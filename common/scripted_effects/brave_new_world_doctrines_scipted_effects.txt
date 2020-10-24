@@ -1,0 +1,282 @@
+﻿bnw_resolve_doctrine_theocracy_change_effect = {
+    if = {
+        limit = {
+            is_landed = yes
+            is_ai = yes
+            bnw_should_turn_theocracy_trigger = yes
+            bnw_is_religious_head_trigger = no
+        }
+        change_government = theocracy_government
+    }
+}
+bnw_resolve_doctrine_head_of_faith_change_effect = {
+    every_religion_global = {
+        every_faith = {
+            save_temporary_scope_as = selected_faith
+            if = {
+                limit = {
+                    exists = religious_head_title
+                    has_doctrine_parameter = no_head_of_faith
+                }
+                remove_religious_head_title = yes
+            }
+            if = {
+                limit = {
+                    exists = religious_head
+                    OR = {
+                        AND = {
+                            religious_head = {
+								NOT = { has_government = theocracy_government }
+							}
+                            has_doctrine_parameter = spiritual_head_of_faith
+                        }
+                        AND = {
+                            religious_head = {
+								has_government = theocracy_government
+							}
+                            has_doctrine_parameter = temporal_head_of_faith
+                        }
+                    }
+                }
+				religious_head = {
+					if = {
+						limit = {
+							is_landed = yes
+							is_ai = yes
+							OR = {
+								bnw_should_turn_theocracy_trigger = yes
+								bnw_should_turn_feudal_trigger = yes
+							}
+						}
+						if = {
+							limit = {
+								bnw_should_turn_theocracy_trigger = yes
+							}
+							change_government = theocracy_government
+						}
+						else = {
+							trigger_event = faith_conversion.0004
+						}
+					}
+					else = {
+						destroy_title = faith.religious_head_title
+					}
+				}
+            }
+            if = {
+                limit = {
+                    NOR = {
+                        exists = religious_head
+                        has_doctrine_parameter = no_head_of_faith
+                        has_doctrine = unreformed_faith_doctrine
+                    }
+                    any_ruler = {
+                        bnw_ruler_can_create_head_of_faith_title_trigger = yes
+                    }
+                }
+                random = {
+                    chance = 10
+                    modifier = {
+                        factor = {
+                            value = num_county_followers
+                            divide = 30
+                        }
+                    }
+                    modifier = {
+                        factor = 2
+                        any_ruler = {
+                            save_temporary_scope_as = checked_ruler
+							faith = {
+								num_realm_holy_sites_faithful_holders = {
+									COUNT = 1
+									CHARACTER = scope:checked_ruler
+								}
+							}
+                        }
+                    }
+                    modifier = {
+                        factor = 2
+                        any_ruler = {
+                            save_temporary_scope_as = checked_ruler
+							faith = {
+								num_realm_holy_sites_faithful_holders = {
+									COUNT = 2
+									CHARACTER = scope:checked_ruler
+								}
+							}
+                        }
+                    }
+                    modifier = {
+                        factor = 2
+                        has_doctrine_parameter = spiritual_head_of_faith 
+                    }
+                    random_ruler = {
+                        limit = {
+                            bnw_ruler_can_create_head_of_faith_title_trigger = yes
+                            save_temporary_scope_as = checked_ruler
+							faith = {
+								num_realm_holy_sites_faithful_holders = {
+									COUNT = 2
+									CHARACTER = scope:checked_ruler
+								}
+							}
+                        }
+                        alternative_limit = {
+                            bnw_ruler_can_create_head_of_faith_title_trigger = yes
+                            save_temporary_scope_as = checked_ruler
+							faith = {
+								num_realm_holy_sites_faithful_holders = {
+									COUNT = 1
+									CHARACTER = scope:checked_ruler
+								}
+							}
+                        }
+                        alternative_limit = {
+                            bnw_ruler_can_create_head_of_faith_title_trigger = yes
+                        }
+                        bnw_create_head_of_faith_title_effect = yes
+                    }
+                }
+            }
+        }
+    }
+}
+bnw_create_head_of_faith_title_effect = {
+    save_temporary_scope_as = title_creator
+    
+    if = {
+        limit = {
+			faith = {
+				has_doctrine_parameter = temporal_head_of_faith
+			}
+        }
+        save_temporary_scope_as = new_religious_head
+    }
+    else = {
+        if = {
+            limit = {
+                any_theocratic_vassal = {
+                    faith = scope:title_creator.faith
+                }
+            }
+            ordered_theocratic_vassal = {
+                limit = {
+                    faith = scope:title_creator.faith
+                }
+                order_by = head_of_faith_selection_weight
+                save_temporary_scope_as = new_religious_head
+            }
+        }
+        else = {
+            create_character = {
+                location = scope:title_creator.capital_province
+                template = bnw_religious_leader_character
+                save_temporary_scope_as = new_religious_head
+            }
+        }
+    }
+    
+    if = {
+        limit = {
+            NOT = { exists = faith.religious_head_title }
+        }
+        faith = {
+            save_scope_as = my_faith
+        }
+        create_dynamic_title = {
+            tier = duchy
+            name = REL_HEAD_TITLE_NAME
+        }
+        scope:my_faith = {
+            random_holy_site = {
+                limit = {
+                    county.holder = scope:new_religious_head
+                }
+                alternative_limit = {
+                    county.holder = {
+                        target_is_liege_or_above = scope:new_religious_head
+                    }
+                }
+                alternative_limit = {
+                    county.holder = scope:title_creator
+                }
+                alternative_limit = {
+                    county.holder = {
+                        target_is_liege_or_above = scope:title_creator
+                    }
+                }
+                alternative_limit = {
+                    always = yes
+                }
+                save_temporary_scope_as = holy_site
+            }
+        }
+        scope:new_title = {
+            set_capital_county = scope:holy_site.county
+            if = {
+                limit = {
+					scope:my_faith = {
+						has_doctrine_parameter = spiritual_head_of_faith
+					}
+                }
+                set_landless_title = yes
+            }
+            set_destroy_if_invalid_heir = yes
+            set_no_automatic_claims = yes
+            set_definitive_form = yes
+            set_always_follows_primary_heir = yes
+			save_temporary_scope_as = my_hof_title
+        }
+    }
+	else = {
+		faith = {
+			religious_head_title = {
+				save_temporary_scope_as = my_hof_title
+			}
+		}
+	}
+
+    create_title_and_vassal_change = {
+        type = created
+        save_scope_as = change
+        add_claim_on_loss = no
+    }
+    scope:my_hof_title = {
+        change_title_holder = {
+            holder = scope:new_religious_head
+            change = scope:change
+        }
+    }
+
+    resolve_title_and_vassal_change = scope:change
+    
+    if = {
+        limit = {
+			faith = {
+				has_doctrine_parameter = temporal_head_of_faith
+			}
+        }
+        add_realm_law_skip_effects = same_faith_succession_law
+        scope:my_hof_title = {
+            add_title_law = temporal_head_of_faith_succession_law
+        }
+    }
+    else = {
+        scope:my_hof_title = {
+            add_title_law = same_faith_theocratic_succession_law
+        }
+    }
+
+    if = {
+        limit = {
+            exists = scope:new_title
+        }
+        faith = {
+            set_religious_head_title = scope:new_title
+        }
+        scope:new_title = {
+            generate_coa = religious_title
+        }
+        clear_saved_scope = new_title
+    }
+}

@@ -1,0 +1,7359 @@
+bnw_pick_random_doctrine_core_tenets_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				has_doctrine = abrahamic_hostility_doctrine
+				always = yes
+				NOT = { 
+					has_doctrine = tenet_aniconism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_aniconism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_aniconism
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = christianity_religion
+				NOT = { 
+					has_doctrine = doctrine_pluralism_fundamentalist
+				}
+				NOT = { 
+					has_doctrine = tenet_alexandrian_catechism
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_alexandrian_catechism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_alexandrian_catechism
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					religion_tag = christianity_religion
+					religion_tag = judaism_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_dharmic_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_armed_pilgrimages
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = christianity_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_armed_pilgrimages
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_armed_pilgrimages
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_carnal_exaltation
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_carnal_exaltation
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_carnal_exaltation
+		}
+		0 = { 
+			trigger = { 
+				always = yes
+				NOT = { 
+					has_doctrine = tenet_communal_identity
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_high_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_communal_identity
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_communal_identity
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_no_head
+				}
+				NOT = { 
+					has_doctrine = tenet_communion
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							has_doctrine = pagan_hostility_doctrine
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_communion
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_communion
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+					religion_tag = zoroastrianism_religion
+					AND = { 
+						has_doctrine = pagan_hostility_doctrine
+						NOT = { 
+							religion_tag = kushitism_religion
+						}
+					}
+				}
+				NOT = { 
+					has_doctrine = tenet_consolamentum
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								religion_tag = hinduism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_consolamentum
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_consolamentum
+		}
+		0 = { 
+			trigger = { 
+				has_doctrine = doctrine_consanguinity_unrestricted
+				NOT = { 
+					has_doctrine = tenet_divine_marriage
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_divine_marriage
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_divine_marriage
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_eastern_syncretism
+				}
+				NOT = { 
+					has_doctrine = tenet_gnosticism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								religion_tag = zoroastrianism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+								religion_tag = hinduism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_gnosticism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_gnosticism
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_hedonistic
+				}
+				NOT = { 
+					has_doctrine = tenet_mendicant_preachers
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+								religion_tag = zoroastrianism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_mendicant_preachers
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_mendicant_preachers
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_hedonistic
+				}
+				NOT = { 
+					has_doctrine = tenet_monasticism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_monasticism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_monasticism
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = buddhism_religion
+					religion_tag = hinduism_religion
+					religion_tag = jainism_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_human_sacrifice
+				}
+				NOT = { 
+					has_doctrine = tenet_armed_pilgrimages
+				}
+				NOT = { 
+					has_doctrine = tenet_pacifism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = christianity_religion
+							religion_tag = taoism_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = islam_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_pacifism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_pacifism
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_pluralism_pluralistic
+				}
+				NOT = { 
+					has_doctrine = tenet_pentarchy
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = hinduism_religion
+								religion_tag = zoroastrianism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_pentarchy
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_pentarchy
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_unrelenting_faith
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_unrelenting_faith
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_unrelenting_faith
+		}
+		0 = { 
+			trigger = { 
+				always = yes
+				NOT = { 
+					has_doctrine = tenet_vows_of_poverty
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_vows_of_poverty
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_vows_of_poverty
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = christianity_religion
+				has_doctrine = doctrine_no_head
+				NOT = { 
+					has_doctrine = tenet_false_conversion_sanction
+				}
+				NOT = { 
+					has_doctrine = tenet_pastoral_isolation
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_pastoral_isolation
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_pastoral_isolation
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					has_doctrine = doctrine_pluralism_fundamentalist
+					has_doctrine = doctrine_pluralism_righteous
+				}
+				NOT = { 
+					has_doctrine = tenet_adaptive
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_adaptive
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_adaptive
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_esotericism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+								religion_tag = jainism_religion
+								religion_tag = zoroastrianism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_esotericism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_esotericism
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_legalism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+								religion_tag = zoroastrianism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_legalism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_legalism
+		}
+		0 = { 
+			trigger = { 
+				has_doctrine = abrahamic_hostility_doctrine
+				NOT = { 
+					has_doctrine = tenet_literalism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_literalism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_literalism
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = christianity_religion
+					religion_tag = judaism_religion
+					religion_tag = zoroastrianism_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_reincarnation
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								religion_tag = hinduism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_reincarnation
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_reincarnation
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_religious_legal_pronouncements
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = hinduism_religion
+								religion_tag = zoroastrianism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_religious_legal_pronouncements
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_religious_legal_pronouncements
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					religion_tag = islam_religion
+					religion_tag = dualism_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_struggle_submission
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = islam_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_struggle_submission
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_struggle_submission
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = christianity_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_false_conversion_sanction
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								religion_tag = hinduism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_false_conversion_sanction
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_false_conversion_sanction
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_tax_nonbelievers
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_tax_nonbelievers
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_tax_nonbelievers
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_asceticism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+								religion_tag = taoism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_asceticism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_asceticism
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = hinduism_religion
+				NOT = { 
+					has_doctrine = tenet_bhakti
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_bhakti
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_bhakti
+		}
+		0 = { 
+			trigger = { 
+				has_doctrine = eastern_hostility_doctrine
+				NOT = { 
+					religion_tag = zoroastrianism_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_human_sacrifice
+				}
+				NOT = { 
+					has_doctrine = tenet_armed_pilgrimages
+				}
+				NOT = { 
+					has_doctrine = tenet_dharmic_pacifism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_dharmic_pacifism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_dharmic_pacifism
+		}
+		0 = { 
+			trigger = { 
+				has_doctrine = eastern_hostility_doctrine
+				NOT = { 
+					religion_tag = zoroastrianism_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_inner_journey
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_inner_journey
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_inner_journey
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = abrahamic_hostility_doctrine
+				}
+				NOT = { 
+					has_doctrine = tenet_ritual_hospitality
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_ritual_hospitality
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_ritual_hospitality
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = west_african_bori_religion
+				NOT = { 
+					has_doctrine = tenet_adorcism
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_adorcism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_adorcism
+		}
+		0 = { 
+			trigger = { 
+				has_doctrine = pagan_hostility_doctrine
+				NOT = { 
+					has_doctrine = tenet_ancestor_worship
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_ancestor_worship
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_ancestor_worship
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_astrology
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_astrology
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_astrology
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = dualism_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_monasticism
+				}
+				NOT = { 
+					has_doctrine = tenet_mendicant_preachers
+				}
+				NOT = { 
+					has_doctrine = tenet_hedonistic
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_hedonistic
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_hedonistic
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = christianity_religion
+					religion_tag = judaism_religion
+					religion_tag = islam_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_dharmic_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_human_sacrifice
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_doctrine = pagan_hostility_doctrine
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_human_sacrifice
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_human_sacrifice
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = magyar_religion
+				NOT = { 
+					has_doctrine = tenet_mystical_birthright
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_mystical_birthright
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_mystical_birthright
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_ritual_celebrations
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+								religion_tag = zoroastrianism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_ritual_celebrations
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_ritual_celebrations
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					religion_tag = baltic_religion
+					religion_tag = waaqism_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_sacred_childbirth
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_sacred_childbirth
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_sacred_childbirth
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_sanctity_of_nature
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							has_doctrine = abrahamic_hostility_doctrine
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_sanctity_of_nature
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_sanctity_of_nature
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					has_doctrine = pagan_hostility_doctrine
+					has_doctrine = eastern_hostility_doctrine
+				}
+				NOT = { 
+					has_doctrine = tenet_sky_burials
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_sky_burials
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_sky_burials
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = zunism_religion
+				NOT = { 
+					has_doctrine = tenet_sun_worship
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_sun_worship
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_sun_worship
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = christianity_religion
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+					religion_tag = dualism_religion
+				}
+				NOT = { 
+					has_doctrine = tenet_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_dharmic_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_warmonger
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+								religion_tag = taoism_religion
+							}
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_warmonger
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_warmonger
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					has_doctrine = abrahamic_hostility_doctrine
+					has_doctrine = pagan_hostility_doctrine
+				}
+				NOT = { 
+					has_doctrine = tenet_gnosticism
+				}
+				NOR = { 
+					has_doctrine = tenet_unreformed_syncretism
+					has_doctrine = tenet_christian_syncretism
+					has_doctrine = tenet_islamic_syncretism
+					has_doctrine = tenet_jewish_syncretism
+				}
+				NOT = { 
+					has_doctrine = tenet_eastern_syncretism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = islam_religion
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_eastern_syncretism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_eastern_syncretism
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = pagan_hostility_doctrine
+				}
+				NOR = { 
+					has_doctrine = tenet_eastern_syncretism
+					has_doctrine = tenet_christian_syncretism
+					has_doctrine = tenet_islamic_syncretism
+					has_doctrine = tenet_jewish_syncretism
+				}
+				NOT = { 
+					has_doctrine = tenet_unreformed_syncretism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_doctrine = doctrine_pluralism_pluralistic
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							has_doctrine = doctrine_pluralism_fundamentalist
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_unreformed_syncretism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_unreformed_syncretism
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = christianity_religion
+				}
+				NOR = { 
+					has_doctrine = tenet_eastern_syncretism
+					has_doctrine = tenet_unreformed_syncretism
+					has_doctrine = tenet_islamic_syncretism
+					has_doctrine = tenet_jewish_syncretism
+				}
+				NOT = { 
+					has_doctrine = tenet_christian_syncretism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = dualism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_christian_syncretism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_christian_syncretism
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = islam_religion
+				}
+				NOR = { 
+					has_doctrine = tenet_eastern_syncretism
+					has_doctrine = tenet_unreformed_syncretism
+					has_doctrine = tenet_christian_syncretism
+					has_doctrine = tenet_jewish_syncretism
+				}
+				NOT = { 
+					has_doctrine = tenet_islamic_syncretism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_islamic_syncretism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_islamic_syncretism
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = judaism_religion
+				}
+				NOR = { 
+					has_doctrine = tenet_eastern_syncretism
+					has_doctrine = tenet_unreformed_syncretism
+					has_doctrine = tenet_christian_syncretism
+					has_doctrine = tenet_islamic_syncretism
+				}
+				NOT = { 
+					has_doctrine = tenet_jewish_syncretism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_jewish_syncretism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_jewish_syncretism
+		}
+		0 = { 
+			trigger = { 
+				always = no
+				NOT = { 
+					has_doctrine = tenet_exaltation_of_pain
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_exaltation_of_pain
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_exaltation_of_pain
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					has_doctrine = doctrine_adultery_women_crime
+					has_doctrine = doctrine_homosexuality_crime
+					has_doctrine = doctrine_adultery_men_crime
+					has_doctrine = doctrine_witchcraft_crime
+					has_doctrine = doctrine_deviancy_crime
+				}
+				OR = { 
+					has_doctrine = doctrine_kinslaying_accepted
+					has_doctrine = doctrine_kinslaying_shunned
+				}
+				NOT = { 
+					has_doctrine = tenet_natural_primitivism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion = religion:hinduism_religion
+							religion = religion:jainism_religion
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							has_doctrine = pagan_hostility_doctrine
+							religion = religion:buddhism_religion
+							religion = religion:christianity_religion
+							religion = religion:dualism_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_natural_primitivism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_natural_primitivism
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_pursuit_of_power
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								has_doctrine = pagan_hostility_doctrine
+								religion_tag = hinduism_religion
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_pursuit_of_power
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_pursuit_of_power
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_ritual_cannibalism
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_variable = accepted_cannibalism
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_ritual_cannibalism
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_ritual_cannibalism
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_sacred_shadows
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								has_doctrine = pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_sacred_shadows
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_sacred_shadows
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					has_doctrine = doctrine_adultery_women_crime
+					has_doctrine = doctrine_adultery_women_shunned
+					has_doctrine = doctrine_adultery_men_crime
+					has_doctrine = doctrine_adultery_men_shunned
+				}
+				NOT = { 
+					has_doctrine = tenet_polyamory
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_polyamory
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_polyamory
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_core_tenets_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				is_target_in_variable_list = { 
+					name = religion_doctrine_preferences
+					target = flag:abrahamic_hostility_doctrine
+				}
+				always = yes
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_aniconism
+			}
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = christianity_religion
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_pluralism_fundamentalist
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_alexandrian_catechism
+			}
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					religion_tag = christianity_religion
+					religion_tag = judaism_religion
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_pacifism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_dharmic_pacifism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = christianity_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_armed_pilgrimages
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_carnal_exaltation
+			}
+		}
+		0 = { 
+			trigger = { 
+				always = yes
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_high_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_communal_identity
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_no_head
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_communion
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+					religion_tag = zoroastrianism_religion
+					AND = { 
+						is_target_in_variable_list = { 
+							name = religion_doctrine_preferences
+							target = flag:pagan_hostility_doctrine
+						}
+						NOT = { 
+							religion_tag = kushitism_religion
+						}
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								religion_tag = hinduism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_consolamentum
+			}
+		}
+		0 = { 
+			trigger = { 
+				is_target_in_variable_list = { 
+					name = religion_doctrine_preferences
+					target = flag:doctrine_consanguinity_unrestricted
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_divine_marriage
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_eastern_syncretism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								religion_tag = zoroastrianism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+								religion_tag = hinduism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_gnosticism
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_hedonistic
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+								religion_tag = zoroastrianism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_mendicant_preachers
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_hedonistic
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_monasticism
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = buddhism_religion
+					religion_tag = hinduism_religion
+					religion_tag = jainism_religion
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_human_sacrifice
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_armed_pilgrimages
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = christianity_religion
+							religion_tag = taoism_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = islam_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_pacifism
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_pluralism_pluralistic
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = hinduism_religion
+								religion_tag = zoroastrianism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_pentarchy
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_unrelenting_faith
+			}
+		}
+		0 = { 
+			trigger = { 
+				always = yes
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_vows_of_poverty
+			}
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = christianity_religion
+				is_target_in_variable_list = { 
+					name = religion_doctrine_preferences
+					target = flag:doctrine_no_head
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_false_conversion_sanction
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_pastoral_isolation
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_pluralism_fundamentalist
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_pluralism_righteous
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_adaptive
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+								religion_tag = jainism_religion
+								religion_tag = zoroastrianism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_esotericism
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+								religion_tag = zoroastrianism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_legalism
+			}
+		}
+		0 = { 
+			trigger = { 
+				is_target_in_variable_list = { 
+					name = religion_doctrine_preferences
+					target = flag:abrahamic_hostility_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_literalism
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = christianity_religion
+					religion_tag = judaism_religion
+					religion_tag = zoroastrianism_religion
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								religion_tag = hinduism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_reincarnation
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = hinduism_religion
+								religion_tag = zoroastrianism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_religious_legal_pronouncements
+			}
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					religion_tag = islam_religion
+					religion_tag = dualism_religion
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = islam_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_struggle_submission
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = christianity_religion
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								religion_tag = hinduism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_false_conversion_sanction
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_tax_nonbelievers
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+								religion_tag = taoism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_asceticism
+			}
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = hinduism_religion
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_bhakti
+			}
+		}
+		0 = { 
+			trigger = { 
+				is_target_in_variable_list = { 
+					name = religion_doctrine_preferences
+					target = flag:eastern_hostility_doctrine
+				}
+				NOT = { 
+					religion_tag = zoroastrianism_religion
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_human_sacrifice
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_armed_pilgrimages
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_dharmic_pacifism
+			}
+		}
+		0 = { 
+			trigger = { 
+				is_target_in_variable_list = { 
+					name = religion_doctrine_preferences
+					target = flag:eastern_hostility_doctrine
+				}
+				NOT = { 
+					religion_tag = zoroastrianism_religion
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_inner_journey
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:abrahamic_hostility_doctrine
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_ritual_hospitality
+			}
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = west_african_bori_religion
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_adorcism
+			}
+		}
+		0 = { 
+			trigger = { 
+				is_target_in_variable_list = { 
+					name = religion_doctrine_preferences
+					target = flag:pagan_hostility_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_ancestor_worship
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = zoroastrianism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_astrology
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = dualism_religion
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_monasticism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_mendicant_preachers
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_hedonistic
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = christianity_religion
+					religion_tag = judaism_religion
+					religion_tag = islam_religion
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_pacifism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_dharmic_pacifism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_human_sacrifice
+			}
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = magyar_religion
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_mystical_birthright
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+								religion_tag = zoroastrianism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_ritual_celebrations
+			}
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					religion_tag = baltic_religion
+					religion_tag = waaqism_religion
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_sacred_childbirth
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:abrahamic_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_sanctity_of_nature
+			}
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:pagan_hostility_doctrine
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:eastern_hostility_doctrine
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_sky_burials
+			}
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = zunism_religion
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_sun_worship
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = christianity_religion
+					religion_tag = islam_religion
+					religion_tag = judaism_religion
+					religion_tag = dualism_religion
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_pacifism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_dharmic_pacifism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+								religion_tag = taoism_religion
+							}
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_warmonger
+			}
+		}
+		0 = { 
+			trigger = { 
+				OR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:abrahamic_hostility_doctrine
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:pagan_hostility_doctrine
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_gnosticism
+					}
+				}
+				NOR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_unreformed_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_christian_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_islamic_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_jewish_syncretism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = dualism_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = islam_religion
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_eastern_syncretism
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:pagan_hostility_doctrine
+					}
+				}
+				NOR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_eastern_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_christian_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_islamic_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_jewish_syncretism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:doctrine_pluralism_pluralistic
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:doctrine_pluralism_fundamentalist
+							}
+						}
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_unreformed_syncretism
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = christianity_religion
+				}
+				NOR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_eastern_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_unreformed_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_islamic_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_jewish_syncretism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = dualism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_christian_syncretism
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = islam_religion
+				}
+				NOR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_eastern_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_unreformed_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_christian_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_jewish_syncretism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_islamic_syncretism
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = judaism_religion
+				}
+				NOR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_eastern_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_unreformed_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_christian_syncretism
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_islamic_syncretism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+								religion_tag = christianity_religion
+								religion_tag = dualism_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_jewish_syncretism
+			}
+		}
+		0 = { 
+			trigger = { 
+				always = no
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = hinduism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_exaltation_of_pain
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_adultery_women_crime
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_homosexuality_crime
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_adultery_men_crime
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_witchcraft_crime
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_deviancy_crime
+					}
+				}
+				OR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_kinslaying_accepted
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_kinslaying_shunned
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion = religion:hinduism_religion
+							religion = religion:jainism_religion
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:pagan_hostility_doctrine
+							}
+							religion = religion:buddhism_religion
+							religion = religion:christianity_religion
+							religion = religion:dualism_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_natural_primitivism
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+								religion_tag = hinduism_religion
+								religion_tag = islam_religion
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_pursuit_of_power
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_variable = accepted_cannibalism
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_ritual_cannibalism
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:pagan_hostility_doctrine
+								}
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = islam_religion
+								religion_tag = judaism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_sacred_shadows
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_adultery_women_crime
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_adultery_women_shunned
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_adultery_men_crime
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_adultery_men_shunned
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							OR = { 
+								religion_tag = christianity_religion
+								religion_tag = judaism_religion
+								religion_tag = islam_religion
+								religion_tag = buddhism_religion
+								religion_tag = jainism_religion
+							}
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_polyamory
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_marriage_type_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_monogamy
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_monogamy
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_monogamy
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_polygamy
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_polygamy
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_polygamy
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_concubines
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_concubines
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_concubines
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_marriage_type_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_monogamy
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_polygamy
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_concubines
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_divorce_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_divorce_disallowed
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_divorce_disallowed
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_divorce_disallowed
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_divorce_approval
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_divorce_approval
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_divorce_approval
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_divorce_allowed
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_divorce_allowed
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_divorce_allowed
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_divorce_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_divorce_disallowed
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_divorce_approval
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_divorce_allowed
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_bastardry_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_bastardry_none
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_bastardry_none
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_bastardry_none
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_bastardry_legitimization
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_bastardry_legitimization
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_bastardry_legitimization
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_bastardry_all
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_bastardry_all
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_bastardry_all
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_bastardry_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_bastardry_none
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_bastardry_legitimization
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_bastardry_all
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_homosexuality_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_homosexuality_crime
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_homosexuality_crime
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_homosexuality_crime
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_homosexuality_shunned
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_homosexuality_shunned
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_homosexuality_shunned
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_homosexuality_accepted
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_homosexuality_accepted
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_homosexuality_accepted
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_homosexuality_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_homosexuality_crime
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_homosexuality_shunned
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_homosexuality_accepted
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_deviancy_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_deviancy_crime
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_deviancy_crime
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_deviancy_crime
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_deviancy_shunned
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_deviancy_shunned
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_deviancy_shunned
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_deviancy_accepted
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_deviancy_accepted
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_deviancy_accepted
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_deviancy_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_deviancy_crime
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_deviancy_shunned
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_deviancy_accepted
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_adultery_men_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_adultery_men_crime
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_adultery_men_crime
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_adultery_men_crime
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_adultery_men_shunned
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_adultery_men_shunned
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_adultery_men_shunned
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_adultery_men_accepted
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_adultery_men_accepted
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_adultery_men_accepted
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_adultery_men_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_adultery_men_crime
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_adultery_men_shunned
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_adultery_men_accepted
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_adultery_women_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_adultery_women_crime
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_adultery_women_crime
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_adultery_women_crime
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_adultery_women_shunned
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_adultery_women_shunned
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_adultery_women_shunned
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_adultery_women_accepted
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_adultery_women_accepted
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_adultery_women_accepted
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_adultery_women_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_adultery_women_crime
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_adultery_women_shunned
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_adultery_women_accepted
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_kinslaying_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_kinslaying_any_dynasty_member_crime
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_kinslaying_any_dynasty_member_crime
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_kinslaying_any_dynasty_member_crime
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_kinslaying_extended_family_crime
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_kinslaying_extended_family_crime
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_kinslaying_extended_family_crime
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_kinslaying_close_kin_crime
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					multiply = faith_changed_doctrine_cost_mult_two_step
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_kinslaying_close_kin_crime
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_kinslaying_close_kin_crime
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_kinslaying_shunned
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_kinslaying_shunned
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_kinslaying_shunned
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_kinslaying_accepted
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_kinslaying_accepted
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_kinslaying_accepted
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_kinslaying_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_kinslaying_any_dynasty_member_crime
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_kinslaying_extended_family_crime
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					multiply = faith_changed_doctrine_cost_mult_two_step
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_kinslaying_close_kin_crime
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_kinslaying_shunned
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_kinslaying_accepted
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_witchcraft_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_witchcraft_crime
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_witchcraft_crime
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_witchcraft_crime
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_witchcraft_shunned
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_witchcraft_shunned
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_witchcraft_shunned
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_witchcraft_accepted
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_witchcraft_accepted
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_witchcraft_accepted
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_witchcraft_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_witchcraft_crime
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_witchcraft_shunned
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_witchcraft_accepted
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_gender_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_game_rule = full_gender_equality
+				}
+				NOT = { 
+					has_doctrine = doctrine_gender_male_dominated
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_gender_male_dominated
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_gender_male_dominated
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_gender_equal
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_gender_equal
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_gender_equal
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_game_rule = full_gender_equality
+				}
+				NOT = { 
+					has_doctrine = doctrine_gender_female_dominated
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_gender_female_dominated
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_gender_female_dominated
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_gender_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_game_rule = full_gender_equality
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_gender_male_dominated
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_gender_equal
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_game_rule = full_gender_equality
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_gender_female_dominated
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_consanguinity_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_consanguinity_restricted
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_consanguinity_restricted
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_consanguinity_restricted
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_consanguinity_cousins
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_consanguinity_cousins
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_consanguinity_cousins
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_consanguinity_aunt_nephew_and_uncle_niece
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_consanguinity_unrestricted
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_consanguinity_unrestricted
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_consanguinity_unrestricted
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_consanguinity_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_consanguinity_restricted
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_consanguinity_cousins
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_consanguinity_aunt_nephew_and_uncle_niece
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_consanguinity_unrestricted
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_pluralism_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_pluralism_fundamentalist
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_pluralism_fundamentalist
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_pluralism_fundamentalist
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_pluralism_righteous
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_pluralism_righteous
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_pluralism_righteous
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_pentarchy
+				}
+				NOT = { 
+					has_doctrine = doctrine_pluralism_pluralistic
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_pluralism_pluralistic
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_pluralism_pluralistic
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_pluralism_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_pluralism_fundamentalist
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_pluralism_righteous
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_pentarchy
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_pluralism_pluralistic
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_theocracy_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_temporal_head
+				}
+				NOT = { 
+					has_doctrine = doctrine_theocracy_temporal
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_theocracy_temporal
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_theocracy_temporal
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_theocracy_lay_clergy
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_theocracy_lay_clergy
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_theocracy_lay_clergy
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_theocracy_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_temporal_head
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					multiply = bnw_doctrine_theocracy_temporal_multiplier
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_theocracy_temporal
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_theocracy_lay_clergy
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_head_of_faith_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_no_head
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_no_head
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_no_head
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_spiritual_head
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_spiritual_head
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_spiritual_head
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_theocracy_temporal
+				}
+				NOR = { 
+					has_doctrine = doctrine_clerical_succession_spiritual_appointment
+					has_doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+				}
+				NOT = { 
+					has_doctrine = doctrine_temporal_head
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_very_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_temporal_head
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_temporal_head
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_head_of_faith_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_no_head
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_spiritual_head
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_theocracy_temporal
+					}
+				}
+				NOR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_clerical_succession_spiritual_appointment
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_clerical_succession_spiritual_fixed_appointment
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_very_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_temporal_head
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_clerical_function_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_function_taxation
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_function_taxation
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_function_taxation
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_function_alms_and_pacification
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_function_alms_and_pacification
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_function_alms_and_pacification
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_function_recruitment
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_function_recruitment
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_function_recruitment
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_clerical_function_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_function_taxation
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_function_alms_and_pacification
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_function_recruitment
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_clerical_gender_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_gender_male_only
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_gender_male_only
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_gender_male_only
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_gender_female_only
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_gender_female_only
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_gender_female_only
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_gender_either
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_gender_either
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_gender_either
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_clerical_gender_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_gender_male_only
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_gender_female_only
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_gender_either
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_clerical_marriage_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_marriage_allowed
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_marriage_allowed
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_marriage_allowed
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_marriage_disallowed
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_marriage_disallowed
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_marriage_disallowed
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_clerical_marriage_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_marriage_allowed
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_marriage_disallowed
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_clerical_succession_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_succession_temporal_appointment
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_succession_temporal_appointment
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_succession_temporal_appointment
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_temporal_head
+				}
+				NOT = { 
+					has_doctrine = doctrine_clerical_succession_spiritual_appointment
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_succession_spiritual_appointment
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_succession_spiritual_appointment
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_succession_temporal_fixed_appointment
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_temporal_head
+				}
+				NOT = { 
+					has_doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_clerical_succession_spiritual_fixed_appointment
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_clerical_succession_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_succession_temporal_appointment
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_temporal_head
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_succession_spiritual_appointment
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_succession_temporal_fixed_appointment
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_temporal_head
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_clerical_succession_spiritual_fixed_appointment
+			}
+		}
+	}
+}
+bnw_pick_random_doctrine_muhammad_succession_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = muhammad_succession_sunni_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							has_doctrine = muhammad_succession_sunni_doctrine
+						}
+						multiply = 0
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:muhammad_succession_sunni_doctrine
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = muhammad_succession_sunni_doctrine
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = muhammad_succession_shia_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							has_doctrine = muhammad_succession_shia_doctrine
+						}
+						multiply = 0
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:muhammad_succession_shia_doctrine
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = muhammad_succession_shia_doctrine
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = muhammad_succession_muhakkima_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							has_doctrine = muhammad_succession_muhakkima_doctrine
+						}
+						multiply = 0
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:muhammad_succession_muhakkima_doctrine
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = muhammad_succession_muhakkima_doctrine
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = muhammad_succession_zandaqa_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							has_doctrine = muhammad_succession_zandaqa_doctrine
+						}
+						multiply = 0
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:muhammad_succession_zandaqa_doctrine
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = muhammad_succession_zandaqa_doctrine
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_muhammad_succession_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:muhammad_succession_sunni_doctrine
+							}
+						}
+						multiply = 0
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:muhammad_succession_sunni_doctrine
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:muhammad_succession_shia_doctrine
+							}
+						}
+						multiply = 0
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:muhammad_succession_shia_doctrine
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:muhammad_succession_muhakkima_doctrine
+							}
+						}
+						multiply = 0
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:muhammad_succession_muhakkima_doctrine
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:muhammad_succession_zandaqa_doctrine
+							}
+						}
+						multiply = 0
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:muhammad_succession_zandaqa_doctrine
+			}
+		}
+	}
+}
+bnw_religion_pick_random_doctrine_muhammad_succession_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:muhammad_succession_sunni_doctrine
+							}
+						}
+						multiply = 0
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:muhammad_succession_sunni_doctrine
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:muhammad_succession_shia_doctrine
+							}
+						}
+						multiply = 0
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:muhammad_succession_shia_doctrine
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:muhammad_succession_muhakkima_doctrine
+							}
+						}
+						multiply = 0
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:muhammad_succession_muhakkima_doctrine
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = bnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:muhammad_succession_zandaqa_doctrine
+							}
+						}
+						multiply = 0
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:muhammad_succession_zandaqa_doctrine
+			}
+		}
+	}
+}
+bnw_remove_all_doctrines_effect = { 
+	if = { 
+		limit = { 
+			has_doctrine = tenet_aniconism
+		}
+		remove_doctrine = tenet_aniconism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_alexandrian_catechism
+		}
+		remove_doctrine = tenet_alexandrian_catechism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_armed_pilgrimages
+		}
+		remove_doctrine = tenet_armed_pilgrimages
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_carnal_exaltation
+		}
+		remove_doctrine = tenet_carnal_exaltation
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_communal_identity
+		}
+		remove_doctrine = tenet_communal_identity
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_communion
+		}
+		remove_doctrine = tenet_communion
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_consolamentum
+		}
+		remove_doctrine = tenet_consolamentum
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_divine_marriage
+		}
+		remove_doctrine = tenet_divine_marriage
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_gnosticism
+		}
+		remove_doctrine = tenet_gnosticism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_mendicant_preachers
+		}
+		remove_doctrine = tenet_mendicant_preachers
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_monasticism
+		}
+		remove_doctrine = tenet_monasticism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_pacifism
+		}
+		remove_doctrine = tenet_pacifism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_pentarchy
+		}
+		remove_doctrine = tenet_pentarchy
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_unrelenting_faith
+		}
+		remove_doctrine = tenet_unrelenting_faith
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_vows_of_poverty
+		}
+		remove_doctrine = tenet_vows_of_poverty
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_pastoral_isolation
+		}
+		remove_doctrine = tenet_pastoral_isolation
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_adaptive
+		}
+		remove_doctrine = tenet_adaptive
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_esotericism
+		}
+		remove_doctrine = tenet_esotericism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_legalism
+		}
+		remove_doctrine = tenet_legalism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_literalism
+		}
+		remove_doctrine = tenet_literalism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_reincarnation
+		}
+		remove_doctrine = tenet_reincarnation
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_religious_legal_pronouncements
+		}
+		remove_doctrine = tenet_religious_legal_pronouncements
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_struggle_submission
+		}
+		remove_doctrine = tenet_struggle_submission
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_false_conversion_sanction
+		}
+		remove_doctrine = tenet_false_conversion_sanction
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_tax_nonbelievers
+		}
+		remove_doctrine = tenet_tax_nonbelievers
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_asceticism
+		}
+		remove_doctrine = tenet_asceticism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_bhakti
+		}
+		remove_doctrine = tenet_bhakti
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_dharmic_pacifism
+		}
+		remove_doctrine = tenet_dharmic_pacifism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_inner_journey
+		}
+		remove_doctrine = tenet_inner_journey
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_ritual_hospitality
+		}
+		remove_doctrine = tenet_ritual_hospitality
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_adorcism
+		}
+		remove_doctrine = tenet_adorcism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_ancestor_worship
+		}
+		remove_doctrine = tenet_ancestor_worship
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_astrology
+		}
+		remove_doctrine = tenet_astrology
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_hedonistic
+		}
+		remove_doctrine = tenet_hedonistic
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_human_sacrifice
+		}
+		remove_doctrine = tenet_human_sacrifice
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_mystical_birthright
+		}
+		remove_doctrine = tenet_mystical_birthright
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_ritual_celebrations
+		}
+		remove_doctrine = tenet_ritual_celebrations
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_sacred_childbirth
+		}
+		remove_doctrine = tenet_sacred_childbirth
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_sanctity_of_nature
+		}
+		remove_doctrine = tenet_sanctity_of_nature
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_sky_burials
+		}
+		remove_doctrine = tenet_sky_burials
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_sun_worship
+		}
+		remove_doctrine = tenet_sun_worship
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_warmonger
+		}
+		remove_doctrine = tenet_warmonger
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_eastern_syncretism
+		}
+		remove_doctrine = tenet_eastern_syncretism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_unreformed_syncretism
+		}
+		remove_doctrine = tenet_unreformed_syncretism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_christian_syncretism
+		}
+		remove_doctrine = tenet_christian_syncretism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_islamic_syncretism
+		}
+		remove_doctrine = tenet_islamic_syncretism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_jewish_syncretism
+		}
+		remove_doctrine = tenet_jewish_syncretism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_exaltation_of_pain
+		}
+		remove_doctrine = tenet_exaltation_of_pain
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_natural_primitivism
+		}
+		remove_doctrine = tenet_natural_primitivism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_pursuit_of_power
+		}
+		remove_doctrine = tenet_pursuit_of_power
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_ritual_cannibalism
+		}
+		remove_doctrine = tenet_ritual_cannibalism
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_sacred_shadows
+		}
+		remove_doctrine = tenet_sacred_shadows
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_polyamory
+		}
+		remove_doctrine = tenet_polyamory
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_monogamy
+		}
+		remove_doctrine = doctrine_monogamy
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_polygamy
+		}
+		remove_doctrine = doctrine_polygamy
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_concubines
+		}
+		remove_doctrine = doctrine_concubines
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_divorce_disallowed
+		}
+		remove_doctrine = doctrine_divorce_disallowed
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_divorce_approval
+		}
+		remove_doctrine = doctrine_divorce_approval
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_divorce_allowed
+		}
+		remove_doctrine = doctrine_divorce_allowed
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_bastardry_none
+		}
+		remove_doctrine = doctrine_bastardry_none
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_bastardry_legitimization
+		}
+		remove_doctrine = doctrine_bastardry_legitimization
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_bastardry_all
+		}
+		remove_doctrine = doctrine_bastardry_all
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_homosexuality_crime
+		}
+		remove_doctrine = doctrine_homosexuality_crime
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_homosexuality_shunned
+		}
+		remove_doctrine = doctrine_homosexuality_shunned
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_homosexuality_accepted
+		}
+		remove_doctrine = doctrine_homosexuality_accepted
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_deviancy_crime
+		}
+		remove_doctrine = doctrine_deviancy_crime
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_deviancy_shunned
+		}
+		remove_doctrine = doctrine_deviancy_shunned
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_deviancy_accepted
+		}
+		remove_doctrine = doctrine_deviancy_accepted
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_adultery_men_crime
+		}
+		remove_doctrine = doctrine_adultery_men_crime
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_adultery_men_shunned
+		}
+		remove_doctrine = doctrine_adultery_men_shunned
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_adultery_men_accepted
+		}
+		remove_doctrine = doctrine_adultery_men_accepted
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_adultery_women_crime
+		}
+		remove_doctrine = doctrine_adultery_women_crime
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_adultery_women_shunned
+		}
+		remove_doctrine = doctrine_adultery_women_shunned
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_adultery_women_accepted
+		}
+		remove_doctrine = doctrine_adultery_women_accepted
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_kinslaying_any_dynasty_member_crime
+		}
+		remove_doctrine = doctrine_kinslaying_any_dynasty_member_crime
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_kinslaying_extended_family_crime
+		}
+		remove_doctrine = doctrine_kinslaying_extended_family_crime
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_kinslaying_close_kin_crime
+		}
+		remove_doctrine = doctrine_kinslaying_close_kin_crime
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_kinslaying_shunned
+		}
+		remove_doctrine = doctrine_kinslaying_shunned
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_kinslaying_accepted
+		}
+		remove_doctrine = doctrine_kinslaying_accepted
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_witchcraft_crime
+		}
+		remove_doctrine = doctrine_witchcraft_crime
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_witchcraft_shunned
+		}
+		remove_doctrine = doctrine_witchcraft_shunned
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_witchcraft_accepted
+		}
+		remove_doctrine = doctrine_witchcraft_accepted
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_gender_male_dominated
+		}
+		remove_doctrine = doctrine_gender_male_dominated
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_gender_equal
+		}
+		remove_doctrine = doctrine_gender_equal
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_gender_female_dominated
+		}
+		remove_doctrine = doctrine_gender_female_dominated
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_consanguinity_restricted
+		}
+		remove_doctrine = doctrine_consanguinity_restricted
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_consanguinity_cousins
+		}
+		remove_doctrine = doctrine_consanguinity_cousins
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+		}
+		remove_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_consanguinity_unrestricted
+		}
+		remove_doctrine = doctrine_consanguinity_unrestricted
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_pluralism_fundamentalist
+		}
+		remove_doctrine = doctrine_pluralism_fundamentalist
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_pluralism_righteous
+		}
+		remove_doctrine = doctrine_pluralism_righteous
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_pluralism_pluralistic
+		}
+		remove_doctrine = doctrine_pluralism_pluralistic
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_theocracy_temporal
+		}
+		remove_doctrine = doctrine_theocracy_temporal
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_theocracy_lay_clergy
+		}
+		remove_doctrine = doctrine_theocracy_lay_clergy
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_no_head
+		}
+		remove_doctrine = doctrine_no_head
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_spiritual_head
+		}
+		remove_doctrine = doctrine_spiritual_head
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_temporal_head
+		}
+		remove_doctrine = doctrine_temporal_head
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_function_taxation
+		}
+		remove_doctrine = doctrine_clerical_function_taxation
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_function_alms_and_pacification
+		}
+		remove_doctrine = doctrine_clerical_function_alms_and_pacification
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_function_recruitment
+		}
+		remove_doctrine = doctrine_clerical_function_recruitment
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_gender_male_only
+		}
+		remove_doctrine = doctrine_clerical_gender_male_only
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_gender_female_only
+		}
+		remove_doctrine = doctrine_clerical_gender_female_only
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_gender_either
+		}
+		remove_doctrine = doctrine_clerical_gender_either
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_marriage_allowed
+		}
+		remove_doctrine = doctrine_clerical_marriage_allowed
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_marriage_disallowed
+		}
+		remove_doctrine = doctrine_clerical_marriage_disallowed
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_succession_temporal_appointment
+		}
+		remove_doctrine = doctrine_clerical_succession_temporal_appointment
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_succession_spiritual_appointment
+		}
+		remove_doctrine = doctrine_clerical_succession_spiritual_appointment
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+		}
+		remove_doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+		}
+		remove_doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+	}
+	if = { 
+		limit = { 
+			has_doctrine = muhammad_succession_sunni_doctrine
+		}
+		remove_doctrine = muhammad_succession_sunni_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = muhammad_succession_shia_doctrine
+		}
+		remove_doctrine = muhammad_succession_shia_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = muhammad_succession_muhakkima_doctrine
+		}
+		remove_doctrine = muhammad_succession_muhakkima_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = muhammad_succession_zandaqa_doctrine
+		}
+		remove_doctrine = muhammad_succession_zandaqa_doctrine
+	}
+}

@@ -1,0 +1,192 @@
+﻿bnw_religious_leader_character = {
+	age = { 20 50 }
+	#Education
+	random_traits_list = {
+		count = 1
+		education_learning_1 = {
+			weight = { base = 10 }
+		}
+		education_learning_2 = {
+			weight = { base = 20 }
+		}
+		education_learning_3 = {
+			weight = { base = 30 }
+		}
+		education_learning_4 = {
+			weight = { base = 20 }
+		}
+	}
+	#Virtue Personality
+	random_traits_list = {
+		count = 1
+		zealous = {}
+        lustful = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = lustful }
+			}
+		}
+		chaste = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = chaste }
+			}
+		}
+		gluttonous = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = gluttonous }
+			}
+		}
+		temperate = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = temperate }
+			}
+		}
+		greedy = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = greedy }
+			}
+		}
+		generous = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = generous }
+			}
+		}
+		wrathful = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = wrathful }
+			}
+		}
+		calm = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = calm }
+			}
+		}
+		patient = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = patient }
+			}
+		}
+		impatient = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = impatient }
+			}
+		}
+		arrogant = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = arrogant }
+			}
+		}
+		humble = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = humble }
+			}
+		}
+		deceitful = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = deceitful }
+			}
+		}
+		honest = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = honest }
+			}
+		}
+		craven = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = craven }
+			}
+		}
+		brave = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = brave }
+			}
+		}
+		ambitious = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = ambitious }
+			}
+		}
+		content = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = content }
+			}
+		}
+		arbitrary = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = arbitrary }
+			}
+		}
+		just = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = just }
+			}
+		}
+		paranoid = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = paranoid }
+			}
+		}
+		trusting = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = trusting }
+			}
+		}
+		compassionate = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = compassionate }
+			}
+		}
+		callous = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = callous }
+			}
+		}
+		sadistic = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = sadistic }
+			}
+		}
+		stubborn = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = stubborn }
+			}
+		}
+		fickle = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = fickle }
+			}
+		}
+		vengeful = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = vengeful }
+			}
+		}
+		forgiving = {
+			trigger = {
+				scope:title_creator.faith = { trait_is_virtue = forgiving }
+			}
+		}
+	}
+	faith = scope:title_creator.faith
+	culture = scope:title_creator.culture
+	gender_female_chance = {
+        if = {
+            limit = {
+                scope:title_creator.faith = { has_doctrine_parameter = clergy_must_be_male }
+            }
+            add =  0
+        }
+        else_if = {
+            limit = {
+                scope:title_creator.faith = { has_doctrine_parameter = clergy_must_be_female }
+            }
+            add =  100
+        }
+        else = {
+            add = 50
+        }
+    }
+	learning = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+}

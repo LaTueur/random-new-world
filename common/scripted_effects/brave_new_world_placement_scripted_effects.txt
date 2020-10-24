@@ -1,0 +1,575 @@
+﻿bnw_collect_all_faiths_to_target_list_effect = {
+    every_religion_global = {
+        every_faith = {
+			limit = {
+				NOT = {
+					religion_tag = $PLACEHOLDER_RELIGION$
+				}
+			}
+            add_to_list = $TARGET$
+        }
+    }
+}
+bnw_select_percent_of_list_to_target_list_effect = {
+    save_temporary_scope_value_as = {
+        name = num_of_scopes_to_select
+        value = {
+            value = 0
+            every_in_list = {
+                list = $LIST$
+                add = 1
+            }
+            multiply = $PERCENT$
+            ceiling = yes
+        }
+    }
+    while = {
+        limit = {
+            scope:num_of_scopes_to_select >= 1
+        }
+        random_in_list = {
+            list = $LIST$
+            limit = {
+                NOT = { exists = var:already_selected }
+            }
+            weight = {
+                base = 1
+				modifier = {
+                    add = 6
+                    trigger_if = {
+                        limit = {
+                            $UNIQUES$ = yes
+                        }
+                        religion = {
+                            NOT = { exists = var:already_selected }
+                        }
+                    }
+				}
+            }
+            add_to_list = $TARGET$
+            set_variable = { name = already_selected value = yes }
+            if = {
+                limit = {
+                    $UNIQUES$ = yes
+                }
+                religion = {
+                    set_variable = { name = already_selected value = yes }
+                }
+            }
+            save_temporary_scope_value_as = {
+                name = num_of_scopes_to_select
+                value = {
+                    value = scope:num_of_scopes_to_select
+                    subtract = 1
+                }
+            }
+        }
+    }
+    every_in_list = {
+        list = $TARGET$
+        remove_variable = already_selected
+        if = {
+            limit = {
+                $UNIQUES$ = yes
+            }
+            religion = {
+                remove_variable = already_selected
+            }
+        }
+    }
+}
+bnw_select_faith_starting_location_effect = {
+    while = {
+        limit = {
+            any_in_list = {
+                list = $LIST$
+                NOT = { exists = var:already_selected }
+            }
+        }
+        random_in_list = {
+            list = $LIST$
+            limit = {
+                NOT = { exists = var:already_selected }
+            }
+            save_temporary_scope_as = selected_faith
+			random_list = {
+				50 = {
+					set_variable = {
+						name = num_of_centers_needed
+						value = 1
+					}
+				}
+				30 = {
+					set_variable = {
+						name = num_of_centers_needed
+						value = 2
+					}
+				}
+				20 = {
+					set_variable = {
+						name = num_of_centers_needed
+						value = 3
+					}
+				}
+			}
+			while = {
+                limit = {
+                    var:num_of_centers_needed >= 1
+                }
+                random_county = {
+                    limit = {
+                        NOT = { exists = var:conversion_target }
+                        save_temporary_scope_as = target_county
+						NOT = {
+                            kingdom = {
+								exists = var:has_at_least_one_faith
+							}
+						}
+                        scope:selected_faith = {
+                            any_holy_site = {
+                                squared_distance = {
+                                    target = scope:target_county
+                                    value <= squared_distance_massive
+                                }
+                            }
+                        }
+                    }
+                    weight = {
+                        base = 1
+                        modifier = {
+                            factor = 20
+                            save_temporary_scope_as = target_county
+                            scope:selected_faith = {
+                                any_holy_site = {
+                                    squared_distance = {
+                                        target = scope:target_county
+                                        value <= squared_distance_small
+                                    }
+                                }
+                            }
+                        }
+                        modifier = {
+                            factor = 10
+                            save_temporary_scope_as = target_county
+                            scope:selected_faith = {
+                                any_holy_site = {
+                                    squared_distance = {
+                                        target = scope:target_county
+                                        value <= squared_distance_medium
+                                    }
+                                }
+                            }
+                        }
+                        modifier = {
+                            factor = 5
+                            save_temporary_scope_as = target_county
+                            scope:selected_faith = {
+                                any_holy_site = {
+                                    squared_distance = {
+                                        target = scope:target_county
+                                        value <= squared_distance_large
+                                    }
+                                }
+                            }
+                        }
+                        modifier = {
+                            factor = {
+								value = 1
+								if = {
+									limit = {
+										exists = var:faiths_in_empire
+									}
+									divide = var:faiths_in_empire
+								}
+							}
+                            empire = {
+								trigger_if = {
+									limit = {
+										exists = var:last_faith_placed
+									}
+									NOT = {
+										var:last_faith_placed = scope:selected_faith
+									}
+								}
+								trigger_else = {
+									always = no
+								}
+							}
+                        }
+                    }
+                    set_variable = { name = conversion_target value = scope:selected_faith }
+					empire = {
+						set_variable = { name = last_faith_placed value = scope:selected_faith }
+						if = {
+							limit = {
+								exists = var:faiths_in_empire
+							}
+							change_variable = { name = faiths_in_empire add = 2 }
+						}
+						else = {
+							set_variable = { name = faiths_in_empire value = 5 }
+						}
+					}
+					kingdom = {
+						set_variable = { name = has_at_least_one_faith value = yes }
+					}
+                }
+                change_variable = {
+                    name = num_of_centers_needed
+                    subtract = 1
+                }
+            }
+            set_variable = { name = already_selected value = yes }
+        }
+    }
+    every_in_list = {
+        list = $LIST$
+        remove_variable = already_selected
+    }
+	every_empire = {
+		limit = {
+			exists = var:last_faith_placed
+		}
+        remove_variable = last_faith_placed
+        remove_variable = faiths_in_empire
+	}
+	every_kingdom = {
+		limit = {
+			exists = var:has_at_least_one_faith
+		}
+        remove_variable = has_at_least_one_faith
+	}
+}
+bnw_spread_conversion_targets_effect = {
+    every_in_list = {
+        list = $LIST$
+        set_variable = {
+            name = num_of_conversion_targets
+            value = 0
+        }
+    }
+    every_county = {
+        limit = {
+            exists = var:conversion_target
+        }
+        var:conversion_target = {
+            change_variable = {
+                name = num_of_conversion_targets
+                add = 1
+            }
+        }
+    }
+    save_temporary_scope_value_as = {
+        name = conversion_target_type
+        value = flag:$TYPE$
+    }
+    while = {
+        limit = {
+            any_county = {
+                NOT = { exists = var:conversion_target }
+            }
+        }
+        every_in_list = {
+            list = $LIST$
+            set_variable = {
+                name = conversion_target_spread_strenght
+                value = {
+                    if = {
+                        limit = {
+                            scope:conversion_target_type = flag:faith
+                        }
+                        value = 300
+                    }
+                    else = {
+                        value = 60
+                    }
+                    subtract = var:num_of_conversion_targets
+                    min = 1
+                }
+            }
+        }
+        every_county = {
+            limit = {
+                NOT = { exists = var:conversion_target }
+				OR = {
+					any_neighboring_county = {
+						bnw_can_convert_province_trigger = yes
+					}
+					any_title_to_title_neighboring_and_across_water_county = {
+						bnw_can_convert_province_trigger = yes
+					}
+				}
+            }
+            save_temporary_scope_as = county_to_select_conversion_target
+            every_neighboring_county = {
+                limit = {
+                    bnw_can_convert_province_trigger = yes
+                }
+				add_to_list = counties_to_select_from
+				set_variable = { name = conversion_strenght_multiplier value = 1 }
+			}
+			every_title_to_title_neighboring_and_across_water_county = {
+				limit = {
+					bnw_can_convert_province_trigger = yes
+					NOT = {
+						is_in_list = counties_to_select_from
+					}
+				}
+				add_to_list = counties_to_select_from
+                set_variable = {
+                    name = conversion_strenght_multiplier
+                    value = {
+                        value = 0.8
+                        if = {
+                            limit = {
+                                scope:conversion_target_type = flag:culture
+                            }
+                            divide = 4
+                        }
+                    }
+                }
+			}
+			every_neighboring_county = {
+				every_neighboring_county = {
+					limit = {
+						bnw_can_convert_province_trigger = yes
+						NOR = {
+                            is_in_list = counties_to_select_from
+                            scope:conversion_target_type = flag:culture
+						}
+					}
+					add_to_list = counties_to_select_from
+					set_variable = { name = conversion_strenght_multiplier value = 0.5 }
+				}
+			}
+			every_in_list = {
+				list = counties_to_select_from
+				save_temporary_scope_as = selected_county
+                var:conversion_target = {
+                    if = {
+                        limit = {
+                            NOT = { is_in_list = conversion_targets_to_select_from }
+                        }
+                        add_to_list = conversion_targets_to_select_from
+                        set_variable = { name = county_conversion_strenght value = 0 }
+                    }
+                    change_variable = {
+						name = county_conversion_strenght
+						add = {
+							value = var:conversion_target_spread_strenght
+							multiply = scope:selected_county.var:conversion_strenght_multiplier
+							multiply = scope:selected_county.bnw_spread_extra_score
+						}
+					}
+                }
+            }
+            random_in_list = {
+                list = conversion_targets_to_select_from
+                weight = {
+                    base = 1
+					modifier = {
+						factor = var:county_conversion_strenght
+					}
+                }
+                save_temporary_scope_as = selected_conversion_target
+                change_variable = {
+                    name = num_of_conversion_targets
+                    add = 1
+                }
+            }
+            set_variable = { name = conversion_target value = scope:selected_conversion_target }
+            set_variable = { name = recently_given_conversion_target value = yes }
+			every_in_list = {
+				list = conversion_targets_to_select_from
+				remove_from_list = conversion_targets_to_select_from
+				remove_variable = county_conversion_strenght
+			}
+			every_in_list = {
+				list = counties_to_select_from
+				remove_from_list = counties_to_select_from
+				remove_variable = conversion_strenght_multiplier
+			}
+        }
+        every_county = {
+            limit = {
+                exists = var:recently_given_conversion_target
+            }
+            remove_variable = recently_given_conversion_target
+        }
+    }
+}
+bnw_flip_conversion_targets_effect = {
+    every_county = {
+        limit = {
+            exists = var:conversion_target
+        }
+        if = {
+            limit = {
+                $TYPE$ = flag:faith
+            }
+            set_county_faith = var:conversion_target
+        }
+        else_if = {
+            limit = {
+                $TYPE$ = flag:culture
+            }
+            set_county_culture = var:conversion_target
+        }
+		remove_variable = conversion_target
+    }
+}
+bnw_collect_all_cultures_to_target_list_effect = {
+    every_county = {
+        if = {
+            limit = {
+                culture =  {
+                    NOT = {
+                        is_in_list = $TARGET$
+                    }
+                }
+            }
+            culture = {
+                add_to_list = $TARGET$
+            }
+        }
+    }
+    every_ruler = {
+        if = {
+            limit = {
+                culture =  {
+                    NOT = {
+                        is_in_list = $TARGET$
+                    }
+                }
+            }
+            culture = {
+                add_to_list = $TARGET$
+            }
+        }
+    }
+}
+bnw_collect_same_culture_group_of_list_to_target_list_effect = {
+    every_in_list = {
+        list = $CULTURE_LIST$
+        limit = {
+            culture_group = $CULTURE_GROUP$
+        }
+        add_to_list = $TARGET$
+    }
+}
+bnw_select_culture_starting_location_effect = {
+    while = {
+        limit = {
+            any_in_list = {
+                list = $LIST$
+                NOT = { exists = var:already_selected }
+            }
+        }
+        random_in_list = {
+            list = $LIST$
+            limit = {
+                NOT = { exists = var:already_selected }
+            }
+			culture_group = {
+				save_temporary_scope_as = selected_culture_group
+			}
+            bnw_collect_same_culture_group_of_list_to_target_list_effect = {
+                CULTURE_LIST = $LIST$
+                TARGET = same_culture_group_list
+                CULTURE_GROUP = scope:selected_culture_group
+            }
+            random_county = {
+                weight = {
+                    base = 1
+                    modifier = {
+                        factor = {
+                            value = 1
+                            if = {
+                                limit = {
+                                    exists = var:culture_groups_in_empire
+                                }
+                                divide = var:culture_groups_in_empire
+                            }
+                        }
+                        empire = {
+                            exists = var:culture_groups_in_empire
+                        }
+                    }
+                }
+                save_temporary_scope_as = culture_group_center
+                empire = {
+                    if = {
+                        limit = {
+                            exists = var:culture_groups_in_empire
+                        }
+                        change_variable = { name = culture_groups_in_empire add = 1 }
+                    }
+                    else = {
+                        set_variable = { name = culture_groups_in_empire value = 2 }
+                    }
+                }
+            }
+            every_in_list = {
+                list = same_culture_group_list
+                save_temporary_scope_as = selected_culture
+                random_county = {
+                    limit = {
+                        NOT = { exists = var:conversion_target }
+                        squared_distance = {
+                            target = scope:culture_group_center
+                            value <= squared_distance_large
+                        }
+                    }
+                    weight = {
+                        base = 1
+                        modifier = {
+                            factor = 2
+                            squared_distance = {
+                                target = scope:culture_group_center
+                                value <= squared_distance_small
+                            }
+                        }
+                        modifier = {
+                            factor = 2
+                            squared_distance = {
+                                target = scope:culture_group_center
+                                value <= squared_distance_medium
+                            }
+                        }
+                        modifier = {
+                            factor = 2
+                            kingdom = {
+                                NOT = { exists = var:has_at_least_one_culture }
+                            }
+                        }
+                    }
+					set_variable = { name = conversion_target value = scope:selected_culture }
+					kingdom = {
+						set_variable = { name = has_at_least_one_culture value = yes }
+					}
+                }
+                set_variable = { name = already_selected value = yes }
+            }
+			every_in_list = {
+				list = same_culture_group_list
+				remove_from_list = same_culture_group_list
+			}
+        }
+    }
+    every_in_list = {
+        list = $LIST$
+        remove_variable = already_selected
+    }
+	every_empire = {
+		limit = {
+			exists = var:culture_groups_in_empire
+		}
+        remove_variable = culture_groups_in_empire
+	}
+	every_kingdom = {
+		limit = {
+			exists = var:has_at_least_one_culture
+		}
+        remove_variable = has_at_least_one_culture
+	}
+}

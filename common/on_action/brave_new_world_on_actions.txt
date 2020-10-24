@@ -1,0 +1,130 @@
+﻿bnw_faith_doctrine_randomization = {
+    effect = {
+        every_religion_global = {
+            bnw_religion_pick_random_doctrine_head_of_faith_effect = yes
+            bnw_religion_pick_random_doctrine_theocracy_effect = yes
+            bnw_religion_pick_random_doctrine_clerical_function_effect = yes
+            bnw_religion_pick_random_doctrine_clerical_gender_effect = yes
+            bnw_religion_pick_random_doctrine_clerical_marriage_effect = yes
+            bnw_religion_pick_random_doctrine_clerical_succession_effect = yes
+
+            bnw_religion_pick_random_doctrine_marriage_type_effect = yes
+            bnw_religion_pick_random_doctrine_divorce_effect = yes
+            bnw_religion_pick_random_doctrine_bastardry_effect = yes
+            bnw_religion_pick_random_doctrine_homosexuality_effect = yes
+            bnw_religion_pick_random_doctrine_deviancy_effect = yes
+            bnw_religion_pick_random_doctrine_adultery_men_effect = yes
+            bnw_religion_pick_random_doctrine_adultery_women_effect = yes
+            bnw_religion_pick_random_doctrine_kinslaying_effect = yes
+            bnw_religion_pick_random_doctrine_witchcraft_effect = yes
+            bnw_religion_pick_random_doctrine_gender_effect = yes
+            bnw_religion_pick_random_doctrine_consanguinity_effect = yes
+            bnw_religion_pick_random_doctrine_pluralism_effect = yes
+
+            every_faith = {
+                bnw_remove_all_doctrines_effect = yes
+
+                bnw_pick_random_doctrine_head_of_faith_effect = yes
+				bnw_pick_random_doctrine_theocracy_effect = yes
+                bnw_pick_random_doctrine_clerical_function_effect = yes
+                bnw_pick_random_doctrine_clerical_gender_effect = yes
+                bnw_pick_random_doctrine_clerical_marriage_effect = yes
+                bnw_pick_random_doctrine_clerical_succession_effect = yes
+
+                bnw_pick_random_doctrine_marriage_type_effect = yes
+                bnw_pick_random_doctrine_divorce_effect = yes
+                bnw_pick_random_doctrine_bastardry_effect = yes
+                bnw_pick_random_doctrine_homosexuality_effect = yes
+                bnw_pick_random_doctrine_deviancy_effect = yes
+                bnw_pick_random_doctrine_adultery_men_effect = yes
+                bnw_pick_random_doctrine_adultery_women_effect = yes
+                bnw_pick_random_doctrine_kinslaying_effect = yes
+                bnw_pick_random_doctrine_witchcraft_effect = yes
+                bnw_pick_random_doctrine_gender_effect = yes
+                bnw_pick_random_doctrine_consanguinity_effect = yes
+                bnw_pick_random_doctrine_pluralism_effect = yes
+
+                if = {
+                    limit = {
+                        religion_tag = islam_religion
+                    }
+                    bnw_pick_random_doctrine_muhammad_succession_effect = yes
+                }
+
+                bnw_pick_random_doctrine_core_tenets_effect = yes
+                bnw_pick_random_doctrine_core_tenets_effect = yes
+                bnw_pick_random_doctrine_core_tenets_effect = yes
+
+            }
+
+            clear_variable_list = religion_doctrine_preferences
+        }
+
+        bnw_resolve_doctrine_head_of_faith_change_effect = yes
+        every_living_character = {
+            trigger_event = {
+                on_action = bnw_faith_randomization_character_check
+            }
+        }
+    }
+}
+bnw_faith_randomization_character_check = {
+	effect = {
+        check_for_equal_doctrine_effect = yes
+        bnw_resolve_doctrine_theocracy_change_effect = yes
+	}
+    events = {
+		faith_conversion.0002 # Remove obsolete modifiers
+		faith_conversion.0004 # Convert Theocracies
+        faith_conversion.0005 # Update marriage opinions
+		war_event.3100		# Handles invalidation of religious wars
+    }
+}
+bnw_faith_placement_randomization = {
+    effect = {
+        bnw_collect_all_faiths_to_target_list_effect = {
+            TARGET = full_faith_list
+            PLACEHOLDER_RELIGION = paganism_religion
+        }
+
+        bnw_select_percent_of_list_to_target_list_effect = {
+            LIST = full_faith_list
+            TARGET = curated_faith_list
+            PERCENT = 0.6
+            UNIQUES = yes
+        }
+
+        bnw_select_faith_starting_location_effect = {
+            LIST = curated_faith_list
+        }
+
+        bnw_spread_conversion_targets_effect = {
+            LIST = curated_faith_list
+            TYPE = faith
+        }
+
+        bnw_flip_conversion_targets_effect = {
+            TYPE = flag:faith
+        }
+    }
+}
+bnw_culture_placement_randomization = {
+    effect = {
+        bnw_collect_all_cultures_to_target_list_effect = {
+            TARGET = full_culture_list
+        }
+
+        bnw_select_culture_starting_location_effect = {
+            LIST = full_culture_list
+        }
+
+        bnw_spread_conversion_targets_effect = {
+            LIST = full_culture_list
+            TYPE = culture
+        }
+
+        bnw_flip_conversion_targets_effect = {
+            TYPE = flag:culture
+        }
+    }
+}

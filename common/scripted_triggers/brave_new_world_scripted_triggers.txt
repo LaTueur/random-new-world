@@ -1,0 +1,40 @@
+﻿bnw_can_convert_province_trigger = {
+    exists = var:conversion_target
+    NOT = { exists = var:recently_given_conversion_target }
+}
+bnw_should_turn_theocracy_trigger = {
+    faith = {
+        NOT = { has_doctrine_parameter = allowed_holding_type_church_holding }
+    }
+    capital_province = {
+        has_holding_type = church_holding
+    }
+    NOT = { has_government = theocracy_government }
+}
+bnw_should_turn_feudal_trigger = {
+    faith = {
+        has_doctrine_parameter = allowed_holding_type_church_holding
+    }
+    has_government = theocracy_government
+}
+bnw_is_religious_head_trigger = {
+    trigger_if = {
+        limit = {
+            exists = faith.religious_head
+        }
+        faith.religious_head = this
+    }
+}
+bnw_ruler_can_create_head_of_faith_title_trigger = {
+    faith = scope:selected_faith
+	is_landed = yes
+    trigger_if = {
+        limit = {
+            faith = {
+                has_doctrine_parameter = temporal_head_of_faith
+            }
+            is_independent_ruler = no
+        }
+        liege.primary_title.tier > tier_duchy
+    }
+}

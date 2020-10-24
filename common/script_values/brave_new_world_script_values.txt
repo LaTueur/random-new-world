@@ -1,0 +1,66 @@
+﻿bnw_faith_doctrine_high_chance          = 40
+bnw_faith_doctrine_averange_chance      = 30
+bnw_faith_doctrine_low_chance           = 20
+bnw_faith_doctrine_very_low_chance      = 10
+bnw_faith_doctrine_really_low_chance    = 5
+
+bnw_religion_doctrine_preferences_modifier = 5
+
+bnw_doctrine_theocracy_temporal_multiplier = 3
+
+bnw_spread_extra_score = {
+	value = 1
+    if = {
+        limit = {
+            scope:conversion_target_type = flag:culture
+        }
+        if = {
+            limit = {
+                faith = scope:county_to_select_conversion_target.faith
+            }
+            multiply = 2
+            if = {
+                limit = {
+                    faith = {
+                        OR = {
+                            has_doctrine_parameter = same_culture_conversion_bonus_active
+                            has_doctrine_parameter = same_faith_promote_culture_bonus_active
+                        }
+                    }
+                }
+                multiply = 1.5
+            }
+        }
+        else_if = {
+            limit = {
+                OR = {
+                    faith = {
+                        OR = {
+                            has_doctrine_parameter = same_culture_conversion_bonus_active
+                            has_doctrine_parameter = same_faith_promote_culture_bonus_active
+                        }
+                    }
+                    scope:county_to_select_conversion_target.faith = {
+                        OR = {
+                            has_doctrine_parameter = same_culture_conversion_bonus_active
+                            has_doctrine_parameter = same_faith_promote_culture_bonus_active
+                        }
+                    }
+                }
+            }
+            multiply = 0.6
+        }
+    }
+    if = {
+        limit = {
+            duchy = scope:county_to_select_conversion_target.duchy
+        }
+        multiply = 2
+    }
+    else_if = {
+        limit = {
+            kingdom = scope:county_to_select_conversion_target.kingdom
+        }
+        multiply = 1.5
+    }
+}
