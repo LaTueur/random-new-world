@@ -1,11 +1,6 @@
 ﻿bnw_collect_all_faiths_to_target_list_effect = {
     every_religion_global = {
         every_faith = {
-			limit = {
-				NOT = {
-					religion_tag = $PLACEHOLDER_RELIGION$
-				}
-			}
             add_to_list = $TARGET$
         }
     }

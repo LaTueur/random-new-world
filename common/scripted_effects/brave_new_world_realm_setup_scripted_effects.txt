@@ -74,7 +74,7 @@ bnw_counts_setup_effect = {
 					}
 					save_temporary_scope_as = core_county
 					create_character = {
-						age = { 6 60 }
+						age = { $MIN_AGE$ $MAX_AGE$ }
 						random_traits = yes
 						gender_female_chance = 50
 						culture = scope:core_county.culture
@@ -89,9 +89,10 @@ bnw_counts_setup_effect = {
 						name = counties_still_wanted
 						value = {
 							integer_range = {
-								min = 0
-								max = 5
+								min = $MIN_COUNTIES$
+								max = $MAX_COUNTIES$
 							}
+							subtract = 1
 						}
 					}
 					while = {
@@ -291,6 +292,96 @@ bnw_higher_realms_setup_effect = {
 		list = titles_to_handle
 		remove_variable = checked_ownership
 		remove_from_list = titles_to_handle
+	}
+}
+bnw_duchy_setup_based_on_rule_effect = {
+	switch = {
+		trigger = has_game_rule
+		none_bnw_num_of_dukes = {}
+		few_bnw_num_of_dukes = {
+			bnw_higher_realms_setup_effect = {
+				TIER = tier_duchy
+				IGNORE_RATE = 50
+				THRESHOLD = 0.51
+				VASSALIZATION_RATE = 50
+			}
+		}
+		normal_bnw_num_of_dukes = {
+			bnw_higher_realms_setup_effect = {
+				TIER = tier_duchy
+				IGNORE_RATE = 5
+				THRESHOLD = 0.30
+				VASSALIZATION_RATE = 90
+			}
+		}
+		many_bnw_num_of_dukes = {
+			bnw_higher_realms_setup_effect = {
+				TIER = tier_duchy
+				IGNORE_RATE = 0
+				THRESHOLD = 0.20
+				VASSALIZATION_RATE = 99
+			}
+		}
+	}
+}
+bnw_kingdom_setup_based_on_rule_effect = {
+	switch = {
+		trigger = has_game_rule
+		none_bnw_num_of_kings = {}
+		few_bnw_num_of_kings = {
+			bnw_higher_realms_setup_effect = {
+				TIER = tier_kingdom
+				IGNORE_RATE = 50
+				THRESHOLD = 0.30
+				VASSALIZATION_RATE = 50
+			}
+		}
+		normal_bnw_num_of_kings = {
+			bnw_higher_realms_setup_effect = {
+				TIER = tier_kingdom
+				IGNORE_RATE = 14
+				THRESHOLD = 0.18
+				VASSALIZATION_RATE = 85
+			}
+		}
+		many_bnw_num_of_kings = {
+			bnw_higher_realms_setup_effect = {
+				TIER = tier_kingdom
+				IGNORE_RATE = 0
+				THRESHOLD = 0.10
+				VASSALIZATION_RATE = 95
+			}
+		}
+	}
+}
+bnw_empire_setup_based_on_rule_effect = {
+	switch = {
+		trigger = has_game_rule
+		none_bnw_num_of_emperors = {}
+		few_bnw_num_of_emperors = {
+			bnw_higher_realms_setup_effect = {
+				TIER = tier_empire
+				IGNORE_RATE = 95
+				THRESHOLD = 0.30
+				VASSALIZATION_RATE = 95
+			}
+		}
+		normal_bnw_num_of_emperors = {
+			bnw_higher_realms_setup_effect = {
+				TIER = tier_empire
+				IGNORE_RATE = 80
+				THRESHOLD = 0.20
+				VASSALIZATION_RATE = 95
+			}
+		}
+		many_bnw_num_of_emperors = {
+			bnw_higher_realms_setup_effect = {
+				TIER = tier_empire
+				IGNORE_RATE = 40
+				THRESHOLD = 0.15
+				VASSALIZATION_RATE = 100
+			}
+		}
 	}
 }
 bnw_remove_de_jure_effect = {

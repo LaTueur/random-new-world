@@ -1,25 +1,45 @@
-﻿bnw_faith_doctrine_randomization = {
+﻿on_game_start_after_lobby = {
+    on_actions = {
+        bnw_de_jure_setup_randomization
+        bnw_faith_doctrine_randomization
+        bnw_faith_placement_randomization
+        bnw_culture_placement_randomization
+        bnw_realm_setup_randomization
+        bnw_faith_doctrine_randomization_after_realm_setup
+    }
+}
+bnw_faith_doctrine_randomization = {
+    trigger = {
+        NOT = {
+            has_game_rule = off_bnw_doctrine_randomization
+        }
+    }
     effect = {
         every_religion_global = {
-            bnw_religion_pick_random_doctrine_head_of_faith_effect = yes
-            bnw_religion_pick_random_doctrine_theocracy_effect = yes
-            bnw_religion_pick_random_doctrine_clerical_function_effect = yes
-            bnw_religion_pick_random_doctrine_clerical_gender_effect = yes
-            bnw_religion_pick_random_doctrine_clerical_marriage_effect = yes
-            bnw_religion_pick_random_doctrine_clerical_succession_effect = yes
-
-            bnw_religion_pick_random_doctrine_marriage_type_effect = yes
-            bnw_religion_pick_random_doctrine_divorce_effect = yes
-            bnw_religion_pick_random_doctrine_bastardry_effect = yes
-            bnw_religion_pick_random_doctrine_homosexuality_effect = yes
-            bnw_religion_pick_random_doctrine_deviancy_effect = yes
-            bnw_religion_pick_random_doctrine_adultery_men_effect = yes
-            bnw_religion_pick_random_doctrine_adultery_women_effect = yes
-            bnw_religion_pick_random_doctrine_kinslaying_effect = yes
-            bnw_religion_pick_random_doctrine_witchcraft_effect = yes
-            bnw_religion_pick_random_doctrine_gender_effect = yes
-            bnw_religion_pick_random_doctrine_consanguinity_effect = yes
-            bnw_religion_pick_random_doctrine_pluralism_effect = yes
+            if = {
+                limit = {
+                    has_game_rule = on_bnw_doctrine_randomization
+                }
+                bnw_religion_pick_random_doctrine_head_of_faith_effect = yes
+                bnw_religion_pick_random_doctrine_theocracy_effect = yes
+                bnw_religion_pick_random_doctrine_clerical_function_effect = yes
+                bnw_religion_pick_random_doctrine_clerical_gender_effect = yes
+                bnw_religion_pick_random_doctrine_clerical_marriage_effect = yes
+                bnw_religion_pick_random_doctrine_clerical_succession_effect = yes
+    
+                bnw_religion_pick_random_doctrine_marriage_type_effect = yes
+                bnw_religion_pick_random_doctrine_divorce_effect = yes
+                bnw_religion_pick_random_doctrine_bastardry_effect = yes
+                bnw_religion_pick_random_doctrine_homosexuality_effect = yes
+                bnw_religion_pick_random_doctrine_deviancy_effect = yes
+                bnw_religion_pick_random_doctrine_adultery_men_effect = yes
+                bnw_religion_pick_random_doctrine_adultery_women_effect = yes
+                bnw_religion_pick_random_doctrine_kinslaying_effect = yes
+                bnw_religion_pick_random_doctrine_witchcraft_effect = yes
+                bnw_religion_pick_random_doctrine_gender_effect = yes
+                bnw_religion_pick_random_doctrine_consanguinity_effect = yes
+                bnw_religion_pick_random_doctrine_pluralism_effect = yes
+            }
 
             every_faith = {
                 bnw_remove_all_doctrines_effect = yes
@@ -54,12 +74,19 @@
                 bnw_pick_random_doctrine_core_tenets_effect = yes
                 bnw_pick_random_doctrine_core_tenets_effect = yes
                 bnw_pick_random_doctrine_core_tenets_effect = yes
-
             }
 
             clear_variable_list = religion_doctrine_preferences
         }
-
+    }
+}
+bnw_faith_doctrine_randomization_after_realm_setup = {
+    trigger = {
+        NOT = {
+            has_game_rule = off_bnw_doctrine_randomization
+        }
+    }
+    effect = {
         bnw_resolve_doctrine_head_of_faith_change_effect = yes
         every_living_character = {
             trigger_event = {
@@ -81,16 +108,20 @@ bnw_faith_randomization_character_check = {
     }
 }
 bnw_faith_placement_randomization = {
+    trigger = {
+        NOT = {
+            has_game_rule = off_bnw_faith_placement_randomization
+        }
+    }
     effect = {
         bnw_collect_all_faiths_to_target_list_effect = {
             TARGET = full_faith_list
-            PLACEHOLDER_RELIGION = paganism_religion
         }
 
         bnw_select_percent_of_list_to_target_list_effect = {
             LIST = full_faith_list
             TARGET = curated_faith_list
-            PERCENT = 0.6
+            PERCENT = bnw_faith_percent_used_value
             UNIQUES = yes
         }
 
@@ -109,6 +140,11 @@ bnw_faith_placement_randomization = {
     }
 }
 bnw_culture_placement_randomization = {
+    trigger = {
+        NOT = {
+            has_game_rule = off_bnw_culture_placement_randomization
+        }
+    }
     effect = {
         bnw_collect_all_cultures_to_target_list_effect = {
             TARGET = full_culture_list
@@ -129,44 +165,51 @@ bnw_culture_placement_randomization = {
     }
 }
 bnw_realm_setup_randomization = {
+    trigger = {
+        NOT = {
+            has_game_rule = off_bnw_realm_setup_randomization
+        }
+    }
     effect = {
         bnw_destroy_every_higher_tier_title_effect = yes
 
-        bnw_counts_setup_effect = yes
+        bnw_counts_setup_effect = {
+            MIN_AGE = bnw_bnw_spawn_age_min_value
+            MAX_AGE = bnw_bnw_spawn_age_max_value
+            MIN_COUNTIES = bnw_counties_per_character_min_value
+            MAX_COUNTIES = bnw_counties_per_character_max_value
+        }
         
-        bnw_higher_realms_setup_effect = {
-            TIER = tier_duchy
-            IGNORE_RATE = 5
-            THRESHOLD = 0.30
-            VASSALIZATION_RATE = 90
-        }
-        bnw_higher_realms_setup_effect = {
-            TIER = tier_kingdom
-            IGNORE_RATE = 14
-            THRESHOLD = 0.18
-            VASSALIZATION_RATE = 85
-        }
-        bnw_higher_realms_setup_effect = {
-            TIER = tier_empire
-            IGNORE_RATE = 80
-            THRESHOLD = 0.20
-            VASSALIZATION_RATE = 95
-        }
+        bnw_duchy_setup_based_on_rule_effect = yes
+        
+        bnw_kingdom_setup_based_on_rule_effect = yes
+
+        bnw_empire_setup_based_on_rule_effect = yes
     }
 }
 bnw_de_jure_setup_randomization = {
+    trigger = {
+        NOT = {
+            has_game_rule = off_bnw_de_jure_kingdom_randomization
+        }
+    }
     effect = {
         #bnw_remove_de_jure_effect = yes
         
         bnw_de_jure_setup_effect = {
             TIER = kingdom
-            MIN = 3
-            MAX = 10
+            MIN = bnw_de_jure_kingdom_min_size_value
+            MAX = bnw_de_jure_kingdom_max_size_value
         }
-        bnw_de_jure_setup_effect = {
-            TIER = empire
-            MIN = 3
-            MAX = 5
+        if = {
+            limit = {
+                has_game_rule = on_bnw_de_jure_empire_randomization
+            }
+            bnw_de_jure_setup_effect = {
+                TIER = empire
+                MIN = bnw_de_jure_empire_min_size_value
+                MAX = bnw_de_jure_empire_max_size_value
+            }
         }
     }
 }
