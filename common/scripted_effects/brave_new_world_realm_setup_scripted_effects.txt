@@ -64,14 +64,12 @@ bnw_counts_setup_effect = {
 			}
 			while = {
 				limit = {
-					any_in_de_jure_hierarchy = {
-						tier = tier_county
+					any_county_in_de_jure_hierarchy = {
 						NOT = { exists = var:choosen_owner }
 					}
 				}
-				random_in_de_jure_hierarchy = {
+				random_county_in_de_jure_hierarchy = {
 					limit = {
-						tier = tier_county
 						NOT = { exists = var:choosen_owner }
 					}
 					save_temporary_scope_as = core_county
@@ -293,5 +291,338 @@ bnw_higher_realms_setup_effect = {
 		list = titles_to_handle
 		remove_variable = checked_ownership
 		remove_from_list = titles_to_handle
+	}
+}
+bnw_remove_de_jure_effect = {
+	every_duchy = {
+		limit = {
+			any_this_title_or_de_jure_above = {
+				tier > tier_duchy
+			}
+		}
+		set_de_jure_liege_title = 0
+	}
+	every_kingdom = {
+		limit = {
+			any_this_title_or_de_jure_above = {
+				tier > tier_kingdom
+			}
+		}
+		set_de_jure_liege_title = 0
+	}
+}
+bnw_de_jure_setup_effect = {
+	save_temporary_scope_value_as = {
+		name = tier_long
+		value = tier_$TIER$
+	}
+	save_temporary_scope_value_as = {
+		name = bellow_tier
+		value = {
+			value = tier_$TIER$
+			subtract = 1
+		}
+	}
+	save_temporary_scope_value_as = {
+		name = max
+		value = $MAX$
+	}
+	save_temporary_scope_value_as = {
+		name = min
+		value = $MIN$
+	}
+	if = {
+		limit = {
+			scope:tier_long = tier_kingdom
+		}
+		every_duchy = {
+			limit = {
+				is_titular = no
+			}
+			add_to_list = titles_to_handle
+		}
+	}
+	else_if = {
+		limit = {
+			scope:tier_long = tier_empire
+		}
+		every_kingdom = {
+			limit = {
+				is_titular = no
+			}
+			add_to_list = titles_to_handle
+		}
+	}
+	while = {
+		limit = {
+			any_in_list = {
+				list = titles_to_handle
+				NOT = {	exists = var:checked_de_jure }
+			}
+		}
+		if = {
+			limit = {
+				any_in_list = {
+					list = titles_to_handle
+					bnw_title_can_provide_empty_neighboring_title_trigger = yes
+				}
+			}
+			random_in_list = {
+				list = titles_to_handle
+				limit = {
+					bnw_title_can_provide_empty_neighboring_title_trigger = yes
+				}
+				random_county_in_de_jure_hierarchy = {
+					limit = {
+						bnw_county_has_empty_neighboring_title_trigger = yes
+					}
+					random_neighboring_county = {
+						limit = {
+							bnw_county_belongs_to_empty_title_trigger = yes
+						}
+						every_this_title_or_de_jure_above = {
+							limit = {
+								tier = scope:bellow_tier
+							}
+							save_scope_as = old_title
+						}
+					}
+				}
+			}
+		}
+		else = {
+			random_in_list = {
+				list = titles_to_handle
+				limit = {
+					NOT = {	exists = var:checked_de_jure }
+				}
+				save_scope_as = old_title
+			}
+		}
+
+		scope:old_title = {
+			create_dynamic_title = {
+				tier = $TIER$
+				name = NEW_CREATED_TITLE_NAME
+			}
+			bnw_set_de_jure_liege_title_effect = yes
+			title_capital_county = {
+				save_temporary_scope_as = core_county
+			}
+			scope:new_title = {
+				set_variable = {
+					name = titles_still_wanted
+					value = {
+						value = $MAX$
+						add = $MIN$
+						divide = 2
+						subtract = 1
+					}
+				}
+				set_coa = scope:old_title
+				set_color_from_title = scope:old_title
+				set_capital_county = scope:core_county
+				while = {
+					limit = {
+						var:titles_still_wanted >= 1
+						bnw_title_has_empty_neighboring_title_trigger = yes
+					}
+					every_county_in_de_jure_hierarchy = {
+						every_neighboring_county = {
+							every_this_title_or_de_jure_above = {
+								limit = {
+									tier = scope:bellow_tier
+									NOR = {
+										exists = var:checked_de_jure
+										is_in_list = titles_to_choose_from
+									}
+								}
+								add_to_list = titles_to_choose_from
+							}
+						}
+					}
+					random_in_list = {
+						list = titles_to_choose_from
+						weight = {
+							base = 10
+							modifier = {
+								factor = bnw_de_jure_choose_multiplier
+							}
+						}
+						bnw_set_de_jure_liege_title_effect = yes
+						set_de_jure_liege_title = scope:new_title
+						set_variable = { name = checked_de_jure value = yes }
+					}
+					every_in_list = {
+						list = titles_to_choose_from
+						remove_from_list = titles_to_choose_from
+					}
+					change_variable = { name = titles_still_wanted subtract = 1 }
+				}
+				if = {
+					limit = {
+						$MIN$ > bnw_num_of_direct_de_jure_titles
+					}
+					add_to_list = titles_with_few_title
+				}
+			}
+		}
+	}
+	while = {
+		limit = {
+			any_in_list = {
+				list = titles_with_few_title
+				NOT = {	exists = var:checked_merge }
+			}
+		}
+		ordered_in_list = {
+			list = titles_with_few_title
+			limit = {
+				NOT = {	exists = var:checked_merge }
+			}
+			order_by = bnw_reversed_num_of_direct_de_jure_titles
+			save_temporary_scope_as = new_title
+			if = {
+				limit = {
+					any_county_in_de_jure_hierarchy = {
+						bnw_can_merge_with_neighboring_title_trigger = yes
+					}
+				}
+				random_county_in_de_jure_hierarchy = {
+					limit = {
+						bnw_can_merge_with_neighboring_title_trigger = yes
+					}
+					random_neighboring_county = {
+						limit = {
+							bnw_can_merge_with_liege_title_trigger = yes
+						}
+						every_this_title_or_de_jure_above = {
+							limit = {
+								tier = scope:tier_long
+							}
+							save_temporary_scope_as = title_to_merge
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_in_list = {
+						list = handled_coastal_titles
+						bnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = large }
+						bnw_can_merge_with_liege_title_trigger = yes
+					}
+				}
+				random_in_list = {
+					list = handled_coastal_titles
+					limit = {
+						bnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = small }
+						bnw_can_merge_with_liege_title_trigger = yes
+					}
+					alternative_limit = {
+						bnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = medium }
+						bnw_can_merge_with_liege_title_trigger = yes
+					}
+					alternative_limit = {
+						bnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = large }
+						bnw_can_merge_with_liege_title_trigger = yes
+					}
+					every_this_title_or_de_jure_above = {
+						limit = {
+							tier = scope:tier_long
+						}
+						save_temporary_scope_as = title_to_merge
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = scope:title_to_merge
+				}
+				random_list = {
+					10 = {
+						modifier = {
+							factor = bnw_num_of_direct_de_jure_titles
+						}
+						bnw_merge_titles_effect = {
+							DOMINANT = scope:new_title
+							SUBSERVIENT = scope:title_to_merge
+						}
+					}
+					10 = {
+						modifier = {
+							factor = scope:title_to_merge.bnw_num_of_direct_de_jure_titles
+						}
+						bnw_merge_titles_effect = {
+							DOMINANT = scope:title_to_merge
+							SUBSERVIENT = scope:new_title
+						}
+					}
+				}
+				clear_saved_scope = title_to_merge
+			}
+			else = {
+				set_variable = { name = checked_merge value = yes }
+			}
+		}
+	}
+	every_in_list = {
+		list = titles_with_few_title
+		remove_variable = checked_merge
+		remove_from_list = titles_with_few_title
+	}
+	every_in_list = {
+		list = titles_to_handle
+		remove_variable = checked_de_jure
+		remove_from_list = titles_to_handle
+	}
+	every_in_list = {
+		list = handled_coastal_titles
+		remove_from_list = handled_coastal_titles
+	}
+	clear_saved_scope = tier_long
+	clear_saved_scope = new_title
+	clear_saved_scope = old_title
+	clear_saved_scope = bellow_tier
+	clear_saved_scope = min
+	clear_saved_scope = max
+}
+bnw_set_de_jure_liege_title_effect = {
+	set_de_jure_liege_title = scope:new_title
+	set_variable = { name = checked_de_jure value = yes }
+	if = {
+		limit = {
+			any_county_in_de_jure_hierarchy = {
+				is_coastal_county = yes
+			}
+		}
+		add_to_list = handled_coastal_titles
+	}
+}
+bnw_merge_titles_effect = {
+	$SUBSERVIENT$ = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = scope:bellow_tier
+			}
+			set_de_jure_liege_title = $DOMINANT$
+		}
+	}
+	$SUBSERVIENT$ = {
+		if = {
+			limit = {
+				is_in_list = titles_with_few_title
+			}
+			set_variable = { name = checked_merge value = yes }
+		}
+	}
+	$DOMINANT$ = {
+		if = {
+			limit = {
+				is_in_list = titles_with_few_title
+				scope:min > bnw_num_of_direct_de_jure_titles
+			}
+			set_variable = { name = checked_merge value = yes }
+		}
 	}
 }

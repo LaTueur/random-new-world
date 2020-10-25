@@ -1,0 +1,4 @@
+﻿county_in_de_jure_hierarchy = {
+	base = in_de_jure_hierarchy
+	conditions = { tier = tier_county }
+}

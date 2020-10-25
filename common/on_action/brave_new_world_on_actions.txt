@@ -154,3 +154,19 @@ bnw_realm_setup_randomization = {
         }
     }
 }
+bnw_de_jure_setup_randomization = {
+    effect = {
+        #bnw_remove_de_jure_effect = yes
+        
+        bnw_de_jure_setup_effect = {
+            TIER = kingdom
+            MIN = 3
+            MAX = 10
+        }
+        bnw_de_jure_setup_effect = {
+            TIER = empire
+            MIN = 3
+            MAX = 5
+        }
+    }
+}

@@ -99,3 +99,127 @@ bnw_outside_de_jure_percent = {
         divide = bnw_num_of_held_counties
     }
 }
+bnw_de_jure_choose_multiplier = {
+    value = 0
+    every_in_de_jure_hierarchy = {
+        limit = {
+            tier = tier_county
+        }
+        every_neighboring_county = {
+            limit = {
+                target_is_de_jure_liege_or_above = scope:new_title
+            }
+        }
+        add = {
+            value = 1
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value <= 100000
+                    }
+                }
+                multiply = 5
+            }
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value >= 200000
+                    }
+                }
+                multiply = 0.8
+            }
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value >= 300000
+                    }
+                }
+                multiply = 0.8
+            }
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value >= 400000
+                    }
+                }
+                multiply = 0.8
+            }
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value >= 500000
+                    }
+                }
+                multiply = 0.8
+            }
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value >= 600000
+                    }
+                }
+                multiply = 0.8
+            }
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value >= 700000
+                    }
+                }
+                multiply = 0.8
+            }
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value >= 800000
+                    }
+                }
+                multiply = 0.8
+            }
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value >= 900000
+                    }
+                }
+                multiply = 0.8
+            }
+            if = {
+                limit = {
+                    squared_distance = {
+                        target = scope:core_county
+                        value >= 1000000
+                    }
+                }
+                multiply = 0.8
+            }
+        }
+    }
+}
+bnw_direct_de_jure_titles_together = {
+    value = 0
+    add = scope:new_title.bnw_num_of_direct_de_jure_titles
+    add = bnw_num_of_direct_de_jure_titles
+}
+bnw_num_of_direct_de_jure_titles = {
+	value = 0
+    every_in_de_jure_hierarchy = {
+        limit = {
+            tier = scope:bellow_tier
+        }
+        add = 1
+    }
+}
+bnw_reversed_num_of_direct_de_jure_titles = {
+    value = 100
+    subtract = bnw_num_of_direct_de_jure_titles
+}
