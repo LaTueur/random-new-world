@@ -64,3 +64,38 @@ bnw_spread_extra_score = {
         multiply = 1.5
     }
 }
+bnw_num_of_held_de_jure_counties = {
+    value = 0
+    every_sub_realm_county = {
+        limit = {
+            target_is_de_jure_liege_or_above = scope:title_searching_owner
+        }
+        add = 1
+    }
+}
+bnw_num_of_de_jure_counties = {
+    value = 0
+    every_in_de_jure_hierarchy = {
+        limit = {
+            tier = tier_county
+        }
+        add = 1
+    }
+}
+bnw_de_jure_held_percentage = {
+    value = bnw_num_of_held_de_jure_counties
+    divide = scope:title_searching_owner.bnw_num_of_de_jure_counties
+}
+bnw_num_of_held_counties = {
+    value = 0
+    every_sub_realm_county = {
+        add = 1
+    }
+}
+bnw_outside_de_jure_percent = {
+    value = 1
+    subtract = {
+        value = bnw_num_of_held_de_jure_counties
+        divide = bnw_num_of_held_counties
+    }
+}
