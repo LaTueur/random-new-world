@@ -639,7 +639,7 @@ bnw_doctrine_gender_male_dominated_multiplier = {
         value = 1
     }
 }
-bnw_doctrine_gender_female_dominated_multiplier = {
+bnw_doctrine_gender_equal_multiplier = {
     if = {
         limit = {
             has_game_rule = equal_bnw_doctrine_gender_preference
@@ -650,7 +650,7 @@ bnw_doctrine_gender_female_dominated_multiplier = {
         value = 1
     }
 }
-bnw_doctrine_gender_equal_multiplier = {
+bnw_doctrine_gender_female_dominated_multiplier = {
     if = {
         limit = {
             has_game_rule = female_bnw_doctrine_gender_preference

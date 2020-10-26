@@ -215,7 +215,7 @@ bnw_de_jure_kingdom_max_size = {
 	12_bnw_de_jure_kingdom_max_size = {}
 }
 bnw_de_jure_empire_randomization = {
-	default = off_bnw_de_jure_empire_randomization
+	default = on_bnw_de_jure_empire_randomization
 
 	off_bnw_de_jure_empire_randomization = {}
 
