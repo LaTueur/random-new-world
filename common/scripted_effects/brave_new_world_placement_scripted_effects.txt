@@ -119,12 +119,19 @@ bnw_select_faith_starting_location_effect = {
                             kingdom = {
 								exists = var:has_at_least_one_faith
 							}
-						}
-                        scope:selected_faith = {
-                            any_holy_site = {
-                                squared_distance = {
-                                    target = scope:target_county
-                                    value <= squared_distance_massive
+                        }
+                        trigger_if = {
+                            limit = {
+                                NOT = {
+                                    has_game_rule = full_bnw_faith_placement_randomization
+                                }
+                            }
+                            scope:selected_faith = {
+                                any_holy_site = {
+                                    squared_distance = {
+                                        target = scope:target_county
+                                        value <= squared_distance_massive
+                                    }
                                 }
                             }
                         }
@@ -133,6 +140,9 @@ bnw_select_faith_starting_location_effect = {
                         base = 1
                         modifier = {
                             factor = 20
+                            NOT = {
+                                has_game_rule = full_bnw_faith_placement_randomization
+                            }
                             save_temporary_scope_as = target_county
                             scope:selected_faith = {
                                 any_holy_site = {
@@ -145,6 +155,9 @@ bnw_select_faith_starting_location_effect = {
                         }
                         modifier = {
                             factor = 10
+                            NOT = {
+                                has_game_rule = full_bnw_faith_placement_randomization
+                            }
                             save_temporary_scope_as = target_county
                             scope:selected_faith = {
                                 any_holy_site = {
@@ -157,6 +170,9 @@ bnw_select_faith_starting_location_effect = {
                         }
                         modifier = {
                             factor = 5
+                            NOT = {
+                                has_game_rule = full_bnw_faith_placement_randomization
+                            }
                             save_temporary_scope_as = target_county
                             scope:selected_faith = {
                                 any_holy_site = {
@@ -465,13 +481,23 @@ bnw_select_culture_starting_location_effect = {
             limit = {
                 NOT = { exists = var:already_selected }
             }
-			culture_group = {
-				save_temporary_scope_as = selected_culture_group
-			}
-            bnw_collect_same_culture_group_of_list_to_target_list_effect = {
-                CULTURE_LIST = $LIST$
-                TARGET = same_culture_group_list
-                CULTURE_GROUP = scope:selected_culture_group
+            if = {
+                limit = {
+                    NOT = {
+                        has_game_rule = full_bnw_culture_placement_randomization
+                    }
+                }
+                culture_group = {
+                    save_temporary_scope_as = selected_culture_group
+                }
+                bnw_collect_same_culture_group_of_list_to_target_list_effect = {
+                    CULTURE_LIST = $LIST$
+                    TARGET = same_culture_group_list
+                    CULTURE_GROUP = scope:selected_culture_group
+                }
+            }
+            else = {
+                add_to_list = same_culture_group_list
             }
             random_county = {
                 weight = {
@@ -510,9 +536,23 @@ bnw_select_culture_starting_location_effect = {
                 random_county = {
                     limit = {
                         NOT = { exists = var:conversion_target }
-                        squared_distance = {
-                            target = scope:culture_group_center
-                            value <= squared_distance_large
+                        trigger_if = {
+                            limit = {
+                                list_size = {
+                                    name = same_culture_group_list
+                                    value > 3
+                                }
+                            }
+                            squared_distance = {
+                                target = scope:culture_group_center
+                                value <= squared_distance_large
+                            }
+                        }
+                        trigger_else = {
+                            squared_distance = {
+                                target = scope:culture_group_center
+                                value <= squared_distance_medium
+                            }
                         }
                     }
                     weight = {

@@ -76,7 +76,7 @@ bnw_counts_setup_effect = {
 					create_character = {
 						age = { $MIN_AGE$ $MAX_AGE$ }
 						random_traits = yes
-						gender_female_chance = 50
+						gender_female_chance = scope:core_county.faith.bnw_female_chance
 						culture = scope:core_county.culture
 						faith = scope:core_county.faith
 						location = scope:core_county.title_province
@@ -85,6 +85,7 @@ bnw_counts_setup_effect = {
 					bnw_resolve_county_change_effect = yes
 				}
 				scope:new_count = {
+					add_to_list = real_rulers
 					set_variable = {
 						name = counties_still_wanted
 						value = {
@@ -715,5 +716,275 @@ bnw_merge_titles_effect = {
 			}
 			set_variable = { name = checked_merge value = yes }
 		}
+	}
+}
+bnw_family_generation_effect = {
+	random_list = {
+		10 = {
+			trigger = {
+				age >= 17
+			}
+			trigger_event = game_rule.1001
+		}
+		5 = {
+			trigger = {
+				OR = {
+					has_game_rule = extended_bnw_family_generation
+					has_game_rule = across_realms_bnw_family_generation
+				}
+			}
+			save_temporary_scope_as = handled_ruler
+			bnw_extended_family_generation_effect = { CHARACTER = scope:handled_ruler }
+		}
+	}
+}
+bnw_extended_family_generation_effect = {
+	$CHARACTER$ = {
+		create_character = {
+			location = $CHARACTER$.location
+			culture = $CHARACTER$.culture
+			faith = $CHARACTER$.faith
+			gender_female_chance = $CHARACTER$.faith.bnw_female_chance
+			age = {
+				value = $CHARACTER$.age
+				add = {
+					integer_range = {
+						min = 17
+						max = 33
+					}
+				}
+			}
+			dynasty_house = $CHARACTER$.house
+			save_scope_as = parent
+		}
+		scope:parent = {
+			death = {
+				death_reason = death_natural_causes
+			}
+			if = {
+				limit = {
+					is_female = yes
+				}
+				$CHARACTER$ = {
+					set_mother = scope:parent
+				}
+				if = {
+					limit = {
+						$CHARACTER$.age > 5
+					}
+					create_character = {
+						location = $CHARACTER$.location
+						culture = $CHARACTER$.culture
+						faith = $CHARACTER$.faith
+						gender_female_chance = 50
+						age = {
+							value = $CHARACTER$.age
+							subtract = {
+								integer_range = {
+									min = 2
+									max = 5
+								}
+							}
+						}
+						mother = scope:parent
+						dynasty_house = $CHARACTER$.house
+					}
+				}
+				if = {
+					limit = {
+						$CHARACTER$.age > 10
+					}
+					create_character = {
+						location = $CHARACTER$.location
+						culture = $CHARACTER$.culture
+						faith = $CHARACTER$.faith
+						gender_female_chance = 50
+						age = {
+							value = $CHARACTER$.age
+							subtract = {
+								integer_range = {
+									min = 6
+									max = 10
+								}
+							}
+						}
+						mother = scope:parent
+						dynasty_house = $CHARACTER$.house
+					}
+				}
+				if = {
+					limit = {
+						$CHARACTER$.age > 16
+					}
+					create_character = {
+						location = $CHARACTER$.location
+						culture = $CHARACTER$.culture
+						faith = $CHARACTER$.faith
+						gender_female_chance = 50
+						age = {
+							value = $CHARACTER$.age
+							subtract = {
+								integer_range = {
+									min = 11
+									max = 16
+								}
+							}
+						}
+						mother = scope:parent
+						dynasty_house = $CHARACTER$.house
+					}
+				}
+			}
+			else = {
+				$CHARACTER$ = {
+					set_father = scope:parent
+				}
+				if = {
+					limit = {
+						$CHARACTER$.age > 5
+					}
+					create_character = {
+						location = $CHARACTER$.location
+						culture = $CHARACTER$.culture
+						faith = $CHARACTER$.faith
+						gender_female_chance = 50
+						age = {
+							value = $CHARACTER$.age
+							subtract = {
+								integer_range = {
+									min = 2
+									max = 5
+								}
+							}
+						}
+						father = scope:parent
+						dynasty_house = $CHARACTER$.house
+					}
+				}
+				if = {
+					limit = {
+						$CHARACTER$.age > 10
+					}
+					create_character = {
+						location = $CHARACTER$.location
+						culture = $CHARACTER$.culture
+						faith = $CHARACTER$.faith
+						gender_female_chance = 50
+						age = {
+							value = $CHARACTER$.age
+							subtract = {
+								integer_range = {
+									min = 6
+									max = 10
+								}
+							}
+						}
+						father = scope:parent
+						dynasty_house = $CHARACTER$.house
+					}
+				}
+				if = {
+					limit = {
+						$CHARACTER$.age > 16
+					}
+					create_character = {
+						location = $CHARACTER$.location
+						culture = $CHARACTER$.culture
+						faith = $CHARACTER$.faith
+						gender_female_chance = 50
+						age = {
+							value = $CHARACTER$.age
+							subtract = {
+								integer_range = {
+									min = 11
+									max = 16
+								}
+							}
+						}
+						father = scope:parent
+						dynasty_house = $CHARACTER$.house
+					}
+				}
+			}
+		}
+	}
+}
+bnw_connect_families_effect = {
+	every_in_list = {
+		list = $LIST$
+		limit = {
+			save_temporary_scope_as = handled_ruler
+			any_close_family_member = {
+				age >= bnw_bnw_spawn_age_min_value
+				age <= bnw_bnw_spawn_age_max_value
+			}
+			any_in_list = {
+				list = $FULL_LIST$
+				faith = scope:handled_ruler.faith
+				culture = scope:handled_ruler.culture
+				is_landed = yes # Might already lost their land by this effect
+			}
+			is_landed = yes # Might already lost their land by this effect
+		}
+		save_temporary_scope_as = handled_ruler
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = change
+			add_claim_on_loss = yes # Even more story
+		}
+		random_close_family_member = {
+			limit = {
+				age >= bnw_bnw_spawn_age_min_value
+				age <= bnw_bnw_spawn_age_max_value
+			}
+			weight = {
+				base = 10
+				modifier = {
+					factor = {
+						value = faith.bnw_female_chance
+						divide = 50
+					}
+					is_female = yes
+				}
+			}
+			save_temporary_scope_as = placed_relative
+		}
+		random_in_list = {
+			list = $FULL_LIST$
+			limit = {
+				faith = scope:handled_ruler.faith
+				culture = scope:handled_ruler.culture
+				is_landed = yes # Might already lost their land by this effect
+			}
+			every_held_title = {
+				limit = {
+					tier >= tier_county
+				}
+				change_title_holder_include_vassals = {
+					holder = scope:placed_relative
+					change = scope:change
+				}
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+}
+bnw_remove_claims_effect = {
+	every_county = {
+		bnw_title_remove_claims_effect = yes
+	}
+	every_duchy = {
+		bnw_title_remove_claims_effect = yes
+	}
+	every_kingdom = {
+		bnw_title_remove_claims_effect = yes
+	}
+	every_empire = {
+		bnw_title_remove_claims_effect = yes
+	}
+}
+bnw_title_remove_claims_effect = {
+	every_claimant = {
+		remove_claim = prev
 	}
 }

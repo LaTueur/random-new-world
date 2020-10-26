@@ -213,3 +213,23 @@ bnw_reversed_num_of_direct_de_jure_titles = {
     value = 100
     subtract = bnw_num_of_direct_de_jure_titles
 }
+bnw_female_chance = {
+    if = {
+        limit = {
+            has_doctrine_parameter = male_dominated_law
+        }
+        value = 15
+    }
+    else_if = {
+        limit = {
+            has_doctrine_parameter = gender_equal_law
+        }
+        value = 50
+    }
+    else_if = {
+        limit = {
+            has_doctrine_parameter = female_dominated_law
+        }
+        value = 85
+    }
+}

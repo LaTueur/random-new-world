@@ -1,59 +1,9 @@
-﻿bnw_culture_placement_randomization = {
-	default = off_bnw_culture_placement_randomization
-
-	off_bnw_culture_placement_randomization = {}
-
-	on_bnw_culture_placement_randomization = {}
-
-	full_bnw_culture_placement_randomization = {}
-}
-bnw_faith_placement_randomization = {
-	default = off_bnw_faith_placement_randomization
-
-	off_bnw_faith_placement_randomization = {}
-
-	on_bnw_faith_placement_randomization = {}
-
-	full_bnw_faith_placement_randomization = {}
-}
-bnw_faith_percent_used = {
-	default = 60_bnw_faith_percent_used
-
-	10_bnw_faith_percent_used = {}
-
-	20_bnw_faith_percent_used = {}
-
-    30_bnw_faith_percent_used = {}
-
-	40_bnw_faith_percent_used = {}
-
-	50_bnw_faith_percent_used = {}
-
-    60_bnw_faith_percent_used = {}
-
-	70_bnw_faith_percent_used = {}
-
-	80_bnw_faith_percent_used = {}
-
-	90_bnw_faith_percent_used = {}
-
-	100_bnw_faith_percent_used = {}
-}
-bnw_doctrine_randomization = {
-	default = off_bnw_doctrine_randomization
-
-    off_bnw_doctrine_randomization = {}
-
-	on_bnw_doctrine_randomization = {}
-
-	full_bnw_doctrine_randomization = {}
-}
-bnw_realm_setup_randomization = {
+﻿bnw_realm_setup_randomization = {
 	default = off_bnw_realm_setup_randomization
 
     off_bnw_realm_setup_randomization = {}
 
-	on_off_bnw_realm_setup_randomization = {}
+	on_bnw_realm_setup_randomization = {}
 }
 bnw_counties_per_character_min = {
 	default = 1_bnw_counties_per_character_min
@@ -92,39 +42,6 @@ bnw_counties_per_character_max = {
 	7_bnw_counties_per_character_max = {}
 
 	8_bnw_counties_per_character_max = {}
-}
-bnw_num_of_dukes = {
-    default = normal_bnw_num_of_dukes
-
-    none_bnw_num_of_dukes = {}
-
-    few_bnw_num_of_dukes = {}
-
-    normal_bnw_num_of_dukes = {}
-
-	many_bnw_num_of_dukes = {}
-}
-bnw_num_of_kings = {
-    default = normal_bnw_num_of_kings
-
-    none_bnw_num_of_kings = {}
-
-    few_bnw_num_of_kings = {}
-
-    normal_bnw_num_of_kings = {}
-
-	many_bnw_num_of_kings = {}
-}
-bnw_num_of_emperors = {
-    default = normal_bnw_num_of_emperors
-
-    none_bnw_num_of_emperors = {}
-
-    few_bnw_num_of_emperors = {}
-
-    normal_bnw_num_of_emperors = {}
-
-	many_bnw_num_of_emperors = {}
 }
 bnw_spawn_age_min = {
 	default = 6_bnw_spawn_age_min
@@ -195,6 +112,50 @@ bnw_spawn_age_max = {
 	84_bnw_spawn_age_max = {}
 
 	90_bnw_spawn_age_max = {}
+}
+bnw_family_generation = {
+	default = across_realms_bnw_family_generation
+
+	off_bnw_family_generation = {}
+
+	on_bnw_family_generation = {}
+
+	extended_bnw_family_generation = {}
+
+	across_realms_bnw_family_generation = {}
+}
+bnw_num_of_dukes = {
+    default = normal_bnw_num_of_dukes
+
+    none_bnw_num_of_dukes = {}
+
+    few_bnw_num_of_dukes = {}
+
+    normal_bnw_num_of_dukes = {}
+
+	many_bnw_num_of_dukes = {}
+}
+bnw_num_of_kings = {
+    default = normal_bnw_num_of_kings
+
+    none_bnw_num_of_kings = {}
+
+    few_bnw_num_of_kings = {}
+
+    normal_bnw_num_of_kings = {}
+
+	many_bnw_num_of_kings = {}
+}
+bnw_num_of_emperors = {
+    default = normal_bnw_num_of_emperors
+
+    none_bnw_num_of_emperors = {}
+
+    few_bnw_num_of_emperors = {}
+
+    normal_bnw_num_of_emperors = {}
+
+	many_bnw_num_of_emperors = {}
 }
 bnw_de_jure_kingdom_randomization = {
 	default = off_bnw_de_jure_kingdom_randomization
@@ -309,4 +270,54 @@ bnw_de_jure_empire_max_size = {
 	11_bnw_de_jure_empire_max_size = {}
 
 	12_bnw_de_jure_empire_max_size = {}
+}
+bnw_culture_placement_randomization = {
+	default = off_bnw_culture_placement_randomization
+
+	off_bnw_culture_placement_randomization = {}
+
+	on_bnw_culture_placement_randomization = {}
+
+	full_bnw_culture_placement_randomization = {}
+}
+bnw_faith_placement_randomization = {
+	default = off_bnw_faith_placement_randomization
+
+	off_bnw_faith_placement_randomization = {}
+
+	on_bnw_faith_placement_randomization = {}
+
+	full_bnw_faith_placement_randomization = {}
+}
+bnw_faith_percent_used = {
+	default = 60_bnw_faith_percent_used
+
+	10_bnw_faith_percent_used = {}
+
+	20_bnw_faith_percent_used = {}
+
+    30_bnw_faith_percent_used = {}
+
+	40_bnw_faith_percent_used = {}
+
+	50_bnw_faith_percent_used = {}
+
+    60_bnw_faith_percent_used = {}
+
+	70_bnw_faith_percent_used = {}
+
+	80_bnw_faith_percent_used = {}
+
+	90_bnw_faith_percent_used = {}
+
+	100_bnw_faith_percent_used = {}
+}
+bnw_doctrine_randomization = {
+	default = off_bnw_doctrine_randomization
+
+    off_bnw_doctrine_randomization = {}
+
+	on_bnw_doctrine_randomization = {}
+
+	full_bnw_doctrine_randomization = {}
 }

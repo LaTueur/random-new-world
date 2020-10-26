@@ -70,22 +70,29 @@ bnw_resolve_doctrine_head_of_faith_change_effect = {
                         has_doctrine_parameter = no_head_of_faith
                         has_doctrine = unreformed_faith_doctrine
                     }
-                    any_ruler = {
+                    any_in_list = {
+                        list = real_rulers
                         bnw_ruler_can_create_head_of_faith_title_trigger = yes
                     }
                 }
                 random = {
                     chance = 10
                     modifier = {
+                        add = 10
+                        has_doctrine_parameter = spiritual_head_of_faith 
+                    }
+                    modifier = {
                         factor = {
                             value = num_county_followers
-                            divide = 30
+                            divide = 45
                         }
                     }
                     modifier = {
                         factor = 2
-                        any_ruler = {
+                        any_in_list = {
+                            list = real_rulers
                             save_temporary_scope_as = checked_ruler
+                            faith = scope:selected_faith
 							faith = {
 								num_realm_holy_sites_faithful_holders = {
 									COUNT = 1
@@ -96,8 +103,10 @@ bnw_resolve_doctrine_head_of_faith_change_effect = {
                     }
                     modifier = {
                         factor = 2
-                        any_ruler = {
+                        any_in_list = {
+                            list = real_rulers
                             save_temporary_scope_as = checked_ruler
+                            faith = scope:selected_faith
 							faith = {
 								num_realm_holy_sites_faithful_holders = {
 									COUNT = 2
@@ -106,11 +115,8 @@ bnw_resolve_doctrine_head_of_faith_change_effect = {
 							}
                         }
                     }
-                    modifier = {
-                        factor = 2
-                        has_doctrine_parameter = spiritual_head_of_faith 
-                    }
-                    random_ruler = {
+                    random_in_list = {
+                        list = real_rulers
                         limit = {
                             bnw_ruler_can_create_head_of_faith_title_trigger = yes
                             save_temporary_scope_as = checked_ruler
