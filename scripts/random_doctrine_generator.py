@@ -1,6 +1,7 @@
 ﻿import regex
 import os
 import apply_script as pdx_parser
+import codecs
 
 doctrine_pattern = regex.compile(r"(\w+)\s*=\s*{\s*(((?:\w+\s*=\s*{(?3)}|[^{}])*))}")
 piety_cost_pattern = regex.compile(r"piety_cost\s*=\s*{(\s*((?:\w+\s*=\s*{(?2)}|[^{}])*))}")
@@ -45,6 +46,9 @@ doctrine_groups_to_skip = (
 )
 extra_modifiers = {
     "doctrine_theocracy_temporal": "multiply = bnw_doctrine_theocracy_temporal_multiplier\n",
+    "doctrine_gender_male_dominated": "multiply = bnw_doctrine_gender_male_dominated_multiplier\n",
+    "doctrine_gender_equal": "multiply = bnw_doctrine_gender_equal_multiplier\n",
+    "doctrine_gender_female_dominated": "multiply = bnw_doctrine_gender_female_dominated_multiplier\n",
 }
 
 def dumpfiles(path, ending = ".txt"):
@@ -63,8 +67,10 @@ def write_output(path, file, text):
     temporary_output_file.write(text)
     temporary_output_file.close()
     parsed_file = pdx_parser.parse_file(os.path.join(path, file))
-    output_file = open(os.path.join(path, file), "w")
-    output_file.write(pdx_parser.reconstruct(parsed_file))
+    output_file = open(os.path.join(path, file), "wb")
+    byte_text = bytes(pdx_parser.reconstruct(parsed_file).encode())
+    output_file.write(codecs.BOM_UTF8)
+    output_file.write(byte_text)
     output_file.close()
 
 def get_extra_modifiers(name):

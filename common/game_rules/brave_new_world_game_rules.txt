@@ -147,7 +147,7 @@ bnw_num_of_kings = {
 	many_bnw_num_of_kings = {}
 }
 bnw_num_of_emperors = {
-    default = normal_bnw_num_of_emperors
+    default = few_bnw_num_of_emperors
 
     none_bnw_num_of_emperors = {}
 
@@ -320,4 +320,15 @@ bnw_doctrine_randomization = {
 	on_bnw_doctrine_randomization = {}
 
 	full_bnw_doctrine_randomization = {}
+}
+bnw_doctrine_gender_preference = {
+	default = male_bnw_doctrine_gender_preference
+
+    male_bnw_doctrine_gender_preference = {}
+
+	equal_bnw_doctrine_gender_preference = {}
+
+	female_bnw_doctrine_gender_preference = {}
+
+	random_bnw_doctrine_gender_preference = {}
 }

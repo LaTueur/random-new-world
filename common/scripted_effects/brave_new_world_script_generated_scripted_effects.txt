@@ -1,4 +1,4 @@
-bnw_pick_random_doctrine_core_tenets_effect = { 
+﻿bnw_pick_random_doctrine_core_tenets_effect = { 
 	random_list = { 
 		0 = { 
 			trigger = { 
@@ -5347,6 +5347,7 @@ bnw_religion_pick_random_doctrine_gender_effect = {
 			modifier = { 
 				add = { 
 					value = bnw_faith_doctrine_low_chance
+					multiply = bnw_doctrine_gender_male_dominated_multiplier
 				}
 			}
 			add_to_variable_list = { 
@@ -5359,6 +5360,7 @@ bnw_religion_pick_random_doctrine_gender_effect = {
 			modifier = { 
 				add = { 
 					value = bnw_faith_doctrine_low_chance
+					multiply = bnw_doctrine_gender_equal_multiplier
 				}
 			}
 			add_to_variable_list = { 
@@ -5375,6 +5377,7 @@ bnw_religion_pick_random_doctrine_gender_effect = {
 			modifier = { 
 				add = { 
 					value = bnw_faith_doctrine_low_chance
+					multiply = bnw_doctrine_gender_female_dominated_multiplier
 				}
 			}
 			add_to_variable_list = { 

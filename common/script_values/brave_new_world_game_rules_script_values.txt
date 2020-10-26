@@ -628,3 +628,36 @@ bnw_de_jure_empire_max_size_value = {
         value = 12
     }
 }
+bnw_doctrine_gender_male_dominated_multiplier = {
+    if = {
+        limit = {
+            has_game_rule = male_bnw_doctrine_gender_preference
+        }
+        value = 4
+    }
+    else = {
+        value = 1
+    }
+}
+bnw_doctrine_gender_female_dominated_multiplier = {
+    if = {
+        limit = {
+            has_game_rule = equal_bnw_doctrine_gender_preference
+        }
+        value = 4
+    }
+    else = {
+        value = 1
+    }
+}
+bnw_doctrine_gender_equal_multiplier = {
+    if = {
+        limit = {
+            has_game_rule = female_bnw_doctrine_gender_preference
+        }
+        value = 4
+    }
+    else = {
+        value = 1
+    }
+}
