@@ -214,7 +214,7 @@ bnw_realm_setup_randomization = {
 		}
 		
 		trigger_event = {
-			on_action = bnw_starting_resources
+			on_action = bnw_starting_resources_without_family_generation
 		}
     }
 }
@@ -272,6 +272,10 @@ bnw_family_generation = {
                 FULL_LIST = real_rulers
             }
         }
+		
+		trigger_event = {
+			on_action = bnw_starting_resources
+		}
     }
 }
 bnw_starting_resources = {
@@ -289,6 +293,19 @@ bnw_starting_resources = {
 			add_prestige = bnw_starting_prestige
 			
 			add_piety = bnw_starting_piety
+		}
+	}
+}
+bnw_starting_resources_without_family_generation = {
+	trigger = {
+        NOT = {
+            has_game_rule = none_bnw_starting_resources
+        }
+		has_game_rule = off_bnw_family_generation
+	}
+	effect = {
+		trigger_event = {
+			on_action = bnw_starting_resources
 		}
 	}
 }

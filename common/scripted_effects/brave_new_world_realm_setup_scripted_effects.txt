@@ -774,7 +774,7 @@ bnw_extended_family_generation_effect = {
 						$CHARACTER$.age > 5
 					}
 					create_character = {
-						location = $CHARACTER$.location
+						employer  = $CHARACTER$
 						culture = $CHARACTER$.culture
 						faith = $CHARACTER$.faith
 						gender_female_chance = 50
@@ -796,7 +796,7 @@ bnw_extended_family_generation_effect = {
 						$CHARACTER$.age > 10
 					}
 					create_character = {
-						location = $CHARACTER$.location
+						employer  = $CHARACTER$
 						culture = $CHARACTER$.culture
 						faith = $CHARACTER$.faith
 						gender_female_chance = 50
@@ -818,7 +818,7 @@ bnw_extended_family_generation_effect = {
 						$CHARACTER$.age > 16
 					}
 					create_character = {
-						location = $CHARACTER$.location
+						employer  = $CHARACTER$
 						culture = $CHARACTER$.culture
 						faith = $CHARACTER$.faith
 						gender_female_chance = 50
@@ -845,7 +845,7 @@ bnw_extended_family_generation_effect = {
 						$CHARACTER$.age > 5
 					}
 					create_character = {
-						location = $CHARACTER$.location
+						employer  = $CHARACTER$
 						culture = $CHARACTER$.culture
 						faith = $CHARACTER$.faith
 						gender_female_chance = 50
@@ -867,7 +867,7 @@ bnw_extended_family_generation_effect = {
 						$CHARACTER$.age > 10
 					}
 					create_character = {
-						location = $CHARACTER$.location
+						employer  = $CHARACTER$
 						culture = $CHARACTER$.culture
 						faith = $CHARACTER$.faith
 						gender_female_chance = 50
@@ -889,7 +889,7 @@ bnw_extended_family_generation_effect = {
 						$CHARACTER$.age > 16
 					}
 					create_character = {
-						location = $CHARACTER$.location
+						employer  = $CHARACTER$
 						culture = $CHARACTER$.culture
 						faith = $CHARACTER$.faith
 						gender_female_chance = 50
@@ -924,6 +924,7 @@ bnw_connect_families_effect = {
 				faith = scope:handled_ruler.faith
 				culture = scope:handled_ruler.culture
 				is_landed = yes # Might already lost their land by this effect
+				NOT = { this = scope:handled_ruler }
 			}
 			is_landed = yes # Might already lost their land by this effect
 		}
@@ -957,6 +958,7 @@ bnw_connect_families_effect = {
 				faith = scope:handled_ruler.faith
 				culture = scope:handled_ruler.culture
 				is_landed = yes # Might already lost their land by this effect
+				NOT = { this = scope:handled_ruler }
 			}
 			every_held_title = {
 				limit = {
@@ -1005,7 +1007,6 @@ bnw_convert_vassals_effect = {
 		limit = {
 			is_independent_ruler = no
 		}
-		debug_log = "[THIS.GetCharacter.GetFullName]"
 		random = {
 			chance = 30
 			set_culture = liege.culture
