@@ -124,6 +124,17 @@ bnw_family_generation = {
 
 	across_realms_bnw_family_generation = {}
 }
+bnw_starting_resources = {
+	default = normal_bnw_starting_resources
+
+	none_bnw_starting_resources = {}
+
+	less_bnw_starting_resources = {}
+
+	normal_bnw_starting_resources = {}
+
+	more_bnw_starting_resources = {}
+}
 bnw_num_of_dukes = {
     default = normal_bnw_num_of_dukes
 

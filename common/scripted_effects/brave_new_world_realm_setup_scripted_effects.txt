@@ -18,6 +18,7 @@
     every_duchy = {
 		limit = {
 			exists = holder
+			is_mercenary_company = no
 		}
         holder = {
             destroy_title = prev
@@ -948,6 +949,7 @@ bnw_connect_families_effect = {
 				}
 			}
 			save_temporary_scope_as = placed_relative
+			add_to_list = $FULL_LIST$
 		}
 		random_in_list = {
 			list = $FULL_LIST$
@@ -964,6 +966,12 @@ bnw_connect_families_effect = {
 					holder = scope:placed_relative
 					change = scope:change
 				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_player_character = scope:placed_relative
 			}
 		}
 		resolve_title_and_vassal_change = scope:change
@@ -986,5 +994,39 @@ bnw_remove_claims_effect = {
 bnw_title_remove_claims_effect = {
 	every_claimant = {
 		remove_claim = prev
+	}
+}
+bnw_convert_vassals_effect = {
+	ordered_in_list = {
+		list = real_rulers
+		order_by = highest_held_title_tier
+		check_range_bounds = no
+		max = 1000000000
+		limit = {
+			is_independent_ruler = no
+		}
+		debug_log = "[THIS.GetCharacter.GetFullName]"
+		random = {
+			chance = 30
+			set_culture = liege.culture
+		}
+		random = {
+			chance = 70
+			set_character_faith = liege.faith
+		}
+	}
+	every_barony = {
+		limit = {
+			exists = holder
+		}
+		holder = {
+			if = {
+				limit = {
+					highest_held_title_tier = tier_barony
+				}
+				set_culture = liege.culture
+				set_character_faith = liege.faith
+			}
+		}
 	}
 }

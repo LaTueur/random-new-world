@@ -202,6 +202,8 @@ bnw_realm_setup_randomization = {
         bnw_empire_setup_based_on_rule_effect = yes
 
         bnw_remove_claims_effect = yes
+		
+		bnw_convert_vassals_effect = yes
 
 		trigger_event = {
 			on_action = bnw_faith_doctrine_randomization_after_realm_setup
@@ -209,6 +211,10 @@ bnw_realm_setup_randomization = {
 		
 		trigger_event = {
 			on_action = bnw_family_generation
+		}
+		
+		trigger_event = {
+			on_action = bnw_starting_resources
 		}
     }
 }
@@ -267,4 +273,22 @@ bnw_family_generation = {
             }
         }
     }
+}
+bnw_starting_resources = {
+	trigger = {
+        NOT = {
+            has_game_rule = none_bnw_starting_resources
+        }
+	}
+	effect = {
+		every_in_list = {
+            list = real_rulers
+			
+			add_gold = bnw_starting_gold
+			
+			add_prestige = bnw_starting_prestige
+			
+			add_piety = bnw_starting_piety
+		}
+	}
 }

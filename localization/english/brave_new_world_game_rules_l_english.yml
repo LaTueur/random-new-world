@@ -119,6 +119,16 @@
  setting_across_realms_bnw_family_generation:0 "Across Realms"
  setting_across_realms_bnw_family_generation_desc:0 "Rulers will have a family generated for them, possibly siblings too. Some starting rulers will be from the same house."
 
+ rule_bnw_starting_resources:0 "#X BNW:#! Starting Resources"
+ setting_none_bnw_starting_resources:0 "None"
+ setting_none_bnw_starting_resources_desc:0 "Rulers will have no gold, prestige and piety at start."
+ setting_less_bnw_starting_resources:0 "Less"
+ setting_less_bnw_starting_resources_desc:0 "Rulers will have less gold, prestige and piety than normal at start."
+ setting_normal_bnw_starting_resources:0 "Normal"
+ setting_normal_bnw_starting_resources_desc:0 "Rulers will have some gold, prestige and piety at start."
+ setting_more_bnw_starting_resources:0 "More"
+ setting_more_bnw_starting_resourcess_desc:0 "Rulers will have more gold, prestige and piety than normal at start."
+
  rule_bnw_num_of_dukes:0 "#X BNW:#! Number of Dukes"
  setting_none_bnw_num_of_dukes:0 "None"
  setting_none_bnw_num_of_dukes_desc:0 "No dukes will be generated."

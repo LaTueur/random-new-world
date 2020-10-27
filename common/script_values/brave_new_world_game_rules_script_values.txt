@@ -661,3 +661,23 @@ bnw_doctrine_gender_female_dominated_multiplier = {
         value = 1
     }
 }
+bnw_starting_resources_multiplier = {
+    if = {
+        limit = {
+            has_game_rule = less_bnw_starting_resources
+        }
+        value = 0.5
+    }
+    else_if = {
+        limit = {
+            has_game_rule = normal_bnw_starting_resources
+        }
+        value = 1
+    }
+    else_if = {
+        limit = {
+            has_game_rule = more_bnw_starting_resources
+        }
+        value = 2
+    }
+}

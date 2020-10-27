@@ -233,3 +233,97 @@ bnw_female_chance = {
         value = 85
     }
 }
+bnw_starting_gold = {
+    if = {
+        limit = {
+            highest_held_title_tier = tier_county
+        }
+        value = 50
+    }
+    else_if = {
+        limit = {
+            highest_held_title_tier = tier_duchy
+        }
+        value = 100
+    }
+    else_if = {
+        limit = {
+            highest_held_title_tier = tier_kingdom
+        }
+        value = 200
+    }
+    else_if = {
+        limit = {
+            highest_held_title_tier = tier_empire
+        }
+        value = 300
+    }
+    else = {
+        value = 0
+    }
+
+    
+	multiply = bnw_starting_resources_multiplier
+}
+bnw_starting_prestige = {
+    if = {
+        limit = {
+            highest_held_title_tier = tier_county
+        }
+        value = 250
+    }
+    else_if = {
+        limit = {
+            highest_held_title_tier = tier_duchy
+        }
+        value = 500
+    }
+    else_if = {
+        limit = {
+            highest_held_title_tier = tier_kingdom
+        }
+        value = 1000
+    }
+    else_if = {
+        limit = {
+            highest_held_title_tier = tier_empire
+        }
+        value = 1500
+    }
+    else = {
+        value = 0
+    }
+
+    multiply = bnw_starting_resources_multiplier
+}
+bnw_starting_piety = {
+    if = {
+        limit = {
+            highest_held_title_tier = tier_county
+        }
+        value = 100
+    }
+    else_if = {
+        limit = {
+            highest_held_title_tier = tier_duchy
+        }
+        value = 200
+    }
+    else_if = {
+        limit = {
+            highest_held_title_tier = tier_kingdom
+        }
+        value = 300
+    }
+    else_if = {
+        limit = {
+            highest_held_title_tier = tier_empire
+        }
+        value = 400
+    }
+    else = {
+        value = 0
+    }
+
+    multiply = bnw_starting_resources_multiplier
+}

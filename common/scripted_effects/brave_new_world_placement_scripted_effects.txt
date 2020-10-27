@@ -114,7 +114,6 @@ bnw_select_faith_starting_location_effect = {
                 random_county = {
                     limit = {
                         NOT = { exists = var:conversion_target }
-                        save_temporary_scope_as = target_county
 						NOT = {
                             kingdom = {
 								exists = var:has_at_least_one_faith
@@ -126,6 +125,7 @@ bnw_select_faith_starting_location_effect = {
                                     has_game_rule = full_bnw_faith_placement_randomization
                                 }
                             }
+                            save_temporary_scope_as = target_county
                             scope:selected_faith = {
                                 any_holy_site = {
                                     squared_distance = {
@@ -135,6 +135,17 @@ bnw_select_faith_starting_location_effect = {
                                 }
                             }
                         }
+                    }
+                    alternative_limit = {
+                        NOT = { exists = var:conversion_target }
+						NOT = {
+                            kingdom = {
+								exists = var:has_at_least_one_faith
+							}
+                        }
+                    }
+                    alternative_limit = {
+                        NOT = { exists = var:conversion_target }
                     }
                     weight = {
                         base = 1
