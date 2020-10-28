@@ -440,7 +440,7 @@ bnw_flip_conversion_targets_effect = {
 		remove_variable = conversion_target
     }
 }
-bnw_collect_all_cultures_to_target_list_effect = {
+bnw_collect_all_cultures_and_groups_to_target_list_effect = {
     every_county = {
         if = {
             limit = {
@@ -452,6 +452,18 @@ bnw_collect_all_cultures_to_target_list_effect = {
             }
             culture = {
                 add_to_list = $TARGET$
+            }
+        }
+        if = {
+            limit = {
+                culture_group =  {
+                    NOT = {
+                        is_in_list = $TARGET_GROUP$
+                    }
+                }
+            }
+            culture_group = {
+                add_to_list = $TARGET_GROUP$
             }
         }
     }
@@ -466,6 +478,18 @@ bnw_collect_all_cultures_to_target_list_effect = {
             }
             culture = {
                 add_to_list = $TARGET$
+            }
+        }
+        if = {
+            limit = {
+                culture_group =  {
+                    NOT = {
+                        is_in_list = $TARGET_GROUP$
+                    }
+                }
+            }
+            culture_group = {
+                add_to_list = $TARGET_GROUP$
             }
         }
     }

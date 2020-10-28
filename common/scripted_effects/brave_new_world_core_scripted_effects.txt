@@ -1,0 +1,307 @@
+﻿bnw_faith_doctrine_randomization_effect = {
+    if = {
+        limit = {
+            NOT = {
+                has_game_rule = off_bnw_doctrine_randomization
+            }
+        }
+        every_religion_global = {
+            if = {
+                limit = {
+                    has_game_rule = on_bnw_doctrine_randomization
+                }
+                bnw_religion_pick_random_doctrine_head_of_faith_effect = yes
+                bnw_religion_pick_random_doctrine_theocracy_effect = yes
+                bnw_religion_pick_random_doctrine_clerical_function_effect = yes
+                bnw_religion_pick_random_doctrine_clerical_gender_effect = yes
+                bnw_religion_pick_random_doctrine_clerical_marriage_effect = yes
+                bnw_religion_pick_random_doctrine_clerical_succession_effect = yes
+    
+                bnw_religion_pick_random_doctrine_marriage_type_effect = yes
+                bnw_religion_pick_random_doctrine_divorce_effect = yes
+                bnw_religion_pick_random_doctrine_bastardry_effect = yes
+                bnw_religion_pick_random_doctrine_homosexuality_effect = yes
+                bnw_religion_pick_random_doctrine_deviancy_effect = yes
+                bnw_religion_pick_random_doctrine_adultery_men_effect = yes
+                bnw_religion_pick_random_doctrine_adultery_women_effect = yes
+                bnw_religion_pick_random_doctrine_kinslaying_effect = yes
+                bnw_religion_pick_random_doctrine_witchcraft_effect = yes
+                bnw_religion_pick_random_doctrine_gender_effect = yes
+                bnw_religion_pick_random_doctrine_consanguinity_effect = yes
+                bnw_religion_pick_random_doctrine_pluralism_effect = yes
+            }
+
+            every_faith = {
+                bnw_remove_all_doctrines_effect = yes
+
+                bnw_pick_random_doctrine_head_of_faith_effect = yes
+                bnw_pick_random_doctrine_theocracy_effect = yes
+                bnw_pick_random_doctrine_clerical_function_effect = yes
+                bnw_pick_random_doctrine_clerical_gender_effect = yes
+                bnw_pick_random_doctrine_clerical_marriage_effect = yes
+                bnw_pick_random_doctrine_clerical_succession_effect = yes
+
+                bnw_pick_random_doctrine_marriage_type_effect = yes
+                bnw_pick_random_doctrine_divorce_effect = yes
+                bnw_pick_random_doctrine_bastardry_effect = yes
+                bnw_pick_random_doctrine_homosexuality_effect = yes
+                bnw_pick_random_doctrine_deviancy_effect = yes
+                bnw_pick_random_doctrine_adultery_men_effect = yes
+                bnw_pick_random_doctrine_adultery_women_effect = yes
+                bnw_pick_random_doctrine_kinslaying_effect = yes
+                bnw_pick_random_doctrine_witchcraft_effect = yes
+                bnw_pick_random_doctrine_gender_effect = yes
+                bnw_pick_random_doctrine_consanguinity_effect = yes
+                bnw_pick_random_doctrine_pluralism_effect = yes
+
+                if = {
+                    limit = {
+                        religion_tag = islam_religion
+                    }
+                    bnw_pick_random_doctrine_muhammad_succession_effect = yes
+                }
+
+                bnw_pick_random_doctrine_core_tenets_effect = yes
+                bnw_pick_random_doctrine_core_tenets_effect = yes
+                bnw_pick_random_doctrine_core_tenets_effect = yes
+            }
+
+            clear_variable_list = religion_doctrine_preferences
+        }
+    }
+}
+bnw_faith_doctrine_randomization_after_effect = {
+    bnw_resolve_doctrine_head_of_faith_change_effect = yes
+    every_living_character = {
+        trigger_event = {
+            on_action = bnw_faith_randomization_character_check
+        }
+    }
+}
+bnw_faith_placement_randomization_effect = {
+    if = {
+        limit = {
+            NOT = {
+                has_game_rule = off_bnw_faith_placement_randomization
+            }
+        }
+        bnw_collect_all_faiths_to_target_list_effect = {
+            TARGET = full_faith_list
+        }
+
+        bnw_select_percent_of_list_to_target_list_effect = {
+            LIST = full_faith_list
+            TARGET = curated_faith_list
+            PERCENT = bnw_faith_percent_used_value
+            UNIQUES = yes
+        }
+
+        bnw_select_faith_starting_location_effect = {
+            LIST = curated_faith_list
+        }
+
+        bnw_spread_conversion_targets_effect = {
+            LIST = curated_faith_list
+            TYPE = faith
+        }
+
+        bnw_flip_conversion_targets_effect = {
+            TYPE = flag:faith
+        }
+    }
+}
+bnw_culture_placement_randomization_effect = {
+    if = {
+        limit = {
+            NOT = {
+                has_game_rule = off_bnw_culture_placement_randomization
+            }
+        }
+        bnw_collect_all_cultures_and_groups_to_target_list_effect = {
+            TARGET = full_culture_list
+            TARGET_GROUP = full_culture_group_list
+        }
+
+        bnw_select_culture_starting_location_effect = {
+            LIST = full_culture_list
+        }
+
+        bnw_spread_conversion_targets_effect = {
+            LIST = full_culture_list
+            TYPE = culture
+        }
+
+        bnw_flip_conversion_targets_effect = {
+            TYPE = flag:culture
+        }
+    }
+}
+bnw_realm_setup_randomization_effect = {
+    if = {
+        limit = {
+            NOT = {
+                has_game_rule = off_bnw_realm_setup_randomization
+            }
+        }
+        bnw_destroy_every_higher_tier_title_effect = yes
+
+        bnw_counts_setup_effect = {
+            MIN_AGE = bnw_bnw_spawn_age_min_value
+            MAX_AGE = bnw_bnw_spawn_age_max_value
+            MIN_COUNTIES = bnw_counties_per_character_min_value
+            MAX_COUNTIES = bnw_counties_per_character_max_value
+        }
+        
+        bnw_duchy_setup_based_on_rule_effect = yes
+        
+        bnw_kingdom_setup_based_on_rule_effect = yes
+
+        bnw_empire_setup_based_on_rule_effect = yes
+
+        bnw_remove_claims_effect = yes
+		
+		bnw_convert_vassals_effect = yes
+    }
+}
+bnw_de_jure_setup_randomization_effect = {
+    if = {
+        limit = {
+            NOT = {
+                has_game_rule = off_bnw_de_jure_kingdom_randomization
+            }
+        }
+        #bnw_remove_de_jure_effect = yes
+        bnw_collect_titles_where_type_dominant_effect = {
+            TIER = tier_kingdom
+            TYPE = culture
+            THRESHOLD = 0.3
+            LIST = potential_base_titles
+        }
+        bnw_de_jure_setup_effect = {
+            TIER = kingdom
+            MIN = bnw_de_jure_kingdom_min_size_value
+            MAX = bnw_de_jure_kingdom_max_size_value
+        }
+        if = {
+            limit = {
+                has_game_rule = on_bnw_de_jure_empire_randomization
+            }
+            bnw_de_jure_setup_effect = {
+                TIER = empire
+                MIN = bnw_de_jure_empire_min_size_value
+                MAX = bnw_de_jure_empire_max_size_value
+            }
+        }
+    }
+}
+bnw_family_generation_and_connection_effect = {
+    if = {
+        limit = {
+            NOR = {
+                has_game_rule = off_bnw_family_generation
+                has_game_rule = off_bnw_realm_setup_randomization
+            }
+        }
+        every_in_list = {
+            list = real_rulers
+
+            bnw_family_generation_effect = yes
+        }
+
+        if = {
+            limit  = {
+                has_game_rule = across_realms_bnw_family_generation
+            }
+            bnw_select_percent_of_list_to_target_list_effect = {
+                LIST = real_rulers
+                TARGET = curated_ruler_list
+                PERCENT = 0.15
+                UNIQUES = no
+            }
+            bnw_connect_families_effect = {
+                LIST = curated_ruler_list
+                FULL_LIST = real_rulers
+            }
+        }
+    }
+}
+bnw_starting_resources_effect = {
+    if = {
+        limit = {
+            NOR = {
+                has_game_rule = none_bnw_starting_resources
+                has_game_rule = off_bnw_realm_setup_randomization
+            }
+        }
+		every_in_list = {
+            list = real_rulers
+			
+			add_gold = bnw_starting_gold
+			
+			add_prestige = bnw_starting_prestige
+			
+			add_piety = bnw_starting_piety
+		}
+	}
+}
+bnw_collect_rulers_effect = {
+    if = {
+        limit = {
+            has_game_rule = off_bnw_realm_setup_randomization
+        }
+        every_ruler = {
+            limit = {
+                is_landed = yes
+            }
+            add_to_list = real_rulers
+        }
+    }
+}
+bnw_give_title_names_and_coas_effect = {
+    if = {
+        limit = {
+            always = yes
+        }
+	    bnw_collect_titles_where_type_dominant_effect = {
+            TIER = tier_kingdom
+            TYPE = culture
+            THRESHOLD = 0.3
+            LIST = desired_base_titles
+        }
+        if = {
+            limit = {
+                has_game_rule = off_bnw_culture_placement_randomization
+            }
+            bnw_collect_all_cultures_and_groups_to_target_list_effect = {
+                TARGET = full_culture_list
+                TARGET_GROUP = full_culture_group_list
+            }
+        }
+        bnw_give_base_title_names_and_coas_effect = {
+            TIER = tier_kingdom
+            TYPE_LIST = full_culture_list
+            FROM_LIST = potential_base_titles
+            TO_LIST = desired_base_titles
+        }
+    }
+}
+bnw_no = {
+        bnw_collect_titles_where_type_dominant_effect = {
+            TIER = tier_empire
+            TYPE = culture_group
+            THRESHOLD = 0.4
+            LIST = desired_base_titles
+        }
+        bnw_give_base_title_names_and_coas_effect = {
+            TIER = tier_empire
+            TYPE_LIST = full_culture_group_list
+            FROM_LIST = potential_base_titles
+            TO_LIST = desired_base_titles
+        }
+        bnw_collect_titles_where_type_dominant_effect = {
+            TIER = tier_empire
+            TYPE = culture_group
+            THRESHOLD = 0.4
+            LIST = potential_base_titles
+        }
+}

@@ -695,6 +695,9 @@ bnw_set_de_jure_liege_title_effect = {
 bnw_merge_titles_effect = {
 	$SUBSERVIENT$ = {
 		every_in_de_jure_hierarchy = {
+			continue = {
+				tier > scope:bellow_tier
+			}
 			limit = {
 				tier = scope:bellow_tier
 			}
@@ -1029,5 +1032,210 @@ bnw_convert_vassals_effect = {
 				set_character_faith = liege.faith
 			}
 		}
+	}
+}
+bnw_collect_titles_where_type_dominant_effect = {
+	if = {
+		limit = {
+			$TIER$ = tier_duchy
+		}
+		every_duchy = {
+			limit = {
+				is_titular = no
+			}
+			add_to_list = titles_to_handle
+		}
+	}
+	else_if = {
+		limit = {
+			$TIER$ = tier_kingdom
+		}
+		every_kingdom = {
+			limit = {
+				is_titular = no
+			}
+			add_to_list = titles_to_handle
+		}
+	}
+	else_if = {
+		limit = {
+			$TIER$ = tier_empire
+		}
+		every_empire = {
+			limit = {
+				is_titular = no
+			}
+			add_to_list = titles_to_handle
+		}
+	}
+			debug_log = "bnw_collect_titles_where_type_dominant_effect runs!"
+	every_in_list = {
+		list = titles_to_handle
+		set_variable = {
+			name = counties_under_title
+			value = 0
+		}
+		save_temporary_scope_as = handled_title
+		every_county_in_de_jure_hierarchy = {
+			$TYPE$ = {
+				if = {
+					limit = {
+						has_variable = counties_of_type_under_title
+					}
+					change_variable = {
+						name = counties_of_type_under_title
+						add = 1
+					}
+				}
+				else = {
+					set_variable = {
+						name = counties_of_type_under_title
+						value = 1
+					}
+				}
+				add_to_list = types_to_choose_from
+			}
+			scope:handled_title = {
+				change_variable = {
+					name = counties_under_title
+					add = 1
+				}
+			}
+		}
+		ordered_in_list = {
+			list = types_to_choose_from
+			order_by = var:counties_of_type_under_title
+			if = {
+				limit = {
+					bnw_percent_under_title >= $THRESHOLD$
+				}
+				add_to_variable_list = {
+					name = $LIST$
+					target = scope:handled_title
+				}
+				scope:handled_title = {
+					add_to_list = all_titles_added
+				}
+			}
+		}
+		every_in_list = {
+			list = types_to_choose_from
+			remove_variable = counties_of_type_under_title
+			remove_from_list = types_to_choose_from
+		}
+		remove_variable = counties_under_title
+	}
+	every_in_list = {
+		list = titles_to_handle
+		remove_from_list = titles_to_handle
+	}
+}
+bnw_give_base_title_names_and_coas_effect = {
+	save_temporary_scope_value_as = {
+		name = bellow_tier
+		value = {
+			value = $TIER$
+			subtract = 1
+		}
+	}
+	every_in_list = {
+		list = all_titles_added
+		limit = {
+			tier = $TIER$
+		}
+		add_to_list = titles_to_handle
+	}
+	every_in_list = {
+		list = $TYPE_LIST$
+		limit = {
+			has_variable_list = $FROM_LIST$
+			has_variable_list = $TO_LIST$
+		}
+		save_temporary_scope_as = handled_type
+		every_in_list = {
+			list = titles_to_handle
+			save_temporary_scope_as = handled_title
+			if = {
+				limit = {
+					scope:handled_type = {
+						is_target_in_variable_list = {
+							name = $FROM_LIST$
+							target = scope:handled_title
+						}
+					}
+				}
+				add_to_list = from_title_list
+			}
+			if = {
+				limit = {
+					scope:handled_type = {
+						is_target_in_variable_list = {
+							name = $TO_LIST$
+							target = scope:handled_title
+						}
+					}
+				}
+				add_to_list = to_title_list
+			}
+		}
+		
+		while = {
+			limit = {
+				list_size = {
+					name = from_title_list
+					value >= 1
+				}
+				list_size = {
+					name = to_title_list
+					value >= 1
+				}
+			}
+			random_in_list = {
+				list = from_title_list
+				save_scope_as = base_title
+				remove_from_list = from_title_list
+			}
+			random_in_list = {
+				list = to_title_list
+				save_temporary_scope_as = changed_title
+				bnw_merge_titles_effect = {
+					DOMINANT = scope:base_title
+					SUBSERVIENT = scope:changed_title
+				}
+				if = {
+					limit = {
+						exists = holder
+					}
+					scope:base_title = {
+						create_title_and_vassal_change = {
+							type = created
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = scope:changed_title.holder
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+					holder = {
+						destroy_title = scope:changed_title
+					}
+				}
+				remove_from_list = to_title_list
+			}
+		}
+		every_in_list = {
+			list = from_title_list
+			remove_from_list = from_title_list
+		}
+		every_in_list = {
+			list = to_title_list
+			remove_from_list = to_title_list
+		}
+	}
+	every_in_list = {
+		list = titles_to_handle
+		remove_from_list = titles_to_handle
 	}
 }

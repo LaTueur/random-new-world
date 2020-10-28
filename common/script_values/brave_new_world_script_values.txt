@@ -213,6 +213,10 @@ bnw_reversed_num_of_direct_de_jure_titles = {
     value = 100
     subtract = bnw_num_of_direct_de_jure_titles
 }
+bnw_percent_under_title = {
+    value = var:counties_of_type_under_title
+    divide = scope:handled_title.var:counties_under_title
+}
 bnw_female_chance = {
     if = {
         limit = {
