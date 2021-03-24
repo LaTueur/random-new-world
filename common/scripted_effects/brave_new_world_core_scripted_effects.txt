@@ -171,12 +171,13 @@ bnw_de_jure_setup_randomization_effect = {
             }
         }
         #bnw_remove_de_jure_effect = yes
-        bnw_collect_titles_where_type_dominant_effect = {
-            TIER = tier_kingdom
-            TYPE = culture
-            THRESHOLD = 0.3
-            LIST = potential_base_titles
-        }
+        # disabled for now
+        #bnw_collect_titles_where_type_dominant_effect = {
+        #    TIER = tier_kingdom
+        #    TYPE = culture
+        #    THRESHOLD = 0.3
+        #    LIST = potential_base_titles
+        #}
         bnw_de_jure_setup_effect = {
             TIER = kingdom
             MIN = bnw_de_jure_kingdom_min_size_value
@@ -260,7 +261,7 @@ bnw_collect_rulers_effect = {
 bnw_give_title_names_and_coas_effect = {
     if = {
         limit = {
-            always = yes
+            always = no # disabled
         }
 	    bnw_collect_titles_where_type_dominant_effect = {
             TIER = tier_kingdom
@@ -284,24 +285,4 @@ bnw_give_title_names_and_coas_effect = {
             TO_LIST = desired_base_titles
         }
     }
-}
-bnw_no = {
-        bnw_collect_titles_where_type_dominant_effect = {
-            TIER = tier_empire
-            TYPE = culture_group
-            THRESHOLD = 0.4
-            LIST = desired_base_titles
-        }
-        bnw_give_base_title_names_and_coas_effect = {
-            TIER = tier_empire
-            TYPE_LIST = full_culture_group_list
-            FROM_LIST = potential_base_titles
-            TO_LIST = desired_base_titles
-        }
-        bnw_collect_titles_where_type_dominant_effect = {
-            TIER = tier_empire
-            TYPE = culture_group
-            THRESHOLD = 0.4
-            LIST = potential_base_titles
-        }
 }

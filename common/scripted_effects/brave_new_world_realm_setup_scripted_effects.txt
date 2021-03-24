@@ -1068,7 +1068,6 @@ bnw_collect_titles_where_type_dominant_effect = {
 			add_to_list = titles_to_handle
 		}
 	}
-			debug_log = "bnw_collect_titles_where_type_dominant_effect runs!"
 	every_in_list = {
 		list = titles_to_handle
 		set_variable = {
