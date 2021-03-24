@@ -12,6 +12,7 @@ comment_pattern = regex.compile(r"(#)[^\n]*")
 religion_doctrine_preference_pattern = regex.compile(r"has_doctrine = (\w+)")
 religion_doctrine_preference_replacement = r"is_target_in_variable_list = { name = religion_doctrine_preferences target = flag:\1 }"
 
+game_path = "C:\Program Files (x86)\Steam\steamapps\common\Crusader Kings III\game" # Can be mod path too
 
 cost_chance_conversion = (
     ("low", "high"),
@@ -83,7 +84,7 @@ def get_extra_modifiers(name):
 #core_doctrines_raw = read_with_removed_comments("doctrines", "00_core_tenets.txt")
 #core_doctrines = doctrine_pattern.findall(core_doctrines_raw)
 
-doctrines_raw = dumpfiles("doctrines")
+doctrines_raw = dumpfiles(os.path.join(game_path, "common/religion/doctrines"))
 doctrine_groups = doctrine_pattern.findall(doctrines_raw)
 
 pick_random_doctrines = ""
