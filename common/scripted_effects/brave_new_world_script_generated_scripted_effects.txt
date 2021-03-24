@@ -485,6 +485,9 @@
 					has_doctrine = tenet_armed_pilgrimages
 				}
 				NOT = { 
+					has_doctrine = tenet_gruesome_festivals
+				}
+				NOT = { 
 					has_doctrine = tenet_pacifism
 				}
 			}
@@ -1131,7 +1134,13 @@
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = hinduism_religion
+				OR = { 
+					religion_tag = hinduism_religion
+					AND = { 
+						religion_tag = germanic_religion
+						has_fp1_dlc_trigger = yes
+					}
+				}
 				NOT = { 
 					has_doctrine = tenet_bhakti
 				}
@@ -1165,6 +1174,9 @@
 				}
 				NOT = { 
 					has_doctrine = tenet_armed_pilgrimages
+				}
+				NOT = { 
+					has_doctrine = tenet_gruesome_festivals
 				}
 				NOT = { 
 					has_doctrine = tenet_dharmic_pacifism
@@ -1435,6 +1447,9 @@
 				}
 				NOT = { 
 					has_doctrine = tenet_dharmic_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_gruesome_festivals
 				}
 				NOT = { 
 					has_doctrine = tenet_human_sacrifice
@@ -1709,6 +1724,65 @@
 				}
 			}
 			add_doctrine = tenet_warmonger
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = christianity_religion
+					religion_tag = judaism_religion
+					religion_tag = islam_religion
+				}
+				has_fp1_dlc_trigger = yes
+				NOT = { 
+					has_doctrine = tenet_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_dharmic_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_human_sacrifice
+				}
+				NOT = { 
+					has_doctrine = tenet_gruesome_festivals
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_doctrine = tenet_human_sacrifice
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							has_doctrine = pagan_hostility_doctrine
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_gruesome_festivals
+								}
+							}
+						}
+						multiply = bnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_gruesome_festivals
 		}
 		0 = { 
 			trigger = { 
@@ -2639,6 +2713,12 @@ bnw_religion_pick_random_doctrine_core_tenets_effect = {
 						target = flag:tenet_armed_pilgrimages
 					}
 				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_gruesome_festivals
+					}
+				}
 			}
 			modifier = { 
 				add = { 
@@ -3157,7 +3237,13 @@ bnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = hinduism_religion
+				OR = { 
+					religion_tag = hinduism_religion
+					AND = { 
+						religion_tag = germanic_religion
+						has_fp1_dlc_trigger = yes
+					}
+				}
 			}
 			modifier = { 
 				add = { 
@@ -3188,6 +3274,12 @@ bnw_religion_pick_random_doctrine_core_tenets_effect = {
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
 						target = flag:tenet_armed_pilgrimages
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_gruesome_festivals
 					}
 				}
 			}
@@ -3406,6 +3498,12 @@ bnw_religion_pick_random_doctrine_core_tenets_effect = {
 						target = flag:tenet_dharmic_pacifism
 					}
 				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_gruesome_festivals
+					}
+				}
 			}
 			modifier = { 
 				add = { 
@@ -3612,6 +3710,69 @@ bnw_religion_pick_random_doctrine_core_tenets_effect = {
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
 				target = flag:tenet_warmonger
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOR = { 
+					religion_tag = christianity_religion
+					religion_tag = judaism_religion
+					religion_tag = islam_religion
+				}
+				has_fp1_dlc_trigger = yes
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_pacifism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_dharmic_pacifism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_human_sacrifice
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:tenet_human_sacrifice
+							}
+						}
+						value = bnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:pagan_hostility_doctrine
+							}
+						}
+						value = bnw_faith_doctrine_averange_chance
+					}
+					else_if = { 
+						limit = { 
+							religion_tag = hinduism_religion
+						}
+						value = bnw_faith_doctrine_low_chance
+					}
+					else = { 
+						value = bnw_faith_doctrine_very_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_gruesome_festivals
 			}
 		}
 		0 = { 
@@ -6932,6 +7093,12 @@ bnw_remove_all_doctrines_effect = {
 			has_doctrine = tenet_warmonger
 		}
 		remove_doctrine = tenet_warmonger
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_gruesome_festivals
+		}
+		remove_doctrine = tenet_gruesome_festivals
 	}
 	if = { 
 		limit = { 
