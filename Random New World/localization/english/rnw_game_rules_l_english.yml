@@ -127,7 +127,7 @@
  setting_normal_rnw_starting_resources:0 "Normal"
  setting_normal_rnw_starting_resources_desc:0 "Rulers will have some gold, prestige and piety at start."
  setting_more_rnw_starting_resources:0 "More"
- setting_more_rnw_starting_resourcess_desc:0 "Rulers will have more gold, prestige and piety than normal at start."
+ setting_more_rnw_starting_resources_desc:0 "Rulers will have more gold, prestige and piety than normal at start."
 
  rule_rnw_num_of_dukes:0 "#X BNW:#! Number of Dukes"
  setting_none_rnw_num_of_dukes:0 "None"
