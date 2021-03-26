@@ -46,10 +46,10 @@ doctrine_groups_to_skip = (
     "hostility_group"
 )
 extra_modifiers = {
-    "doctrine_theocracy_temporal": "multiply = bnw_doctrine_theocracy_temporal_multiplier\n",
-    "doctrine_gender_male_dominated": "multiply = bnw_doctrine_gender_male_dominated_multiplier\n",
-    "doctrine_gender_equal": "multiply = bnw_doctrine_gender_equal_multiplier\n",
-    "doctrine_gender_female_dominated": "multiply = bnw_doctrine_gender_female_dominated_multiplier\n",
+    "doctrine_theocracy_temporal": "multiply = rnw_doctrine_theocracy_temporal_multiplier\n",
+    "doctrine_gender_male_dominated": "multiply = rnw_doctrine_gender_male_dominated_multiplier\n",
+    "doctrine_gender_equal": "multiply = rnw_doctrine_gender_equal_multiplier\n",
+    "doctrine_gender_female_dominated": "multiply = rnw_doctrine_gender_female_dominated_multiplier\n",
 }
 
 def dumpfiles(path, ending = ".txt"):
@@ -88,15 +88,15 @@ doctrines_raw = dumpfiles(os.path.join(game_path, "common/religion/doctrines"))
 doctrine_groups = doctrine_pattern.findall(doctrines_raw)
 
 pick_random_doctrines = ""
-remove_all_doctrines = "bnw_remove_all_doctrines_effect = {"
+remove_all_doctrines = "rnw_remove_all_doctrines_effect = {"
 
 for doctrine_group in doctrine_groups:
     group_name = doctrine_group[0].replace("ż","")
     if group_name in doctrine_groups_to_skip:
         continue
     group_body = doctrine_group[1]
-    pick_group = f"bnw_pick_random_{group_name}_effect = {{\nrandom_list = {{"
-    pick_group_religion = f"bnw_religion_pick_random_{group_name}_effect = {{\nrandom_list = {{"
+    pick_group = f"rnw_pick_random_{group_name}_effect = {{\nrandom_list = {{"
+    pick_group_religion = f"rnw_religion_pick_random_{group_name}_effect = {{\nrandom_list = {{"
 
     doctrines = doctrine_pattern.findall(group_body)
     for doctrine in doctrines:
@@ -132,8 +132,8 @@ for doctrine_group in doctrine_groups:
         weight = piety_cost[1]
 
         for i in (cost_chance_conversion if "_syncretism" not in name else cost_chance_conversion_syncretism):
-            weight = weight.replace(f"faith_tenet_cost_{i[0]}", f"bnw_faith_doctrine_{i[1]}_chance")
-            weight = weight.replace(f"faith_doctrine_cost_{i[0]}", f"bnw_faith_doctrine_{i[1]}_chance")
+            weight = weight.replace(f"faith_tenet_cost_{i[0]}", f"rnw_faith_doctrine_{i[1]}_chance")
+            weight = weight.replace(f"faith_doctrine_cost_{i[0]}", f"rnw_faith_doctrine_{i[1]}_chance")
 
         pick_group += f"""
         0 = {{
@@ -153,7 +153,7 @@ for doctrine_group in doctrine_groups:
                                 }}
                             }}
                         }}
-                        multiply = bnw_religion_doctrine_preferences_modifier
+                        multiply = rnw_religion_doctrine_preferences_modifier
                     }}
                 }}
             }}
@@ -188,6 +188,6 @@ for doctrine_group in doctrine_groups:
 remove_all_doctrines += "\n}\n"
 output = pick_random_doctrines + pick_group_religion + remove_all_doctrines
 
-write_output("../common/scripted_effects", "brave_new_world_script_generated_scripted_effects.txt", output)
+write_output("../Random New World/common/scripted_effects", "rnw_generated_doctrine_scripted_effects.txt", output)
 
     
