@@ -331,3 +331,15 @@ rnw_starting_piety = {
 
     multiply = rnw_starting_resources_multiplier
 }
+rnw_holy_site_share_multiplier = {
+    value = 10
+    if = {
+        limit = {
+            list_size = {
+                name = choosen_holy_sites
+                value < 1
+            }
+        }
+        multiply = 10
+    }
+}

@@ -1,0 +1,81 @@
+﻿rnw_holy_site_choice_modifier = {
+	modifier = {
+        trigger_if = {
+            limit = {
+                exists = religion
+            }
+            religion = {
+                is_target_in_variable_list = {
+                    name = choosen_holy_sites
+                    target = $COUNTY$
+                }
+            }
+        }
+        trigger_else = {
+            always = no
+        }
+		factor = rnw_holy_site_share_multiplier
+	}
+	modifier = {
+        $COUNTY$ = {
+            has_variable = faiths_having_this_holy_site
+        }
+        exists = religion
+        factor = {
+            value = 1
+            divide = $COUNTY$.var:faiths_having_this_holy_site
+        }
+	}
+    modifier = {
+        factor = 2
+        any_in_list = {
+            list = choosen_holy_sites
+            squared_distance = {
+                target = $COUNTY$
+                value <= squared_distance_small
+            }
+        }
+    }
+    modifier = {
+        factor = 2
+        any_in_list = {
+            list = choosen_holy_sites
+            squared_distance = {
+                target = $COUNTY$
+                value <= squared_distance_medium
+            }
+        }
+    }
+    modifier = {
+        factor = 3
+        any_in_list = {
+            list = choosen_holy_sites
+            squared_distance = {
+                target = $COUNTY$
+                value <= squared_distance_large
+            }
+        }
+    }
+    modifier = {
+        factor = 5
+        any_in_list = {
+            list = choosen_holy_sites
+            squared_distance = {
+                target = $COUNTY$
+                value <= squared_distance_massive
+            }
+        }
+    }
+    modifier = {
+        factor = 5
+        NOT = {
+            any_in_list = {
+                list = choosen_holy_sites
+                squared_distance = {
+                    target = $COUNTY$
+                    value > squared_distance_massive
+                }
+            }
+        }
+    }
+}

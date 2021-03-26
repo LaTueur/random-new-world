@@ -1,0 +1,3637 @@
+﻿rnw_choose_holy_site_effect = { 
+	random_list = { 
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_jerusalem = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_jerusalem
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = jerusalem
+				COUNTY = title:c_jerusalem
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_roma = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_roma
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = rome
+				COUNTY = title:c_roma
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_cologne = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_cologne
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = cologne
+				COUNTY = title:c_cologne
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_santiago = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_santiago
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = santiago
+				COUNTY = title:c_santiago
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kent = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kent
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kent
+				COUNTY = title:c_kent
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_barcelona = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_barcelona
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = segrada_familia
+				COUNTY = title:c_barcelona
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_byzantion = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_byzantion
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = constantinople
+				COUNTY = title:c_byzantion
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_alexandria = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_alexandria
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = alexandria
+				COUNTY = title:c_alexandria
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_antiocheia = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_antiocheia
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = antioch
+				COUNTY = title:c_antiocheia
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_tigre = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_tigre
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = aksum
+				COUNTY = title:c_tigre
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_meroe = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_meroe
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = napata
+				COUNTY = title:c_meroe
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_suenik = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_suenik
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = suenik
+				COUNTY = title:c_suenik
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_colonea = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_colonea
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = colonea
+				COUNTY = title:c_colonea
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_beirut = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_beirut
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = beirut
+				COUNTY = title:c_beirut
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_baghdad = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_baghdad
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = baghdad
+				COUNTY = title:c_baghdad
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_shiraz = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_shiraz
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = farz
+				COUNTY = title:c_shiraz
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kanara = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kanara
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kerala
+				COUNTY = title:c_kanara
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_oriel = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_oriel
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = armagh
+				COUNTY = title:c_oriel
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_inner_hebrides = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_inner_hebrides
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = iona
+				COUNTY = title:c_inner_hebrides
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_rama = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_rama
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = visoki
+				COUNTY = title:c_rama
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ragusa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ragusa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ragusa
+				COUNTY = title:c_ragusa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_esztergom = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_esztergom
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = esztergom
+				COUNTY = title:c_esztergom
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_mecca = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_mecca
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = mecca
+				COUNTY = title:c_mecca
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_medina = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_medina
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = medina
+				COUNTY = title:c_medina
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_cordoba = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_cordoba
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = cordoba
+				COUNTY = title:c_cordoba
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sinai = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sinai
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sinai
+				COUNTY = title:c_sinai
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_tinmallal = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_tinmallal
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = tinmallal
+				COUNTY = title:c_tinmallal
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_fes = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_fes
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = fes
+				COUNTY = title:c_fes
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kufa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kufa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = nadjaf
+				COUNTY = title:c_kufa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_damascus = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_damascus
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = damascus
+				COUNTY = title:c_damascus
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_palmyra = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_palmyra
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = siffa
+				COUNTY = title:c_palmyra
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kufa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kufa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kufa
+				COUNTY = title:c_kufa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_basra = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_basra
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = basra
+				COUNTY = title:c_basra
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_nizwa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_nizwa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = nizwa
+				COUNTY = title:c_nizwa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sijilmasa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sijilmasa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sijilmasa
+				COUNTY = title:c_sijilmasa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_qatif = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_qatif
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = bahrein
+				COUNTY = title:c_qatif
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_yamama = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_yamama
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = yamama
+				COUNTY = title:c_yamama
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sinjar = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sinjar
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sinjar
+				COUNTY = title:c_sinjar
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_baalbek = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_baalbek
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = baalbek
+				COUNTY = title:c_baalbek
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ninive = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ninive
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = lalish
+				COUNTY = title:c_ninive
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_nishapur = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_nishapur
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = nishapur
+				COUNTY = title:c_nishapur
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_mandestan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_mandestan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = dashtestan
+				COUNTY = title:c_mandestan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_bakharz = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_bakharz
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = zozan
+				COUNTY = title:c_bakharz
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_semien = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_semien
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = semien
+				COUNTY = title:c_semien
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_acre = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_acre
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sufed
+				COUNTY = title:c_acre
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_jerusalem = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_jerusalem
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = gerizim
+				COUNTY = title:c_jerusalem
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ahvaz = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ahvaz
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ahvaz
+				COUNTY = title:c_ahvaz
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_samarkand = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_samarkand
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = samarkand
+				COUNTY = title:c_samarkand
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_udabhanda = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_udabhanda
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = udabhanda
+				COUNTY = title:c_udabhanda
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_toledo = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_toledo
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = toledo
+				COUNTY = title:c_toledo
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_cairo = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_cairo
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = memphis
+				COUNTY = title:c_cairo
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_gaya = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_gaya
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = bodh_gaya
+				COUNTY = title:c_gaya
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_lumbini = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_lumbini
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kusinagara
+				COUNTY = title:c_lumbini
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_varanasi = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_varanasi
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sarnath
+				COUNTY = title:c_varanasi
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_vidisa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_vidisa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sanchi
+				COUNTY = title:c_vidisa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_vatsagulma = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_vatsagulma
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ajanta
+				COUNTY = title:c_vatsagulma
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sagya = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sagya
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sagya
+				COUNTY = title:c_sagya
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_dagon = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_dagon
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = dagon
+				COUNTY = title:c_dagon
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_pagan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_pagan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = pagan
+				COUNTY = title:c_pagan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_phiti = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_phiti
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = atamasthana
+				COUNTY = title:c_phiti
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_nallamala = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_nallamala
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = amaravati
+				COUNTY = title:c_nallamala
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_varanasi = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_varanasi
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = varanasi
+				COUNTY = title:c_varanasi
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ayodhya = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ayodhya
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ayodhya
+				COUNTY = title:c_ayodhya
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_mathura = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_mathura
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = mathura
+				COUNTY = title:c_mathura
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sthanisvara = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sthanisvara
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = haridwar
+				COUNTY = title:c_sthanisvara
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kanchipuram = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kanchipuram
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kanchipuram
+				COUNTY = title:c_kanchipuram
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ujjayini = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ujjayini
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ujjayini
+				COUNTY = title:c_ujjayini
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_dvaraka = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_dvaraka
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = dwarka
+				COUNTY = title:c_dvaraka
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_somnath = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_somnath
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = palitana
+				COUNTY = title:c_somnath
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_radha = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_radha
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = shikharj
+				COUNTY = title:c_radha
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_naddula = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_naddula
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ranakpur
+				COUNTY = title:c_naddula
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_vatsagulma = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_vatsagulma
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ellora
+				COUNTY = title:c_vatsagulma
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kongu = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kongu
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sittannavasal
+				COUNTY = title:c_kongu
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_itanagar = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_itanagar
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = itanagar
+				COUNTY = title:c_itanagar
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_pemako = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_pemako
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = pemako
+				COUNTY = title:c_pemako
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_rima = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_rima
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = rima
+				COUNTY = title:c_rima
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_tezu = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_tezu
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = tezu
+				COUNTY = title:c_tezu
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kathmandu = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kathmandu
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kathmandu
+				COUNTY = title:c_kathmandu
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ilam = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ilam
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ilam
+				COUNTY = title:c_ilam
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_garwhal = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_garwhal
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = garwhal
+				COUNTY = title:c_garwhal
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_jumla = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_jumla
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = jumla
+				COUNTY = title:c_jumla
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_maowun = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_maowun
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = maowun
+				COUNTY = title:c_maowun
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ngawa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ngawa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ngawa
+				COUNTY = title:c_ngawa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_chakla = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_chakla
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = chakla
+				COUNTY = title:c_chakla
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_gyaitang = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_gyaitang
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = gyaitang
+				COUNTY = title:c_gyaitang
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_rebgong = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_rebgong
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = rebgong
+				COUNTY = title:c_rebgong
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_xingqing = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_xingqing
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = xingqing
+				COUNTY = title:c_xingqing
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_yijinai = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_yijinai
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = yijinai
+				COUNTY = title:c_yijinai
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_alxa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_alxa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = alxa
+				COUNTY = title:c_alxa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_yazd = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_yazd
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = yazd
+				COUNTY = title:c_yazd
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_riqan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_riqan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = nok_kundi
+				COUNTY = title:c_riqan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_balkh = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_balkh
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = takht-i-sangin
+				COUNTY = title:c_balkh
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_urmiya = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_urmiya
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = takht-e_soleyman
+				COUNTY = title:c_urmiya
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_baduspan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_baduspan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ushi-darena
+				COUNTY = title:c_baduspan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_upland = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_upland
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = uppsala
+				COUNTY = title:c_upland
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sjaelland = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sjaelland
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = lejre
+				COUNTY = title:c_sjaelland
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_paderborn = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_paderborn
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = paderborn
+				COUNTY = title:c_paderborn
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_zeeland = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_zeeland
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = zeeland
+				COUNTY = title:c_zeeland
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_trandheim = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_trandheim
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ranaheim
+				COUNTY = title:c_trandheim
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_north_riding = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_north_riding
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = jorvik
+				COUNTY = title:c_north_riding
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kiev = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kiev
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = konugardr
+				COUNTY = title:c_kiev
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kakisalmi = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kakisalmi
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = raivola
+				COUNTY = title:c_kakisalmi
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_osel = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_osel
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = hiiumaa
+				COUNTY = title:c_osel
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_akkel = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_akkel
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = akkel
+				COUNTY = title:c_akkel
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_perm = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_perm
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = perm
+				COUNTY = title:c_perm
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kiev = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kiev
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kiev
+				COUNTY = title:c_kiev
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_novgorod = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_novgorod
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = novgorod
+				COUNTY = title:c_novgorod
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_barlad = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_barlad
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = barlad
+				COUNTY = title:c_barlad
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_plocka = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_plocka
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = plock
+				COUNTY = title:c_plocka
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_zemigalians = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_zemigalians
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = pokaini
+				COUNTY = title:c_zemigalians
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_torun = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_torun
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = torun
+				COUNTY = title:c_torun
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_braslau = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_braslau
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = braslau
+				COUNTY = title:c_braslau
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_rugen = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_rugen
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = rugen
+				COUNTY = title:c_rugen
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_visegrad = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_visegrad
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = pest
+				COUNTY = title:c_visegrad
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kerch = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kerch
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kerch
+				COUNTY = title:c_kerch
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_odessa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_odessa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = olvia
+				COUNTY = title:c_odessa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_poszony = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_poszony
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = poszony
+				COUNTY = title:c_poszony
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sarysyn = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sarysyn
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sarysyn
+				COUNTY = title:c_sarysyn
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_karakorum = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_karakorum
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kara_khorum
+				COUNTY = title:c_karakorum
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_qayaliq = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_qayaliq
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = qayaliq
+				COUNTY = title:c_qayaliq
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_tavan_bogd = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_tavan_bogd
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = tavan_bogd
+				COUNTY = title:c_tavan_bogd
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_dorostorum = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_dorostorum
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = preslav
+				COUNTY = title:c_dorostorum
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_attica = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_attica
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = athens
+				COUNTY = title:c_attica
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_laconia = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_laconia
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sparta
+				COUNTY = title:c_laconia
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_tunis = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_tunis
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = carthage
+				COUNTY = title:c_tunis
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kabul = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kabul
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kabul
+				COUNTY = title:c_kabul
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_multan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_multan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = multan
+				COUNTY = title:c_multan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_bost = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_bost
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = bost
+				COUNTY = title:c_bost
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_khotan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_khotan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = khotan
+				COUNTY = title:c_khotan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_balkh = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_balkh
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = balkh
+				COUNTY = title:c_balkh
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_lhasa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_lhasa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = lhasa
+				COUNTY = title:c_lhasa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_purang = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_purang
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = purang
+				COUNTY = title:c_purang
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_tyumen = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_tyumen
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = tyumen
+				COUNTY = title:c_tyumen
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kazym = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kazym
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = surgut
+				COUNTY = title:c_kazym
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ob = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ob
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ob
+				COUNTY = title:c_ob
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_olkhon = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_olkhon
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = olkhon
+				COUNTY = title:c_olkhon
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_awkar = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_awkar
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = awkar
+				COUNTY = title:c_awkar
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_jenne = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_jenne
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = jenne
+				COUNTY = title:c_jenne
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_niani = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_niani
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = niani
+				COUNTY = title:c_niani
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kukiya = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kukiya
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kukiya
+				COUNTY = title:c_kukiya
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_wadan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_wadan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = wadan
+				COUNTY = title:c_wadan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_daura = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_daura
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = daura
+				COUNTY = title:c_daura
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_garumele = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_garumele
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = garumele
+				COUNTY = title:c_garumele
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_igbo = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_igbo
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = igbo
+				COUNTY = title:c_igbo
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_el_fasher = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_el_fasher
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = el_fasher
+				COUNTY = title:c_el_fasher
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_wandala = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_wandala
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = wandala
+				COUNTY = title:c_wandala
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kisi = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kisi
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kisi
+				COUNTY = title:c_kisi
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sherbro = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sherbro
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sherbro
+				COUNTY = title:c_sherbro
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kayor = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kayor
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kayor
+				COUNTY = title:c_kayor
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kasa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kasa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kasa
+				COUNTY = title:c_kasa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_bono = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_bono
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = bono
+				COUNTY = title:c_bono
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kumasi = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kumasi
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kumasi
+				COUNTY = title:c_kumasi
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ife = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ife
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ife
+				COUNTY = title:c_ife
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_nikki = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_nikki
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = nikki
+				COUNTY = title:c_nikki
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_aswan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_aswan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = aswan
+				COUNTY = title:c_aswan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_wadi_el-milk = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_wadi_el-milk
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = wadi_el_milk
+				COUNTY = title:c_wadi_el-milk
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_naqis = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_naqis
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = naqis
+				COUNTY = title:c_naqis
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sennar = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sennar
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sennar
+				COUNTY = title:c_sennar
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_danakil = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_danakil
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = danakil
+				COUNTY = title:c_danakil
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kaffa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kaffa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kaffa
+				COUNTY = title:c_kaffa
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_harar = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_harar
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = harar
+				COUNTY = title:c_harar
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_makhir = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_makhir
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = makhir
+				COUNTY = title:c_makhir
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_mogadishu = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_mogadishu
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = mogadishu
+				COUNTY = title:c_mogadishu
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_gilgit = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_gilgit
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = gilgit
+				COUNTY = title:c_gilgit
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_suzhou = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_suzhou
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = suzhou
+				COUNTY = title:c_suzhou
+				FAITH = $FAITH$
+			}
+		}
+	}
+}
+rnw_forward_to_holy_site_choice_effect = { 
+	if = { 
+		limit = { 
+			NOT = { 
+				exists = religion
+			}
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = akom_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:akom_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = akom_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:baltic_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = baltic_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:bon
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = bon
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:old_bon
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = old_bon
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:theravada
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = theravada
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:mahayana
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = mahayana
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:vajrayana
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = vajrayana
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:ari
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = ari
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:lamaism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = lamaism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:catholic
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = catholic
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:orthodox
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = orthodox
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:coptic
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = coptic
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:armenian_apostolic
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = armenian_apostolic
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:conversos
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = conversos
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:cathar
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = cathar
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:waldensian
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = waldensian
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:lollard
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = lollard
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:iconoclast
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = iconoclast
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:bogomilist
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = bogomilist
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:paulician
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = paulician
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:nestorian
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = nestorian
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:messalian
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = messalian
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:adamites
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = adamites
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:insular_celtic
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = insular_celtic
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:bosnian_church
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = bosnian_church
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:donyipoloism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = donyipoloism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:sedism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = sedism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:manichean
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = manichean
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:mandeaism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = mandeaism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:sabianism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = sabianism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:valentinianism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = valentinianism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:sethianism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = sethianism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:priscillianism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = priscillianism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:cainitism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = cainitism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:finnish_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = finnish_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:norse_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = norse_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:hellenic_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = hellenic_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:vaishnavism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = vaishnavism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:advaitism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = advaitism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:shaivism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = shaivism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:srikula_shaktism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = srikula_shaktism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:kalikula_shaktism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = kalikula_shaktism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:smartism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = smartism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:krishnaism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = krishnaism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:ashari
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = ashari
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:muwalladi
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = muwalladi
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:maturidi
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = maturidi
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:masmudi
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = masmudi
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:mutazila
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = mutazila
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:quranist
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = quranist
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:ismaili
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = ismaili
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:qarmatian
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = qarmatian
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:nizari
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = nizari
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:zayidi
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = zayidi
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:imami
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = imami
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:ghulat
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = ghulat
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:alawite
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = alawite
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:alevi
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = alevi
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:druze
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = druze
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:ibadi
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = ibadi
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:azariqa
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = azariqa
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:najdat
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = najdat
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:sufri
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = sufri
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:digambara
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = digambara
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:svetambara
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = svetambara
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:yapaniya
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = yapaniya
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:rabbinism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = rabbinism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:karaism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = karaism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:haymanot
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = haymanot
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:malabarism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = malabarism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:samaritan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = samaritan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:kabarism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = kabarism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:kushitism_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = kushitism_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:magyar_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = magyar_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:kiratism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = kiratism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:yumaism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = yumaism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:rrmeaism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = rrmeaism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:melieism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = melieism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:siberian_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = siberian_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:slavic_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = slavic_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:zhengyi
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = zhengyi
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:shangqing
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = shangqing
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:quanzhen
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = quanzhen
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:tengri_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = tengri_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:waaqism_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = waaqism_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:west_african_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = west_african_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:west_african_bidu_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = west_african_bidu_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:west_african_bori_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = west_african_bori_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:west_african_orisha_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = west_african_orisha_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:west_african_roog_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = west_african_roog_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:yazidi
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = yazidi
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:meshefaresism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = meshefaresism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:kitebacilweism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = kitebacilweism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:mazdayasna
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = mazdayasna
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:zurvanism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = zurvanism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:gayomarthianism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = gayomarthianism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:khurmazta
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = khurmazta
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:mazdakism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = mazdakism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:khurramism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = khurramism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:urartuism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = urartuism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:zun_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = zun_pagan
+		}
+	}
+}

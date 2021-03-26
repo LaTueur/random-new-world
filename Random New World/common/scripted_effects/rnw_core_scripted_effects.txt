@@ -286,3 +286,42 @@ rnw_give_title_names_and_coas_effect = {
         }
     }
 }
+rnw_holy_site_randomization_effect = {
+    if = {
+        limit = {
+            always = yes
+        }
+        every_religion_global = {
+            rnw_forward_to_holy_site_choice_effect = yes
+            every_in_list = {
+                list = choosen_holy_sites
+                remove_from_list = choosen_holy_sites
+            }
+        }
+        rnw_collect_all_faiths_to_target_list_effect = { TARGET = faith_list }
+        while = {
+            limit = {
+                any_in_list = {
+                    list = faith_list
+                    NOT = { has_variable = already_selected }
+                }
+            }
+            random_in_list = {
+                list = faith_list
+                limit = {
+                    NOT = { has_variable = already_selected }
+                }
+                rnw_forward_to_holy_site_choice_effect = yes
+                set_variable = { name = already_selected value = yes }
+                every_in_list = {
+                    list = choosen_holy_sites
+                    remove_from_list = choosen_holy_sites
+                }
+            }
+        }
+        every_in_list = {
+            list = faith_list
+            remove_variable = already_selected
+        }
+    }
+}

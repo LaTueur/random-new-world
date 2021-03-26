@@ -643,3 +643,48 @@ rnw_select_culture_starting_location_effect = {
         remove_variable = has_at_least_one_culture
 	}
 }
+rnw_add_holy_site_effect = {
+    $COUNTY$ = {
+        add_to_list = choosen_holy_sites
+    }
+    if = {
+        limit = {
+            exists = religion
+        }
+        activate_holy_site = $SITE$_$FAITH$
+        $COUNTY$ = {
+            if = {
+                limit = {
+                    exists = var:faiths_having_this_holy_site
+                }
+                change_variable = { name = faiths_having_this_holy_site add = 2 }
+            }
+            else = {
+                set_variable = { name = faiths_having_this_holy_site value = 5 }
+            }
+        }
+    }
+    else = {
+        add_to_variable_list = {
+            name = choosen_holy_sites
+            target = $COUNTY$
+        }
+    }
+}
+rnw_choose_multiple_holy_site_effect = {
+    set_variable = {
+        name = sites_still_wanted
+        value = 5
+    }
+    while = {
+        limit = {
+            var:sites_still_wanted >= 1
+        }
+        rnw_choose_holy_site_effect = {
+            FAITH = $FAITH$
+        }
+        change_variable = { name = sites_still_wanted subtract = 1 }
+    }
+}
+rnw_forward_to_holy_site_choice_effect = {
+}
