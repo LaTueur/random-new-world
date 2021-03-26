@@ -1,0 +1,345 @@
+﻿rnw_realm_setup_randomization = {
+	default = off_rnw_realm_setup_randomization
+
+    off_rnw_realm_setup_randomization = {}
+
+	on_rnw_realm_setup_randomization = {}
+}
+rnw_counties_per_character_min = {
+	default = 1_rnw_counties_per_character_min
+
+    1_rnw_counties_per_character_min = {}
+
+    2_rnw_counties_per_character_min = {}
+
+	3_rnw_counties_per_character_min = {}
+
+	4_rnw_counties_per_character_min = {}
+
+	5_rnw_counties_per_character_min = {}
+
+	6_rnw_counties_per_character_min = {}
+
+	7_rnw_counties_per_character_min = {}
+
+	8_rnw_counties_per_character_min = {}
+}
+rnw_counties_per_character_max = {
+	default = 5_rnw_counties_per_character_max
+
+    1_rnw_counties_per_character_max = {}
+
+    2_rnw_counties_per_character_max = {}
+
+	3_rnw_counties_per_character_max = {}
+
+	4_rnw_counties_per_character_max = {}
+
+	5_rnw_counties_per_character_max = {}
+
+	6_rnw_counties_per_character_max = {}
+
+	7_rnw_counties_per_character_max = {}
+
+	8_rnw_counties_per_character_max = {}
+}
+rnw_spawn_age_min = {
+	default = 6_rnw_spawn_age_min
+
+    0_rnw_spawn_age_min = {}
+
+    6_rnw_spawn_age_min = {}
+
+	12_rnw_spawn_age_min = {}
+
+    18_rnw_spawn_age_min = {}
+
+    24_rnw_spawn_age_min = {}
+
+	30_rnw_spawn_age_min = {}
+
+    36_rnw_spawn_age_min = {}
+
+    42_rnw_spawn_age_min = {}
+
+	48_rnw_spawn_age_min = {}
+
+    54_rnw_spawn_age_min = {}
+
+    60_rnw_spawn_age_min = {}
+
+	66_rnw_spawn_age_min = {}
+
+	72_rnw_spawn_age_min = {}
+
+	78_rnw_spawn_age_min = {}
+
+	84_rnw_spawn_age_min = {}
+
+	90_rnw_spawn_age_min = {}
+}
+rnw_spawn_age_max = {
+	default = 60_rnw_spawn_age_max
+
+    0_rnw_spawn_age_max = {}
+
+    6_rnw_spawn_age_max = {}
+
+	12_rnw_spawn_age_max = {}
+
+    18_rnw_spawn_age_max = {}
+
+    24_rnw_spawn_age_max = {}
+
+	30_rnw_spawn_age_max = {}
+
+    36_rnw_spawn_age_max = {}
+
+    42_rnw_spawn_age_max = {}
+
+	48_rnw_spawn_age_max = {}
+
+    54_rnw_spawn_age_max = {}
+
+    60_rnw_spawn_age_max = {}
+
+	66_rnw_spawn_age_max = {}
+
+	72_rnw_spawn_age_max = {}
+
+	78_rnw_spawn_age_max = {}
+
+	84_rnw_spawn_age_max = {}
+
+	90_rnw_spawn_age_max = {}
+}
+rnw_family_generation = {
+	default = across_realms_rnw_family_generation
+
+	off_rnw_family_generation = {}
+
+	on_rnw_family_generation = {}
+
+	extended_rnw_family_generation = {}
+
+	across_realms_rnw_family_generation = {}
+}
+rnw_starting_resources = {
+	default = normal_rnw_starting_resources
+
+	none_rnw_starting_resources = {}
+
+	less_rnw_starting_resources = {}
+
+	normal_rnw_starting_resources = {}
+
+	more_rnw_starting_resources = {}
+}
+rnw_num_of_dukes = {
+    default = normal_rnw_num_of_dukes
+
+    none_rnw_num_of_dukes = {}
+
+    few_rnw_num_of_dukes = {}
+
+    normal_rnw_num_of_dukes = {}
+
+	many_rnw_num_of_dukes = {}
+}
+rnw_num_of_kings = {
+    default = normal_rnw_num_of_kings
+
+    none_rnw_num_of_kings = {}
+
+    few_rnw_num_of_kings = {}
+
+    normal_rnw_num_of_kings = {}
+
+	many_rnw_num_of_kings = {}
+}
+rnw_num_of_emperors = {
+    default = few_rnw_num_of_emperors
+
+    none_rnw_num_of_emperors = {}
+
+    few_rnw_num_of_emperors = {}
+
+    normal_rnw_num_of_emperors = {}
+
+	many_rnw_num_of_emperors = {}
+}
+rnw_de_jure_kingdom_randomization = {
+	default = off_rnw_de_jure_kingdom_randomization
+
+    off_rnw_de_jure_kingdom_randomization = {}
+
+	on_rnw_de_jure_kingdom_randomization = {}
+}
+rnw_de_jure_kingdom_min_size = {
+	default = 3_rnw_de_jure_kingdom_min_size
+
+    2_rnw_de_jure_kingdom_min_size = {}
+
+	3_rnw_de_jure_kingdom_min_size = {}
+
+	4_rnw_de_jure_kingdom_min_size = {}
+
+	5_rnw_de_jure_kingdom_min_size = {}
+
+	6_rnw_de_jure_kingdom_min_size = {}
+
+	7_rnw_de_jure_kingdom_min_size = {}
+
+	8_rnw_de_jure_kingdom_min_size = {}
+
+	9_rnw_de_jure_kingdom_min_size = {}
+
+	10_rnw_de_jure_kingdom_min_size = {}
+
+	11_rnw_de_jure_kingdom_min_size = {}
+
+	12_rnw_de_jure_kingdom_min_size = {}
+}
+rnw_de_jure_kingdom_max_size = {
+	default = 10_rnw_de_jure_kingdom_max_size
+
+    2_rnw_de_jure_kingdom_max_size = {}
+
+	3_rnw_de_jure_kingdom_max_size = {}
+
+	4_rnw_de_jure_kingdom_max_size = {}
+
+	5_rnw_de_jure_kingdom_max_size = {}
+
+	6_rnw_de_jure_kingdom_max_size = {}
+
+	7_rnw_de_jure_kingdom_max_size = {}
+
+	8_rnw_de_jure_kingdom_max_size = {}
+
+	9_rnw_de_jure_kingdom_max_size = {}
+
+	10_rnw_de_jure_kingdom_max_size = {}
+
+	11_rnw_de_jure_kingdom_max_size = {}
+
+	12_rnw_de_jure_kingdom_max_size = {}
+}
+rnw_de_jure_empire_randomization = {
+	default = on_rnw_de_jure_empire_randomization
+
+	off_rnw_de_jure_empire_randomization = {}
+
+	on_rnw_de_jure_empire_randomization = {}
+}
+rnw_de_jure_empire_min_size = {
+	default = 3_rnw_de_jure_empire_min_size
+
+    2_rnw_de_jure_empire_min_size = {}
+
+	3_rnw_de_jure_empire_min_size = {}
+
+	4_rnw_de_jure_empire_min_size = {}
+
+	5_rnw_de_jure_empire_min_size = {}
+
+	6_rnw_de_jure_empire_min_size = {}
+
+	7_rnw_de_jure_empire_min_size = {}
+
+	8_rnw_de_jure_empire_min_size = {}
+
+	9_rnw_de_jure_empire_min_size = {}
+
+	10_rnw_de_jure_empire_min_size = {}
+
+	11_rnw_de_jure_empire_min_size = {}
+
+	12_rnw_de_jure_empire_min_size = {}
+}
+rnw_de_jure_empire_max_size = {
+	default = 6_rnw_de_jure_empire_max_size
+
+    2_rnw_de_jure_empire_max_size = {}
+
+	3_rnw_de_jure_empire_max_size = {}
+
+	4_rnw_de_jure_empire_max_size = {}
+
+	5_rnw_de_jure_empire_max_size = {}
+
+	6_rnw_de_jure_empire_max_size = {}
+
+	7_rnw_de_jure_empire_max_size = {}
+
+	8_rnw_de_jure_empire_max_size = {}
+
+	9_rnw_de_jure_empire_max_size = {}
+
+	10_rnw_de_jure_empire_max_size = {}
+
+	11_rnw_de_jure_empire_max_size = {}
+
+	12_rnw_de_jure_empire_max_size = {}
+}
+rnw_culture_placement_randomization = {
+	default = off_rnw_culture_placement_randomization
+
+	off_rnw_culture_placement_randomization = {}
+
+	on_rnw_culture_placement_randomization = {}
+
+	full_rnw_culture_placement_randomization = {}
+}
+rnw_faith_placement_randomization = {
+	default = off_rnw_faith_placement_randomization
+
+	off_rnw_faith_placement_randomization = {}
+
+	on_rnw_faith_placement_randomization = {}
+
+	full_rnw_faith_placement_randomization = {}
+}
+rnw_faith_percent_used = {
+	default = 60_rnw_faith_percent_used
+
+	10_rnw_faith_percent_used = {}
+
+	20_rnw_faith_percent_used = {}
+
+    30_rnw_faith_percent_used = {}
+
+	40_rnw_faith_percent_used = {}
+
+	50_rnw_faith_percent_used = {}
+
+    60_rnw_faith_percent_used = {}
+
+	70_rnw_faith_percent_used = {}
+
+	80_rnw_faith_percent_used = {}
+
+	90_rnw_faith_percent_used = {}
+
+	100_rnw_faith_percent_used = {}
+}
+rnw_doctrine_randomization = {
+	default = off_rnw_doctrine_randomization
+
+    off_rnw_doctrine_randomization = {}
+
+	on_rnw_doctrine_randomization = {}
+
+	full_rnw_doctrine_randomization = {}
+}
+rnw_doctrine_gender_preference = {
+	default = male_rnw_doctrine_gender_preference
+
+    male_rnw_doctrine_gender_preference = {}
+
+	equal_rnw_doctrine_gender_preference = {}
+
+	female_rnw_doctrine_gender_preference = {}
+
+	random_rnw_doctrine_gender_preference = {}
+}

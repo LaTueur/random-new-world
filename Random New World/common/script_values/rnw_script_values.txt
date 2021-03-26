@@ -1,4 +1,4 @@
-﻿bnw_spread_extra_score = {
+﻿rnw_spread_extra_score = {
 	value = 1
     if = {
         limit = {
@@ -54,7 +54,7 @@
         multiply = 1.5
     }
 }
-bnw_num_of_held_de_jure_counties = {
+rnw_num_of_held_de_jure_counties = {
     value = 0
     every_sub_realm_county = {
         limit = {
@@ -63,7 +63,7 @@ bnw_num_of_held_de_jure_counties = {
         add = 1
     }
 }
-bnw_num_of_de_jure_counties = {
+rnw_num_of_de_jure_counties = {
     value = 0
     every_in_de_jure_hierarchy = {
         limit = {
@@ -72,24 +72,24 @@ bnw_num_of_de_jure_counties = {
         add = 1
     }
 }
-bnw_de_jure_held_percentage = {
-    value = bnw_num_of_held_de_jure_counties
-    divide = scope:title_searching_owner.bnw_num_of_de_jure_counties
+rnw_de_jure_held_percentage = {
+    value = rnw_num_of_held_de_jure_counties
+    divide = scope:title_searching_owner.rnw_num_of_de_jure_counties
 }
-bnw_num_of_held_counties = {
+rnw_num_of_held_counties = {
     value = 0
     every_sub_realm_county = {
         add = 1
     }
 }
-bnw_outside_de_jure_percent = {
+rnw_outside_de_jure_percent = {
     value = 1
     subtract = {
-        value = bnw_num_of_held_de_jure_counties
-        divide = bnw_num_of_held_counties
+        value = rnw_num_of_held_de_jure_counties
+        divide = rnw_num_of_held_counties
     }
 }
-bnw_de_jure_choose_multiplier = {
+rnw_de_jure_choose_multiplier = {
     value = 0
     every_in_de_jure_hierarchy = {
         limit = {
@@ -195,12 +195,12 @@ bnw_de_jure_choose_multiplier = {
         }
     }
 }
-bnw_direct_de_jure_titles_together = {
+rnw_direct_de_jure_titles_together = {
     value = 0
-    add = scope:new_title.bnw_num_of_direct_de_jure_titles
-    add = bnw_num_of_direct_de_jure_titles
+    add = scope:new_title.rnw_num_of_direct_de_jure_titles
+    add = rnw_num_of_direct_de_jure_titles
 }
-bnw_num_of_direct_de_jure_titles = {
+rnw_num_of_direct_de_jure_titles = {
 	value = 0
     every_in_de_jure_hierarchy = {
         limit = {
@@ -209,15 +209,15 @@ bnw_num_of_direct_de_jure_titles = {
         add = 1
     }
 }
-bnw_reversed_num_of_direct_de_jure_titles = {
+rnw_reversed_num_of_direct_de_jure_titles = {
     value = 100
-    subtract = bnw_num_of_direct_de_jure_titles
+    subtract = rnw_num_of_direct_de_jure_titles
 }
-bnw_percent_under_title = {
+rnw_percent_under_title = {
     value = var:counties_of_type_under_title
     divide = scope:handled_title.var:counties_under_title
 }
-bnw_female_chance = {
+rnw_female_chance = {
     if = {
         limit = {
             has_doctrine_parameter = male_dominated_law
@@ -237,7 +237,7 @@ bnw_female_chance = {
         value = 85
     }
 }
-bnw_starting_gold = {
+rnw_starting_gold = {
     if = {
         limit = {
             highest_held_title_tier = tier_county
@@ -267,9 +267,9 @@ bnw_starting_gold = {
     }
 
     
-	multiply = bnw_starting_resources_multiplier
+	multiply = rnw_starting_resources_multiplier
 }
-bnw_starting_prestige = {
+rnw_starting_prestige = {
     if = {
         limit = {
             highest_held_title_tier = tier_county
@@ -298,9 +298,9 @@ bnw_starting_prestige = {
         value = 0
     }
 
-    multiply = bnw_starting_resources_multiplier
+    multiply = rnw_starting_resources_multiplier
 }
-bnw_starting_piety = {
+rnw_starting_piety = {
     if = {
         limit = {
             highest_held_title_tier = tier_county
@@ -329,5 +329,5 @@ bnw_starting_piety = {
         value = 0
     }
 
-    multiply = bnw_starting_resources_multiplier
+    multiply = rnw_starting_resources_multiplier
 }

@@ -1,4 +1,4 @@
-﻿bnw_destroy_every_higher_tier_title_effect = {
+﻿rnw_destroy_every_higher_tier_title_effect = {
     every_empire = {
 		limit = {
 			exists = holder
@@ -25,7 +25,7 @@
         }
     }
 }
-bnw_resolve_county_change_effect = {
+rnw_resolve_county_change_effect = {
 	create_title_and_vassal_change = {
 		type = usurped
 		save_scope_as = change
@@ -52,7 +52,7 @@ bnw_resolve_county_change_effect = {
 	resolve_title_and_vassal_change = scope:change
     set_variable = { name = choosen_owner value = yes }
 }
-bnw_counts_setup_effect = {
+rnw_counts_setup_effect = {
     while = {
 		limit = {
 			any_kingdom = {
@@ -77,13 +77,13 @@ bnw_counts_setup_effect = {
 					create_character = {
 						age = { $MIN_AGE$ $MAX_AGE$ }
 						random_traits = yes
-						gender_female_chance = scope:core_county.faith.bnw_female_chance
+						gender_female_chance = scope:core_county.faith.rnw_female_chance
 						culture = scope:core_county.culture
 						faith = scope:core_county.faith
 						location = scope:core_county.title_province
 						save_scope_as = new_count
 					}
-					bnw_resolve_county_change_effect = yes
+					rnw_resolve_county_change_effect = yes
 				}
 				scope:new_count = {
 					add_to_list = real_rulers
@@ -166,7 +166,7 @@ bnw_counts_setup_effect = {
 									culture_group = scope:new_count.culture_group
 								}
 							}
-							bnw_resolve_county_change_effect = yes
+							rnw_resolve_county_change_effect = yes
 						}
 						every_in_list = {
 							list = counties_to_select_from
@@ -186,7 +186,7 @@ bnw_counts_setup_effect = {
 		remove_variable = checked_counties
 	}
 }
-bnw_higher_realms_setup_effect = {
+rnw_higher_realms_setup_effect = {
 	if = {
 		limit = {
 			$TIER$ = tier_duchy
@@ -242,11 +242,11 @@ bnw_higher_realms_setup_effect = {
 				}
 				save_temporary_scope_as = title_searching_owner
 				ordered_de_jure_top_liege = {
-					order_by = bnw_num_of_held_de_jure_counties
+					order_by = rnw_num_of_held_de_jure_counties
 					max = 1
 					if = {
 						limit = {
-							bnw_de_jure_held_percentage >= $THRESHOLD$
+							rnw_de_jure_held_percentage >= $THRESHOLD$
 						}
 						save_temporary_scope_as = new_owner
 						create_title_and_vassal_change = {
@@ -271,7 +271,7 @@ bnw_higher_realms_setup_effect = {
 								limit = {
 									NOT = { this = scope:new_owner }
 									highest_held_title_tier < scope:title_searching_owner.tier
-									bnw_outside_de_jure_percent <= 0.5
+									rnw_outside_de_jure_percent <= 0.5
 								}
 								random = {
 									chance = $VASSALIZATION_RATE$
@@ -296,28 +296,28 @@ bnw_higher_realms_setup_effect = {
 		remove_from_list = titles_to_handle
 	}
 }
-bnw_duchy_setup_based_on_rule_effect = {
+rnw_duchy_setup_based_on_rule_effect = {
 	switch = {
 		trigger = has_game_rule
-		none_bnw_num_of_dukes = {}
-		few_bnw_num_of_dukes = {
-			bnw_higher_realms_setup_effect = {
+		none_rnw_num_of_dukes = {}
+		few_rnw_num_of_dukes = {
+			rnw_higher_realms_setup_effect = {
 				TIER = tier_duchy
 				IGNORE_RATE = 50
 				THRESHOLD = 0.51
 				VASSALIZATION_RATE = 50
 			}
 		}
-		normal_bnw_num_of_dukes = {
-			bnw_higher_realms_setup_effect = {
+		normal_rnw_num_of_dukes = {
+			rnw_higher_realms_setup_effect = {
 				TIER = tier_duchy
 				IGNORE_RATE = 5
 				THRESHOLD = 0.30
 				VASSALIZATION_RATE = 90
 			}
 		}
-		many_bnw_num_of_dukes = {
-			bnw_higher_realms_setup_effect = {
+		many_rnw_num_of_dukes = {
+			rnw_higher_realms_setup_effect = {
 				TIER = tier_duchy
 				IGNORE_RATE = 0
 				THRESHOLD = 0.20
@@ -326,28 +326,28 @@ bnw_duchy_setup_based_on_rule_effect = {
 		}
 	}
 }
-bnw_kingdom_setup_based_on_rule_effect = {
+rnw_kingdom_setup_based_on_rule_effect = {
 	switch = {
 		trigger = has_game_rule
-		none_bnw_num_of_kings = {}
-		few_bnw_num_of_kings = {
-			bnw_higher_realms_setup_effect = {
+		none_rnw_num_of_kings = {}
+		few_rnw_num_of_kings = {
+			rnw_higher_realms_setup_effect = {
 				TIER = tier_kingdom
 				IGNORE_RATE = 50
 				THRESHOLD = 0.30
 				VASSALIZATION_RATE = 50
 			}
 		}
-		normal_bnw_num_of_kings = {
-			bnw_higher_realms_setup_effect = {
+		normal_rnw_num_of_kings = {
+			rnw_higher_realms_setup_effect = {
 				TIER = tier_kingdom
 				IGNORE_RATE = 14
 				THRESHOLD = 0.18
 				VASSALIZATION_RATE = 85
 			}
 		}
-		many_bnw_num_of_kings = {
-			bnw_higher_realms_setup_effect = {
+		many_rnw_num_of_kings = {
+			rnw_higher_realms_setup_effect = {
 				TIER = tier_kingdom
 				IGNORE_RATE = 0
 				THRESHOLD = 0.10
@@ -356,28 +356,28 @@ bnw_kingdom_setup_based_on_rule_effect = {
 		}
 	}
 }
-bnw_empire_setup_based_on_rule_effect = {
+rnw_empire_setup_based_on_rule_effect = {
 	switch = {
 		trigger = has_game_rule
-		none_bnw_num_of_emperors = {}
-		few_bnw_num_of_emperors = {
-			bnw_higher_realms_setup_effect = {
+		none_rnw_num_of_emperors = {}
+		few_rnw_num_of_emperors = {
+			rnw_higher_realms_setup_effect = {
 				TIER = tier_empire
 				IGNORE_RATE = 95
 				THRESHOLD = 0.30
 				VASSALIZATION_RATE = 95
 			}
 		}
-		normal_bnw_num_of_emperors = {
-			bnw_higher_realms_setup_effect = {
+		normal_rnw_num_of_emperors = {
+			rnw_higher_realms_setup_effect = {
 				TIER = tier_empire
 				IGNORE_RATE = 80
 				THRESHOLD = 0.20
 				VASSALIZATION_RATE = 95
 			}
 		}
-		many_bnw_num_of_emperors = {
-			bnw_higher_realms_setup_effect = {
+		many_rnw_num_of_emperors = {
+			rnw_higher_realms_setup_effect = {
 				TIER = tier_empire
 				IGNORE_RATE = 40
 				THRESHOLD = 0.15
@@ -386,7 +386,7 @@ bnw_empire_setup_based_on_rule_effect = {
 		}
 	}
 }
-bnw_remove_de_jure_effect = {
+rnw_remove_de_jure_effect = {
 	every_duchy = {
 		limit = {
 			any_this_title_or_de_jure_above = {
@@ -404,7 +404,7 @@ bnw_remove_de_jure_effect = {
 		set_de_jure_liege_title = 0
 	}
 }
-bnw_de_jure_setup_effect = {
+rnw_de_jure_setup_effect = {
 	save_temporary_scope_value_as = {
 		name = tier_long
 		value = tier_$TIER$
@@ -457,21 +457,21 @@ bnw_de_jure_setup_effect = {
 			limit = {
 				any_in_list = {
 					list = titles_to_handle
-					bnw_title_can_provide_empty_neighboring_title_trigger = yes
+					rnw_title_can_provide_empty_neighboring_title_trigger = yes
 				}
 			}
 			random_in_list = {
 				list = titles_to_handle
 				limit = {
-					bnw_title_can_provide_empty_neighboring_title_trigger = yes
+					rnw_title_can_provide_empty_neighboring_title_trigger = yes
 				}
 				random_county_in_de_jure_hierarchy = {
 					limit = {
-						bnw_county_has_empty_neighboring_title_trigger = yes
+						rnw_county_has_empty_neighboring_title_trigger = yes
 					}
 					random_neighboring_county = {
 						limit = {
-							bnw_county_belongs_to_empty_title_trigger = yes
+							rnw_county_belongs_to_empty_title_trigger = yes
 						}
 						every_this_title_or_de_jure_above = {
 							limit = {
@@ -498,7 +498,7 @@ bnw_de_jure_setup_effect = {
 				tier = $TIER$
 				name = NEW_CREATED_TITLE_NAME
 			}
-			bnw_set_de_jure_liege_title_effect = yes
+			rnw_set_de_jure_liege_title_effect = yes
 			title_capital_county = {
 				save_temporary_scope_as = core_county
 			}
@@ -518,7 +518,7 @@ bnw_de_jure_setup_effect = {
 				while = {
 					limit = {
 						var:titles_still_wanted >= 1
-						bnw_title_has_empty_neighboring_title_trigger = yes
+						rnw_title_has_empty_neighboring_title_trigger = yes
 					}
 					every_county_in_de_jure_hierarchy = {
 						every_neighboring_county = {
@@ -539,10 +539,10 @@ bnw_de_jure_setup_effect = {
 						weight = {
 							base = 10
 							modifier = {
-								factor = bnw_de_jure_choose_multiplier
+								factor = rnw_de_jure_choose_multiplier
 							}
 						}
-						bnw_set_de_jure_liege_title_effect = yes
+						rnw_set_de_jure_liege_title_effect = yes
 						set_de_jure_liege_title = scope:new_title
 						set_variable = { name = checked_de_jure value = yes }
 					}
@@ -554,7 +554,7 @@ bnw_de_jure_setup_effect = {
 				}
 				if = {
 					limit = {
-						$MIN$ > bnw_num_of_direct_de_jure_titles
+						$MIN$ > rnw_num_of_direct_de_jure_titles
 					}
 					add_to_list = titles_with_few_title
 				}
@@ -573,21 +573,21 @@ bnw_de_jure_setup_effect = {
 			limit = {
 				NOT = {	exists = var:checked_merge }
 			}
-			order_by = bnw_reversed_num_of_direct_de_jure_titles
+			order_by = rnw_reversed_num_of_direct_de_jure_titles
 			save_temporary_scope_as = new_title
 			if = {
 				limit = {
 					any_county_in_de_jure_hierarchy = {
-						bnw_can_merge_with_neighboring_title_trigger = yes
+						rnw_can_merge_with_neighboring_title_trigger = yes
 					}
 				}
 				random_county_in_de_jure_hierarchy = {
 					limit = {
-						bnw_can_merge_with_neighboring_title_trigger = yes
+						rnw_can_merge_with_neighboring_title_trigger = yes
 					}
 					random_neighboring_county = {
 						limit = {
-							bnw_can_merge_with_liege_title_trigger = yes
+							rnw_can_merge_with_liege_title_trigger = yes
 						}
 						every_this_title_or_de_jure_above = {
 							limit = {
@@ -602,23 +602,23 @@ bnw_de_jure_setup_effect = {
 				limit = {
 					any_in_list = {
 						list = handled_coastal_titles
-						bnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = large }
-						bnw_can_merge_with_liege_title_trigger = yes
+						rnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = large }
+						rnw_can_merge_with_liege_title_trigger = yes
 					}
 				}
 				random_in_list = {
 					list = handled_coastal_titles
 					limit = {
-						bnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = small }
-						bnw_can_merge_with_liege_title_trigger = yes
+						rnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = small }
+						rnw_can_merge_with_liege_title_trigger = yes
 					}
 					alternative_limit = {
-						bnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = medium }
-						bnw_can_merge_with_liege_title_trigger = yes
+						rnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = medium }
+						rnw_can_merge_with_liege_title_trigger = yes
 					}
 					alternative_limit = {
-						bnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = large }
-						bnw_can_merge_with_liege_title_trigger = yes
+						rnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = large }
+						rnw_can_merge_with_liege_title_trigger = yes
 					}
 					every_this_title_or_de_jure_above = {
 						limit = {
@@ -635,18 +635,18 @@ bnw_de_jure_setup_effect = {
 				random_list = {
 					10 = {
 						modifier = {
-							factor = bnw_num_of_direct_de_jure_titles
+							factor = rnw_num_of_direct_de_jure_titles
 						}
-						bnw_merge_titles_effect = {
+						rnw_merge_titles_effect = {
 							DOMINANT = scope:new_title
 							SUBSERVIENT = scope:title_to_merge
 						}
 					}
 					10 = {
 						modifier = {
-							factor = scope:title_to_merge.bnw_num_of_direct_de_jure_titles
+							factor = scope:title_to_merge.rnw_num_of_direct_de_jure_titles
 						}
-						bnw_merge_titles_effect = {
+						rnw_merge_titles_effect = {
 							DOMINANT = scope:title_to_merge
 							SUBSERVIENT = scope:new_title
 						}
@@ -680,7 +680,7 @@ bnw_de_jure_setup_effect = {
 	clear_saved_scope = min
 	clear_saved_scope = max
 }
-bnw_set_de_jure_liege_title_effect = {
+rnw_set_de_jure_liege_title_effect = {
 	set_de_jure_liege_title = scope:new_title
 	set_variable = { name = checked_de_jure value = yes }
 	if = {
@@ -692,7 +692,7 @@ bnw_set_de_jure_liege_title_effect = {
 		add_to_list = handled_coastal_titles
 	}
 }
-bnw_merge_titles_effect = {
+rnw_merge_titles_effect = {
 	$SUBSERVIENT$ = {
 		every_in_de_jure_hierarchy = {
 			continue = {
@@ -716,13 +716,13 @@ bnw_merge_titles_effect = {
 		if = {
 			limit = {
 				is_in_list = titles_with_few_title
-				scope:min > bnw_num_of_direct_de_jure_titles
+				scope:min > rnw_num_of_direct_de_jure_titles
 			}
 			set_variable = { name = checked_merge value = yes }
 		}
 	}
 }
-bnw_family_generation_effect = {
+rnw_family_generation_effect = {
 	random_list = {
 		10 = {
 			trigger = {
@@ -733,22 +733,22 @@ bnw_family_generation_effect = {
 		5 = {
 			trigger = {
 				OR = {
-					has_game_rule = extended_bnw_family_generation
-					has_game_rule = across_realms_bnw_family_generation
+					has_game_rule = extended_rnw_family_generation
+					has_game_rule = across_realms_rnw_family_generation
 				}
 			}
 			save_temporary_scope_as = handled_ruler
-			bnw_extended_family_generation_effect = { CHARACTER = scope:handled_ruler }
+			rnw_extended_family_generation_effect = { CHARACTER = scope:handled_ruler }
 		}
 	}
 }
-bnw_extended_family_generation_effect = {
+rnw_extended_family_generation_effect = {
 	$CHARACTER$ = {
 		create_character = {
 			location = $CHARACTER$.location
 			culture = $CHARACTER$.culture
 			faith = $CHARACTER$.faith
-			gender_female_chance = $CHARACTER$.faith.bnw_female_chance
+			gender_female_chance = $CHARACTER$.faith.rnw_female_chance
 			age = {
 				value = $CHARACTER$.age
 				add = {
@@ -913,14 +913,14 @@ bnw_extended_family_generation_effect = {
 		}
 	}
 }
-bnw_connect_families_effect = {
+rnw_connect_families_effect = {
 	every_in_list = {
 		list = $LIST$
 		limit = {
 			save_temporary_scope_as = handled_ruler
 			any_close_family_member = {
-				age >= bnw_bnw_spawn_age_min_value
-				age <= bnw_bnw_spawn_age_max_value
+				age >= rnw_rnw_spawn_age_min_value
+				age <= rnw_rnw_spawn_age_max_value
 			}
 			any_in_list = {
 				list = $FULL_LIST$
@@ -939,14 +939,14 @@ bnw_connect_families_effect = {
 		}
 		random_close_family_member = {
 			limit = {
-				age >= bnw_bnw_spawn_age_min_value
-				age <= bnw_bnw_spawn_age_max_value
+				age >= rnw_rnw_spawn_age_min_value
+				age <= rnw_rnw_spawn_age_max_value
 			}
 			weight = {
 				base = 10
 				modifier = {
 					factor = {
-						value = faith.bnw_female_chance
+						value = faith.rnw_female_chance
 						divide = 50
 					}
 					is_female = yes
@@ -982,26 +982,26 @@ bnw_connect_families_effect = {
 		resolve_title_and_vassal_change = scope:change
 	}
 }
-bnw_remove_claims_effect = {
+rnw_remove_claims_effect = {
 	every_county = {
-		bnw_title_remove_claims_effect = yes
+		rnw_title_remove_claims_effect = yes
 	}
 	every_duchy = {
-		bnw_title_remove_claims_effect = yes
+		rnw_title_remove_claims_effect = yes
 	}
 	every_kingdom = {
-		bnw_title_remove_claims_effect = yes
+		rnw_title_remove_claims_effect = yes
 	}
 	every_empire = {
-		bnw_title_remove_claims_effect = yes
+		rnw_title_remove_claims_effect = yes
 	}
 }
-bnw_title_remove_claims_effect = {
+rnw_title_remove_claims_effect = {
 	every_claimant = {
 		remove_claim = prev
 	}
 }
-bnw_convert_vassals_effect = {
+rnw_convert_vassals_effect = {
 	ordered_in_list = {
 		list = real_rulers
 		order_by = highest_held_title_tier
@@ -1034,7 +1034,7 @@ bnw_convert_vassals_effect = {
 		}
 	}
 }
-bnw_collect_titles_where_type_dominant_effect = {
+rnw_collect_titles_where_type_dominant_effect = {
 	if = {
 		limit = {
 			$TIER$ = tier_duchy
@@ -1106,7 +1106,7 @@ bnw_collect_titles_where_type_dominant_effect = {
 			order_by = var:counties_of_type_under_title
 			if = {
 				limit = {
-					bnw_percent_under_title >= $THRESHOLD$
+					rnw_percent_under_title >= $THRESHOLD$
 				}
 				add_to_variable_list = {
 					name = $LIST$
@@ -1129,7 +1129,7 @@ bnw_collect_titles_where_type_dominant_effect = {
 		remove_from_list = titles_to_handle
 	}
 }
-bnw_give_base_title_names_and_coas_effect = {
+rnw_give_base_title_names_and_coas_effect = {
 	save_temporary_scope_value_as = {
 		name = bellow_tier
 		value = {
@@ -1197,7 +1197,7 @@ bnw_give_base_title_names_and_coas_effect = {
 			random_in_list = {
 				list = to_title_list
 				save_temporary_scope_as = changed_title
-				bnw_merge_titles_effect = {
+				rnw_merge_titles_effect = {
 					DOMINANT = scope:base_title
 					SUBSERVIENT = scope:changed_title
 				}

@@ -1,637 +1,637 @@
-﻿bnw_faith_percent_used_value = {
+﻿rnw_faith_percent_used_value = {
     if = {
         limit = {
-            has_game_rule = 10_bnw_faith_percent_used
+            has_game_rule = 10_rnw_faith_percent_used
         }
         value = 0.1
     }
     else_if = {
         limit = {
-            has_game_rule = 20_bnw_faith_percent_used
+            has_game_rule = 20_rnw_faith_percent_used
         }
         value = 0.2
     }
     else_if = {
         limit = {
-            has_game_rule = 30_bnw_faith_percent_used
+            has_game_rule = 30_rnw_faith_percent_used
         }
         value = 0.3
     }
     else_if = {
         limit = {
-            has_game_rule = 40_bnw_faith_percent_used
+            has_game_rule = 40_rnw_faith_percent_used
         }
         value = 0.4
     }
     else_if = {
         limit = {
-            has_game_rule = 50_bnw_faith_percent_used
+            has_game_rule = 50_rnw_faith_percent_used
         }
         value = 0.5
     }
     else_if = {
         limit = {
-            has_game_rule = 60_bnw_faith_percent_used
+            has_game_rule = 60_rnw_faith_percent_used
         }
         value = 0.6
     }
     else_if = {
         limit = {
-            has_game_rule = 70_bnw_faith_percent_used
+            has_game_rule = 70_rnw_faith_percent_used
         }
         value = 0.7
     }
     else_if = {
         limit = {
-            has_game_rule = 80_bnw_faith_percent_used
+            has_game_rule = 80_rnw_faith_percent_used
         }
         value = 0.8
     }
     else_if = {
         limit = {
-            has_game_rule = 90_bnw_faith_percent_used
+            has_game_rule = 90_rnw_faith_percent_used
         }
         value = 0.9
     }
     else_if = {
         limit = {
-            has_game_rule = 100_bnw_faith_percent_used
+            has_game_rule = 100_rnw_faith_percent_used
         }
         value = 1
     }
 }
-bnw_bnw_spawn_age_min_value = {
+rnw_rnw_spawn_age_min_value = {
     if = {
         limit = {
-            has_game_rule = 0_bnw_spawn_age_min
+            has_game_rule = 0_rnw_spawn_age_min
         }
         value = 0
     }
     else_if = {
         limit = {
-            has_game_rule = 6_bnw_spawn_age_min
+            has_game_rule = 6_rnw_spawn_age_min
         }
         value = 6
     }
     else_if = {
         limit = {
-            has_game_rule = 12_bnw_spawn_age_min
+            has_game_rule = 12_rnw_spawn_age_min
         }
         value = 12
     }
     else_if = {
         limit = {
-            has_game_rule = 18_bnw_spawn_age_min
+            has_game_rule = 18_rnw_spawn_age_min
         }
         value = 18
     }
     else_if = {
         limit = {
-            has_game_rule = 24_bnw_spawn_age_min
+            has_game_rule = 24_rnw_spawn_age_min
         }
         value = 24
     }
     else_if = {
         limit = {
-            has_game_rule = 30_bnw_spawn_age_min
+            has_game_rule = 30_rnw_spawn_age_min
         }
         value = 30
     }
     else_if = {
         limit = {
-            has_game_rule = 36_bnw_spawn_age_min
+            has_game_rule = 36_rnw_spawn_age_min
         }
         value = 36
     }
     else_if = {
         limit = {
-            has_game_rule = 42_bnw_spawn_age_min
+            has_game_rule = 42_rnw_spawn_age_min
         }
         value = 42
     }
     else_if = {
         limit = {
-            has_game_rule = 48_bnw_spawn_age_min
+            has_game_rule = 48_rnw_spawn_age_min
         }
         value = 48
     }
     else_if = {
         limit = {
-            has_game_rule = 54_bnw_spawn_age_min
+            has_game_rule = 54_rnw_spawn_age_min
         }
         value = 54
     }
     else_if = {
         limit = {
-            has_game_rule = 60_bnw_spawn_age_min
+            has_game_rule = 60_rnw_spawn_age_min
         }
         value = 60
     }
     else_if = {
         limit = {
-            has_game_rule = 66_bnw_spawn_age_min
+            has_game_rule = 66_rnw_spawn_age_min
         }
         value = 66
     }
     else_if = {
         limit = {
-            has_game_rule = 72_bnw_spawn_age_min
+            has_game_rule = 72_rnw_spawn_age_min
         }
         value = 72
     }
     else_if = {
         limit = {
-            has_game_rule = 78_bnw_spawn_age_min
+            has_game_rule = 78_rnw_spawn_age_min
         }
         value = 78
     }
     else_if = {
         limit = {
-            has_game_rule = 84_bnw_spawn_age_min
+            has_game_rule = 84_rnw_spawn_age_min
         }
         value = 84
     }
     else_if = {
         limit = {
-            has_game_rule = 90_bnw_spawn_age_min
+            has_game_rule = 90_rnw_spawn_age_min
         }
         value = 90
     }
 }
-bnw_bnw_spawn_age_max_value = {
+rnw_rnw_spawn_age_max_value = {
     if = {
         limit = {
-            has_game_rule = 0_bnw_spawn_age_max
+            has_game_rule = 0_rnw_spawn_age_max
         }
         value = 0
     }
     else_if = {
         limit = {
-            has_game_rule = 6_bnw_spawn_age_max
+            has_game_rule = 6_rnw_spawn_age_max
         }
         value = 6
     }
     else_if = {
         limit = {
-            has_game_rule = 12_bnw_spawn_age_max
+            has_game_rule = 12_rnw_spawn_age_max
         }
         value = 12
     }
     else_if = {
         limit = {
-            has_game_rule = 18_bnw_spawn_age_max
+            has_game_rule = 18_rnw_spawn_age_max
         }
         value = 18
     }
     else_if = {
         limit = {
-            has_game_rule = 24_bnw_spawn_age_max
+            has_game_rule = 24_rnw_spawn_age_max
         }
         value = 24
     }
     else_if = {
         limit = {
-            has_game_rule = 30_bnw_spawn_age_max
+            has_game_rule = 30_rnw_spawn_age_max
         }
         value = 30
     }
     else_if = {
         limit = {
-            has_game_rule = 36_bnw_spawn_age_max
+            has_game_rule = 36_rnw_spawn_age_max
         }
         value = 36
     }
     else_if = {
         limit = {
-            has_game_rule = 42_bnw_spawn_age_max
+            has_game_rule = 42_rnw_spawn_age_max
         }
         value = 42
     }
     else_if = {
         limit = {
-            has_game_rule = 48_bnw_spawn_age_max
+            has_game_rule = 48_rnw_spawn_age_max
         }
         value = 48
     }
     else_if = {
         limit = {
-            has_game_rule = 54_bnw_spawn_age_max
+            has_game_rule = 54_rnw_spawn_age_max
         }
         value = 54
     }
     else_if = {
         limit = {
-            has_game_rule = 60_bnw_spawn_age_max
+            has_game_rule = 60_rnw_spawn_age_max
         }
         value = 60
     }
     else_if = {
         limit = {
-            has_game_rule = 66_bnw_spawn_age_max
+            has_game_rule = 66_rnw_spawn_age_max
         }
         value = 66
     }
     else_if = {
         limit = {
-            has_game_rule = 72_bnw_spawn_age_max
+            has_game_rule = 72_rnw_spawn_age_max
         }
         value = 72
     }
     else_if = {
         limit = {
-            has_game_rule = 78_bnw_spawn_age_max
+            has_game_rule = 78_rnw_spawn_age_max
         }
         value = 78
     }
     else_if = {
         limit = {
-            has_game_rule = 84_bnw_spawn_age_max
+            has_game_rule = 84_rnw_spawn_age_max
         }
         value = 84
     }
     else_if = {
         limit = {
-            has_game_rule = 90_bnw_spawn_age_max
+            has_game_rule = 90_rnw_spawn_age_max
         }
         value = 90
     }
 }
-bnw_counties_per_character_min_value = {
+rnw_counties_per_character_min_value = {
     if = {
         limit = {
-            has_game_rule = 1_bnw_counties_per_character_min
+            has_game_rule = 1_rnw_counties_per_character_min
         }
         value = 1
     }
     else_if = {
         limit = {
-            has_game_rule = 2_bnw_counties_per_character_min
+            has_game_rule = 2_rnw_counties_per_character_min
         }
         value = 2
     }
     else_if = {
         limit = {
-            has_game_rule = 3_bnw_counties_per_character_min
+            has_game_rule = 3_rnw_counties_per_character_min
         }
         value = 3
     }
     else_if = {
         limit = {
-            has_game_rule = 4_bnw_counties_per_character_min
+            has_game_rule = 4_rnw_counties_per_character_min
         }
         value = 4
     }
     else_if = {
         limit = {
-            has_game_rule = 5_bnw_counties_per_character_min
+            has_game_rule = 5_rnw_counties_per_character_min
         }
         value = 5
     }
     else_if = {
         limit = {
-            has_game_rule = 6_bnw_counties_per_character_min
+            has_game_rule = 6_rnw_counties_per_character_min
         }
         value = 6
     }
     else_if = {
         limit = {
-            has_game_rule = 7_bnw_counties_per_character_min
+            has_game_rule = 7_rnw_counties_per_character_min
         }
         value = 7
     }
     else_if = {
         limit = {
-            has_game_rule = 8_bnw_counties_per_character_min
+            has_game_rule = 8_rnw_counties_per_character_min
         }
         value = 8
     }
 }
-bnw_counties_per_character_max_value = {
+rnw_counties_per_character_max_value = {
     if = {
         limit = {
-            has_game_rule = 1_bnw_counties_per_character_max
+            has_game_rule = 1_rnw_counties_per_character_max
         }
         value = 1
     }
     else_if = {
         limit = {
-            has_game_rule = 2_bnw_counties_per_character_max
+            has_game_rule = 2_rnw_counties_per_character_max
         }
         value = 2
     }
     else_if = {
         limit = {
-            has_game_rule = 3_bnw_counties_per_character_max
+            has_game_rule = 3_rnw_counties_per_character_max
         }
         value = 3
     }
     else_if = {
         limit = {
-            has_game_rule = 4_bnw_counties_per_character_max
+            has_game_rule = 4_rnw_counties_per_character_max
         }
         value = 4
     }
     else_if = {
         limit = {
-            has_game_rule = 5_bnw_counties_per_character_max
+            has_game_rule = 5_rnw_counties_per_character_max
         }
         value = 5
     }
     else_if = {
         limit = {
-            has_game_rule = 6_bnw_counties_per_character_max
+            has_game_rule = 6_rnw_counties_per_character_max
         }
         value = 6
     }
     else_if = {
         limit = {
-            has_game_rule = 7_bnw_counties_per_character_max
+            has_game_rule = 7_rnw_counties_per_character_max
         }
         value = 7
     }
     else_if = {
         limit = {
-            has_game_rule = 8_bnw_counties_per_character_max
+            has_game_rule = 8_rnw_counties_per_character_max
         }
         value = 8
     }
 }
-bnw_de_jure_kingdom_min_size_value = {
+rnw_de_jure_kingdom_min_size_value = {
     if = {
         limit = {
-            has_game_rule = 2_bnw_de_jure_kingdom_min_size
+            has_game_rule = 2_rnw_de_jure_kingdom_min_size
         }
         value = 2
     }
     else_if = {
         limit = {
-            has_game_rule = 3_bnw_de_jure_kingdom_min_size
+            has_game_rule = 3_rnw_de_jure_kingdom_min_size
         }
         value = 3
     }
     else_if = {
         limit = {
-            has_game_rule = 4_bnw_de_jure_kingdom_min_size
+            has_game_rule = 4_rnw_de_jure_kingdom_min_size
         }
         value = 4
     }
     else_if = {
         limit = {
-            has_game_rule = 5_bnw_de_jure_kingdom_min_size
+            has_game_rule = 5_rnw_de_jure_kingdom_min_size
         }
         value = 5
     }
     else_if = {
         limit = {
-            has_game_rule = 6_bnw_de_jure_kingdom_min_size
+            has_game_rule = 6_rnw_de_jure_kingdom_min_size
         }
         value = 6
     }
     else_if = {
         limit = {
-            has_game_rule = 7_bnw_de_jure_kingdom_min_size
+            has_game_rule = 7_rnw_de_jure_kingdom_min_size
         }
         value = 7
     }
     else_if = {
         limit = {
-            has_game_rule = 8_bnw_de_jure_kingdom_min_size
+            has_game_rule = 8_rnw_de_jure_kingdom_min_size
         }
         value = 8
     }
     else_if = {
         limit = {
-            has_game_rule = 9_bnw_de_jure_kingdom_min_size
+            has_game_rule = 9_rnw_de_jure_kingdom_min_size
         }
         value = 9
     }
     else_if = {
         limit = {
-            has_game_rule = 10_bnw_de_jure_kingdom_min_size
+            has_game_rule = 10_rnw_de_jure_kingdom_min_size
         }
         value = 10
     }
     else_if = {
         limit = {
-            has_game_rule = 11_bnw_de_jure_kingdom_min_size
+            has_game_rule = 11_rnw_de_jure_kingdom_min_size
         }
         value = 11
     }
     else_if = {
         limit = {
-            has_game_rule = 12_bnw_de_jure_kingdom_min_size
+            has_game_rule = 12_rnw_de_jure_kingdom_min_size
         }
         value = 12
     }
 }
-bnw_de_jure_kingdom_max_size_value = {
+rnw_de_jure_kingdom_max_size_value = {
     if = {
         limit = {
-            has_game_rule = 2_bnw_de_jure_kingdom_max_size
+            has_game_rule = 2_rnw_de_jure_kingdom_max_size
         }
         value = 2
     }
     else_if = {
         limit = {
-            has_game_rule = 3_bnw_de_jure_kingdom_max_size
+            has_game_rule = 3_rnw_de_jure_kingdom_max_size
         }
         value = 3
     }
     else_if = {
         limit = {
-            has_game_rule = 4_bnw_de_jure_kingdom_max_size
+            has_game_rule = 4_rnw_de_jure_kingdom_max_size
         }
         value = 4
     }
     else_if = {
         limit = {
-            has_game_rule = 5_bnw_de_jure_kingdom_max_size
+            has_game_rule = 5_rnw_de_jure_kingdom_max_size
         }
         value = 5
     }
     else_if = {
         limit = {
-            has_game_rule = 6_bnw_de_jure_kingdom_max_size
+            has_game_rule = 6_rnw_de_jure_kingdom_max_size
         }
         value = 6
     }
     else_if = {
         limit = {
-            has_game_rule = 7_bnw_de_jure_kingdom_max_size
+            has_game_rule = 7_rnw_de_jure_kingdom_max_size
         }
         value = 7
     }
     else_if = {
         limit = {
-            has_game_rule = 8_bnw_de_jure_kingdom_max_size
+            has_game_rule = 8_rnw_de_jure_kingdom_max_size
         }
         value = 8
     }
     else_if = {
         limit = {
-            has_game_rule = 9_bnw_de_jure_kingdom_max_size
+            has_game_rule = 9_rnw_de_jure_kingdom_max_size
         }
         value = 9
     }
     else_if = {
         limit = {
-            has_game_rule = 10_bnw_de_jure_kingdom_max_size
+            has_game_rule = 10_rnw_de_jure_kingdom_max_size
         }
         value = 10
     }
     else_if = {
         limit = {
-            has_game_rule = 11_bnw_de_jure_kingdom_max_size
+            has_game_rule = 11_rnw_de_jure_kingdom_max_size
         }
         value = 11
     }
     else_if = {
         limit = {
-            has_game_rule = 12_bnw_de_jure_kingdom_max_size
+            has_game_rule = 12_rnw_de_jure_kingdom_max_size
         }
         value = 12
     }
 }
-bnw_de_jure_empire_min_size_value = {
+rnw_de_jure_empire_min_size_value = {
     if = {
         limit = {
-            has_game_rule = 2_bnw_de_jure_empire_min_size
+            has_game_rule = 2_rnw_de_jure_empire_min_size
         }
         value = 2
     }
     else_if = {
         limit = {
-            has_game_rule = 3_bnw_de_jure_empire_min_size
+            has_game_rule = 3_rnw_de_jure_empire_min_size
         }
         value = 3
     }
     else_if = {
         limit = {
-            has_game_rule = 4_bnw_de_jure_empire_min_size
+            has_game_rule = 4_rnw_de_jure_empire_min_size
         }
         value = 4
     }
     else_if = {
         limit = {
-            has_game_rule = 5_bnw_de_jure_empire_min_size
+            has_game_rule = 5_rnw_de_jure_empire_min_size
         }
         value = 5
     }
     else_if = {
         limit = {
-            has_game_rule = 6_bnw_de_jure_empire_min_size
+            has_game_rule = 6_rnw_de_jure_empire_min_size
         }
         value = 6
     }
     else_if = {
         limit = {
-            has_game_rule = 7_bnw_de_jure_empire_min_size
+            has_game_rule = 7_rnw_de_jure_empire_min_size
         }
         value = 7
     }
     else_if = {
         limit = {
-            has_game_rule = 8_bnw_de_jure_empire_min_size
+            has_game_rule = 8_rnw_de_jure_empire_min_size
         }
         value = 8
     }
     else_if = {
         limit = {
-            has_game_rule = 9_bnw_de_jure_empire_min_size
+            has_game_rule = 9_rnw_de_jure_empire_min_size
         }
         value = 9
     }
     else_if = {
         limit = {
-            has_game_rule = 10_bnw_de_jure_empire_min_size
+            has_game_rule = 10_rnw_de_jure_empire_min_size
         }
         value = 10
     }
     else_if = {
         limit = {
-            has_game_rule = 11_bnw_de_jure_empire_min_size
+            has_game_rule = 11_rnw_de_jure_empire_min_size
         }
         value = 11
     }
     else_if = {
         limit = {
-            has_game_rule = 12_bnw_de_jure_empire_min_size
+            has_game_rule = 12_rnw_de_jure_empire_min_size
         }
         value = 12
     }
 }
-bnw_de_jure_empire_max_size_value = {
+rnw_de_jure_empire_max_size_value = {
     if = {
         limit = {
-            has_game_rule = 2_bnw_de_jure_empire_max_size
+            has_game_rule = 2_rnw_de_jure_empire_max_size
         }
         value = 2
     }
     else_if = {
         limit = {
-            has_game_rule = 3_bnw_de_jure_empire_max_size
+            has_game_rule = 3_rnw_de_jure_empire_max_size
         }
         value = 3
     }
     else_if = {
         limit = {
-            has_game_rule = 4_bnw_de_jure_empire_max_size
+            has_game_rule = 4_rnw_de_jure_empire_max_size
         }
         value = 4
     }
     else_if = {
         limit = {
-            has_game_rule = 5_bnw_de_jure_empire_max_size
+            has_game_rule = 5_rnw_de_jure_empire_max_size
         }
         value = 5
     }
     else_if = {
         limit = {
-            has_game_rule = 6_bnw_de_jure_empire_max_size
+            has_game_rule = 6_rnw_de_jure_empire_max_size
         }
         value = 6
     }
     else_if = {
         limit = {
-            has_game_rule = 7_bnw_de_jure_empire_max_size
+            has_game_rule = 7_rnw_de_jure_empire_max_size
         }
         value = 7
     }
     else_if = {
         limit = {
-            has_game_rule = 8_bnw_de_jure_empire_max_size
+            has_game_rule = 8_rnw_de_jure_empire_max_size
         }
         value = 8
     }
     else_if = {
         limit = {
-            has_game_rule = 9_bnw_de_jure_empire_max_size
+            has_game_rule = 9_rnw_de_jure_empire_max_size
         }
         value = 9
     }
     else_if = {
         limit = {
-            has_game_rule = 10_bnw_de_jure_empire_max_size
+            has_game_rule = 10_rnw_de_jure_empire_max_size
         }
         value = 10
     }
     else_if = {
         limit = {
-            has_game_rule = 11_bnw_de_jure_empire_max_size
+            has_game_rule = 11_rnw_de_jure_empire_max_size
         }
         value = 11
     }
     else_if = {
         limit = {
-            has_game_rule = 12_bnw_de_jure_empire_max_size
+            has_game_rule = 12_rnw_de_jure_empire_max_size
         }
         value = 12
     }
 }
-bnw_doctrine_gender_male_dominated_multiplier = {
+rnw_doctrine_gender_male_dominated_multiplier = {
     if = {
         limit = {
-            has_game_rule = male_bnw_doctrine_gender_preference
+            has_game_rule = male_rnw_doctrine_gender_preference
         }
         value = 4
     }
@@ -639,10 +639,10 @@ bnw_doctrine_gender_male_dominated_multiplier = {
         value = 1
     }
 }
-bnw_doctrine_gender_equal_multiplier = {
+rnw_doctrine_gender_equal_multiplier = {
     if = {
         limit = {
-            has_game_rule = equal_bnw_doctrine_gender_preference
+            has_game_rule = equal_rnw_doctrine_gender_preference
         }
         value = 4
     }
@@ -650,10 +650,10 @@ bnw_doctrine_gender_equal_multiplier = {
         value = 1
     }
 }
-bnw_doctrine_gender_female_dominated_multiplier = {
+rnw_doctrine_gender_female_dominated_multiplier = {
     if = {
         limit = {
-            has_game_rule = female_bnw_doctrine_gender_preference
+            has_game_rule = female_rnw_doctrine_gender_preference
         }
         value = 4
     }
@@ -661,22 +661,22 @@ bnw_doctrine_gender_female_dominated_multiplier = {
         value = 1
     }
 }
-bnw_starting_resources_multiplier = {
+rnw_starting_resources_multiplier = {
     if = {
         limit = {
-            has_game_rule = less_bnw_starting_resources
+            has_game_rule = less_rnw_starting_resources
         }
         value = 0.5
     }
     else_if = {
         limit = {
-            has_game_rule = normal_bnw_starting_resources
+            has_game_rule = normal_rnw_starting_resources
         }
         value = 1
     }
     else_if = {
         limit = {
-            has_game_rule = more_bnw_starting_resources
+            has_game_rule = more_rnw_starting_resources
         }
         value = 2
     }

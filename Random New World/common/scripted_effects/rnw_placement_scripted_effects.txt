@@ -1,11 +1,11 @@
-﻿bnw_collect_all_faiths_to_target_list_effect = {
+﻿rnw_collect_all_faiths_to_target_list_effect = {
     every_religion_global = {
         every_faith = {
             add_to_list = $TARGET$
         }
     }
 }
-bnw_select_percent_of_list_to_target_list_effect = {
+rnw_select_percent_of_list_to_target_list_effect = {
     save_temporary_scope_value_as = {
         name = num_of_scopes_to_select
         value = {
@@ -73,7 +73,7 @@ bnw_select_percent_of_list_to_target_list_effect = {
         }
     }
 }
-bnw_select_faith_starting_location_effect = {
+rnw_select_faith_starting_location_effect = {
     while = {
         limit = {
             any_in_list = {
@@ -122,7 +122,7 @@ bnw_select_faith_starting_location_effect = {
                         trigger_if = {
                             limit = {
                                 NOT = {
-                                    has_game_rule = full_bnw_faith_placement_randomization
+                                    has_game_rule = full_rnw_faith_placement_randomization
                                 }
                             }
                             save_temporary_scope_as = target_county
@@ -152,7 +152,7 @@ bnw_select_faith_starting_location_effect = {
                         modifier = {
                             factor = 20
                             NOT = {
-                                has_game_rule = full_bnw_faith_placement_randomization
+                                has_game_rule = full_rnw_faith_placement_randomization
                             }
                             save_temporary_scope_as = target_county
                             scope:selected_faith = {
@@ -167,7 +167,7 @@ bnw_select_faith_starting_location_effect = {
                         modifier = {
                             factor = 10
                             NOT = {
-                                has_game_rule = full_bnw_faith_placement_randomization
+                                has_game_rule = full_rnw_faith_placement_randomization
                             }
                             save_temporary_scope_as = target_county
                             scope:selected_faith = {
@@ -182,7 +182,7 @@ bnw_select_faith_starting_location_effect = {
                         modifier = {
                             factor = 5
                             NOT = {
-                                has_game_rule = full_bnw_faith_placement_randomization
+                                has_game_rule = full_rnw_faith_placement_randomization
                             }
                             save_temporary_scope_as = target_county
                             scope:selected_faith = {
@@ -262,7 +262,7 @@ bnw_select_faith_starting_location_effect = {
         remove_variable = has_at_least_one_faith
 	}
 }
-bnw_spread_conversion_targets_effect = {
+rnw_spread_conversion_targets_effect = {
     every_in_list = {
         list = $LIST$
         set_variable = {
@@ -315,24 +315,24 @@ bnw_spread_conversion_targets_effect = {
                 NOT = { exists = var:conversion_target }
 				OR = {
 					any_neighboring_county = {
-						bnw_can_convert_province_trigger = yes
+						rnw_can_convert_province_trigger = yes
 					}
 					any_title_to_title_neighboring_and_across_water_county = {
-						bnw_can_convert_province_trigger = yes
+						rnw_can_convert_province_trigger = yes
 					}
 				}
             }
             save_temporary_scope_as = county_to_select_conversion_target
             every_neighboring_county = {
                 limit = {
-                    bnw_can_convert_province_trigger = yes
+                    rnw_can_convert_province_trigger = yes
                 }
 				add_to_list = counties_to_select_from
 				set_variable = { name = conversion_strenght_multiplier value = 1 }
 			}
 			every_title_to_title_neighboring_and_across_water_county = {
 				limit = {
-					bnw_can_convert_province_trigger = yes
+					rnw_can_convert_province_trigger = yes
 					NOT = {
 						is_in_list = counties_to_select_from
 					}
@@ -354,7 +354,7 @@ bnw_spread_conversion_targets_effect = {
 			every_neighboring_county = {
 				every_neighboring_county = {
 					limit = {
-						bnw_can_convert_province_trigger = yes
+						rnw_can_convert_province_trigger = yes
 						NOR = {
                             is_in_list = counties_to_select_from
                             scope:conversion_target_type = flag:culture
@@ -380,7 +380,7 @@ bnw_spread_conversion_targets_effect = {
 						add = {
 							value = var:conversion_target_spread_strenght
 							multiply = scope:selected_county.var:conversion_strenght_multiplier
-							multiply = scope:selected_county.bnw_spread_extra_score
+							multiply = scope:selected_county.rnw_spread_extra_score
 						}
 					}
                 }
@@ -420,7 +420,7 @@ bnw_spread_conversion_targets_effect = {
         }
     }
 }
-bnw_flip_conversion_targets_effect = {
+rnw_flip_conversion_targets_effect = {
     every_county = {
         limit = {
             exists = var:conversion_target
@@ -440,7 +440,7 @@ bnw_flip_conversion_targets_effect = {
 		remove_variable = conversion_target
     }
 }
-bnw_collect_all_cultures_and_groups_to_target_list_effect = {
+rnw_collect_all_cultures_and_groups_to_target_list_effect = {
     every_county = {
         if = {
             limit = {
@@ -494,7 +494,7 @@ bnw_collect_all_cultures_and_groups_to_target_list_effect = {
         }
     }
 }
-bnw_collect_same_culture_group_of_list_to_target_list_effect = {
+rnw_collect_same_culture_group_of_list_to_target_list_effect = {
     every_in_list = {
         list = $CULTURE_LIST$
         limit = {
@@ -503,7 +503,7 @@ bnw_collect_same_culture_group_of_list_to_target_list_effect = {
         add_to_list = $TARGET$
     }
 }
-bnw_select_culture_starting_location_effect = {
+rnw_select_culture_starting_location_effect = {
     while = {
         limit = {
             any_in_list = {
@@ -519,13 +519,13 @@ bnw_select_culture_starting_location_effect = {
             if = {
                 limit = {
                     NOT = {
-                        has_game_rule = full_bnw_culture_placement_randomization
+                        has_game_rule = full_rnw_culture_placement_randomization
                     }
                 }
                 culture_group = {
                     save_temporary_scope_as = selected_culture_group
                 }
-                bnw_collect_same_culture_group_of_list_to_target_list_effect = {
+                rnw_collect_same_culture_group_of_list_to_target_list_effect = {
                     CULTURE_LIST = $LIST$
                     TARGET = same_culture_group_list
                     CULTURE_GROUP = scope:selected_culture_group

@@ -1,15 +1,15 @@
-﻿bnw_resolve_doctrine_theocracy_change_effect = {
+﻿rnw_resolve_doctrine_theocracy_change_effect = {
     if = {
         limit = {
             is_landed = yes
             is_ai = yes
-            bnw_should_turn_theocracy_trigger = yes
-            bnw_is_religious_head_trigger = no
+            rnw_should_turn_theocracy_trigger = yes
+            rnw_is_religious_head_trigger = no
         }
         change_government = theocracy_government
     }
 }
-bnw_resolve_doctrine_head_of_faith_change_effect = {
+rnw_resolve_doctrine_head_of_faith_change_effect = {
     every_religion_global = {
         every_faith = {
             save_temporary_scope_as = selected_faith
@@ -44,13 +44,13 @@ bnw_resolve_doctrine_head_of_faith_change_effect = {
 							is_landed = yes
 							is_ai = yes
 							OR = {
-								bnw_should_turn_theocracy_trigger = yes
-								bnw_should_turn_feudal_trigger = yes
+								rnw_should_turn_theocracy_trigger = yes
+								rnw_should_turn_feudal_trigger = yes
 							}
 						}
 						if = {
 							limit = {
-								bnw_should_turn_theocracy_trigger = yes
+								rnw_should_turn_theocracy_trigger = yes
 							}
 							change_government = theocracy_government
 						}
@@ -72,7 +72,7 @@ bnw_resolve_doctrine_head_of_faith_change_effect = {
                     }
                     any_in_list = {
                         list = real_rulers
-                        bnw_ruler_can_create_head_of_faith_title_trigger = yes
+                        rnw_ruler_can_create_head_of_faith_title_trigger = yes
                     }
                 }
                 random = {
@@ -118,7 +118,7 @@ bnw_resolve_doctrine_head_of_faith_change_effect = {
                     random_in_list = {
                         list = real_rulers
                         limit = {
-                            bnw_ruler_can_create_head_of_faith_title_trigger = yes
+                            rnw_ruler_can_create_head_of_faith_title_trigger = yes
                             save_temporary_scope_as = checked_ruler
 							faith = {
 								num_realm_holy_sites_faithful_holders = {
@@ -128,7 +128,7 @@ bnw_resolve_doctrine_head_of_faith_change_effect = {
 							}
                         }
                         alternative_limit = {
-                            bnw_ruler_can_create_head_of_faith_title_trigger = yes
+                            rnw_ruler_can_create_head_of_faith_title_trigger = yes
                             save_temporary_scope_as = checked_ruler
 							faith = {
 								num_realm_holy_sites_faithful_holders = {
@@ -138,16 +138,16 @@ bnw_resolve_doctrine_head_of_faith_change_effect = {
 							}
                         }
                         alternative_limit = {
-                            bnw_ruler_can_create_head_of_faith_title_trigger = yes
+                            rnw_ruler_can_create_head_of_faith_title_trigger = yes
                         }
-                        bnw_create_head_of_faith_title_effect = yes
+                        rnw_create_head_of_faith_title_effect = yes
                     }
                 }
             }
         }
     }
 }
-bnw_create_head_of_faith_title_effect = {
+rnw_create_head_of_faith_title_effect = {
     save_temporary_scope_as = title_creator
     
     if = {
@@ -176,7 +176,7 @@ bnw_create_head_of_faith_title_effect = {
         else = {
             create_character = {
                 location = scope:title_creator.capital_province
-                template = bnw_religious_leader_character
+                template = rnw_religious_leader_character
                 save_temporary_scope_as = new_religious_head
             }
         }

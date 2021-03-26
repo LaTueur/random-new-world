@@ -1,0 +1,9 @@
+﻿rnw_faith_doctrine_high_chance          = 40
+rnw_faith_doctrine_averange_chance      = 30
+rnw_faith_doctrine_low_chance           = 20
+rnw_faith_doctrine_very_low_chance      = 10
+rnw_faith_doctrine_really_low_chance    = 5
+
+rnw_religion_doctrine_preferences_modifier = 5
+
+rnw_doctrine_theocracy_temporal_multiplier = 3

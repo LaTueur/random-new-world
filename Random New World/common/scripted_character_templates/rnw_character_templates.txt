@@ -1,4 +1,4 @@
-﻿bnw_religious_leader_character = {
+﻿rnw_religious_leader_character = {
 	age = { 20 50 }
 	#Education
 	random_traits_list = {

@@ -1,0 +1,31 @@
+﻿on_game_start_after_lobby = {
+    on_actions = {
+        rnw_on_game_start_after_lobby
+    }
+}
+rnw_on_game_start_after_lobby = {
+    effect = {
+		rnw_de_jure_setup_randomization_effect = yes
+        rnw_faith_doctrine_randomization_effect = yes
+        rnw_faith_placement_randomization_effect = yes
+        rnw_culture_placement_randomization_effect = yes
+        rnw_realm_setup_randomization_effect = yes
+        rnw_collect_rulers_effect = yes
+        rnw_faith_doctrine_randomization_after_effect = yes
+        rnw_family_generation_and_connection_effect = yes
+        rnw_starting_resources_effect = yes
+        rnw_give_title_names_and_coas_effect = yes
+    }
+}
+rnw_faith_randomization_character_check = {
+	effect = {
+        check_for_equal_doctrine_effect = yes
+        rnw_resolve_doctrine_theocracy_change_effect = yes
+	}
+    events = {
+		faith_conversion.0002 # Remove obsolete modifiers
+		faith_conversion.0004 # Convert Theocracies
+        faith_conversion.0005 # Update marriage opinions
+		war_event.3100		# Handles invalidation of religious wars
+    }
+}

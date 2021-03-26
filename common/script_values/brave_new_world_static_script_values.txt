@@ -1,9 +1,0 @@
-﻿bnw_faith_doctrine_high_chance          = 40
-bnw_faith_doctrine_averange_chance      = 30
-bnw_faith_doctrine_low_chance           = 20
-bnw_faith_doctrine_very_low_chance      = 10
-bnw_faith_doctrine_really_low_chance    = 5
-
-bnw_religion_doctrine_preferences_modifier = 5
-
-bnw_doctrine_theocracy_temporal_multiplier = 3
