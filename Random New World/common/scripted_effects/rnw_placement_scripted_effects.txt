@@ -688,3 +688,5 @@ rnw_choose_multiple_holy_site_effect = {
 }
 rnw_forward_to_holy_site_choice_effect = {
 }
+rnw_set_up_holy_site_buildings_effect = {
+}

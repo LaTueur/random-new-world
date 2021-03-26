@@ -323,5 +323,6 @@ rnw_holy_site_randomization_effect = {
             list = faith_list
             remove_variable = already_selected
         }
+        rnw_set_up_holy_site_buildings_effect = yes
     }
 }

@@ -4,7 +4,6 @@
             is_landed = yes
             is_ai = yes
             rnw_should_turn_theocracy_trigger = yes
-            rnw_is_religious_head_trigger = no
         }
         change_government = theocracy_government
     }
@@ -16,57 +15,12 @@ rnw_resolve_doctrine_head_of_faith_change_effect = {
             if = {
                 limit = {
                     exists = religious_head_title
-                    has_doctrine_parameter = no_head_of_faith
                 }
                 remove_religious_head_title = yes
             }
             if = {
                 limit = {
-                    exists = religious_head
-                    OR = {
-                        AND = {
-                            religious_head = {
-								NOT = { has_government = theocracy_government }
-							}
-                            has_doctrine_parameter = spiritual_head_of_faith
-                        }
-                        AND = {
-                            religious_head = {
-								has_government = theocracy_government
-							}
-                            has_doctrine_parameter = temporal_head_of_faith
-                        }
-                    }
-                }
-				religious_head = {
-					if = {
-						limit = {
-							is_landed = yes
-							is_ai = yes
-							OR = {
-								rnw_should_turn_theocracy_trigger = yes
-								rnw_should_turn_feudal_trigger = yes
-							}
-						}
-						if = {
-							limit = {
-								rnw_should_turn_theocracy_trigger = yes
-							}
-							change_government = theocracy_government
-						}
-						else = {
-							trigger_event = faith_conversion.0004
-						}
-					}
-					else = {
-						destroy_title = faith.religious_head_title
-					}
-				}
-            }
-            if = {
-                limit = {
                     NOR = {
-                        exists = religious_head
                         has_doctrine_parameter = no_head_of_faith
                         has_doctrine = unreformed_faith_doctrine
                     }
@@ -84,11 +38,11 @@ rnw_resolve_doctrine_head_of_faith_change_effect = {
                     modifier = {
                         factor = {
                             value = num_county_followers
-                            divide = 45
+                            divide = 20
                         }
                     }
                     modifier = {
-                        factor = 2
+                        factor = 3
                         any_in_list = {
                             list = real_rulers
                             save_temporary_scope_as = checked_ruler
@@ -102,7 +56,7 @@ rnw_resolve_doctrine_head_of_faith_change_effect = {
                         }
                     }
                     modifier = {
-                        factor = 2
+                        factor = 3
                         any_in_list = {
                             list = real_rulers
                             save_temporary_scope_as = checked_ruler
@@ -285,4 +239,18 @@ rnw_create_head_of_faith_title_effect = {
         }
         clear_saved_scope = new_title
     }
+}
+rnw_check_for_equal_doctrine_effect = {
+	if = {
+		limit = {
+			is_landed = yes
+			faith = {
+				has_doctrine = doctrine_gender_equal
+			}
+			NOT = {
+				has_realm_law = equal_law
+			}
+		}
+		add_realm_law_skip_effects = equal_law
+	}
 }
