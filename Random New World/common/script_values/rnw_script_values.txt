@@ -8,7 +8,7 @@
             limit = {
                 faith = scope:county_to_select_conversion_target.faith
             }
-            multiply = 2
+            add = 1
             if = {
                 limit = {
                     faith = {
@@ -18,7 +18,7 @@
                         }
                     }
                 }
-                multiply = 1.5
+                add = 1
             }
         }
         else_if = {
@@ -38,20 +38,35 @@
                     }
                 }
             }
-            multiply = 0.6
+            subtract = 0.4
+        }
+    }
+    else = {
+        limit = {
+            scope:conversion_target_type = flag:faith
+        }
+        if = {
+            limit = {
+                faith = {
+                    any_holy_site = {
+                        county = scope:county_to_select_conversion_target
+                    }
+                }
+            }
+            add = 2
         }
     }
     if = {
         limit = {
             duchy = scope:county_to_select_conversion_target.duchy
         }
-        multiply = 2
+        add = 1
     }
     else_if = {
         limit = {
             kingdom = scope:county_to_select_conversion_target.kingdom
         }
-        multiply = 1.5
+        add = 0.6
     }
 }
 rnw_num_of_held_de_jure_counties = {

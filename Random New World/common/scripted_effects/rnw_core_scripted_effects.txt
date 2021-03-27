@@ -71,10 +71,18 @@
     }
 }
 rnw_faith_doctrine_randomization_after_effect = {
-    rnw_resolve_doctrine_head_of_faith_change_effect = yes
-    every_living_character = {
-        trigger_event = {
-            on_action = rnw_faith_randomization_character_check
+    if = {
+        limit = {
+            NAND = {
+                has_game_rule = off_rnw_faith_placement_randomization
+                has_game_rule = off_rnw_realm_setup_randomization
+            }
+        }
+        rnw_resolve_doctrine_head_of_faith_change_effect = yes
+        every_living_character = {
+            trigger_event = {
+                on_action = rnw_faith_randomization_character_check
+            }
         }
     }
 }

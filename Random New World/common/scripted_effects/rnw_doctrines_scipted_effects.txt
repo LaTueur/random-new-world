@@ -30,19 +30,13 @@ rnw_resolve_doctrine_head_of_faith_change_effect = {
                     }
                 }
                 random = {
-                    chance = 10
+                    chance = 30
                     modifier = {
-                        add = 10
+                        add = 70
                         has_doctrine_parameter = spiritual_head_of_faith 
                     }
                     modifier = {
-                        factor = {
-                            value = num_county_followers
-                            divide = 20
-                        }
-                    }
-                    modifier = {
-                        factor = 3
+                        factor = 4
                         any_in_list = {
                             list = real_rulers
                             save_temporary_scope_as = checked_ruler
@@ -50,20 +44,6 @@ rnw_resolve_doctrine_head_of_faith_change_effect = {
 							faith = {
 								num_realm_holy_sites_faithful_holders = {
 									COUNT = 1
-									CHARACTER = scope:checked_ruler
-								}
-							}
-                        }
-                    }
-                    modifier = {
-                        factor = 3
-                        any_in_list = {
-                            list = real_rulers
-                            save_temporary_scope_as = checked_ruler
-                            faith = scope:selected_faith
-							faith = {
-								num_realm_holy_sites_faithful_holders = {
-									COUNT = 2
 									CHARACTER = scope:checked_ruler
 								}
 							}
