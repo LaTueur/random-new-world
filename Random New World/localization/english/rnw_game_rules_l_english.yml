@@ -1,11 +1,11 @@
 ﻿l_english:
- rule_rnw_realm_setup_randomization:0 "#X BNW:#! Realm Setup"
+ rule_rnw_realm_setup_randomization:0 "#X RNW:#! Realm Setup"
  setting_off_rnw_realm_setup_randomization:0 "#high Historical#!"
  setting_off_rnw_realm_setup_randomization_desc:0 "The realm setup will be unchanged.\n#high This disables the effect of most other rules.#!"
  setting_on_rnw_realm_setup_randomization:0 "Random"
  setting_on_rnw_realm_setup_randomization_desc:0 "The realm setup will be randomized."
 
- rule_rnw_counties_per_character_min:0 "#X BNW:#! Minimum Counties Per Ruler"
+ rule_rnw_counties_per_character_min:0 "#X RNW:#! Minimum Counties Per Ruler"
  setting_1_rnw_counties_per_character_min:0 "1 County"
  setting_1_rnw_counties_per_character_min_desc:0 "All rulers will try to get at least 1 county."
  setting_2_rnw_counties_per_character_min:0 "2 Counties"
@@ -23,7 +23,7 @@
  setting_8_rnw_counties_per_character_min:0 "8 Counties"
  setting_8_rnw_counties_per_character_min_desc:0 "All rulers will try to get at least 8 counties."
 
- rule_rnw_counties_per_character_max:0 "#X BNW:#! Maximum Counties Per Ruler"
+ rule_rnw_counties_per_character_max:0 "#X RNW:#! Maximum Counties Per Ruler"
  setting_1_rnw_counties_per_character_max:0 "1 County"
  setting_1_rnw_counties_per_character_max_desc:0 "All rulers will try to get at most 1 county."
  setting_2_rnw_counties_per_character_max:0 "2 Counties"
@@ -41,7 +41,7 @@
  setting_8_rnw_counties_per_character_max:0 "8 Counties"
  setting_8_rnw_counties_per_character_max_desc:0 "All rulers will try to get at most 8 counties."
  
- rule_rnw_spawn_age_min:0 "#X BNW:#! Minimum Ruler Age"
+ rule_rnw_spawn_age_min:0 "#X RNW:#! Minimum Ruler Age"
  setting_0_rnw_spawn_age_min:0 "0 Years"
  setting_0_rnw_spawn_age_min_desc:0 "All rulers will be at least 0 years old."
  setting_6_rnw_spawn_age_min:0 "6 Years"
@@ -75,7 +75,7 @@
  setting_90_rnw_spawn_age_min:0 "90 Years"
  setting_90_rnw_spawn_age_min_desc:0 "All rulers will be at least 90 years old."
  
- rule_rnw_spawn_age_max:0 "#X BNW:#! Maximum Ruler Age"
+ rule_rnw_spawn_age_max:0 "#X RNW:#! Maximum Ruler Age"
  setting_0_rnw_spawn_age_max:0 "0 Years"
  setting_0_rnw_spawn_age_max_desc:0 "All rulers will be at most 0 years old."
  setting_6_rnw_spawn_age_max:0 "6 Years"
@@ -109,7 +109,7 @@
  setting_90_rnw_spawn_age_max:0 "90 Years"
  setting_90_rnw_spawn_age_max_desc:0 "All rulers will be at most 90 years old."
 
- rule_rnw_family_generation:0 "#X BNW:#! Family Generation"
+ rule_rnw_family_generation:0 "#X RNW:#! Family Generation"
  setting_off_rnw_family_generation:0 "Disabled"
  setting_off_rnw_family_generation_desc:0 "Rulers will NOT have a family generated for them. This increases the risk of an early game over."
  setting_on_rnw_family_generation:0 "Vanilla"
@@ -119,7 +119,7 @@
  setting_across_realms_rnw_family_generation:0 "Across Realms"
  setting_across_realms_rnw_family_generation_desc:0 "Rulers will have a family generated for them, possibly siblings too. Some starting rulers will be from the same house."
 
- rule_rnw_starting_resources:0 "#X BNW:#! Starting Resources"
+ rule_rnw_starting_resources:0 "#X RNW:#! Starting Resources"
  setting_none_rnw_starting_resources:0 "None"
  setting_none_rnw_starting_resources_desc:0 "Rulers will have no gold, prestige and piety at start."
  setting_less_rnw_starting_resources:0 "Less"
@@ -129,7 +129,7 @@
  setting_more_rnw_starting_resources:0 "More"
  setting_more_rnw_starting_resources_desc:0 "Rulers will have more gold, prestige and piety than normal at start."
 
- rule_rnw_num_of_dukes:0 "#X BNW:#! Number of Dukes"
+ rule_rnw_num_of_dukes:0 "#X RNW:#! Number of Dukes"
  setting_none_rnw_num_of_dukes:0 "None"
  setting_none_rnw_num_of_dukes_desc:0 "No dukes will be generated."
  setting_few_rnw_num_of_dukes:0 "Few"
@@ -139,7 +139,7 @@
  setting_many_rnw_num_of_dukes:0 "Many"
  setting_many_rnw_num_of_dukes_desc:0 "Many dukes will be generated."
 
- rule_rnw_num_of_kings:0 "#X BNW:#! Number of Kings"
+ rule_rnw_num_of_kings:0 "#X RNW:#! Number of Kings"
  setting_none_rnw_num_of_kings:0 "None"
  setting_none_rnw_num_of_kings_desc:0 "No kings will be generated."
  setting_few_rnw_num_of_kings:0 "Few"
@@ -149,7 +149,7 @@
  setting_many_rnw_num_of_kings:0 "Many"
  setting_many_rnw_num_of_kings_desc:0 "Many kings will be generated."
 
- rule_rnw_num_of_emperors:0 "#X BNW:#! Number of Emperors"
+ rule_rnw_num_of_emperors:0 "#X RNW:#! Number of Emperors"
  setting_none_rnw_num_of_emperors:0 "None"
  setting_none_rnw_num_of_emperors_desc:0 "No emperors will be generated."
  setting_few_rnw_num_of_emperors:0 "Few"
@@ -159,13 +159,13 @@
  setting_many_rnw_num_of_emperors:0 "Many"
  setting_many_rnw_num_of_emperors_desc:0 "Many emperors will be generated."
  
- rule_rnw_de_jure_kingdom_randomization:0 "#X BNW:#! De Jure Kingdoms"
+ rule_rnw_de_jure_kingdom_randomization:0 "#X RNW:#! De Jure Kingdoms"
  setting_off_rnw_de_jure_kingdom_randomization:0 "Historical"
  setting_off_rnw_de_jure_kingdom_randomization_desc:0 "De jure kingdoms will be unchanged."
  setting_on_rnw_de_jure_kingdom_randomization:0 "Random"
  setting_on_rnw_de_jure_kingdom_randomization_desc:0 "De jure kingdoms will be randomized."
 
- rule_rnw_de_jure_kingdom_min_size:0 "#X BNW:#! Minimum De Jure Kingdom Size"
+ rule_rnw_de_jure_kingdom_min_size:0 "#X RNW:#! Minimum De Jure Kingdom Size"
  setting_2_rnw_de_jure_kingdom_min_size:0 "2 Duchies"
  setting_2_rnw_de_jure_kingdom_min_size_desc:0 "De jure kingdoms will have at least 2 duchies."
  setting_3_rnw_de_jure_kingdom_min_size:0 "3 Duchies"
@@ -189,7 +189,7 @@
  setting_12_rnw_de_jure_kingdom_min_size:0 "12 Duchies"
  setting_12_rnw_de_jure_kingdom_min_size_desc:0 "De jure kingdoms will have at least 12 duchies."
  
- rule_rnw_de_jure_kingdom_max_size:0 "#X BNW:#! Maximum De Jure Kingdom Size"
+ rule_rnw_de_jure_kingdom_max_size:0 "#X RNW:#! Maximum De Jure Kingdom Size"
  setting_2_rnw_de_jure_kingdom_max_size:0 "2 Duchies"
  setting_2_rnw_de_jure_kingdom_max_size_desc:0 "De jure kingdoms will have at most 2 duchies."
  setting_3_rnw_de_jure_kingdom_max_size:0 "3 Duchies"
@@ -213,13 +213,13 @@
  setting_12_rnw_de_jure_kingdom_max_size:0 "12 Duchies"
  setting_12_rnw_de_jure_kingdom_max_size_desc:0 "De jure kingdoms will have at most 12 duchies."
  
- rule_rnw_de_jure_empire_randomization:0 "#X BNW:#! De Jure Empires"
+ rule_rnw_de_jure_empire_randomization:0 "#X RNW:#! De Jure Empires"
  setting_off_rnw_de_jure_empire_randomization:0 "None"
  setting_off_rnw_de_jure_empire_randomization_desc:0 "De jure empires will NOT be generated. This rule only has an effect if de jure kingdoms are randomized."
  setting_on_rnw_de_jure_empire_randomization:0 "Generated"
  setting_on_rnw_de_jure_empire_randomization_desc:0 "De jure empires will be generated. This rule only has an effect if de jure kingdoms are randomized."
 
- rule_rnw_de_jure_empire_min_size:0 "#X BNW:#! Minimum De Jure Empire Size"
+ rule_rnw_de_jure_empire_min_size:0 "#X RNW:#! Minimum De Jure Empire Size"
  setting_2_rnw_de_jure_empire_min_size:0 "2 Kingdoms"
  setting_2_rnw_de_jure_empire_min_size_desc:0 "De jure empires will have at least 2 kingdoms."
  setting_3_rnw_de_jure_empire_min_size:0 "3 Kingdoms"
@@ -243,7 +243,7 @@
  setting_12_rnw_de_jure_empire_min_size:0 "12 Kingdoms"
  setting_12_rnw_de_jure_empire_min_size_desc:0 "De jure empires will have at least 12 kingdoms."
 
- rule_rnw_de_jure_empire_max_size:0 "#X BNW:#! Maximum De Jure Empire Size"
+ rule_rnw_de_jure_empire_max_size:0 "#X RNW:#! Maximum De Jure Empire Size"
  setting_2_rnw_de_jure_empire_max_size:0 "2 Kingdoms"
  setting_2_rnw_de_jure_empire_max_size_desc:0 "De jure empires will have at most 2 kingdoms."
  setting_3_rnw_de_jure_empire_max_size:0 "3 Kingdoms"
@@ -267,7 +267,7 @@
  setting_12_rnw_de_jure_empire_max_size:0 "12 Kingdoms"
  setting_12_rnw_de_jure_empire_max_size_desc:0 "De jure empires will have at most 12 kingdoms."
 
- rule_rnw_culture_placement_randomization:0 "#X BNW:#! Culture Placement"
+ rule_rnw_culture_placement_randomization:0 "#X RNW:#! Culture Placement"
  setting_off_rnw_culture_placement_randomization:0 "Historical"
  setting_off_rnw_culture_placement_randomization_desc:0 "The culture placement will be unchanged."
  setting_on_rnw_culture_placement_randomization:0 "Random"
@@ -275,7 +275,7 @@
  setting_full_rnw_culture_placement_randomization:0 "Full Random"
  setting_full_rnw_culture_placement_randomization_desc:0 "The culture placement will be randomized. culture from the same culture group will NOT always appear near each other."
 
- rule_rnw_faith_placement_randomization:0 "#X BNW:#! Faith Placement"
+ rule_rnw_faith_placement_randomization:0 "#X RNW:#! Faith Placement"
  setting_off_rnw_faith_placement_randomization:0 "Historical"
  setting_off_rnw_faith_placement_randomization_desc:0 "The faith placement will be unchanged."
  setting_on_rnw_faith_placement_randomization:0 "Random"
@@ -283,7 +283,7 @@
  setting_full_rnw_faith_placement_randomization:0 "Full Random"
  setting_full_rnw_faith_placement_randomization_desc:0 "The faith placement will be randomized. Faiths will NOT always appear near their holysites."
 
- rule_rnw_faith_percent_used:0 "#X BNW:#! Faiths Used For Randomization"
+ rule_rnw_faith_percent_used:0 "#X RNW:#! Faiths Used For Randomization"
  setting_10_rnw_faith_percent_used:0 "10%"
  setting_10_rnw_faith_percent_used_desc:0 "10% of all faiths will be used for random faith placement. This rule only has an effect if faith placement is randomized."
  setting_20_rnw_faith_percent_used:0 "20%"
@@ -305,7 +305,7 @@
  setting_100_rnw_faith_percent_used:0 "100%"
  setting_100_rnw_faith_percent_used_desc:0 "100% of all faiths will be used for random faith placement. This rule only has an effect if faith placement is randomized."
  
- rule_rnw_doctrine_randomization:0 "#X BNW:#! Doctrines"
+ rule_rnw_doctrine_randomization:0 "#X RNW:#! Doctrines"
  setting_off_rnw_doctrine_randomization:0 "Historical"
  setting_off_rnw_doctrine_randomization_desc:0 "Doctrines will be unchanged."
  setting_on_rnw_doctrine_randomization:0 "Random"
@@ -313,7 +313,7 @@
  setting_full_rnw_doctrine_randomization:0 "Full Random"
  setting_full_rnw_doctrine_randomization_desc:0 "Doctrines will be randomized. Faiths from the same religion will NOT get the same doctrines."
  
- rule_rnw_doctrine_gender_preference:0 "#X BNW:#! Gender Doctrine Preference"
+ rule_rnw_doctrine_gender_preference:0 "#X RNW:#! Gender Doctrine Preference"
  setting_male_rnw_doctrine_gender_preference:0 "Male Dominated"
  setting_male_rnw_doctrine_gender_preference_desc:0 "Most faiths will have the Male Dominated gender doctrine. This rule only has an effect if doctrines are randomized."
  setting_equal_rnw_doctrine_gender_preference:0 "Equal"
