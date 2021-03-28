@@ -173,6 +173,7 @@ rnw_counts_setup_effect = {
 							remove_from_list = counties_to_select_from
 						}
 					}
+					remove_variable = counties_still_wanted
 				}
 			}
 			set_variable = { name = checked_counties value = yes }
@@ -550,6 +551,7 @@ rnw_de_jure_setup_effect = {
 						remove_from_list = titles_to_choose_from
 					}
 				}
+				remove_variable = titles_still_wanted
 				if = {
 					limit = {
 						$MIN$ > rnw_num_of_direct_de_jure_titles
