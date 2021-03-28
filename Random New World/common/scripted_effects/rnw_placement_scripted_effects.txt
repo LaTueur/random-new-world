@@ -226,6 +226,7 @@ rnw_select_faith_starting_location_effect = {
 					}
                 }
             }
+            remove_variable = num_of_centers_needed
             set_variable = { name = already_selected value = yes }
         }
     }
@@ -667,6 +668,7 @@ rnw_choose_multiple_holy_site_effect = {
             FAITH = $FAITH$
         }
     }
+    remove_variable = sites_still_wanted
 }
 rnw_forward_to_holy_site_choice_effect = {
 }
