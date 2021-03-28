@@ -98,8 +98,8 @@ rnw_counts_setup_effect = {
 						}
 					}
 					while = {
+						count = var:counties_still_wanted
 						limit = {
-							var:counties_still_wanted >= 1
 							any_sub_realm_county = {
 								OR = {
 									any_neighboring_county = {
@@ -172,7 +172,6 @@ rnw_counts_setup_effect = {
 							list = counties_to_select_from
 							remove_from_list = counties_to_select_from
 						}
-						change_variable = { name = counties_still_wanted subtract = 1 }
 					}
 				}
 			}
@@ -516,8 +515,8 @@ rnw_de_jure_setup_effect = {
 				set_color_from_title = scope:old_title
 				set_capital_county = scope:core_county
 				while = {
+					count = var:titles_still_wanted
 					limit = {
-						var:titles_still_wanted >= 1
 						rnw_title_has_empty_neighboring_title_trigger = yes
 					}
 					every_county_in_de_jure_hierarchy = {
@@ -550,7 +549,6 @@ rnw_de_jure_setup_effect = {
 						list = titles_to_choose_from
 						remove_from_list = titles_to_choose_from
 					}
-					change_variable = { name = titles_still_wanted subtract = 1 }
 				}
 				if = {
 					limit = {

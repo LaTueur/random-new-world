@@ -19,9 +19,7 @@ rnw_select_percent_of_list_to_target_list_effect = {
         }
     }
     while = {
-        limit = {
-            scope:num_of_scopes_to_select >= 1
-        }
+        count = scope:num_of_scopes_to_select
         random_in_list = {
             list = $LIST$
             limit = {
@@ -49,13 +47,6 @@ rnw_select_percent_of_list_to_target_list_effect = {
                 }
                 religion = {
                     set_variable = { name = already_selected value = yes }
-                }
-            }
-            save_temporary_scope_value_as = {
-                name = num_of_scopes_to_select
-                value = {
-                    value = scope:num_of_scopes_to_select
-                    subtract = 1
                 }
             }
         }
@@ -88,19 +79,19 @@ rnw_select_faith_starting_location_effect = {
             }
             save_temporary_scope_as = selected_faith
 			random_list = {
-				50 = {
+				70 = {
 					set_variable = {
 						name = num_of_centers_needed
 						value = 1
 					}
 				}
-				30 = {
+				20 = {
 					set_variable = {
 						name = num_of_centers_needed
 						value = 2
 					}
 				}
-				20 = {
+				10 = {
 					set_variable = {
 						name = num_of_centers_needed
 						value = 3
@@ -108,9 +99,7 @@ rnw_select_faith_starting_location_effect = {
 				}
 			}
 			while = {
-                limit = {
-                    var:num_of_centers_needed >= 1
-                }
+                count = var:num_of_centers_needed
                 random_county = {
                     limit = {
                         NOT = { exists = var:conversion_target }
@@ -235,10 +224,6 @@ rnw_select_faith_starting_location_effect = {
 					kingdom = {
 						set_variable = { name = has_at_least_one_faith value = yes }
 					}
-                }
-                change_variable = {
-                    name = num_of_centers_needed
-                    subtract = 1
                 }
             }
             set_variable = { name = already_selected value = yes }
@@ -677,13 +662,10 @@ rnw_choose_multiple_holy_site_effect = {
         value = 5
     }
     while = {
-        limit = {
-            var:sites_still_wanted >= 1
-        }
+        count = var:sites_still_wanted
         rnw_choose_holy_site_effect = {
             FAITH = $FAITH$
         }
-        change_variable = { name = sites_still_wanted subtract = 1 }
     }
 }
 rnw_forward_to_holy_site_choice_effect = {
