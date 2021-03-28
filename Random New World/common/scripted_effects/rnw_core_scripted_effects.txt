@@ -334,3 +334,29 @@ rnw_holy_site_randomization_effect = {
         rnw_set_up_holy_site_buildings_effect = yes
     }
 }
+rnw_development_randomization_effect = {
+	rnw_nullify_development_level_effect = yes
+    rnw_set_development_level_effect = {
+        TIER = empire
+        MIN = 3
+        MAX = 23
+    }
+    rnw_set_development_level_effect = {
+        TIER = kingdom
+        MIN = -3
+        MAX = 3
+    }
+    rnw_set_development_level_effect = {
+        TIER = duchy
+        MIN = -3
+        MAX = 3
+    }
+    rnw_limit_development_level_effect = {
+        MIN = 0
+        MAX = 25
+    }
+    rnw_smooth_development_level_effect = {
+        ROUNDS = 5
+        IMPACT_DIVIDER = 1
+    }
+}

@@ -1,0 +1,78 @@
+﻿rnw_set_development_level_effect = {
+    every_$TIER$ = {
+		save_temporary_scope_value_as = {
+			name = development_level
+			value =  {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+        change_development_level = scope:development_level
+    }
+}
+rnw_nullify_development_level_effect = {
+    every_county = {
+        change_development_level = {
+            value = 0
+            subtract = this.development_level
+		}
+	}
+}
+rnw_limit_development_level_effect = {
+    every_county = {
+        change_development_level = {
+            value = development_level
+			min = $MIN$
+			max = $MAX$
+			subtract = development_level
+		}
+	}
+}
+rnw_smooth_development_level_effect = {
+	while = {
+		count = $ROUNDS$
+		every_county = {
+			save_temporary_scope_as = checked_province
+			set_variable = {
+				name = development_level_influence
+				value = {
+					every_neighboring_county = {
+						add = development_level
+					}
+				}
+			}
+			set_variable = {
+				name = development_level_influenecers
+				value = {
+					every_neighboring_county = {
+						add = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							has_variable = development_level_influenecers
+						}
+						var:development_level_influenecers > 0
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				change_development_level = {
+					add = var:development_level_influence
+					divide = var:development_level_influenecers
+					subtract = development_level
+					divide = $IMPACT_DIVIDER$
+					round = yes
+				}
+				remove_variable = development_level_influence
+				remove_variable = development_level_influenecers
+			}
+		}
+	}
+}
