@@ -1,0 +1,395 @@
+﻿RNW_RANDOM_VOWEL = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_letter_e
+		weight_multiplier = {
+			base = 112
+		}
+	}
+	text = {
+		localization_key = rnw_letter_a
+		weight_multiplier = {
+			base = 85
+		}
+	}
+	text = {
+		localization_key = rnw_letter_i
+		weight_multiplier = {
+			base = 75
+		}
+	}
+	text = {
+		localization_key = rnw_letter_o
+		weight_multiplier = {
+			base = 72
+		}
+	}
+	text = {
+		localization_key = rnw_letter_u
+		weight_multiplier = {
+			base = 36
+		}
+	}
+	text = {
+		localization_key = rnw_letter_y
+		weight_multiplier = {
+			base = 18
+		}
+	}
+}
+RNW_RANDOM_CONSONANT = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_letter_r
+		weight_multiplier = {
+			base = 76
+		}
+	}
+	text = {
+		localization_key = rnw_letter_t
+		weight_multiplier = {
+			base = 70
+		}
+	}
+	text = {
+		localization_key = rnw_letter_n
+		weight_multiplier = {
+			base = 66
+		}
+	}
+	text = {
+		localization_key = rnw_letter_s
+		weight_multiplier = {
+			base = 57
+		}
+	}
+	text = {
+		localization_key = rnw_letter_l
+		weight_multiplier = {
+			base = 55
+		}
+	}
+	text = {
+		localization_key = rnw_letter_c
+		weight_multiplier = {
+			base = 45
+		}
+	}
+	text = {
+		localization_key = rnw_letter_d
+		weight_multiplier = {
+			base = 36
+		}
+	}
+	text = {
+		localization_key = rnw_letter_p
+		weight_multiplier = {
+			base = 34
+		}
+	}
+	text = {
+		localization_key = rnw_letter_m
+		weight_multiplier = {
+			base = 32
+		}
+	}
+	text = {
+		localization_key = rnw_letter_h
+		weight_multiplier = {
+			base = 30
+		}
+	}
+	text = {
+		localization_key = rnw_letter_g
+		weight_multiplier = {
+			base = 30
+		}
+	}
+	text = {
+		localization_key = rnw_letter_b
+		weight_multiplier = {
+			base = 25
+		}
+	}
+	text = {
+		localization_key = rnw_letter_f
+		weight_multiplier = {
+			base = 18
+		}
+	}
+	text = {
+		localization_key = rnw_letter_w
+		weight_multiplier = {
+			base = 13
+		}
+	}
+	text = {
+		localization_key = rnw_letter_k
+		weight_multiplier = {
+			base = 11
+		}
+	}
+	text = {
+		localization_key = rnw_letter_v
+		weight_multiplier = {
+			base = 10
+		}
+	}
+	text = {
+		localization_key = rnw_letter_x
+		weight_multiplier = {
+			base = 3
+		}
+	}
+	text = {
+		localization_key = rnw_letter_z
+		weight_multiplier = {
+			base = 3
+		}
+	}
+	text = {
+		localization_key = rnw_letter_j
+		weight_multiplier = {
+			base = 2
+		}
+	}
+	text = {
+		localization_key = rnw_letter_q
+		weight_multiplier = {
+			base = 2
+		}
+	}
+}
+RNW_RANDOM_CLUSTER = {
+	type = character
+
+	random_valid = yes
+
+    text = {
+		localization_key = rnw_letter_sm
+	}
+	text = {
+		localization_key = rnw_letter_sn
+	}
+	text = {
+		localization_key = rnw_letter_st
+	}
+	text = {
+		localization_key = rnw_letter_sw
+	}
+	text = {
+		localization_key = rnw_letter_sk
+	}
+	text = {
+		localization_key = rnw_letter_sp
+	}
+	text = {
+		localization_key = rnw_letter_sph
+	}
+	text = {
+		localization_key = rnw_letter_thw
+	}
+	text = {
+		localization_key = rnw_letter_th
+	}
+	text = {
+		localization_key = rnw_letter_tr
+	}
+	text = {
+		localization_key = rnw_letter_tw
+	}
+	text = {
+		localization_key = rnw_letter_thr
+	}
+	text = {
+		localization_key = rnw_letter_dw
+	}
+	text = {
+		localization_key = rnw_letter_dr
+	}
+	text = {
+		localization_key = rnw_letter_qu
+	}
+	text = {
+		localization_key = rnw_letter_cl
+	}
+	text = {
+		localization_key = rnw_letter_pr
+	}
+	text = {
+		localization_key = rnw_letter_fr
+	}
+	text = {
+		localization_key = rnw_letter_br
+	}
+	text = {
+		localization_key = rnw_letter_gr
+	}
+	text = {
+		localization_key = rnw_letter_pl
+	}
+	text = {
+		localization_key = rnw_letter_fl
+	}
+	text = {
+		localization_key = rnw_letter_bl
+	}
+	text = {
+		localization_key = rnw_letter_gl
+	}
+	text = {
+		localization_key = rnw_letter_ght
+	}
+	text = {
+		localization_key = rnw_letter_shr
+	}
+	text = {
+		localization_key = rnw_letter_spl
+	}
+	text = {
+		localization_key = rnw_letter_spr
+	}
+	text = {
+		localization_key = rnw_letter_str
+	}
+	text = {
+		localization_key = rnw_letter_scr
+	}
+	text = {
+		localization_key = rnw_letter_sq
+    }
+}
+RNW_NAME_ENDING = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_ending_ia
+		weight_multiplier = {
+			base = 100
+		}
+	}
+	text = {
+		localization_key = rnw_ending_land
+		weight_multiplier = {
+			base = 100
+		}
+	}
+	text = {
+		localization_key = rnw_ending_an
+		weight_multiplier = {
+			base = 20
+		}
+	}
+	text = {
+		localization_key = rnw_letter_y
+		weight_multiplier = {
+			base = 50
+		}
+	}
+	text = {
+		localization_key = rnw_letter_a
+		weight_multiplier = {
+			base = 20
+		}
+	}
+	text = {
+		localization_key = rnw_letter_i
+		weight_multiplier = {
+			base = 5
+		}
+	}
+	text = {
+		localization_key = rnw_letter_o
+		weight_multiplier = {
+			base = 5
+		}
+	}
+}
+RNW_VOWEL_PLACE = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_one_vowel
+		weight_multiplier = {
+			base = 65
+		}
+	}
+	text = {
+		localization_key = rnw_two_vowel
+		weight_multiplier = {
+			base = 25
+		}
+	}
+	text = {
+		localization_key = rnw_three_vowel
+		weight_multiplier = {
+			base = 10
+		}
+	}
+}
+RNW_CONSONANT_PLACE = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_consonant
+		weight_multiplier = {
+			base = 70
+		}
+	}
+	text = {
+		localization_key = rnw_cluster
+		weight_multiplier = {
+			base = 30
+		}
+	}
+}
+RNW_SYLLABLE_PLACE = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_syllable
+		weight_multiplier = {
+			base = 50
+		}
+	}
+	text = {
+		localization_key = rnw_nothing
+		weight_multiplier = {
+			base = 50
+		}
+	}
+}
+RNW_NAME_PLACE = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_vowel_start
+		weight_multiplier = {
+			base = 50
+		}
+	}
+	text = {
+		localization_key = rnw_consonant_start
+		weight_multiplier = {
+			base = 50
+		}
+	}
+}
+
+

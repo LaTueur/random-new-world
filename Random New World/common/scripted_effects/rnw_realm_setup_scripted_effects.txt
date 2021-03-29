@@ -465,7 +465,7 @@ rnw_de_jure_setup_effect = {
 		scope:old_title = {
 			create_dynamic_title = {
 				tier = $TIER$
-				name = NEW_CREATED_TITLE_NAME
+				name = rnw_title_name
 			}
 			rnw_set_de_jure_liege_title_effect = yes
 			title_capital_county = {
