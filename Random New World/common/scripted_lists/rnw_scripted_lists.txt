@@ -2,3 +2,15 @@
 	base = in_de_jure_hierarchy
 	conditions = { tier = tier_county }
 }
+duchy_in_de_jure_hierarchy = {
+	base = in_de_jure_hierarchy
+	conditions = { tier = tier_duchy }
+}
+kingdom_in_de_jure_hierarchy = {
+	base = in_de_jure_hierarchy
+	conditions = { tier = tier_kingdom }
+}
+coastal_county = {
+	base = county
+	conditions = { is_coastal_county = yes }
+}

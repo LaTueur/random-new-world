@@ -7,3 +7,5 @@ rnw_faith_doctrine_really_low_chance    = 5
 rnw_religion_doctrine_preferences_modifier = 5
 
 rnw_doctrine_theocracy_temporal_multiplier = 3
+
+squared_distance_tiny = 14400 #120*120

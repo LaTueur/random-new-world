@@ -101,13 +101,9 @@ rnw_counts_setup_effect = {
 						count = var:counties_still_wanted
 						limit = {
 							any_sub_realm_county = {
-								OR = {
-									any_neighboring_county = {
-										NOT = { exists = var:choosen_owner }
-									}
-									any_title_to_title_neighboring_and_across_water_county = {
-										NOT = { exists = var:choosen_owner }
-									}
+								any_in_list = {
+									variable = connected_titles
+									NOT = { exists = var:choosen_owner }
 								}
 							}
 						}
@@ -133,7 +129,8 @@ rnw_counts_setup_effect = {
 						}
 						else = {
 							every_sub_realm_county = {
-								every_title_to_title_neighboring_and_across_water_county = {
+								every_in_list = {
+									variable = naval_connected_titles
 									limit = {
 										NOR = {
 											is_in_list = counties_to_select_from
@@ -411,10 +408,7 @@ rnw_de_jure_setup_effect = {
 	}
 	save_temporary_scope_value_as = {
 		name = bellow_tier
-		value = {
-			value = tier_$TIER$
-			subtract = 1
-		}
+		value = tier_$BELLOW_TIER$
 	}
 	save_temporary_scope_value_as = {
 		name = max
@@ -424,27 +418,11 @@ rnw_de_jure_setup_effect = {
 		name = min
 		value = $MIN$
 	}
-	if = {
+	every_$BELLOW_TIER$ = {
 		limit = {
-			scope:tier_long = tier_kingdom
+			is_titular = no
 		}
-		every_duchy = {
-			limit = {
-				is_titular = no
-			}
-			add_to_list = titles_to_handle
-		}
-	}
-	else_if = {
-		limit = {
-			scope:tier_long = tier_empire
-		}
-		every_kingdom = {
-			limit = {
-				is_titular = no
-			}
-			add_to_list = titles_to_handle
-		}
+		add_to_list = titles_to_handle
 	}
 	while = {
 		limit = {
@@ -457,29 +435,20 @@ rnw_de_jure_setup_effect = {
 			limit = {
 				any_in_list = {
 					list = titles_to_handle
-					rnw_title_can_provide_empty_neighboring_title_trigger = yes
+					rnw_has_empty_connected_title_trigger = yes
 				}
 			}
 			random_in_list = {
 				list = titles_to_handle
 				limit = {
-					rnw_title_can_provide_empty_neighboring_title_trigger = yes
+					rnw_has_empty_connected_title_trigger = yes
 				}
-				random_county_in_de_jure_hierarchy = {
+				random_in_list = {
+					variable = connected_titles
 					limit = {
-						rnw_county_has_empty_neighboring_title_trigger = yes
+						NOT = {	exists = var:checked_de_jure }
 					}
-					random_neighboring_county = {
-						limit = {
-							rnw_county_belongs_to_empty_title_trigger = yes
-						}
-						every_this_title_or_de_jure_above = {
-							limit = {
-								tier = scope:bellow_tier
-							}
-							save_scope_as = old_title
-						}
-					}
+					save_scope_as = old_title
 				}
 			}
 		}
@@ -518,20 +487,20 @@ rnw_de_jure_setup_effect = {
 				while = {
 					count = var:titles_still_wanted
 					limit = {
-						rnw_title_has_empty_neighboring_title_trigger = yes
+						any_$BELLOW_TIER$_in_de_jure_hierarchy = {
+							rnw_has_empty_connected_title_trigger = yes
+						}
 					}
-					every_county_in_de_jure_hierarchy = {
-						every_neighboring_county = {
-							every_this_title_or_de_jure_above = {
-								limit = {
-									tier = scope:bellow_tier
-									NOR = {
-										exists = var:checked_de_jure
-										is_in_list = titles_to_choose_from
-									}
+					every_$BELLOW_TIER$_in_de_jure_hierarchy = {
+						every_in_list = {
+							variable = connected_titles
+							limit = {
+								NOR = {
+									exists = var:checked_de_jure
+									is_in_list = titles_to_choose_from
 								}
-								add_to_list = titles_to_choose_from
 							}
+							add_to_list = titles_to_choose_from
 						}
 					}
 					random_in_list = {
@@ -539,11 +508,10 @@ rnw_de_jure_setup_effect = {
 						weight = {
 							base = 10
 							modifier = {
-								factor = rnw_de_jure_choose_multiplier
+								factor = this.rnw_de_jure_choose_multiplier
 							}
 						}
 						rnw_set_de_jure_liege_title_effect = yes
-						set_de_jure_liege_title = scope:new_title
 						set_variable = { name = checked_de_jure value = yes }
 					}
 					every_in_list = {
@@ -577,54 +545,22 @@ rnw_de_jure_setup_effect = {
 			save_temporary_scope_as = new_title
 			if = {
 				limit = {
-					any_county_in_de_jure_hierarchy = {
-						rnw_can_merge_with_neighboring_title_trigger = yes
+					any_$BELLOW_TIER$_in_de_jure_hierarchy = {
+						rnw_can_merge_with_connected_title_trigger = yes
 					}
 				}
-				random_county_in_de_jure_hierarchy = {
+				random_$BELLOW_TIER$_in_de_jure_hierarchy = {
 					limit = {
-						rnw_can_merge_with_neighboring_title_trigger = yes
+						rnw_can_merge_with_connected_title_trigger = yes
 					}
-					random_neighboring_county = {
+					random_in_list = {
+						variable = connected_titles
 						limit = {
 							rnw_can_merge_with_liege_title_trigger = yes
 						}
-						every_this_title_or_de_jure_above = {
-							limit = {
-								tier = scope:tier_long
-							}
+						de_jure_liege = {
 							save_temporary_scope_as = title_to_merge
 						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					any_in_list = {
-						list = handled_coastal_titles
-						rnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = large }
-						rnw_can_merge_with_liege_title_trigger = yes
-					}
-				}
-				random_in_list = {
-					list = handled_coastal_titles
-					limit = {
-						rnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = small }
-						rnw_can_merge_with_liege_title_trigger = yes
-					}
-					alternative_limit = {
-						rnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = medium }
-						rnw_can_merge_with_liege_title_trigger = yes
-					}
-					alternative_limit = {
-						rnw_has_coastal_county_to_merge_title_trigger = { MAX_DISTANCE = large }
-						rnw_can_merge_with_liege_title_trigger = yes
-					}
-					every_this_title_or_de_jure_above = {
-						limit = {
-							tier = scope:tier_long
-						}
-						save_temporary_scope_as = title_to_merge
 					}
 				}
 			}
@@ -659,6 +595,95 @@ rnw_de_jure_setup_effect = {
 			}
 		}
 	}
+	save_scope_value_as = {
+		name = title_was_transferred
+		value = yes
+	}
+	while = {
+		limit = {
+			exists = scope:title_was_transferred
+		}
+		clear_saved_scope = title_was_transferred
+		every_in_list = {
+			list = titles_to_handle
+			limit = {
+				rnw_disconnected_title_trigger = yes
+			}
+			add_to_list = disconnected_titles
+		}
+		ordered_in_list = {
+			list = disconnected_titles
+			order_by = de_jure_liege.rnw_num_of_direct_de_jure_titles
+			max = 100
+			check_range_bounds = no
+			if = {
+				limit = {
+					de_jure_liege.rnw_num_of_direct_de_jure_titles > $MIN$
+					rnw_disconnected_title_trigger = yes
+				}
+				save_temporary_scope_as = disconnected_title
+				every_in_list = {
+					variable = connected_titles
+					limit = {
+						NOR = {
+							de_jure_liege = scope:checked_title.de_jure_liege
+							de_jure_liege.rnw_num_of_direct_de_jure_titles >= $MAX$
+						}
+					}
+					de_jure_liege = {
+						add_to_list = potential_takers
+						if = {
+							limit = {
+								has_variable = titles_connected
+							}
+							change_variable = {
+								name = titles_connected
+								add = 1
+							}
+						}
+						else = {
+							set_variable = {
+								name = titles_connected
+								value = 1
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_in_list = {
+							list = potential_takers
+							var:titles_connected >= 2
+						}
+					}
+					ordered_in_list = {
+						list = potential_takers
+						limit = {
+							var:titles_connected >= 2
+						}
+						order_by = rwn_take_disconnected_score
+						save_temporary_scope_as = new_title
+						scope:disconnected_title = {
+							set_de_jure_liege_title = scope:new_title
+							save_scope_value_as = {
+								name = title_was_transferred
+								value = yes
+							}
+						}
+					}
+				}
+				every_in_list = {
+					list = potential_takers
+					remove_from_list = potential_takers
+					remove_variable = titles_connected
+				}
+			}
+		}
+		every_in_list = {
+			list = disconnected_titles
+			remove_from_list = disconnected_titles
+		}
+	}
 	every_in_list = {
 		list = titles_with_few_title
 		remove_variable = checked_merge
@@ -672,6 +697,30 @@ rnw_de_jure_setup_effect = {
 	every_in_list = {
 		list = handled_coastal_titles
 		remove_from_list = handled_coastal_titles
+	}
+	every_$TIER$ = {
+		limit = {
+			is_titular = no
+		}
+		save_temporary_scope_as = checked_title
+		every_$BELLOW_TIER$_in_de_jure_hierarchy = {
+			save_scope_as = collecting_title
+			every_in_list = {
+				variable = connected_titles
+				save_scope_as = connected_title
+				rnw_connect_title_effect = {
+					SCOPE = de_jure_liege
+					TYPE = flag:unknow
+				}
+			}
+		}
+		ordered_$BELLOW_TIER$_in_de_jure_hierarchy = {
+			order_by = rnw_capital_score
+			save_temporary_scope_as = capital_title
+			scope:checked_title = {
+				set_capital_county = scope:capital_title.title_capital_county
+			}
+		}
 	}
 	clear_saved_scope = tier_long
 	clear_saved_scope = new_title

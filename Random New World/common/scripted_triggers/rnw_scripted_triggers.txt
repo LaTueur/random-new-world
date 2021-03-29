@@ -38,18 +38,19 @@ rnw_ruler_can_create_head_of_faith_title_trigger = {
         liege.primary_title.tier > tier_duchy
     }
 }
-rnw_title_can_provide_empty_neighboring_title_trigger = {
+rnw_title_can_provide_empty_connected_title_trigger = {
     exists = var:checked_de_jure
-    rnw_title_has_empty_neighboring_title_trigger = yes
+    rnw_title_has_empty_connected_title_trigger = yes
 }
-rnw_title_has_empty_neighboring_title_trigger = {
+rnw_title_has_empty_connected_title_trigger = {
     any_county_in_de_jure_hierarchy = {
-        rnw_county_has_empty_neighboring_title_trigger = yes
+        rnw_county_has_empty_connected_title_trigger = yes
     }
 }
-rnw_county_has_empty_neighboring_title_trigger = {
-    any_neighboring_county = {
-        rnw_county_belongs_to_empty_title_trigger = yes
+rnw_has_empty_connected_title_trigger = {
+    any_in_list = {
+        variable = connected_titles
+        NOT = {	exists = var:checked_de_jure }
     }
 }
 rnw_county_belongs_to_empty_title_trigger = {
@@ -58,14 +59,14 @@ rnw_county_belongs_to_empty_title_trigger = {
         NOT = {	exists = var:checked_de_jure }
     }
 }
-rnw_can_merge_with_neighboring_title_trigger = {
-    any_neighboring_county = {
+rnw_can_merge_with_connected_title_trigger = {
+    any_in_list = {
+        variable = connected_titles
         rnw_can_merge_with_liege_title_trigger = yes
     }
 }
 rnw_can_merge_with_liege_title_trigger = {
-    any_this_title_or_de_jure_above = {
-        tier = scope:tier_long
+    de_jure_liege = {
 		any_in_de_jure_hierarchy = {
 			exists = var:checked_de_jure
 		}
@@ -92,4 +93,7 @@ rnw_coastal_county_to_merge_title_trigger = {
             }
         }
     }
+}
+rnw_disconnected_title_trigger = {
+    rwn_same_liege_connected_score < 2
 }

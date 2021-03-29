@@ -1,5 +1,8 @@
 ﻿rnw_set_development_level_effect = {
     every_$TIER$ = {
+		limit = {
+			is_titular = no
+		}
 		save_temporary_scope_value_as = {
 			name = development_level
 			value =  {
@@ -38,7 +41,8 @@ rnw_smooth_development_level_effect = {
 			set_variable = {
 				name = development_level_influence
 				value = {
-					every_neighboring_county = {
+					every_in_list = {
+						variable = connected_titles
 						add = development_level
 					}
 				}
@@ -46,7 +50,8 @@ rnw_smooth_development_level_effect = {
 			set_variable = {
 				name = development_level_influenecers
 				value = {
-					every_neighboring_county = {
+					every_in_list = {
+						variable = connected_titles
 						add = 1
 					}
 				}

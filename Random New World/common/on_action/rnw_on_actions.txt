@@ -5,6 +5,7 @@
 }
 rnw_on_game_start_after_lobby = {
     effect = {
+        rnw_collect_connected_counties_effect = yes
         rnw_holy_site_randomization_effect = yes
 		rnw_de_jure_setup_randomization_effect = yes
         rnw_development_randomization_effect = yes

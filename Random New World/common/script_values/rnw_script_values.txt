@@ -110,102 +110,103 @@ rnw_de_jure_choose_multiplier = {
         limit = {
             tier = tier_county
         }
-        every_neighboring_county = {
+        every_in_list = {
+            variable = connected_titles
             limit = {
                 target_is_de_jure_liege_or_above = scope:new_title
             }
-        }
-        add = {
-            value = 1
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value <= 100000
+            add = {
+                value = 1
+                if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value <= 100000
+                        }
                     }
+                    multiply = 5
                 }
-                multiply = 5
-            }
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value >= 200000
+                else_if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value >= 200000
+                        }
                     }
+                    multiply = 0.8
                 }
-                multiply = 0.8
-            }
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value >= 300000
+                else_if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value >= 300000
+                        }
                     }
+                    multiply = 0.8
                 }
-                multiply = 0.8
-            }
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value >= 400000
+                else_if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value >= 400000
+                        }
                     }
+                    multiply = 0.8
                 }
-                multiply = 0.8
-            }
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value >= 500000
+                else_if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value >= 500000
+                        }
                     }
+                    multiply = 0.8
                 }
-                multiply = 0.8
-            }
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value >= 600000
+                else_if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value >= 600000
+                        }
                     }
+                    multiply = 0.8
                 }
-                multiply = 0.8
-            }
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value >= 700000
+                else_if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value >= 700000
+                        }
                     }
+                    multiply = 0.8
                 }
-                multiply = 0.8
-            }
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value >= 800000
+                else_if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value >= 800000
+                        }
                     }
+                    multiply = 0.8
                 }
-                multiply = 0.8
-            }
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value >= 900000
+                else_if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value >= 900000
+                        }
                     }
+                    multiply = 0.8
                 }
-                multiply = 0.8
-            }
-            if = {
-                limit = {
-                    squared_distance = {
-                        target = scope:core_county
-                        value >= 1000000
+                else_if = {
+                    limit = {
+                        squared_distance = {
+                            target = scope:core_county
+                            value >= 1000000
+                        }
                     }
+                    multiply = 0.8
                 }
-                multiply = 0.8
             }
         }
     }
@@ -356,5 +357,28 @@ rnw_holy_site_share_multiplier = {
             }
         }
         multiply = 10
+    }
+}
+rwn_take_disconnected_score = {
+    value = var:titles_connected
+    divide = rnw_num_of_direct_de_jure_titles
+}
+rwn_same_liege_connected_score = {
+    value = 0
+    every_in_list = {
+        variable = connected_titles
+        limit = {
+            de_jure_liege = prev.de_jure_liege
+        }
+        add = 1
+    }
+}
+rnw_capital_score = {
+    value = rwn_same_liege_connected_score
+    if = {
+        limit = {
+            title_capital_county = de_jure_liege.title_capital_county
+        }
+        multiply = 1.1
     }
 }

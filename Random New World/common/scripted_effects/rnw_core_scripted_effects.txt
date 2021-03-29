@@ -188,6 +188,7 @@ rnw_de_jure_setup_randomization_effect = {
         #}
         rnw_de_jure_setup_effect = {
             TIER = kingdom
+            BELLOW_TIER = duchy
             MIN = rnw_de_jure_kingdom_min_size_value
             MAX = rnw_de_jure_kingdom_max_size_value
         }
@@ -197,6 +198,7 @@ rnw_de_jure_setup_randomization_effect = {
             }
             rnw_de_jure_setup_effect = {
                 TIER = empire
+                BELLOW_TIER = kingdom
                 MIN = rnw_de_jure_empire_min_size_value
                 MAX = rnw_de_jure_empire_max_size_value
             }
@@ -358,5 +360,22 @@ rnw_development_randomization_effect = {
     rnw_smooth_development_level_effect = {
         ROUNDS = 5
         IMPACT_DIVIDER = 1
+    }
+}
+rnw_collect_connected_counties_effect = {
+    rnw_collect_neighboring_connected_counties_effect = yes
+    every_coastal_county = {
+        rnw_collect_coastally_connected_counties_effect = {
+            DISTANCE = tiny
+        }
+    }
+    rnw_handle_duchies_with_few_connections_effect = {
+        DISTANCE = small
+    }
+    rnw_handle_duchies_with_few_connections_effect = {
+        DISTANCE = medium
+    }
+    rnw_handle_duchies_with_few_connections_effect = {
+        DISTANCE = large
     }
 }
