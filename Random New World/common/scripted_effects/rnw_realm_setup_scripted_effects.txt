@@ -625,9 +625,8 @@ rnw_de_jure_setup_effect = {
 				every_in_list = {
 					variable = connected_titles
 					limit = {
-						save_temporary_scope_as = checked_title
 						NOR = {
-							de_jure_liege = scope:checked_title.de_jure_liege
+							de_jure_liege = scope:disconnected_title.de_jure_liege
 							de_jure_liege.rnw_num_of_direct_de_jure_titles >= $MAX$
 						}
 					}
