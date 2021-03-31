@@ -3,6 +3,11 @@ tags={
 	"Utilities"
 	"Alternative History"
 	"Gameplay"
+	"Total Conversion"
+	"Map"
+	"Religion"
+	"Culture"
+	"Random"
 }
 name="Random New World"
 supported_version="1.3.*"
