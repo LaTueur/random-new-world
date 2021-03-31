@@ -347,3 +347,14 @@ rnw_doctrine_gender_preference = {
 
 	random_rnw_doctrine_gender_preference = {}
 }
+rnw_development_randomization = {
+    default = few_rnw_num_of_emperors
+
+    off_rnw_development_randomization = {}
+
+    low_rnw_development_randomization = {}
+
+    medium_rnw_development_randomization = {}
+
+	high_rnw_development_randomization = {}
+}

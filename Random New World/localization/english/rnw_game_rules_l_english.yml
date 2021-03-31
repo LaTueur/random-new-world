@@ -326,3 +326,13 @@
  setting_female_rnw_doctrine_gender_preference_desc:0 "Most faiths will have the Female Dominated gender doctrine. This rule only has an effect if doctrines are randomized."
  setting_random_rnw_doctrine_gender_preference:0 "Full Random"
  setting_random_rnw_doctrine_gender_preference_desc:0 "All gender doctrines will appear with the same chance. This rule only has an effect if doctrines are randomized."
+
+ rule_rnw_development_randomization:0 "#X RNW:#! Development Level"
+ setting_off_rnw_development_randomization:0 "Historical"
+ setting_off_rnw_development_randomization_desc:0 "The development level will be unchanged."
+ setting_low_rnw_development_randomization:0 "Low"
+ setting_low_rnw_development_randomization_desc:0 "Development level will be randomized. It will range from 0 to 10."
+ setting_medium_rnw_development_randomization:0 "Medium"
+ setting_medium_rnw_development_randomization_desc:0 "Development level will be randomized. It will range from 0 to 20."
+ setting_high_rnw_development_randomization:0 "High"
+ setting_high_rnw_development_randomization_desc:0 "Development level will be randomized. It will range from 0 to 30."

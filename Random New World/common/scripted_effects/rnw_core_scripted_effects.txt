@@ -332,29 +332,36 @@ rnw_holy_site_randomization_effect = {
     }
 }
 rnw_development_randomization_effect = {
-	rnw_nullify_development_level_effect = yes
-    rnw_set_development_level_effect = {
-        TIER = empire
-        MIN = 3
-        MAX = 23
-    }
-    rnw_set_development_level_effect = {
-        TIER = kingdom
-        MIN = -3
-        MAX = 3
-    }
-    rnw_set_development_level_effect = {
-        TIER = duchy
-        MIN = -3
-        MAX = 3
-    }
-    rnw_limit_development_level_effect = {
-        MIN = 0
-        MAX = 25
-    }
-    rnw_smooth_development_level_effect = {
-        ROUNDS = 5
-        IMPACT_DIVIDER = 1
+    if = {
+        limit = {
+            NOT = {
+                has_game_rule = off_rnw_development_randomization
+            }
+        }
+        rnw_nullify_development_level_effect = yes
+        rnw_set_development_level_effect = {
+            TIER = empire
+            MIN = 0
+            MAX = rnw_maximum_development_level_value
+        }
+        rnw_set_development_level_effect = {
+            TIER = kingdom
+            MIN = rnw_development_level_negative_variance_value
+            MAX = rnw_development_level_variance_value
+        }
+        rnw_set_development_level_effect = {
+            TIER = duchy
+            MIN = rnw_development_level_negative_variance_value
+            MAX = rnw_development_level_variance_value
+        }
+        rnw_limit_development_level_effect = {
+            MIN = 0
+            MAX = rnw_maximum_development_level_value
+        }
+        rnw_smooth_development_level_effect = {
+            ROUNDS = 5
+            IMPACT_DIVIDER = 1
+        }
     }
 }
 rnw_collect_connected_counties_effect = {
