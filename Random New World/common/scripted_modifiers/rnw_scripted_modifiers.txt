@@ -79,3 +79,42 @@
         }
     }
 }
+rnw_realm_setup_county_score = {
+    modifier = {
+        add = 5
+        faith = scope:new_count.faith
+    }
+    modifier = {
+        add = 5
+        culture = scope:new_count.culture
+    }
+    modifier = {
+        add = 5
+        religion = scope:new_count.religion
+    }
+    modifier = {
+        add = 5
+        culture_group = scope:new_count.culture_group
+    }
+    modifier = {
+        add = {
+            value = 0
+            every_in_list = {
+                variable = connected_titles
+                limit = {
+                    holder = scope:new_count
+                }
+                add = 5
+            }
+        }
+        always = yes
+    }
+    modifier = {
+        add = 10
+        duchy = scope:core_county.duchy
+    }
+    modifier = {
+        add = 10
+        kingdom = scope:core_county.kingdom
+    }
+}

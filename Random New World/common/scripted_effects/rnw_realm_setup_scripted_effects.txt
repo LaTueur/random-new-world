@@ -145,23 +145,8 @@ rnw_counts_setup_effect = {
 						random_in_list = {
 							list = counties_to_select_from
 							weight = {
-								base = 10
-								modifier = {
-									add = 5
-									faith = scope:new_count.faith
-								}
-								modifier = {
-									add = 5
-									culture = scope:new_count.culture
-								}
-								modifier = {
-									add = 5
-									religion = scope:new_count.religion
-								}
-								modifier = {
-									add = 5
-									culture_group = scope:new_count.culture_group
-								}
+								base = 0
+								rnw_realm_setup_county_score = yes
 							}
 							rnw_resolve_county_change_effect = yes
 						}
