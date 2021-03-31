@@ -168,12 +168,23 @@ rnw_num_of_emperors = {
 
 	many_rnw_num_of_emperors = {}
 }
-rnw_de_jure_kingdom_randomization = {
-	default = off_rnw_de_jure_kingdom_randomization
+rnw_title_name_randomization = {
+	default = off_rnw_title_name_randomization
 
-    off_rnw_de_jure_kingdom_randomization = {}
+    off_rnw_title_name_randomization = {}
 
-	on_rnw_de_jure_kingdom_randomization = {}
+	kingdom_rnw_title_name_randomization = {}
+
+	duchy_rnw_title_name_randomization = {}
+}
+rnw_de_jure_randomization = {
+	default = off_rnw_de_jure_randomization
+
+    off_rnw_de_jure_randomization = {}
+
+	on_rnw_de_jure_randomization = {}
+
+	full_rnw_de_jure_randomization = {}
 }
 rnw_de_jure_kingdom_min_size = {
 	default = 3_rnw_de_jure_kingdom_min_size
@@ -224,13 +235,6 @@ rnw_de_jure_kingdom_max_size = {
 	11_rnw_de_jure_kingdom_max_size = {}
 
 	12_rnw_de_jure_kingdom_max_size = {}
-}
-rnw_de_jure_empire_randomization = {
-	default = on_rnw_de_jure_empire_randomization
-
-	off_rnw_de_jure_empire_randomization = {}
-
-	on_rnw_de_jure_empire_randomization = {}
 }
 rnw_de_jure_empire_min_size = {
 	default = 3_rnw_de_jure_empire_min_size

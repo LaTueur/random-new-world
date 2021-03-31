@@ -175,7 +175,7 @@ rnw_de_jure_setup_randomization_effect = {
     if = {
         limit = {
             NOT = {
-                has_game_rule = off_rnw_de_jure_kingdom_randomization
+                has_game_rule = off_rnw_de_jure_randomization
             }
         }
         #rnw_remove_de_jure_effect = yes
@@ -192,16 +192,11 @@ rnw_de_jure_setup_randomization_effect = {
             MIN = rnw_de_jure_kingdom_min_size_value
             MAX = rnw_de_jure_kingdom_max_size_value
         }
-        if = {
-            limit = {
-                has_game_rule = on_rnw_de_jure_empire_randomization
-            }
-            rnw_de_jure_setup_effect = {
-                TIER = empire
-                BELLOW_TIER = kingdom
-                MIN = rnw_de_jure_empire_min_size_value
-                MAX = rnw_de_jure_empire_max_size_value
-            }
+        rnw_de_jure_setup_effect = {
+            TIER = empire
+            BELLOW_TIER = kingdom
+            MIN = rnw_de_jure_empire_min_size_value
+            MAX = rnw_de_jure_empire_max_size_value
         }
     }
 }
@@ -377,5 +372,47 @@ rnw_collect_connected_counties_effect = {
     }
     rnw_handle_duchies_with_few_connections_effect = {
         DISTANCE = large
+    }
+}
+rnw_title_name_randomization_effect = {
+    if = {
+        limit = {
+            NAND = {
+                has_game_rule = off_rnw_de_jure_randomization
+                has_game_rule = off_rnw_title_name_randomization
+            }
+        }
+        every_empire = {
+            limit = {
+                is_titular = no
+            }
+            save_scope_as = title_to_rename
+            random_county_in_de_jure_hierarchy = {
+                trigger_event = rnw.1000
+            }
+        }
+        every_kingdom = {
+            limit = {
+                is_titular = no
+            }
+            save_scope_as = title_to_rename
+            random_county_in_de_jure_hierarchy = {
+                trigger_event = rnw.1000
+            }
+        }
+        if = {
+            limit = {
+                has_game_rule = duchy_rnw_title_name_randomization
+            }
+            every_duchy = {
+                limit = {
+                    is_titular = no
+                }
+                save_scope_as = title_to_rename
+                random_county_in_de_jure_hierarchy = {
+                    trigger_event = rnw.1000
+                }
+            }
+        }
     }
 }

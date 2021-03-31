@@ -268,48 +268,228 @@ RNW_RANDOM_CLUSTER = {
 RNW_NAME_ENDING = {
 	type = character
 
-	random_valid = yes
-
 	text = {
 		localization_key = rnw_ending_ia
-		weight_multiplier = {
-			base = 100
+		trigger = {
+			var:title_endig = flag:rnw_ending_ia
 		}
 	}
 	text = {
 		localization_key = rnw_ending_land
-		weight_multiplier = {
-			base = 100
+		trigger = {
+			var:title_endig = flag:rnw_ending_land
 		}
 	}
 	text = {
 		localization_key = rnw_ending_an
-		weight_multiplier = {
-			base = 20
+		trigger = {
+			var:title_endig = flag:rnw_ending_an
 		}
 	}
 	text = {
-		localization_key = rnw_letter_y
-		weight_multiplier = {
-			base = 50
+		localization_key = rnw_ending_en
+		trigger = {
+			var:title_endig = flag:rnw_ending_en
+		}
+	}
+	text = {
+		localization_key = rnw_ending_istan
+		trigger = {
+			var:title_endig = flag:rnw_ending_istan
+		}
+	}
+	text = {
+		localization_key = rnw_ending_lia
+		trigger = {
+			var:title_endig = flag:rnw_ending_lia
+		}
+	}
+	text = {
+		localization_key = rnw_ending_ny
+		trigger = {
+			var:title_endig = flag:rnw_ending_ny
+		}
+	}
+	text = {
+		localization_key = rnw_ending_ry
+		trigger = {
+			var:title_endig = flag:rnw_ending_ry
+		}
+	}
+	text = {
+		localization_key = rnw_ending_ex
+		trigger = {
+			var:title_endig = flag:rnw_ending_ex
+		}
+	}
+	text = {
+		localization_key = rnw_ending_vania
+		trigger = {
+			var:title_endig = flag:rnw_ending_vania
+		}
+	}
+	text = {
+		localization_key = rnw_ending_ony
+		trigger = {
+			var:title_endig = flag:rnw_ending_ony
+		}
+	}
+	text = {
+		localization_key = rnw_ending_ium
+		trigger = {
+			var:title_endig = flag:rnw_ending_ium
+		}
+	}
+	text = {
+		localization_key = rnw_ending_co
+		trigger = {
+			var:title_endig = flag:rnw_ending_co
+		}
+	}
+	text = {
+		localization_key = rnw_ending_rus
+		trigger = {
+			var:title_endig = flag:rnw_ending_rus
+		}
+	}
+	text = {
+		localization_key = rnw_ending_al
+		trigger = {
+			var:title_endig = flag:rnw_ending_al
+		}
+	}
+	text = {
+		localization_key = rnw_ending_li
+		trigger = {
+			var:title_endig = flag:rnw_ending_li
+		}
+	}
+	text = {
+		localization_key = rnw_ending_ine
+		trigger = {
+			var:title_endig = flag:rnw_ending_ine
+		}
+	}
+	text = {
+		localization_key = rnw_nothing
+		trigger = {
+			var:title_endig = flag:rnw_nothing
 		}
 	}
 	text = {
 		localization_key = rnw_letter_a
-		weight_multiplier = {
-			base = 20
+		trigger = {
+			var:title_endig = flag:rnw_letter_a
+		}
+	}
+}
+RNW_ADJECTIVE_ENDING = {
+	type = character
+
+	text = {
+		localization_key = rnw_ending_ian
+		trigger = {
+			OR = {
+				var:title_endig = flag:rnw_ending_ia
+				var:title_endig = flag:rnw_nothing
+				var:title_endig = flag:rnw_ending_ium
+			}
 		}
 	}
 	text = {
-		localization_key = rnw_letter_i
-		weight_multiplier = {
-			base = 5
+		localization_key = rnw_ending_landian
+		trigger = {
+			var:title_endig = flag:rnw_ending_land
 		}
 	}
 	text = {
-		localization_key = rnw_letter_o
-		weight_multiplier = {
-			base = 5
+		localization_key = rnw_ending_anian
+		trigger = {
+			var:title_endig = flag:rnw_ending_an
+		}
+	}
+	text = {
+		localization_key = rnw_ending_enninger
+		trigger = {
+			var:title_endig = flag:rnw_ending_en
+		}
+	}
+	text = {
+		localization_key = rnw_ending_istanian
+		trigger = {
+			var:title_endig = flag:rnw_ending_istan
+		}
+	}
+	text = {
+		localization_key = rnw_ending_icenian
+		trigger = {
+			var:title_endig = flag:rnw_ending_lia
+		}
+	}
+	text = {
+		localization_key = rnw_ending_nynan
+		trigger = {
+			var:title_endig = flag:rnw_ending_ny
+		}
+	}
+	text = {
+		localization_key = rnw_ending_rian
+		trigger = {
+			var:title_endig = flag:rnw_ending_ry
+		}
+	}
+	text = {
+		localization_key = rnw_ending_exer
+		trigger = {
+			var:title_endig = flag:rnw_ending_ex
+		}
+	}
+	text = {
+		localization_key = rnw_ending_vanian
+		trigger = {
+			var:title_endig = flag:rnw_ending_vania
+		}
+	}
+	text = {
+		localization_key = rnw_ending_onian
+		trigger = {
+			var:title_endig = flag:rnw_ending_ony
+		}
+	}
+	text = {
+		localization_key = rnw_ending_can
+		trigger = {
+			var:title_endig = flag:rnw_ending_co
+		}
+	}
+	text = {
+		localization_key = rnw_ending_iot
+		trigger = {
+			var:title_endig = flag:rnw_ending_rus
+		}
+	}
+	text = {
+		localization_key = rnw_ending_alese
+		trigger = {
+			var:title_endig = flag:rnw_ending_al
+		}
+	}
+	text = {
+		localization_key = rnw_ending_lian
+		trigger = {
+			var:title_endig = flag:rnw_ending_li
+		}
+	}
+	text = {
+		localization_key = rnw_ending_inian
+		trigger = {
+			var:title_endig = flag:rnw_ending_ine
+		}
+	}
+	text = {
+		localization_key = rnw_ending_an
+		trigger = {
+			var:title_endig = flag:rnw_letter_a
 		}
 	}
 }
@@ -373,7 +553,7 @@ RNW_SYLLABLE_PLACE = {
 		}
 	}
 }
-RNW_NAME_PLACE = {
+RNW_START_PLACE = {
 	type = character
 
 	random_valid = yes
@@ -388,6 +568,24 @@ RNW_NAME_PLACE = {
 		localization_key = rnw_consonant_start
 		weight_multiplier = {
 			base = 50
+		}
+	}
+}
+RNW_NAME_PLACE = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_first_name
+		trigger = {
+			var:name_type = flag:rnw_first_name
+		}
+	}
+	text = {
+		localization_key = rnw_house_name
+		trigger = {
+			var:name_type = flag:rnw_house_name
 		}
 	}
 }

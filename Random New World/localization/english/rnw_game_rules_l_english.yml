@@ -158,12 +158,22 @@
  setting_normal_rnw_num_of_emperors_desc:0 "Some emperors will be generated."
  setting_many_rnw_num_of_emperors:0 "Many"
  setting_many_rnw_num_of_emperors_desc:0 "Many emperors will be generated."
- 
- rule_rnw_de_jure_kingdom_randomization:0 "#X RNW:#! De Jure Kingdoms"
- setting_off_rnw_de_jure_kingdom_randomization:0 "Historical"
- setting_off_rnw_de_jure_kingdom_randomization_desc:0 "De jure kingdoms will be unchanged."
- setting_on_rnw_de_jure_kingdom_randomization:0 "Random"
- setting_on_rnw_de_jure_kingdom_randomization_desc:0 "De jure kingdoms will be randomized."
+
+ rule_rnw_title_name_randomization:0 "#X RNW:#! Title Names"
+ setting_off_rnw_title_name_randomization:0 "Historical"
+ setting_off_rnw_title_name_randomization_desc:0 "Title names will be unchanged. Only newly generated titles will get random names."
+ setting_kingdom_rnw_title_name_randomization:0 "Random for Kingdoms"
+ setting_kingdom_rnw_title_name_randomization_desc:0 "Kingdom and empire names will be randomly generated. Currently have other unwanted effects too, use at your own risk."
+ setting_duchy_rnw_title_name_randomization:0 "Random for Duchies"
+ setting_duchy_rnw_title_name_randomization_desc:0 "Duchy, kingdom and empire names will be randomly generated. Currently have other unwanted effects too, use at your own risk."
+
+ rule_rnw_de_jure_randomization:0 "#X RNW:#! De Jure Realms"
+ setting_off_rnw_de_jure_randomization:0 "Historical"
+ setting_off_rnw_de_jure_randomization_desc:0 "De jure kingdoms and empires will be unchanged."
+ setting_on_rnw_de_jure_randomization:0 "Random"
+ setting_on_rnw_de_jure_randomization_desc:0 "De jure kingdoms and empires will be randomized."
+ setting_full_rnw_de_jure_randomization:0 "Full Random"
+ setting_full_rnw_de_jure_randomization_desc:0 "De jure kingdoms and empires will be unchanged. Generates more diverse, but less realistic shapes."
 
  rule_rnw_de_jure_kingdom_min_size:0 "#X RNW:#! Minimum De Jure Kingdom Size"
  setting_2_rnw_de_jure_kingdom_min_size:0 "2 Duchies"
@@ -212,12 +222,6 @@
  setting_11_rnw_de_jure_kingdom_max_size_desc:0 "De jure kingdoms will have at most 11 duchies."
  setting_12_rnw_de_jure_kingdom_max_size:0 "12 Duchies"
  setting_12_rnw_de_jure_kingdom_max_size_desc:0 "De jure kingdoms will have at most 12 duchies."
- 
- rule_rnw_de_jure_empire_randomization:0 "#X RNW:#! De Jure Empires"
- setting_off_rnw_de_jure_empire_randomization:0 "None"
- setting_off_rnw_de_jure_empire_randomization_desc:0 "De jure empires will NOT be generated. This rule only has an effect if de jure kingdoms are randomized."
- setting_on_rnw_de_jure_empire_randomization:0 "Generated"
- setting_on_rnw_de_jure_empire_randomization_desc:0 "De jure empires will be generated. This rule only has an effect if de jure kingdoms are randomized."
 
  rule_rnw_de_jure_empire_min_size:0 "#X RNW:#! Minimum De Jure Empire Size"
  setting_2_rnw_de_jure_empire_min_size:0 "2 Kingdoms"
