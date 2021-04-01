@@ -336,6 +336,13 @@ rnw_faith_percent_used = {
 
 	100_rnw_faith_percent_used = {}
 }
+rnw_ruler_conversion = {
+	default = off_rnw_ruler_conversion
+
+    off_rnw_ruler_conversion = {}
+
+	on_rnw_ruler_conversion = {}
+}
 rnw_doctrine_randomization = {
 	default = off_rnw_doctrine_randomization
 

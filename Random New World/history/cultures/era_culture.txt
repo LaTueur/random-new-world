@@ -1,0 +1,3 @@
+﻿20.1.1 = {
+	join_era = culture_era_early_medieval
+}

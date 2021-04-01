@@ -1,0 +1,26 @@
+﻿era_cultures_group = {
+	
+	era_culture = {
+		
+		color = { 1.0 1.0 1.0 }
+
+		cadet_dynasty_names = {
+			"Botond"
+		}
+
+		dynasty_names = {
+			"Botond"
+		}
+
+		male_names = {
+			Botond
+		}
+		female_names = {
+			Botond
+		}
+
+		ethnicities = {
+			10 = caucasian_brown_hair
+		}
+	}
+}
