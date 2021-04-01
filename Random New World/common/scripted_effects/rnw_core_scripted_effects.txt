@@ -153,6 +153,11 @@ rnw_realm_setup_randomization_effect = {
         }
         rnw_destroy_every_higher_tier_title_effect = yes
 
+        rnw_player_realm_setup_effect = {
+            MIN_COUNTIES = rnw_counties_per_character_min_value
+            MAX_COUNTIES = rnw_counties_per_character_max_value
+        }
+
         rnw_counts_setup_effect = {
             MIN_AGE = rnw_rnw_spawn_age_min_value
             MAX_AGE = rnw_rnw_spawn_age_max_value

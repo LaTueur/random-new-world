@@ -41,7 +41,7 @@
             subtract = 0.4
         }
     }
-    else = {
+    else_if = {
         limit = {
             scope:conversion_target_type = flag:faith
         }

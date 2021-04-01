@@ -5,6 +5,15 @@
 
 	on_rnw_realm_setup_randomization = {}
 }
+rnw_player_character_protection = {
+	default = off_rnw_player_character_protection
+
+    off_rnw_player_character_protection = {}
+
+	on_rnw_player_character_protection = {}
+
+	full_rnw_player_character_protection = {}
+}
 rnw_counties_per_character_min = {
 	default = 1_rnw_counties_per_character_min
 

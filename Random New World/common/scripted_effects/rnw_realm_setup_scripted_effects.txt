@@ -74,88 +74,17 @@ rnw_counts_setup_effect = {
 						NOT = { exists = var:choosen_owner }
 					}
 					save_temporary_scope_as = core_county
-					create_character = {
-						age = { $MIN_AGE$ $MAX_AGE$ }
-						random_traits = yes
-						gender_female_chance = scope:core_county.faith.rnw_female_chance
-						culture = scope:core_county.culture
-						faith = scope:core_county.faith
-						location = scope:core_county.title_province
-						save_scope_as = new_count
+					rnw_generate_new_count_effect = {
+						MIN_AGE = $MIN_AGE$
+						MAX_AGE = $MAX_AGE$
 					}
 					rnw_resolve_county_change_effect = yes
 				}
 				scope:new_count = {
-					add_to_list = real_rulers
-					set_variable = {
-						name = counties_still_wanted
-						value = {
-							integer_range = {
-								min = $MIN_COUNTIES$
-								max = $MAX_COUNTIES$
-							}
-							subtract = 1
-						}
+					rnw_hand_out_counties_effect = {
+						MIN_COUNTIES = $MIN_COUNTIES$
+						MAX_COUNTIES = $MAX_COUNTIES$
 					}
-					while = {
-						count = var:counties_still_wanted
-						limit = {
-							any_sub_realm_county = {
-								any_in_list = {
-									variable = connected_titles
-									NOT = { exists = var:choosen_owner }
-								}
-							}
-						}
-						if = {
-							limit = {
-								any_sub_realm_county = {
-									any_neighboring_county = {
-										NOT = { exists = var:choosen_owner }
-									}
-								}
-							}
-							every_sub_realm_county = {
-								every_neighboring_county = {
-									limit = {
-										NOR = {
-											is_in_list = counties_to_select_from
-											exists = var:choosen_owner
-										}
-									}
-									add_to_list = counties_to_select_from
-								}
-							}
-						}
-						else = {
-							every_sub_realm_county = {
-								every_in_list = {
-									variable = naval_connected_titles
-									limit = {
-										NOR = {
-											is_in_list = counties_to_select_from
-											exists = var:choosen_owner
-										}
-									}
-									add_to_list = counties_to_select_from
-								}
-							}
-						}
-						
-						random_in_list = {
-							list = counties_to_select_from
-							weight = {
-								base = 0
-								rnw_realm_setup_county_score = yes
-							}
-							rnw_resolve_county_change_effect = yes
-						}
-						every_in_list = {
-							list = counties_to_select_from
-							remove_from_list = counties_to_select_from
-						}
-					}
-					remove_variable = counties_still_wanted
 				}
 			}
 			set_variable = { name = checked_counties value = yes }
@@ -167,6 +96,151 @@ rnw_counts_setup_effect = {
 	every_kingdom = {
 		remove_variable = checked_counties
 	}
+}
+rnw_generate_new_count_effect = {
+	create_character = {
+		age = { $MIN_AGE$ $MAX_AGE$ }
+		random_traits = yes
+		gender_female_chance = scope:core_county.faith.rnw_female_chance
+		culture = scope:core_county.culture
+		faith = scope:core_county.faith
+		location = scope:core_county.title_province
+		save_scope_as = new_count
+	}
+}
+rnw_hand_out_counties_effect = {
+	add_to_list = real_rulers
+	set_variable = {
+		name = counties_still_wanted
+		value = {
+			integer_range = {
+				min = $MIN_COUNTIES$
+				max = $MAX_COUNTIES$
+			}
+			subtract = 1
+		}
+	}
+	while = {
+		count = var:counties_still_wanted
+		limit = {
+			any_sub_realm_county = {
+				any_in_list = {
+					variable = connected_titles
+					NOT = { exists = var:choosen_owner }
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_sub_realm_county = {
+					any_neighboring_county = {
+						NOT = { exists = var:choosen_owner }
+					}
+				}
+			}
+			every_sub_realm_county = {
+				every_neighboring_county = {
+					limit = {
+						NOR = {
+							is_in_list = counties_to_select_from
+							exists = var:choosen_owner
+						}
+					}
+					add_to_list = counties_to_select_from
+				}
+			}
+		}
+		else = {
+			every_sub_realm_county = {
+				every_in_list = {
+					variable = naval_connected_titles
+					limit = {
+						NOR = {
+							is_in_list = counties_to_select_from
+							exists = var:choosen_owner
+						}
+					}
+					add_to_list = counties_to_select_from
+				}
+			}
+		}
+		
+		random_in_list = {
+			list = counties_to_select_from
+			weight = {
+				base = 0
+				rnw_realm_setup_county_score = yes
+			}
+			rnw_resolve_county_change_effect = yes
+		}
+		every_in_list = {
+			list = counties_to_select_from
+			remove_from_list = counties_to_select_from
+		}
+	}
+	remove_variable = counties_still_wanted
+}
+rnw_player_realm_setup_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_game_rule = off_rnw_player_character_protection
+			}
+		}
+		every_player = {
+			save_scope_as = new_count
+			capital_county = {
+				save_temporary_scope_as = core_county
+				rnw_resolve_county_change_effect = yes
+			}
+			rnw_dismiss_other_titles_effect = yes
+			if = {
+				limit = {
+					NOT = { has_game_rule = full_rnw_player_character_protection }
+				}
+				set_culture = scope:core_county.culture
+				set_character_faith = scope:core_county.faith
+				house = {
+					every_house_member = {
+						set_culture = scope:core_county.culture
+						set_character_faith = scope:core_county.faith
+					}
+				}
+			}
+			rnw_hand_out_counties_effect = {
+				MIN_COUNTIES = $MIN_COUNTIES$
+				MAX_COUNTIES = $MAX_COUNTIES$
+			}
+		}
+	}
+}
+rnw_dismiss_other_titles_effect = {
+	create_character = {
+		age = 0
+		random_traits = yes
+		gender_female_chance = 50
+		culture = scope:core_county.culture
+		faith = scope:core_county.faith
+		location = scope:core_county.title_province
+		save_scope_as = holder_character
+	}
+	create_title_and_vassal_change = {
+		type = usurped
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	every_sub_realm_county = {
+		limit = {
+			NOT = {
+				this = scope:core_county
+			}
+		}
+		change_title_holder_include_vassals = {
+			holder = scope:holder_character
+			change = scope:change
+		}
+	}
+	resolve_title_and_vassal_change = scope:change
 }
 rnw_higher_realms_setup_effect = {
 	if = {
@@ -655,6 +729,17 @@ rnw_convert_vassals_effect = {
 		max = 1000000000
 		limit = {
 			is_independent_ruler = no
+			trigger_if = {
+				limit = {
+					has_game_rule = full_rnw_player_character_protection
+				}
+				save_temporary_scope_as = checked_ruler
+				NOT = {
+					any_player = {
+						this = scope:checked_ruler
+					}
+				}
+			}
 		}
 		random = {
 			chance = 30
