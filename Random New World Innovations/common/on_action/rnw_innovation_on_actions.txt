@@ -1,0 +1,11 @@
+﻿rnw_innovation_on_action = {
+    effect = {
+        rnw_innovation_development_connection_collection = yes
+        rnw_innovation_average_development_calculation = yes
+        rnw_innovation_set_levels = {
+            MIN = 3
+            MAX = 10
+        }
+        rnw_innovation_assignation = yes
+    }
+}

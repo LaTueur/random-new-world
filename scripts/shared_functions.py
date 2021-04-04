@@ -3,6 +3,8 @@ import os
 import apply_script as pdx_parser
 import codecs
 
+game_path = "C:\Program Files (x86)\Steam\steamapps\common\Crusader Kings III\game" # Can be mod path too
+
 comment_pattern = regex.compile(r"(#)[^\n]*")
 
 def write_output(path, file, text):
