@@ -15,10 +15,10 @@
         change_development_level = scope:development_level
     }
 }
-rnw_nullify_development_level_effect = {
+rnw_set_global_development_level_effect = {
     every_county = {
         change_development_level = {
-            value = 0
+            value = $LEVEL$
             subtract = this.development_level
 		}
 	}

@@ -343,29 +343,45 @@ rnw_development_randomization_effect = {
                 has_game_rule = off_rnw_development_randomization
             }
         }
-        rnw_nullify_development_level_effect = yes
-        rnw_set_development_level_effect = {
-            TIER = empire
-            MIN = 0
-            MAX = rnw_maximum_development_level_value
+        if = {
+            limit = {
+                OR = {
+                    has_game_rule = low_rnw_development_randomization
+                    has_game_rule = medium_rnw_development_randomization
+                    has_game_rule = high_rnw_development_randomization
+                }
+            }
+            rnw_set_global_development_level_effect = {
+                LEVEL = 0
+            }
+            rnw_set_development_level_effect = {
+                TIER = empire
+                MIN = 0
+                MAX = rnw_maximum_development_level_value
+            }
+            rnw_set_development_level_effect = {
+                TIER = kingdom
+                MIN = rnw_development_level_negative_variance_value
+                MAX = rnw_development_level_variance_value
+            }
+            rnw_set_development_level_effect = {
+                TIER = duchy
+                MIN = rnw_development_level_negative_variance_value
+                MAX = rnw_development_level_variance_value
+            }
+            rnw_limit_development_level_effect = {
+                MIN = 0
+                MAX = rnw_maximum_development_level_value
+            }
+            rnw_smooth_development_level_effect = {
+                ROUNDS = 5
+                IMPACT_DIVIDER = 1
+            }
         }
-        rnw_set_development_level_effect = {
-            TIER = kingdom
-            MIN = rnw_development_level_negative_variance_value
-            MAX = rnw_development_level_variance_value
-        }
-        rnw_set_development_level_effect = {
-            TIER = duchy
-            MIN = rnw_development_level_negative_variance_value
-            MAX = rnw_development_level_variance_value
-        }
-        rnw_limit_development_level_effect = {
-            MIN = 0
-            MAX = rnw_maximum_development_level_value
-        }
-        rnw_smooth_development_level_effect = {
-            ROUNDS = 5
-            IMPACT_DIVIDER = 1
+        else = {
+            rnw_set_global_development_level_effect = {
+                LEVEL = rnw_flat_development_level_value
+            }
         }
     }
 }

@@ -709,3 +709,47 @@ rnw_development_level_negative_variance_value = {
     value = rnw_development_level_variance_value
     multiply = -1
 }
+rnw_flat_development_level_value = {
+    if = {
+        limit = {
+            has_game_rule = flat_0_rnw_development_randomization
+        }
+        value = 0
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_5_rnw_development_randomization
+        }
+        value = 5
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_10_rnw_development_randomization
+        }
+        value = 10
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_15_rnw_development_randomization
+        }
+        value = 15
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_20_rnw_development_randomization
+        }
+        value = 20
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_25_rnw_development_randomization
+        }
+        value = 25
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_30_rnw_development_randomization
+        }
+        value = 30
+    }
+}

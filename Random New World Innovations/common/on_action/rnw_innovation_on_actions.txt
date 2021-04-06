@@ -1,10 +1,24 @@
 ﻿rnw_innovation_on_action = {
     effect = {
-        rnw_innovation_development_connection_collection = yes
-        rnw_innovation_average_development_calculation = yes
-        rnw_innovation_set_levels = {
-            MIN = 3
-            MAX = 10
+        if = {
+            limit = {
+                OR = {
+                    has_game_rule = low_rnw_innovation_randomization
+                    has_game_rule = medium_rnw_innovation_randomization
+                    has_game_rule = high_rnw_innovation_randomization
+                }
+            }
+            rnw_innovation_development_connection_collection = yes
+            rnw_innovation_average_development_calculation = yes
+            rnw_innovation_set_levels = {
+                MIN = rnw_innovation_min_level
+                MAX = rnw_innovation_max_level
+            }
+        }
+        else = {
+            rnw_innovation_flat_set_levels = {
+                LEVEL = rnw_innovation_flat_level
+            }
         }
         rnw_innovation_assignation = yes
     }

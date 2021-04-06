@@ -52,7 +52,6 @@
                     target = scope:connected_culture
                 }
             }
-            debug_log = "connected!"
         }
     }
 }
@@ -141,6 +140,22 @@ rnw_innovation_set_levels = {
         rnw_innovation_check_level_threshold = yes
     }
 }
+rnw_innovation_flat_set_levels = {
+    every_county = {
+        culture = {
+            if = {
+                limit = {
+                    NOT = { exists = var:innovation_level }
+                }
+                set_variable = {
+                    name = innovation_level
+                    value = $LEVEL$
+                }
+                add_to_list = innovation_culture_list
+            }
+        }
+    }
+}
 rnw_innovation_assignation = {
     while = {
         limit = {
@@ -202,6 +217,10 @@ rnw_innovation_check_level_threshold = {
 rnw_innovation_add_to_culture = {
     save_temporary_scope_as = gaining_culture
     add_random_innovation = culture_group_regional
+    save_temporary_scope_value_as = {
+        name = added_innovations
+        value = 0
+    }
     while = {
         count = var:innovation_level
         random_list = {
@@ -228,6 +247,33 @@ rnw_innovation_add_to_culture = {
             }
             10 = {
                 add_random_innovation = yes
+            }
+        }
+        if = {
+            limit = {
+                NOT = {
+                    exists = var:second_era
+                }
+            }
+            save_temporary_scope_value_as = {
+                name = added_innovations
+                value = {
+                    value = scope:added_innovations
+                    add = 1
+                }
+            }
+            if = {
+                limit = {
+					scope:added_innovations = {
+						compare_value >= rnw_innovation_second_era_threshold
+					}
+                }
+                get_all_innovations_from = culture:era_culture
+                add_random_innovation = culture_group_regional
+                set_variable = {
+                    name = second_era
+                    value = yes
+                }
             }
         }
     }
