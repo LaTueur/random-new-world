@@ -90,7 +90,7 @@ rnw_holding_type_effect = {
 	ordered_in_list = {
 		list = start_counties
 		order_by = development_level
-		max = 6
+		max = 10
 		set_variable = {
 			name = holding_type
 			value = flag:castle_holding
@@ -189,5 +189,317 @@ rnw_flip_holding_type_effect = {
 			}
 		}
 		remove_variable = holding_type
+	}
+}
+rnw_get_world_development_average_effect = {
+	save_scope_value_as = {
+		name = world_development_average
+		value = {
+			value = 0
+			every_county = {
+				add = development_level
+			}
+			divide = {
+				value = 0
+				every_county = {
+					add = 1
+				}
+			}
+		}
+	}
+}
+rnw_get_ruler_development_average_effect = {
+	every_in_list = {
+		list = real_rulers
+		limit = {
+			is_landed = yes
+			is_independent_ruler = yes
+		}
+		set_variable = {
+			name = development_average
+			value = {
+				value = 0
+				every_sub_realm_county = {
+					add = development_level
+				}
+				divide = {
+					value = 0
+					every_sub_realm_county = {
+						add = 1
+					}
+				}
+			}
+		}
+	}
+}
+rnw_get_effective_development_effect = {
+	every_in_list = {
+		list = real_rulers
+		limit = {
+			is_landed = yes
+			is_independent_ruler = yes
+		}
+		save_temporary_scope_as = checked_ruler
+		every_sub_realm_county = {
+			every_in_list = {
+				variable = connected_titles
+				holder.top_liege = {
+					if = {
+						limit = {
+							NOR = {
+								is_in_list = connected_rulers
+								this = scope:checked_ruler
+							}
+						}
+						add_to_list = connected_rulers
+					}
+				}
+			}
+		}
+        set_variable = {
+            name = surrounding_development_average
+            value = {
+                value = 0
+                every_in_list = {
+                    list = connected_rulers
+                    add = var:development_average
+                }
+                divide = {
+                    value = 0
+                    every_in_list = {
+                        list = connected_rulers
+                        add = 1
+                    }
+                }
+            }
+        }
+        set_variable = {
+            name = effective_development
+            value = {
+                value = 0
+                add = {
+                    value = var:development_average
+                    multiply = 0.75
+                }
+                add = {
+                    value = var:surrounding_development_average
+                    multiply = 0.25
+                }
+            }
+        }
+		every_in_list = {
+			list = connected_rulers
+			remove_from_list = connected_rulers
+		}
+	}
+}
+rnw_set_governments_effect = {
+	every_in_list = {
+		list = real_rulers
+		limit = {
+			is_landed = yes
+			is_independent_ruler = yes
+		}
+		if = {
+			limit = {
+				var:effective_development.compare_value >= scope:world_development_average.compare_value
+			}
+			rnw_set_feudal_government_effect = yes
+			ordered_vassal_or_below = {
+				order_by = highest_held_title_tier
+				rnw_set_feudal_government_effect = yes
+			}
+		}
+		else = {
+			rnw_set_tribal_government_effect = yes
+			ordered_vassal_or_below = {
+				order_by = highest_held_title_tier
+				rnw_set_tribal_government_effect = yes
+			}
+		}
+	}
+}
+rnw_set_feudal_government_effect = {
+	rnw_set_tribal_government_effect = yes
+	if = {
+		limit = {
+			is_independent_ruler = no
+			liege = { has_government = clan_government }
+		}
+		change_government = clan_government
+	}
+	else_if = {
+		limit = {
+			is_independent_ruler = no
+			liege = { has_government = feudal_government }
+		}
+		change_government = feudal_government
+	}
+	else_if = {
+		limit = {
+			is_independent_ruler = yes
+			faith = { religion_tag = islam_religion }
+		}
+		change_government = clan_government
+	}
+	else = { change_government = feudal_government }
+}
+rnw_set_tribal_government_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_government = tribal_government
+			}
+		}
+		change_government = tribal_government
+	}
+}
+rnw_set_special_governments_effect = {
+	ordered_in_list = {
+		list = real_rulers
+		limit = {
+			faith = {
+				NOT = { has_doctrine_parameter = allowed_holding_type_church_holding }
+			}
+			is_ai = no
+		}
+		max = 5
+		order_by = {
+			value = 0
+			save_temporary_scope_as = checked_ruler
+			if = {
+				limit = {
+					faith = {
+						any_holy_site = {
+							county.holder = scope:checked_ruler
+						}
+					}
+				}
+				add = 10
+			}
+			if = {
+				limit = {
+					is_independent_ruler = no
+				}
+				add = 5
+			}
+		}
+		change_government = theocracy_government
+	}
+	ordered_in_list = {
+		list = real_rulers
+		limit = {
+			NOT = {
+				has_government = theocracy_government
+			}
+			is_ai = no
+		}
+		max = 5
+		order_by = {
+			value = 0
+			save_temporary_scope_as = checked_ruler
+			if = {
+				limit = {
+					capital_province.county = {
+						is_coastal_county = yes
+					}
+				}
+				add = 5
+			}
+			if = {
+				limit = {
+					is_independent_ruler = no
+				}
+				add = 5
+			}
+		}
+		change_government = republic_government
+	}
+}
+rnw_set_holdings_effect = {
+	every_county = {
+		if = {
+			limit = {
+				holder = {
+					has_government = tribal_government
+				}
+			}
+			title_province = {
+				rnw_set_holding_type_effect = {
+					TYPE = tribal_holding
+				}
+			}
+			every_county_province = {
+				limit = {
+					NOT = {
+						this = county.title_province
+						exists = barony.holder
+					}
+				}
+				set_holding_type = rnw_none
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					holder = {
+						OR = {
+							has_government = feudal_government
+							has_government = clan_government
+						}
+					}
+				}
+				title_province = {
+					rnw_set_holding_type_effect = {
+						TYPE = castle_holding
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					holder = {
+						has_government = theocracy_government
+					}
+				}
+				title_province = {
+					rnw_set_holding_type_effect = {
+						TYPE = temple_holding
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					holder = {
+						has_government = republic_government
+					}
+				}
+				title_province = {
+					rnw_set_holding_type_effect = {
+						TYPE = city_holding
+					}
+				}
+			}
+		}
+	}
+}
+rnw_set_holding_type_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_holding_type = tribal_holding
+			}
+		}
+		set_holding_type = tribal_holding
+	}
+	set_holding_type = castle_holding
+	set_holding_type = temple_holding
+	set_holding_type = city_holding
+	if = {
+		limit = {
+			NOT = {
+				has_holding_type = $TYPE$
+			}
+		}
+		set_holding_type = $TYPE$
 	}
 }
