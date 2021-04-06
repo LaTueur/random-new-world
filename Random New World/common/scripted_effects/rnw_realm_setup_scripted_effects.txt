@@ -733,12 +733,7 @@ rnw_convert_vassals_effect = {
 				limit = {
 					has_game_rule = full_rnw_player_character_protection
 				}
-				save_temporary_scope_as = checked_ruler
-				NOT = {
-					any_player = {
-						this = scope:checked_ruler
-					}
-				}
+				is_ai = no
 			}
 		}
 		random = {
