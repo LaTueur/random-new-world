@@ -452,7 +452,7 @@ rnw_holding_and_government_randomization_effect = {
         rnw_get_world_development_average_effect = yes
         rnw_get_ruler_development_average_effect = yes
         rnw_get_effective_development_effect = yes
-        rnw_set_governments_effect = yes
+        rnw_choose_governments_effect = yes
         rnw_set_special_governments_effect = yes
         rnw_set_holdings_effect = yes
     }
