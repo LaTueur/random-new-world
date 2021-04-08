@@ -197,7 +197,7 @@ rnw_get_world_development_average_effect = {
 		value = {
 			value = 0
 			every_county = {
-				add = development_level
+				add = rnw_development_level_value
 			}
 			divide = {
 				value = 0
@@ -220,7 +220,7 @@ rnw_get_ruler_development_average_effect = {
 			value = {
 				value = 0
 				every_sub_realm_county = {
-					add = development_level
+					add = rnw_development_level_value
 				}
 				divide = {
 					value = 0
@@ -372,9 +372,9 @@ rnw_set_special_governments_effect = {
 		max = 5
 		order_by = {
 			value = 0
-			save_temporary_scope_as = checked_ruler
 			if = {
 				limit = {
+					save_temporary_scope_as = checked_ruler
 					faith = {
 						any_holy_site = {
 							county.holder = scope:checked_ruler
@@ -407,7 +407,6 @@ rnw_set_special_governments_effect = {
 		max = 5
 		order_by = {
 			value = 0
-			save_temporary_scope_as = checked_ruler
 			if = {
 				limit = {
 					capital_province.county = {
@@ -452,7 +451,28 @@ rnw_set_holdings_effect = {
 			while = {
 				count = scope:extra_provinces
 				random = {
-					chance = 50
+					chance = 30
+                    modifier = {
+                        add = development_level
+                    }
+                    modifier = {
+                        add = 15
+						NOT = {
+							exists = var:has_castle_holding
+						}
+                    }
+                    modifier = {
+                        add = 15
+						NOT = {
+							exists = var:has_church_holding
+						}
+                    }
+                    modifier = {
+                        add = 15
+						NOT = {
+							exists = var:has_city_holding
+						}
+                    }
 					random_county_province = {
 						limit = {
 							NOR = {
@@ -469,16 +489,34 @@ rnw_set_holdings_effect = {
 						}
 						random_list = {
 							30 = {
+								modifier = {
+									factor = 7
+									NOT = {
+										exists = county.var:has_castle_holding
+									} 
+								}
 								rnw_set_holding_type_effect = {
 									TYPE = castle_holding
 								}
 							}
 							30 = {
+								modifier = {
+									factor = 7
+									NOT = {
+										exists = county.var:has_church_holding
+									} 
+								}
 								rnw_set_holding_type_effect = {
 									TYPE = church_holding
 								}
 							}
 							30 = {
+								modifier = {
+									factor = 7
+									NOT = {
+										exists = county.var:has_city_holding
+									} 
+								}
 								rnw_set_holding_type_effect = {
 									TYPE = city_holding
 								}
@@ -508,6 +546,9 @@ rnw_set_holdings_effect = {
 			}
 			remove_variable = has_holding
 		}
+		remove_variable = has_castle_holding
+		remove_variable = has_church_holding
+		remove_variable = has_city_holding
 	}
 }
 rnw_set_holding_type_effect = {
@@ -515,17 +556,7 @@ rnw_set_holding_type_effect = {
 		limit = {
 			has_holding = yes
 		}
-		if = {
-			limit = {
-				NOT = {
-					has_holding_type = tribal_holding
-				}
-			}
-			set_holding_type = tribal_holding
-		}
-		set_holding_type = castle_holding
-		set_holding_type = church_holding
-		set_holding_type = city_holding
+		set_holding_type = none
 	}
 	if = {
 		limit = {
@@ -534,5 +565,18 @@ rnw_set_holding_type_effect = {
 			}
 		}
 		set_holding_type = $TYPE$
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = county.var:has_$TYPE$
+			}
+		}
+		county = {
+			set_variable = {
+				name = has_$TYPE$
+				value = yes
+			}
+		}
 	}
 }

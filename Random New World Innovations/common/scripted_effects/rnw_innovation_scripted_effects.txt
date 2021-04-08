@@ -12,7 +12,7 @@
                 }
                 change_variable = {
                     name = development_sum
-                    add = scope:checked_county.development_level
+                    add = scope:checked_county.rnw_development_level_value
                 }
             }
             else = {
@@ -23,7 +23,7 @@
                 }
                 set_variable = {
                     name = development_sum
-                    value = scope:checked_county.development_level
+                    value = scope:checked_county.rnw_development_level_value
                 }
             }
         }

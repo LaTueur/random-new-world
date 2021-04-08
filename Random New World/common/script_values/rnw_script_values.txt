@@ -382,3 +382,14 @@ rnw_capital_score = {
         multiply = 1.1
     }
 }
+rnw_development_level_value = {
+    value = development_level
+    if = {
+        limit = {
+            faith = {
+                has_doctrine = unreformed_faith_doctrine
+            }
+        }
+        multiply = 0.5
+    }
+}
