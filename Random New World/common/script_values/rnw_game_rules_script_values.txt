@@ -753,3 +753,57 @@ rnw_flat_development_level_value = {
         value = 30
     }
 }
+rnw_unreformed_development_penalty = {
+    if = {
+        limit = {
+            has_game_rule = off_rnw_unreformed_development_penalty
+        }
+        value = 1
+    }
+    else_if = {
+        limit = {
+            has_game_rule = on_rnw_unreformed_development_penalty
+        }
+        value = 0.75
+    }
+    else_if = {
+        limit = {
+            has_game_rule = full_rnw_unreformed_development_penalty
+        }
+        value = 0.1
+    }
+}
+rnw_global_development_multiplier = {
+    if = {
+        limit = {
+            has_game_rule = less_rnw_government_randomization
+        }
+        value = 0.67
+    }
+    else_if = {
+        limit = {
+            has_game_rule = normal_rnw_government_randomization
+        }
+        value = 1
+    }
+    else_if = {
+        limit = {
+            has_game_rule = more_rnw_government_randomization
+        }
+        value = 1.33
+    }
+}
+rnw_special_governments_value = {
+    if = {
+        limit = {
+            has_game_rule = on_rnw_special_governments
+        }
+        value = 5
+    }
+    else_if = {
+        limit = {
+            has_game_rule = more_rnw_special_governments
+        }
+        value = 10
+    }
+}

@@ -95,6 +95,7 @@ rnw_get_world_development_average_effect = {
 					add = 1
 				}
 			}
+			multiply = rnw_global_development_multiplier
 		}
 	}
 }
@@ -201,12 +202,14 @@ rnw_choose_governments_effect = {
 				rnw_set_government_effect = {
 					GOVERNMENT = clan_government
 					HOLDING = castle_holding
+					SUCCESSION = none
 				}
 			}
 			else = {
 				rnw_set_government_effect = {
 					GOVERNMENT = feudal_government
 					HOLDING = castle_holding
+					SUCCESSION = none
 				}
 			}
 		}
@@ -214,6 +217,45 @@ rnw_choose_governments_effect = {
 			rnw_set_government_effect = {
 				GOVERNMENT = tribal_government
 				HOLDING = tribal_holding
+				SUCCESSION = none
+			}
+		}
+	}
+}
+rnw_choose_flat_governments_effect = {
+	every_in_list = {
+		list = real_rulers
+		limit = {
+			is_landed = yes
+			is_independent_ruler = yes
+		}
+		if = {
+			limit = {
+				has_game_rule = feudal_rnw_government_randomization
+			}
+			if = {
+				limit = {
+					faith = { religion_tag = islam_religion }
+				}
+				rnw_set_government_effect = {
+					GOVERNMENT = clan_government
+					HOLDING = castle_holding
+					SUCCESSION = none
+				}
+			}
+			else = {
+				rnw_set_government_effect = {
+					GOVERNMENT = feudal_government
+					HOLDING = castle_holding
+					SUCCESSION = none
+				}
+			}
+		}
+		else = {
+			rnw_set_government_effect = {
+				GOVERNMENT = tribal_government
+				HOLDING = tribal_holding
+				SUCCESSION = none
 			}
 		}
 	}
@@ -234,6 +276,14 @@ rnw_set_government_effect = {
 		}
 		change_government = $GOVERNMENT$
 	}
+	if = {
+		limit = {
+			NOT = {
+				has_realm_law = $SUCCESSION$
+			}
+		}
+		add_realm_law_skip_effects = $SUCCESSION$
+	}
 	every_vassal_or_below = {
 		limit = {
 			is_landed = yes
@@ -247,6 +297,34 @@ rnw_set_government_effect = {
 			}
 			change_government = $GOVERNMENT$
 		}
+		if = {
+			limit = {
+				NOT = {
+					has_realm_law = $GOVERNMENT$
+				}
+			}
+			add_realm_law_skip_effects = $SUCCESSION$
+		}
+	}
+}
+rnw_set_religious_head_government_effect = {
+	every_religion_global = {
+		every_faith = {
+			limit = {
+				has_doctrine_parameter = spiritual_head_of_faith
+				exists = religious_head_title
+				religious_head_title.holder = {
+					is_landed = yes
+				}
+			}
+			religious_head_title.holder = {
+				rnw_set_government_effect = {
+					GOVERNMENT = theocracy_government
+					HOLDING = church_holding
+					SUCCESSION = bishop_theocratic_succession_law
+				}
+			}
+		}
 	}
 }
 rnw_set_special_governments_effect = {
@@ -259,7 +337,7 @@ rnw_set_special_governments_effect = {
 			is_ai = yes
 			is_landed = yes
 		}
-		max = 5
+		max = rnw_special_governments_value
 		order_by = {
 			value = 0
 			if = {
@@ -279,10 +357,25 @@ rnw_set_special_governments_effect = {
 				}
 				add = 5
 			}
+			if = {
+				limit = {
+					is_adult = yes
+				}
+				add = 5
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_government = tribal_government
+					}
+				}
+				add = 10
+			}
 		}
 		rnw_set_government_effect = {
 			GOVERNMENT = theocracy_government
 			HOLDING = church_holding
+			SUCCESSION = bishop_theocratic_succession_law
 		}
 	}
 	ordered_in_list = {
@@ -294,7 +387,7 @@ rnw_set_special_governments_effect = {
 			is_ai = yes
 			is_landed = yes
 		}
-		max = 5
+		max = rnw_special_governments_value
 		order_by = {
 			value = 0
 			if = {
@@ -311,10 +404,36 @@ rnw_set_special_governments_effect = {
 				}
 				add = 5
 			}
+			if = {
+				limit = {
+					is_adult = yes
+				}
+				add = 5
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_government = tribal_government
+					}
+				}
+				add = 10
+			}
 		}
 		rnw_set_government_effect = {
 			GOVERNMENT = republic_government
 			HOLDING = city_holding
+			SUCCESSION = city_succession_law
+		}
+	}
+}
+set_to_liege_government_effect = {
+	save_temporary_scope_as = changing_vassal
+	liege = {
+		switch = {
+			trigger = has_government
+			clan_government = { scope:changing_vassal = { change_government = clan_government } }
+			feudal_government = { scope:changing_vassal = { change_government = feudal_government } }
+			republic_government = { scope:changing_vassal = { change_government = republic_government } }
 		}
 	}
 }
@@ -398,6 +517,19 @@ rnw_set_holdings_effect = {
 								}
 								rnw_set_holding_type_effect = {
 									TYPE = church_holding
+								}
+								if = {
+									limit = {
+										barony.holder = {
+											highest_held_title_tier = tier_barony
+											faith = {
+												has_doctrine_parameter = allowed_holding_type_church_holding
+											}
+										}
+									}
+									barony.holder = {
+										set_to_liege_government_effect = yes
+									}
 								}
 							}
 							30 = {

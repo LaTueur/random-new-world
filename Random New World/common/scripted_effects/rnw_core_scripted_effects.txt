@@ -447,13 +447,31 @@ rnw_title_name_randomization_effect = {
 rnw_holding_and_government_randomization_effect = {
     if = {
         limit = {
-            always = yes
+            NOT = { has_game_rule = off_rnw_government_randomization }
         }
-        rnw_get_world_development_average_effect = yes
-        rnw_get_ruler_development_average_effect = yes
-        rnw_get_effective_development_effect = yes
-        rnw_choose_governments_effect = yes
-        rnw_set_special_governments_effect = yes
+        if = {
+            limit = {
+                OR = {
+                    has_game_rule = low_rnw_development_randomization
+                    has_game_rule = medium_rnw_development_randomization
+                    has_game_rule = high_rnw_development_randomization
+                }
+            }
+            rnw_get_world_development_average_effect = yes
+            rnw_get_ruler_development_average_effect = yes
+            rnw_get_effective_development_effect = yes
+            rnw_choose_governments_effect = yes
+        }
+        else = {
+            rnw_choose_flat_governments_effect = yes
+        }
+        rnw_set_religious_head_government_effect = yes
+        if = {
+            limit = {
+                NOT = { has_game_rule = off_rnw_special_governments }
+            }
+            rnw_set_special_governments_effect = yes
+        }
         rnw_set_holdings_effect = yes
     }
 }

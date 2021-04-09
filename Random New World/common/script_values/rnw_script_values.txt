@@ -390,6 +390,6 @@ rnw_development_level_value = {
                 has_doctrine = unreformed_faith_doctrine
             }
         }
-        multiply = 0.5
+        multiply = rnw_unreformed_development_penalty
     }
 }

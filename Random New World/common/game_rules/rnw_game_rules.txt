@@ -388,3 +388,36 @@ rnw_development_randomization = {
 
     flat_30_rnw_development_randomization = {}
 }
+rnw_government_randomization = {
+    default = off_rnw_government_randomization
+
+    off_rnw_government_randomization = {}
+
+    less_rnw_government_randomization = {}
+
+    normal_rnw_government_randomization = {}
+
+	more_rnw_government_randomization = {}
+
+    tribal_rnw_government_randomization = {}
+
+    feudal_rnw_government_randomization = {}
+}
+rnw_unreformed_development_penalty = {
+    default = on_rnw_unreformed_development_penalty
+
+    off_rnw_unreformed_development_penalty = {}
+
+    on_rnw_unreformed_development_penalty = {}
+
+    full_rnw_unreformed_development_penalty = {}
+}
+rnw_special_governments = {
+    default = on_rnw_special_governments
+
+    off_rnw_special_governments = {}
+
+    on_rnw_special_governments = {}
+
+    more_rnw_special_governments = {}
+}
