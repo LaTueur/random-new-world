@@ -1,4 +1,4 @@
-version="1.2"
+version="1.2.1"
 tags={
 	"Utilities"
 	"Alternative History"
@@ -7,8 +7,7 @@ tags={
 	"Map"
 	"Religion"
 	"Culture"
-	"Random"
 }
 name="Random New World"
-supported_version="1.3.*"
+supported_version="1.*"
 remote_file_id="2442026625"
