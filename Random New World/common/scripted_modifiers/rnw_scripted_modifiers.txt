@@ -94,7 +94,7 @@ rnw_realm_setup_county_score = {
     }
     modifier = {
         add = 5
-        culture_group = scope:new_count.culture_group
+        culture = { has_same_culture_heritage = scope:new_count.culture }
     }
     modifier = {
         add = {

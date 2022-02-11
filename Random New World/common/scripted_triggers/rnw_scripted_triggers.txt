@@ -38,15 +38,6 @@ rnw_ruler_can_create_head_of_faith_title_trigger = {
         liege.primary_title.tier > tier_duchy
     }
 }
-rnw_title_can_provide_empty_connected_title_trigger = {
-    exists = var:checked_de_jure
-    rnw_title_has_empty_connected_title_trigger = yes
-}
-rnw_title_has_empty_connected_title_trigger = {
-    any_county_in_de_jure_hierarchy = {
-        rnw_county_has_empty_connected_title_trigger = yes
-    }
-}
 rnw_has_empty_connected_title_trigger = {
     any_in_list = {
         variable = connected_titles
@@ -96,4 +87,10 @@ rnw_coastal_county_to_merge_title_trigger = {
 }
 rnw_disconnected_title_trigger = {
     rwn_same_liege_connected_score < 2
+}
+rnw_same_religion_trigger = {
+    religion = scope:checked_list_element.religion
+}
+rnw_same_heritage_trigger = {
+    has_same_culture_heritage = scope:checked_list_element
 }

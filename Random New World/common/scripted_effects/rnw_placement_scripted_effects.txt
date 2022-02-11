@@ -29,39 +29,27 @@ rnw_select_percent_of_list_to_target_list_effect = {
                 base = 1
 				modifier = {
                     add = 6
+                    save_temporary_scope_as = checked_list_element
                     trigger_if = {
                         limit = {
                             $UNIQUES$ = yes
                         }
-                        religion = {
-                            NOT = { exists = var:already_selected }
+                        NOT = {
+                            any_in_list = {
+                                list = $TARGET$
+                                $SAME_TRIGGER$ = yes
+                            }
                         }
                     }
 				}
             }
             add_to_list = $TARGET$
             set_variable = { name = already_selected value = yes }
-            if = {
-                limit = {
-                    $UNIQUES$ = yes
-                }
-                religion = {
-                    set_variable = { name = already_selected value = yes }
-                }
-            }
         }
     }
     every_in_list = {
         list = $TARGET$
         remove_variable = already_selected
-        if = {
-            limit = {
-                $UNIQUES$ = yes
-            }
-            religion = {
-                remove_variable = already_selected
-            }
-        }
     }
 }
 rnw_select_faith_starting_location_effect = {
@@ -408,70 +396,27 @@ rnw_flip_conversion_targets_effect = {
 		remove_variable = conversion_target
     }
 }
-rnw_collect_all_cultures_and_groups_to_target_list_effect = {
-    every_county = {
-        if = {
-            limit = {
-                culture =  {
-                    NOT = {
-                        is_in_list = $TARGET$
-                    }
-                }
-            }
-            culture = {
-                add_to_list = $TARGET$
-            }
+rnw_collect_all_cultures_to_target_list_effect = {
+    every_culture_global = {
+        limit = {
+            NOT = { has_cultural_pillar = heritage_rnw_era }
         }
-        if = {
-            limit = {
-                culture_group =  {
-                    NOT = {
-                        is_in_list = $TARGET_GROUP$
-                    }
-                }
-            }
-            culture_group = {
-                add_to_list = $TARGET_GROUP$
-            }
-        }
-    }
-    every_ruler = {
-        if = {
-            limit = {
-                culture =  {
-                    NOT = {
-                        is_in_list = $TARGET$
-                    }
-                }
-            }
-            culture = {
-                add_to_list = $TARGET$
-            }
-        }
-        if = {
-            limit = {
-                culture_group =  {
-                    NOT = {
-                        is_in_list = $TARGET_GROUP$
-                    }
-                }
-            }
-            culture_group = {
-                add_to_list = $TARGET_GROUP$
-            }
-        }
+        add_to_list = $TARGET$
     }
 }
-rnw_collect_same_culture_group_of_list_to_target_list_effect = {
+rnw_collect_same_heritage_of_list_to_target_list_effect = {
     every_in_list = {
         list = $CULTURE_LIST$
         limit = {
-            culture_group = $CULTURE_GROUP$
+            has_same_culture_heritage = $CULTURE_WITH_HERITAGE$
         }
         add_to_list = $TARGET$
     }
 }
 rnw_select_culture_starting_location_effect = {
+	every_empire = {
+        set_variable = { name = cultures_in_empire value = 2 }
+	}
     while = {
         limit = {
             any_in_list = {
@@ -490,17 +435,15 @@ rnw_select_culture_starting_location_effect = {
                         has_game_rule = full_rnw_culture_placement_randomization
                     }
                 }
-                culture_group = {
-                    save_temporary_scope_as = selected_culture_group
-                }
-                rnw_collect_same_culture_group_of_list_to_target_list_effect = {
+                save_temporary_scope_as = selected_culture_with_heritage
+                rnw_collect_same_heritage_of_list_to_target_list_effect = {
                     CULTURE_LIST = $LIST$
-                    TARGET = same_culture_group_list
-                    CULTURE_GROUP = scope:selected_culture_group
+                    TARGET = same_heritage_list
+                    CULTURE_WITH_HERITAGE = scope:selected_culture_with_heritage
                 }
             }
             else = {
-                add_to_list = same_culture_group_list
+                add_to_list = same_heritage_list
             }
             random_county = {
                 weight = {
@@ -510,31 +453,24 @@ rnw_select_culture_starting_location_effect = {
                             value = 1
                             if = {
                                 limit = {
-                                    exists = var:culture_groups_in_empire
+                                    exists = var:cultures_in_empire
                                 }
-                                divide = var:culture_groups_in_empire
+                                divide = var:cultures_in_empire
                             }
                         }
                         empire = {
-                            exists = var:culture_groups_in_empire
+                            exists = var:cultures_in_empire
                         }
                     }
                 }
-                save_temporary_scope_as = culture_group_center
+                save_temporary_scope_as = heritage_center
+                # One extra per heritage
                 empire = {
-                    if = {
-                        limit = {
-                            exists = var:culture_groups_in_empire
-                        }
-                        change_variable = { name = culture_groups_in_empire add = 1 }
-                    }
-                    else = {
-                        set_variable = { name = culture_groups_in_empire value = 2 }
-                    }
+                    change_variable = { name = cultures_in_empire add = 1 }
                 }
             }
             every_in_list = {
-                list = same_culture_group_list
+                list = same_heritage_list
                 save_temporary_scope_as = selected_culture
                 random_county = {
                     limit = {
@@ -542,18 +478,18 @@ rnw_select_culture_starting_location_effect = {
                         trigger_if = {
                             limit = {
                                 list_size = {
-                                    name = same_culture_group_list
+                                    name = same_heritage_list
                                     value > 3
                                 }
                             }
                             squared_distance = {
-                                target = scope:culture_group_center
+                                target = scope:heritage_center
                                 value <= squared_distance_large
                             }
                         }
                         trigger_else = {
                             squared_distance = {
-                                target = scope:culture_group_center
+                                target = scope:heritage_center
                                 value <= squared_distance_medium
                             }
                         }
@@ -561,21 +497,21 @@ rnw_select_culture_starting_location_effect = {
                     weight = {
                         base = 1
                         modifier = {
-                            factor = 2
+                            factor = 1.3
                             squared_distance = {
-                                target = scope:culture_group_center
+                                target = scope:heritage_center
                                 value <= squared_distance_small
                             }
                         }
                         modifier = {
-                            factor = 2
+                            factor = 1.3
                             squared_distance = {
-                                target = scope:culture_group_center
+                                target = scope:heritage_center
                                 value <= squared_distance_medium
                             }
                         }
                         modifier = {
-                            factor = 2
+                            factor = 3
                             kingdom = {
                                 NOT = { exists = var:has_at_least_one_culture }
                             }
@@ -585,12 +521,15 @@ rnw_select_culture_starting_location_effect = {
 					kingdom = {
 						set_variable = { name = has_at_least_one_culture value = yes }
 					}
+                    empire = {
+                        change_variable = { name = cultures_in_empire add = 1 }
+                    }
                 }
                 set_variable = { name = already_selected value = yes }
             }
 			every_in_list = {
-				list = same_culture_group_list
-				remove_from_list = same_culture_group_list
+				list = same_heritage_list
+				remove_from_list = same_heritage_list
 			}
         }
     }
@@ -600,9 +539,9 @@ rnw_select_culture_starting_location_effect = {
     }
 	every_empire = {
 		limit = {
-			exists = var:culture_groups_in_empire
+			exists = var:cultures_in_empire
 		}
-        remove_variable = culture_groups_in_empire
+        remove_variable = cultures_in_empire
 	}
 	every_kingdom = {
 		limit = {

@@ -326,6 +326,9 @@
 		0 = { 
 			trigger = { 
 				NOT = { 
+					has_doctrine = special_doctrine_is_gnostic_faith
+				}
+				NOT = { 
 					has_doctrine = tenet_eastern_syncretism
 				}
 				NOT = { 
@@ -1280,7 +1283,10 @@
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = west_african_bori_religion
+				OR = { 
+					religion_tag = west_african_bori_religion
+					religion_tag = akom_religion
+				}
 				NOT = { 
 					has_doctrine = tenet_adorcism
 				}
@@ -2566,6 +2572,12 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 				NOT = { 
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
+						target = flag:special_doctrine_is_gnostic_faith
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
 						target = flag:tenet_eastern_syncretism
 					}
 				}
@@ -3357,7 +3369,10 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = west_african_bori_religion
+				OR = { 
+					religion_tag = west_african_bori_religion
+					religion_tag = akom_religion
+				}
 			}
 			modifier = { 
 				add = { 
@@ -5422,6 +5437,12 @@ rnw_pick_random_doctrine_gender_effect = {
 				NOT = { 
 					has_game_rule = full_gender_equality
 				}
+				NAND = { 
+					exists = religious_head
+					religious_head.culture = { 
+						has_cultural_parameter = female_only_inheritance
+					}
+				}
 				NOT = { 
 					has_doctrine = doctrine_gender_male_dominated
 				}
@@ -5503,6 +5524,12 @@ rnw_religion_pick_random_doctrine_gender_effect = {
 			trigger = { 
 				NOT = { 
 					has_game_rule = full_gender_equality
+				}
+				NAND = { 
+					exists = religious_head
+					religious_head.culture = { 
+						has_cultural_parameter = female_only_inheritance
+					}
 				}
 			}
 			modifier = { 
@@ -6753,93 +6780,20 @@ rnw_religion_pick_random_doctrine_muhammad_succession_effect = {
 		}
 	}
 }
-rnw_religion_pick_random_doctrine_muhammad_succession_effect = { 
-	random_list = { 
-		0 = { 
-			trigger = { }
-			modifier = { 
-				add = { 
-					value = rnw_faith_doctrine_high_chance
-					if = { 
-						limit = { 
-							is_target_in_variable_list = { 
-								name = religion_doctrine_preferences
-								target = flag:muhammad_succession_sunni_doctrine
-							}
-						}
-						multiply = 0
-					}
-				}
-			}
-			add_to_variable_list = { 
-				name = religion_doctrine_preferences
-				target = flag:muhammad_succession_sunni_doctrine
-			}
-		}
-		0 = { 
-			trigger = { }
-			modifier = { 
-				add = { 
-					value = rnw_faith_doctrine_high_chance
-					if = { 
-						limit = { 
-							is_target_in_variable_list = { 
-								name = religion_doctrine_preferences
-								target = flag:muhammad_succession_shia_doctrine
-							}
-						}
-						multiply = 0
-					}
-				}
-			}
-			add_to_variable_list = { 
-				name = religion_doctrine_preferences
-				target = flag:muhammad_succession_shia_doctrine
-			}
-		}
-		0 = { 
-			trigger = { }
-			modifier = { 
-				add = { 
-					value = rnw_faith_doctrine_high_chance
-					if = { 
-						limit = { 
-							is_target_in_variable_list = { 
-								name = religion_doctrine_preferences
-								target = flag:muhammad_succession_muhakkima_doctrine
-							}
-						}
-						multiply = 0
-					}
-				}
-			}
-			add_to_variable_list = { 
-				name = religion_doctrine_preferences
-				target = flag:muhammad_succession_muhakkima_doctrine
-			}
-		}
-		0 = { 
-			trigger = { }
-			modifier = { 
-				add = { 
-					value = rnw_faith_doctrine_high_chance
-					if = { 
-						limit = { 
-							is_target_in_variable_list = { 
-								name = religion_doctrine_preferences
-								target = flag:muhammad_succession_zandaqa_doctrine
-							}
-						}
-						multiply = 0
-					}
-				}
-			}
-			add_to_variable_list = { 
-				name = religion_doctrine_preferences
-				target = flag:muhammad_succession_zandaqa_doctrine
-			}
-		}
-	}
+rnw_pick_random_is_eastern_faith_effect = { 
+	random_list = { }
+}
+rnw_religion_pick_random_is_eastern_faith_effect = { 
+	random_list = { }
+}
+rnw_pick_random_is_gnostic_faith_effect = { 
+	random_list = { }
+}
+rnw_religion_pick_random_is_gnostic_faith_effect = { 
+	random_list = { }
+}
+rnw_religion_pick_random_is_gnostic_faith_effect = { 
+	random_list = { }
 }
 rnw_remove_all_doctrines_effect = { 
 	if = { 
@@ -7525,5 +7479,17 @@ rnw_remove_all_doctrines_effect = {
 			has_doctrine = muhammad_succession_zandaqa_doctrine
 		}
 		remove_doctrine = muhammad_succession_zandaqa_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = special_doctrine_is_eastern_faith
+		}
+		remove_doctrine = special_doctrine_is_eastern_faith
+	}
+	if = { 
+		limit = { 
+			has_doctrine = special_doctrine_is_gnostic_faith
+		}
+		remove_doctrine = special_doctrine_is_gnostic_faith
 	}
 }

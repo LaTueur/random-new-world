@@ -102,6 +102,7 @@ rnw_faith_placement_randomization_effect = {
             TARGET = curated_faith_list
             PERCENT = rnw_faith_percent_used_value
             UNIQUES = yes
+            SAME_TRIGGER = rnw_same_religion_trigger
         }
 
         rnw_select_faith_starting_location_effect = {
@@ -125,17 +126,24 @@ rnw_culture_placement_randomization_effect = {
                 has_game_rule = off_rnw_culture_placement_randomization
             }
         }
-        rnw_collect_all_cultures_and_groups_to_target_list_effect = {
+        rnw_collect_all_cultures_to_target_list_effect = {
             TARGET = full_culture_list
-            TARGET_GROUP = full_culture_group_list
+        }
+
+        rnw_select_percent_of_list_to_target_list_effect = {
+            LIST = full_culture_list
+            TARGET = curated_culture_list
+            PERCENT = rnw_culture_percent_used_value
+            UNIQUES = yes
+            SAME_TRIGGER = rnw_same_heritage_trigger
         }
 
         rnw_select_culture_starting_location_effect = {
-            LIST = full_culture_list
+            LIST = curated_culture_list
         }
 
         rnw_spread_conversion_targets_effect = {
-            LIST = full_culture_list
+            LIST = curated_culture_list
             TYPE = culture
         }
 
@@ -183,14 +191,6 @@ rnw_de_jure_setup_randomization_effect = {
                 has_game_rule = off_rnw_de_jure_randomization
             }
         }
-        #rnw_remove_de_jure_effect = yes
-        # disabled for now
-        #rnw_collect_titles_where_type_dominant_effect = {
-        #    TIER = tier_kingdom
-        #    TYPE = culture
-        #    THRESHOLD = 0.3
-        #    LIST = potential_base_titles
-        #}
         rnw_de_jure_setup_effect = {
             TIER = kingdom
             BELLOW_TIER = duchy
@@ -228,6 +228,7 @@ rnw_family_generation_and_connection_effect = {
                 TARGET = curated_ruler_list
                 PERCENT = 0.15
                 UNIQUES = no
+                SAME_TRIGGER = no
             }
             rnw_connect_families_effect = {
                 LIST = curated_ruler_list

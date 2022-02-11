@@ -60,6 +60,68 @@
         value = 1
     }
 }
+rnw_culture_percent_used_value = {
+    if = {
+        limit = {
+            has_game_rule = 10_rnw_culture_percent_used
+        }
+        value = 0.1
+    }
+    else_if = {
+        limit = {
+            has_game_rule = 20_rnw_culture_percent_used
+        }
+        value = 0.2
+    }
+    else_if = {
+        limit = {
+            has_game_rule = 30_rnw_culture_percent_used
+        }
+        value = 0.3
+    }
+    else_if = {
+        limit = {
+            has_game_rule = 40_rnw_culture_percent_used
+        }
+        value = 0.4
+    }
+    else_if = {
+        limit = {
+            has_game_rule = 50_rnw_culture_percent_used
+        }
+        value = 0.5
+    }
+    else_if = {
+        limit = {
+            has_game_rule = 60_rnw_culture_percent_used
+        }
+        value = 0.6
+    }
+    else_if = {
+        limit = {
+            has_game_rule = 70_rnw_culture_percent_used
+        }
+        value = 0.7
+    }
+    else_if = {
+        limit = {
+            has_game_rule = 80_rnw_culture_percent_used
+        }
+        value = 0.8
+    }
+    else_if = {
+        limit = {
+            has_game_rule = 90_rnw_culture_percent_used
+        }
+        value = 0.9
+    }
+    else_if = {
+        limit = {
+            has_game_rule = 100_rnw_culture_percent_used
+        }
+        value = 1
+    }
+}
 rnw_rnw_spawn_age_min_value = {
     if = {
         limit = {

@@ -1,4 +1,4 @@
-version="1.2"
+version="1.3"
 tags={
 	"Utilities"
 	"Alternative History"
@@ -7,9 +7,7 @@ tags={
 	"Map"
 	"Religion"
 	"Culture"
-	"Random"
-	"Submod"
 }
 name="Random New World Holy Sites"
-supported_version="1.3.*"
+supported_version="1.*"
 remote_file_id="2442027021"

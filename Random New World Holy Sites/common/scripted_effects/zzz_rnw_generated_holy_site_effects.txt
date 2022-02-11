@@ -377,6 +377,23 @@
 		10 = { 
 			trigger = { 
 				NOT = { 
+					title:c_albi = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_albi
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = albi
+				COUNTY = title:c_albi
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
 					title:c_mecca = { 
 						is_in_list = choosen_holy_sites
 					}
@@ -779,6 +796,74 @@
 			rnw_add_holy_site_effect = { 
 				SITE = gerizim
 				COUNTY = title:c_jerusalem
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kerch = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kerch
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = panticapaeum
+				COUNTY = title:c_kerch
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_itil = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_itil
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = itil
+				COUNTY = title:c_itil
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kerala = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kerala
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = kochi
+				COUNTY = title:c_kerala
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_manipur = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_manipur
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = manipur
+				COUNTY = title:c_manipur
 				FAITH = $FAITH$
 			}
 		}
@@ -2094,23 +2179,6 @@
 		10 = { 
 			trigger = { 
 				NOT = { 
-					title:c_laconia = { 
-						is_in_list = choosen_holy_sites
-					}
-				}
-			}
-			rnw_holy_site_choice_modifier = { 
-				COUNTY = title:c_laconia
-			}
-			rnw_add_holy_site_effect = { 
-				SITE = sparta
-				COUNTY = title:c_laconia
-				FAITH = $FAITH$
-			}
-		}
-		10 = { 
-			trigger = { 
-				NOT = { 
 					title:c_tunis = { 
 						is_in_list = choosen_holy_sites
 					}
@@ -2122,6 +2190,40 @@
 			rnw_add_holy_site_effect = { 
 				SITE = carthage
 				COUNTY = title:c_tunis
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_thessalia = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_thessalia
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = olympus
+				COUNTY = title:c_thessalia
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_laconia = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_laconia
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sparta
+				COUNTY = title:c_laconia
 				FAITH = $FAITH$
 			}
 		}

@@ -1,22 +1,4 @@
-﻿rnw_remove_de_jure_effect = {
-	every_duchy = {
-		limit = {
-			any_this_title_or_de_jure_above = {
-				tier > tier_duchy
-			}
-		}
-		set_de_jure_liege_title = 0
-	}
-	every_kingdom = {
-		limit = {
-			any_this_title_or_de_jure_above = {
-				tier > tier_kingdom
-			}
-		}
-		set_de_jure_liege_title = 0
-	}
-}
-rnw_de_jure_setup_effect = {
+﻿rnw_de_jure_setup_effect = {
 	save_temporary_scope_value_as = {
 		name = tier_long
 		value = tier_$TIER$

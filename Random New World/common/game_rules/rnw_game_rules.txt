@@ -304,6 +304,29 @@ rnw_culture_placement_randomization = {
 
 	full_rnw_culture_placement_randomization = {}
 }
+rnw_culture_percent_used = {
+	default = 70_rnw_culture_percent_used
+
+	10_rnw_culture_percent_used = {}
+
+	20_rnw_culture_percent_used = {}
+
+    30_rnw_culture_percent_used = {}
+
+	40_rnw_culture_percent_used = {}
+
+	50_rnw_culture_percent_used = {}
+
+    60_rnw_culture_percent_used = {}
+
+	70_rnw_culture_percent_used = {}
+
+	80_rnw_culture_percent_used = {}
+
+	90_rnw_culture_percent_used = {}
+
+	100_rnw_culture_percent_used = {}
+}
 rnw_faith_placement_randomization = {
 	default = on_rnw_faith_placement_randomization
 
@@ -314,7 +337,7 @@ rnw_faith_placement_randomization = {
 	full_rnw_faith_placement_randomization = {}
 }
 rnw_faith_percent_used = {
-	default = 40_rnw_faith_percent_used
+	default = 50_rnw_faith_percent_used
 
 	10_rnw_faith_percent_used = {}
 
