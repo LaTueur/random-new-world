@@ -268,34 +268,6 @@ rnw_collect_rulers_effect = {
         }
     }
 }
-rnw_give_title_names_and_coas_effect = {
-    if = {
-        limit = {
-            always = no # disabled
-        }
-	    rnw_collect_titles_where_type_dominant_effect = {
-            TIER = tier_kingdom
-            TYPE = culture
-            THRESHOLD = 0.3
-            LIST = desired_base_titles
-        }
-        if = {
-            limit = {
-                has_game_rule = off_rnw_culture_placement_randomization
-            }
-            rnw_collect_all_cultures_and_groups_to_target_list_effect = {
-                TARGET = full_culture_list
-                TARGET_GROUP = full_culture_group_list
-            }
-        }
-        rnw_give_base_title_names_and_coas_effect = {
-            TIER = tier_kingdom
-            TYPE_LIST = full_culture_list
-            FROM_LIST = potential_base_titles
-            TO_LIST = desired_base_titles
-        }
-    }
-}
 rnw_holy_site_randomization_effect = {
     if = {
         limit = {
