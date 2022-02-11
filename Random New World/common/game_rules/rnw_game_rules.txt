@@ -1,5 +1,5 @@
 ﻿rnw_realm_setup_randomization = {
-	default = off_rnw_realm_setup_randomization
+	default = on_rnw_realm_setup_randomization
 
     off_rnw_realm_setup_randomization = {}
 
@@ -187,7 +187,7 @@ rnw_title_name_randomization = {
 	duchy_rnw_title_name_randomization = {}
 }
 rnw_de_jure_randomization = {
-	default = off_rnw_de_jure_randomization
+	default = on_rnw_de_jure_randomization
 
     off_rnw_de_jure_randomization = {}
 
@@ -296,7 +296,7 @@ rnw_de_jure_empire_max_size = {
 	12_rnw_de_jure_empire_max_size = {}
 }
 rnw_culture_placement_randomization = {
-	default = off_rnw_culture_placement_randomization
+	default = on_rnw_culture_placement_randomization
 
 	off_rnw_culture_placement_randomization = {}
 
@@ -305,7 +305,7 @@ rnw_culture_placement_randomization = {
 	full_rnw_culture_placement_randomization = {}
 }
 rnw_faith_placement_randomization = {
-	default = off_rnw_faith_placement_randomization
+	default = on_rnw_faith_placement_randomization
 
 	off_rnw_faith_placement_randomization = {}
 
@@ -314,7 +314,7 @@ rnw_faith_placement_randomization = {
 	full_rnw_faith_placement_randomization = {}
 }
 rnw_faith_percent_used = {
-	default = 60_rnw_faith_percent_used
+	default = 40_rnw_faith_percent_used
 
 	10_rnw_faith_percent_used = {}
 
@@ -337,7 +337,7 @@ rnw_faith_percent_used = {
 	100_rnw_faith_percent_used = {}
 }
 rnw_doctrine_randomization = {
-	default = off_rnw_doctrine_randomization
+	default = on_rnw_doctrine_randomization
 
     off_rnw_doctrine_randomization = {}
 
@@ -357,7 +357,7 @@ rnw_doctrine_gender_preference = {
 	random_rnw_doctrine_gender_preference = {}
 }
 rnw_development_randomization = {
-    default = off_rnw_development_randomization
+    default = medium_rnw_development_randomization
 
     off_rnw_development_randomization = {}
 
@@ -382,7 +382,7 @@ rnw_development_randomization = {
     flat_30_rnw_development_randomization = {}
 }
 rnw_government_randomization = {
-    default = off_rnw_government_randomization
+    default = normal_rnw_government_randomization
 
     off_rnw_government_randomization = {}
 
