@@ -1,4 +1,10 @@
-﻿rnw_innovation_development_connection_collection = {
+﻿rnw_remove_eras_innovations_effect = {
+    every_culture_global = {
+        leave_era = culture_era_tribal
+        rnw_remove_innovations_from_culture_effect = yes
+    }
+}
+rnw_collect_development_connection_effect = {
     every_county = {
         save_temporary_scope_as = checked_county
         culture = {
@@ -55,7 +61,7 @@
         }
     }
 }
-rnw_innovation_average_development_calculation = {
+rnw_calculate_average_development_effect = {
     every_in_list = {
         list = innovation_culture_list
         set_variable = {
@@ -101,7 +107,7 @@ rnw_innovation_average_development_calculation = {
         }
     }
 }
-rnw_innovation_set_levels = {
+rnw_set_innovation_levels_effect = {
     save_scope_value_as = {
         name = level_threshold
         value = {
@@ -137,10 +143,10 @@ rnw_innovation_set_levels = {
             name = innovation_level
             value = scope:current_level
         }
-        rnw_innovation_check_level_threshold = yes
+        rnw_check_innovation_level_threshold_effect = yes
     }
 }
-rnw_innovation_flat_set_levels = {
+rnw_set_flat_innovation_levels_effect = {
     every_county = {
         culture = {
             if = {
@@ -156,7 +162,7 @@ rnw_innovation_flat_set_levels = {
         }
     }
 }
-rnw_innovation_assignation = {
+rnw_assign_innovations_effect = {
     while = {
         limit = {
             any_in_list = {
@@ -176,7 +182,7 @@ rnw_innovation_assignation = {
             alternative_limit = {
                 NOT = { exists = var:already_checked }
             }
-            rnw_innovation_add_to_culture = yes
+            rnw_assign_innovations_to_culture_effect = yes
             set_variable = {
                 name = already_checked
                 value = yes
@@ -184,7 +190,7 @@ rnw_innovation_assignation = {
         }
     }
 }
-rnw_innovation_check_level_threshold = {
+rnw_check_innovation_level_threshold_effect = {
     save_temporary_scope_value_as = {
         name = progress_to_next_level
         value = {
@@ -214,9 +220,8 @@ rnw_innovation_check_level_threshold = {
         }
     }
 }
-rnw_innovation_add_to_culture = {
+rnw_assign_innovations_to_culture_effect = {
     save_temporary_scope_as = gaining_culture
-    add_random_innovation = culture_group_regional
     save_temporary_scope_value_as = {
         name = added_innovations
         value = 0
@@ -268,8 +273,7 @@ rnw_innovation_add_to_culture = {
 						compare_value >= rnw_innovation_second_era_threshold
 					}
                 }
-                get_all_innovations_from = culture:era_culture
-                add_random_innovation = culture_group_regional
+                join_era = culture_era_early_medieval
                 set_variable = {
                     name = second_era
                     value = yes

@@ -1,0 +1,524 @@
+﻿rnw_remove_innovations_from_culture_effect = { 
+	if = { 
+		limit = { 
+			has_innovation = innovation_zweihanders
+		}
+		remove_innovation = innovation_zweihanders
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_adaptive_militia
+		}
+		remove_innovation = innovation_adaptive_militia
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_valets
+		}
+		remove_innovation = innovation_valets
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_pike_columns
+		}
+		remove_innovation = innovation_pike_columns
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_legionnaires
+		}
+		remove_innovation = innovation_legionnaires
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_desert_tactics
+		}
+		remove_innovation = innovation_desert_tactics
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_caballeros
+		}
+		remove_innovation = innovation_caballeros
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_hobbies
+		}
+		remove_innovation = innovation_hobbies
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_rectilinear_schiltron
+		}
+		remove_innovation = innovation_rectilinear_schiltron
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_bamboo_bows
+		}
+		remove_innovation = innovation_bamboo_bows
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_sahel_horsemen
+		}
+		remove_innovation = innovation_sahel_horsemen
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_sarawit
+		}
+		remove_innovation = innovation_sarawit
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_repeating_crossbow
+		}
+		remove_innovation = innovation_repeating_crossbow
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_battlements
+		}
+		remove_innovation = innovation_battlements
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_mangonel
+		}
+		remove_innovation = innovation_mangonel
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_burhs
+		}
+		remove_innovation = innovation_burhs
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_house_soldiers
+		}
+		remove_innovation = innovation_house_soldiers
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_horseshoes
+		}
+		remove_innovation = innovation_horseshoes
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_arched_saddle
+		}
+		remove_innovation = innovation_arched_saddle
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_hereditary_rule
+		}
+		remove_innovation = innovation_hereditary_rule
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_manorialism
+		}
+		remove_innovation = innovation_manorialism
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_development_02
+		}
+		remove_innovation = innovation_development_02
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_currency_02
+		}
+		remove_innovation = innovation_currency_02
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_royal_prerogative
+		}
+		remove_innovation = innovation_royal_prerogative
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_chronicle_writing
+		}
+		remove_innovation = innovation_chronicle_writing
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_armilary_sphere
+		}
+		remove_innovation = innovation_armilary_sphere
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_baliffs
+		}
+		remove_innovation = innovation_baliffs
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_reconquista
+		}
+		remove_innovation = innovation_reconquista
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_stem_duchies
+		}
+		remove_innovation = innovation_stem_duchies
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_ghilman
+		}
+		remove_innovation = innovation_ghilman
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_hoardings
+		}
+		remove_innovation = innovation_hoardings
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_trebuchet
+		}
+		remove_innovation = innovation_trebuchet
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_castle_baileys
+		}
+		remove_innovation = innovation_castle_baileys
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_men_at_arms
+		}
+		remove_innovation = innovation_men_at_arms
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_knighthood
+		}
+		remove_innovation = innovation_knighthood
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_advanced_bowmaking
+		}
+		remove_innovation = innovation_advanced_bowmaking
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_heraldry
+		}
+		remove_innovation = innovation_heraldry
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_windmills
+		}
+		remove_innovation = innovation_windmills
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_divine_right
+		}
+		remove_innovation = innovation_divine_right
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_land_grants
+		}
+		remove_innovation = innovation_land_grants
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_scutage
+		}
+		remove_innovation = innovation_scutage
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_guilds
+		}
+		remove_innovation = innovation_guilds
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_development_03
+		}
+		remove_innovation = innovation_development_03
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_currency_03
+		}
+		remove_innovation = innovation_currency_03
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_east_settling
+		}
+		remove_innovation = innovation_east_settling
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_seigneurialism
+		}
+		remove_innovation = innovation_seigneurialism
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_muladi
+		}
+		remove_innovation = innovation_muladi
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_french_peerage
+		}
+		remove_innovation = innovation_french_peerage
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_machicolations
+		}
+		remove_innovation = innovation_machicolations
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_bombard
+		}
+		remove_innovation = innovation_bombard
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_royal_armory
+		}
+		remove_innovation = innovation_royal_armory
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_standing_armies
+		}
+		remove_innovation = innovation_standing_armies
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_sappers
+		}
+		remove_innovation = innovation_sappers
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_plate_armor
+		}
+		remove_innovation = innovation_plate_armor
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_primogeniture
+		}
+		remove_innovation = innovation_primogeniture
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_cranes
+		}
+		remove_innovation = innovation_cranes
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_noblesse_oblige
+		}
+		remove_innovation = innovation_noblesse_oblige
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_rightful_ownership
+		}
+		remove_innovation = innovation_rightful_ownership
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_ermine_cloaks
+		}
+		remove_innovation = innovation_ermine_cloaks
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_court_officials
+		}
+		remove_innovation = innovation_court_officials
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_development_04
+		}
+		remove_innovation = innovation_development_04
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_currency_04
+		}
+		remove_innovation = innovation_currency_04
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_wierdijks
+		}
+		remove_innovation = innovation_wierdijks
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_condottieri
+		}
+		remove_innovation = innovation_condottieri
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_deccan_unity
+		}
+		remove_innovation = innovation_deccan_unity
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_motte
+		}
+		remove_innovation = innovation_motte
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_catapult
+		}
+		remove_innovation = innovation_catapult
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_barracks
+		}
+		remove_innovation = innovation_barracks
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_mustering_grounds
+		}
+		remove_innovation = innovation_mustering_grounds
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_bannus
+		}
+		remove_innovation = innovation_bannus
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_quilted_armor
+		}
+		remove_innovation = innovation_quilted_armor
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_development_01
+		}
+		remove_innovation = innovation_development_01
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_currency_01
+		}
+		remove_innovation = innovation_currency_01
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_gavelkind
+		}
+		remove_innovation = innovation_gavelkind
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_crop_rotation
+		}
+		remove_innovation = innovation_crop_rotation
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_city_planning
+		}
+		remove_innovation = innovation_city_planning
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_casus_belli
+		}
+		remove_innovation = innovation_casus_belli
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_plenary_assemblies
+		}
+		remove_innovation = innovation_plenary_assemblies
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_ledger
+		}
+		remove_innovation = innovation_ledger
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_table_of_princes
+		}
+		remove_innovation = innovation_table_of_princes
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_longboats
+		}
+		remove_innovation = innovation_longboats
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_elephantry
+		}
+		remove_innovation = innovation_elephantry
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_war_camels
+		}
+		remove_innovation = innovation_war_camels
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_wootz_steel
+		}
+		remove_innovation = innovation_wootz_steel
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_african_canoes
+		}
+		remove_innovation = innovation_african_canoes
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_varangian_adventurers
+		}
+		remove_innovation = innovation_varangian_adventurers
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_all_things
+		}
+		remove_innovation = innovation_all_things
+	}
+}

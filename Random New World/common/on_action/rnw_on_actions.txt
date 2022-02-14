@@ -13,9 +13,7 @@ rnw_on_game_start_after_lobby = {
         rnw_faith_placement_randomization_effect = yes
         rnw_culture_placement_randomization_effect = yes
         rnw_title_name_randomization_effect = yes
-        trigger_event = {
-            on_action = rnw_innovation_on_action
-        }
+        rnw_innovation_randomization_effect = yes
         rnw_realm_setup_randomization_effect = yes
         rnw_collect_rulers_effect = yes
         rnw_faith_doctrine_randomization_after_effect = yes
@@ -34,6 +32,4 @@ rnw_faith_randomization_character_check = {
         faith_conversion.0005 # Update marriage opinions
 		war_event.3100		# Handles invalidation of religious wars
     }
-}
-rnw_innovation_on_action = {
 }

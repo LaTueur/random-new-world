@@ -32,6 +32,13 @@ def dumpfiles(path, ending = ".txt"):
             full_text += read_with_removed_comments(path, file)
     return(full_text)
 
+def join_files(path, ending):
+    full_list = []
+    for file in os.listdir(path):
+        if file.endswith(ending):
+            full_list += pdx_parser.parse_file(os.path.join(path, file))
+    return(full_list)
+
 def read_with_removed_comments(path, file):
     file_content = open(os.path.join(path, file)).read()
     return(comment_pattern.sub("", file_content))

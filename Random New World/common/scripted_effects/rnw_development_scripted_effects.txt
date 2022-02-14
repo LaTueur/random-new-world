@@ -544,6 +544,7 @@ rnw_set_holdings_effect = {
 								}
 							}
 						}
+						rnw_place_buildings_effect = yes
 						set_variable = {
 							name = has_holding
 							value = yes
@@ -560,7 +561,7 @@ rnw_set_holdings_effect = {
 				}
 				has_holding = yes
 			}
-			set_holding_type = none
+			remove_holding = yes
 		}
 		every_county_province = {
 			limit = {
@@ -578,7 +579,11 @@ rnw_set_holding_type_effect = {
 		limit = {
 			has_holding = yes
 		}
-		set_holding_type = none
+		remove_holding = yes
+		#set_holding_type = castle_holding
+		#set_holding_type = church_holding
+		#set_holding_type = city_holding
+		#set_holding_type = tribal_holding
 	}
 	if = {
 		limit = {
@@ -601,4 +606,20 @@ rnw_set_holding_type_effect = {
 			}
 		}
 	}
+}
+rnw_place_buildings_effect = {
+	set_variable = {
+		name = builings_needed
+		value = {
+			integer_range = {
+				min = 0
+				max = 3
+			}
+		}
+	}
+	while = {
+		count = var:builings_needed
+		generate_building = yes
+	}
+	remove_variable = builings_needed
 }

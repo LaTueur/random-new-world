@@ -869,3 +869,83 @@ rnw_special_governments_value = {
         value = 10
     }
 }
+rnw_innovation_second_era_threshold = 12
+
+rnw_innovation_min_level = {
+    if = {
+        limit = {
+            has_game_rule = low_rnw_innovation_randomization
+        }
+        value = 2
+    }
+    else_if = {
+        limit = {
+            has_game_rule = medium_rnw_innovation_randomization
+        }
+        value = 6
+    }
+    else_if = {
+        limit = {
+            has_game_rule = high_rnw_innovation_randomization
+        }
+        value = 10
+    }
+}
+rnw_innovation_max_level = {
+    if = {
+        limit = {
+            has_game_rule = low_rnw_innovation_randomization
+        }
+        value = 10
+    }
+    else_if = {
+        limit = {
+            has_game_rule = medium_rnw_innovation_randomization
+        }
+        value = 16
+    }
+    else_if = {
+        limit = {
+            has_game_rule = high_rnw_innovation_randomization
+        }
+        value = 22
+    }
+}
+rnw_innovation_flat_level = {
+    if = {
+        limit = {
+            has_game_rule = flat_0_rnw_innovation_randomization
+        }
+        value = 0
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_5_rnw_innovation_randomization
+        }
+        value = 5
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_10_rnw_innovation_randomization
+        }
+        value = 10
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_15_rnw_innovation_randomization
+        }
+        value = 15
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_20_rnw_innovation_randomization
+        }
+        value = 20
+    }
+    else_if = {
+        limit = {
+            has_game_rule = flat_25_rnw_innovation_randomization
+        }
+        value = 25
+    }
+}

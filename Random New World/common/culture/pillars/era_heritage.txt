@@ -1,3 +1,0 @@
-﻿heritage_rnw_era = {
-	type = heritage
-}

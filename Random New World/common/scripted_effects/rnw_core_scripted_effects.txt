@@ -447,3 +447,32 @@ rnw_holding_and_government_randomization_effect = {
         rnw_set_holdings_effect = yes
     }
 }
+rnw_innovation_randomization_effect = {
+    if = {
+        limit = {
+            NOT = { has_game_rule = off_rnw_innovation_randomization }
+        }
+        rnw_remove_eras_innovations_effect = yes
+        if = {
+            limit = {
+                OR = {
+                    has_game_rule = low_rnw_innovation_randomization
+                    has_game_rule = medium_rnw_innovation_randomization
+                    has_game_rule = high_rnw_innovation_randomization
+                }
+            }
+            rnw_collect_development_connection_effect = yes
+            rnw_calculate_average_development_effect = yes
+            rnw_set_innovation_levels_effect = {
+                MIN = rnw_innovation_min_level
+                MAX = rnw_innovation_max_level
+            }
+        }
+        else = {
+            rnw_set_flat_innovation_levels_effect = {
+                LEVEL = rnw_innovation_flat_level
+            }
+        }
+        rnw_assign_innovations_effect = yes
+    }
+}

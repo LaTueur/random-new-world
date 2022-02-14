@@ -398,9 +398,6 @@ rnw_flip_conversion_targets_effect = {
 }
 rnw_collect_all_cultures_to_target_list_effect = {
     every_culture_global = {
-        limit = {
-            NOT = { has_cultural_pillar = heritage_rnw_era }
-        }
         add_to_list = $TARGET$
     }
 }
