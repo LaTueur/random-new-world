@@ -167,7 +167,7 @@ rnw_num_of_kings = {
 	many_rnw_num_of_kings = {}
 }
 rnw_num_of_emperors = {
-    default = few_rnw_num_of_emperors
+    default = normal_rnw_num_of_emperors
 
     none_rnw_num_of_emperors = {}
 
@@ -305,7 +305,7 @@ rnw_culture_placement_randomization = {
 	full_rnw_culture_placement_randomization = {}
 }
 rnw_culture_percent_used = {
-	default = 70_rnw_culture_percent_used
+	default = 60_rnw_culture_percent_used
 
 	10_rnw_culture_percent_used = {}
 
