@@ -202,14 +202,12 @@ rnw_choose_governments_effect = {
 				rnw_set_government_effect = {
 					GOVERNMENT = clan_government
 					HOLDING = castle_holding
-					SUCCESSION = none
 				}
 			}
 			else = {
 				rnw_set_government_effect = {
 					GOVERNMENT = feudal_government
 					HOLDING = castle_holding
-					SUCCESSION = none
 				}
 			}
 		}
@@ -217,7 +215,6 @@ rnw_choose_governments_effect = {
 			rnw_set_government_effect = {
 				GOVERNMENT = tribal_government
 				HOLDING = tribal_holding
-				SUCCESSION = none
 			}
 		}
 	}
@@ -240,14 +237,12 @@ rnw_choose_flat_governments_effect = {
 				rnw_set_government_effect = {
 					GOVERNMENT = clan_government
 					HOLDING = castle_holding
-					SUCCESSION = none
 				}
 			}
 			else = {
 				rnw_set_government_effect = {
 					GOVERNMENT = feudal_government
 					HOLDING = castle_holding
-					SUCCESSION = none
 				}
 			}
 		}
@@ -255,12 +250,42 @@ rnw_choose_flat_governments_effect = {
 			rnw_set_government_effect = {
 				GOVERNMENT = tribal_government
 				HOLDING = tribal_holding
-				SUCCESSION = none
 			}
 		}
 	}
 }
 rnw_set_government_effect = {
+	every_sub_realm_county = {
+		title_province = {
+			rnw_set_holding_type_effect = {
+				TYPE = $HOLDING$
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_government = $GOVERNMENT$
+			}
+		}
+		change_government = $GOVERNMENT$
+	}
+	every_vassal_or_below = {
+		limit = {
+			is_landed = yes
+			highest_held_title_tier > tier_barony
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_government = $GOVERNMENT$
+				}
+			}
+			change_government = $GOVERNMENT$
+		}
+	}
+}
+rnw_set_government_with_succesion_effect = {
 	every_sub_realm_county = {
 		title_province = {
 			rnw_set_holding_type_effect = {
@@ -318,7 +343,7 @@ rnw_set_religious_head_government_effect = {
 				}
 			}
 			religious_head_title.holder = {
-				rnw_set_government_effect = {
+				rnw_set_government_with_succesion_effect = {
 					GOVERNMENT = theocracy_government
 					HOLDING = church_holding
 					SUCCESSION = bishop_theocratic_succession_law
@@ -372,7 +397,7 @@ rnw_set_special_governments_effect = {
 				add = 10
 			}
 		}
-		rnw_set_government_effect = {
+		rnw_set_government_with_succesion_effect = {
 			GOVERNMENT = theocracy_government
 			HOLDING = church_holding
 			SUCCESSION = bishop_theocratic_succession_law
@@ -419,7 +444,7 @@ rnw_set_special_governments_effect = {
 				add = 10
 			}
 		}
-		rnw_set_government_effect = {
+		rnw_set_government_with_succesion_effect = {
 			GOVERNMENT = republic_government
 			HOLDING = city_holding
 			SUCCESSION = city_succession_law
@@ -544,7 +569,6 @@ rnw_set_holdings_effect = {
 								}
 							}
 						}
-						rnw_place_buildings_effect = yes
 						set_variable = {
 							name = has_holding
 							value = yes
@@ -579,11 +603,18 @@ rnw_set_holding_type_effect = {
 		limit = {
 			has_holding = yes
 		}
-		remove_holding = yes
-		#set_holding_type = castle_holding
-		#set_holding_type = church_holding
-		#set_holding_type = city_holding
-		#set_holding_type = tribal_holding
+		if = {
+			limit = {
+				NOT = {
+					has_holding_type = castle_holding
+				}
+			}
+			set_holding_type = castle_holding
+		}
+		#remove_holding = yes
+		set_holding_type = church_holding
+		set_holding_type = city_holding
+		set_holding_type = tribal_holding
 	}
 	if = {
 		limit = {
@@ -606,20 +637,4 @@ rnw_set_holding_type_effect = {
 			}
 		}
 	}
-}
-rnw_place_buildings_effect = {
-	set_variable = {
-		name = builings_needed
-		value = {
-			integer_range = {
-				min = 0
-				max = 3
-			}
-		}
-	}
-	while = {
-		count = var:builings_needed
-		generate_building = yes
-	}
-	remove_variable = builings_needed
 }

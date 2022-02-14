@@ -62,7 +62,7 @@
 				save_scope_as = connected_title
 				rnw_connect_title_effect = {
 					SCOPE = de_jure_liege
-					TYPE = flag:unknow
+					NAVAL = no
 				}
 			}
 		}

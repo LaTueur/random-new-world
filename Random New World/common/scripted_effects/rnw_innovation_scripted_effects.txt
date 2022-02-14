@@ -189,6 +189,10 @@ rnw_assign_innovations_effect = {
             }
         }
     }
+    every_in_list = {
+        list = innovation_culture_list
+        remove_variable = already_checked
+    }
 }
 rnw_check_innovation_level_threshold_effect = {
     save_temporary_scope_value_as = {

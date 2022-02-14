@@ -30,7 +30,7 @@
             }
             if = {
                 limit = {
-                    $TYPE$ = flag:naval
+                    $NAVAL$ = yes
                 }
                 add_to_variable_list = {
                     name = naval_connected_titles
@@ -53,11 +53,11 @@ rnw_collect_neighboring_connected_counties_effect = {
             save_scope_as = connected_title
             rnw_connect_title_effect = {
                 SCOPE = this
-                TYPE = flag:neighboring
+                NAVAL = no
             }
             rnw_connect_title_effect = {
                 SCOPE = duchy
-                TYPE = flag:neighboring
+                NAVAL = no
             }
         }
     }
@@ -81,11 +81,11 @@ rnw_collect_coastally_connected_counties_effect = {
             save_scope_as = connected_title
             rnw_connect_title_effect = {
                 SCOPE = this
-                TYPE = flag:naval
+                NAVAL = yes
             }
             rnw_connect_title_effect = {
                 SCOPE = duchy
-                TYPE = flag:naval
+                NAVAL = yes
             }
         }
     }
