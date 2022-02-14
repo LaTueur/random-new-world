@@ -20,6 +20,7 @@ rnw_on_game_start_after_lobby = {
         rnw_holding_and_government_randomization_effect = yes
         rnw_family_generation_and_connection_effect = yes
         rnw_starting_resources_effect = yes
+        rnw_tradition_randomization_effect = yes
     }
 }
 rnw_faith_randomization_character_check = {

@@ -476,3 +476,34 @@ rnw_innovation_randomization_effect = {
         rnw_assign_innovations_effect = yes
     }
 }
+rnw_tradition_randomization_effect = {
+    if = {
+        limit = {
+            NOT = { has_game_rule = off_rnw_tradition_randomization }
+        }
+        if = {
+            limit = {
+                has_game_rule = off_rnw_culture_placement_randomization
+            }
+            rnw_collect_all_cultures_to_target_list_effect = {
+                TARGET = full_culture_list
+            }
+        }
+        if = {
+            limit = {
+                NOR = {
+                    has_game_rule = low_rnw_innovation_randomization
+                    has_game_rule = medium_rnw_innovation_randomization
+                    has_game_rule = high_rnw_innovation_randomization
+                }
+            }
+            rnw_collect_development_connection_effect = yes
+        }
+        rnw_clear_traditions_effect = yes
+        rnw_set_ethoses_effect = yes
+        rnw_set_traditions_effect = {
+            MIN = rnw_tradition_min_amount
+            MAX = rnw_tradition_max_amount
+        }
+    }
+}

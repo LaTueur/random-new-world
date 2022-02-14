@@ -1,0 +1,238 @@
+﻿rnw_clear_traditions_effect = {
+    every_culture_global = {
+        clear_culture_traditions = yes
+    }
+}
+rnw_set_ethoses_effect = {
+    every_culture_global = {
+        limit = {
+            NOT = { exists = var:already_checked }
+        }
+        save_temporary_scope_as = selected_culture_with_heritage
+        rnw_collect_same_heritage_of_list_to_target_list_effect = {
+            CULTURE_LIST = full_culture_list
+            TARGET = same_heritage_list
+            CULTURE_WITH_HERITAGE = scope:selected_culture_with_heritage
+        }
+        rnw_set_random_ethos_effect = yes
+        set_variable = { name = already_checked value = yes }
+        every_in_list = {
+            list = same_heritage_list
+            limit = {
+                NOT = { this = scope:selected_culture_with_heritage }
+            }
+            random_list = {
+                40 = {
+                    if = {
+                        limit = {
+                            NOT = {  has_same_culture_ethos = scope:selected_culture_with_heritage }
+                        }
+                        set_ethos_from = scope:selected_culture_with_heritage
+                    }
+                }
+                60 = {
+                    rnw_set_random_ethos_effect = yes
+                }
+            }
+            set_variable = { name = already_checked value = yes }
+        }
+        every_in_list = {
+            list = same_heritage_list
+            remove_from_list = same_heritage_list
+        }
+    }
+    every_culture_global = {
+        remove_variable = already_checked
+    }
+}
+rnw_set_random_ethos_effect = {
+    random_list = {
+        10 = {
+            rnw_set_ethos_if_needed_effect = { ETHOS = ethos_bellicose }
+        }
+        10 = {
+            rnw_set_ethos_if_needed_effect = { ETHOS = ethos_stoic }
+        }
+        10 = {
+            rnw_set_ethos_if_needed_effect = { ETHOS = ethos_bureaucratic }
+        }
+        10 = {
+            rnw_set_ethos_if_needed_effect = { ETHOS = ethos_spiritual }
+        }
+        10 = {
+            rnw_set_ethos_if_needed_effect = { ETHOS = ethos_courtly }
+        }
+        10 = {
+            rnw_set_ethos_if_needed_effect = { ETHOS = ethos_egalitarian }
+        }
+        10 = {
+            rnw_set_ethos_if_needed_effect = { ETHOS = ethos_communal }
+        }
+    }
+}
+rnw_set_ethos_if_needed_effect = {
+    if = {
+        limit = {
+            NOT = { has_cultural_pillar = $ETHOS$ }
+        }
+        set_culture_pillar = $ETHOS$
+    }
+}
+rnw_set_traditions_effect = {
+    while = {
+        limit = {
+            any_culture_global = {
+                NOT = { exists = var:already_checked }
+            }
+        }
+        random_culture_global = {
+            limit = {
+                NOT = { exists = var:already_checked }
+                any_in_list = {
+                    variable = connected_cultures
+                    exists = var:already_checked
+                }
+            }
+            alternative_limit = {
+                NOT = { exists = var:already_checked }
+            }
+            save_temporary_scope_as = selected_culture
+            set_variable = {
+                name = tradition_count
+                value = {
+                    integer_range = {
+                        min = $MIN$
+                        max = $MAX$
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    any_in_list = {
+                        variable = connected_cultures
+                        exists = var:already_checked
+                    }
+                }
+                random_in_list = {
+                    variable = connected_cultures
+                    limit = {
+                        exists = var:already_checked
+                    }
+                    weight = {
+                        base = 10
+                        modifier = {
+                            add = 10
+                            has_same_culture_ethos = scope:selected_culture
+                        }
+                        modifier = {
+                            add = 30
+                            has_same_culture_heritage = scope:selected_culture
+                        }
+                        modifier = {
+                            add = 5
+                            has_same_culture_language = scope:selected_culture
+                        }
+                    }
+                    save_temporary_scope_as = tradition_template
+                }
+                copy_all_traditions_from = scope:tradition_template
+                set_variable = {
+                    name = own_traditions
+                    value = {
+                        value = var:tradition_count
+                        subtract = {
+                            integer_range = {
+                                min = 1
+                                max = var:tradition_count
+                            }
+                            max = scope:tradition_template.var:tradition_count
+                            min = 1
+                        }
+                        add = 1
+                    }
+                }
+                while = {
+                    count = {
+                        value = scope:tradition_template.var:tradition_count
+                        subtract = var:tradition_count
+                        add = var:own_traditions
+                    }
+                    remove_random_culture_tradition = yes
+                }
+            }
+            else = {
+                set_variable = {
+                    name = own_traditions
+                    value = var:tradition_count
+                }
+            }
+            if = {
+                limit = {
+                    any_in_list = {
+                        list = real_rulers
+                        culture = scope:selected_culture
+                    }
+                }
+                ordered_in_list = {
+                    list = real_rulers
+                    limit = {
+                        culture = scope:selected_culture
+                    }
+                    order_by = {
+                        value = 0
+                        if = {
+                            limit = {
+                                is_independent_ruler = yes
+                            }
+                            add = 20
+                        }
+                        add = realm_size
+                        add = {
+                            value = highest_held_title_tier
+                            multiply = 5
+                        }
+                    }
+                    save_temporary_scope_as = example_ruler
+                }
+            }
+            else = {
+                random_county = {
+                    limit = {
+                        culture = scope:selected_culture
+                    }
+                    alternative_limit = {
+                        culture = {
+                            has_same_culture_heritage = scope:selected_culture
+                        }
+                    }
+                    alternative_limit = {
+                        always = yes
+                    }
+                    save_temporary_scope_as = selected_province
+                    create_character = {
+                        age = { 16 50 }
+                        random_traits = yes
+                        gender_female_chance = scope:selected_province.faith.rnw_female_chance
+                        culture = scope:selected_culture
+                        faith = scope:selected_province.faith
+                        location = scope:selected_province.title_province
+                        save_temporary_scope_as = example_ruler
+                    }
+                }
+            }
+            while = {
+                count = var:own_traditions
+                add_random_valid_tradition = scope:example_ruler
+            }
+            set_variable = {
+                name = already_checked
+                value = yes
+            }
+        }
+    }
+    every_culture_global = {
+        remove_variable = already_checked
+        remove_variable = tradition_count
+        remove_variable = own_traditions
+    }
+}

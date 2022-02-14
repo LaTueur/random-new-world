@@ -460,3 +460,40 @@ rnw_innovation_randomization = {
 
 	flat_25_rnw_innovation_randomization = {}
 }
+rnw_tradition_randomization = {
+    default = on_rnw_tradition_randomization
+
+    off_rnw_tradition_randomization = {}
+
+    on_rnw_tradition_randomization = {}
+}
+rnw_tradition_min_amount = {
+	default = 2_rnw_tradition_min_amount
+
+    0_rnw_tradition_min_amount = {}
+
+    1_rnw_tradition_min_amount = {}
+
+	2_rnw_tradition_min_amount = {}
+
+	3_rnw_tradition_min_amount = {}
+
+	4_rnw_tradition_min_amount = {}
+
+	5_rnw_tradition_min_amount = {}
+}
+rnw_tradition_max_amount = {
+	default = 5_rnw_tradition_max_amount
+
+    0_rnw_tradition_max_amount = {}
+
+    1_rnw_tradition_max_amount = {}
+
+	2_rnw_tradition_max_amount = {}
+
+	3_rnw_tradition_max_amount = {}
+
+	4_rnw_tradition_max_amount = {}
+
+	5_rnw_tradition_max_amount = {}
+}
