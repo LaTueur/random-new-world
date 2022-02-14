@@ -43,7 +43,9 @@ doctrine_groups_to_skip = (
     "unreformed_faith",
     "divine_destiny",
     "full_tolerance",
-    "hostility_group"
+    "hostility_group",
+    "is_eastern_faith",
+    "is_gnostic_faith"
 )
 extra_modifiers = {
     "doctrine_theocracy_temporal": "multiply = rnw_doctrine_theocracy_temporal_multiplier\n",
