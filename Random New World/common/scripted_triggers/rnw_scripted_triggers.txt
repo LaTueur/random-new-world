@@ -94,3 +94,20 @@ rnw_same_religion_trigger = {
 rnw_same_heritage_trigger = {
     has_same_culture_heritage = scope:checked_list_element
 }
+rnw_in_heritage_distance_trigger = {
+    trigger_if = {
+        limit = {
+            scope:num_of_cultures > 3
+        }
+        squared_distance = {
+            target = scope:heritage_center
+            value <= squared_distance_large
+        }
+    }
+    trigger_else = {
+        squared_distance = {
+            target = scope:heritage_center
+            value <= squared_distance_medium
+        }
+    }
+}

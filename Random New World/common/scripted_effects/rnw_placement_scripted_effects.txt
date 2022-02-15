@@ -442,29 +442,50 @@ rnw_select_culture_starting_location_effect = {
             else = {
                 add_to_list = same_heritage_list
             }
-            random_county = {
-                weight = {
-                    base = 1
-                    modifier = {
-                        factor = {
-                            value = 1
-                            if = {
-                                limit = {
-                                    exists = var:cultures_in_empire
-                                }
-                                divide = var:cultures_in_empire
+			save_temporary_scope_value_as = {
+				name = num_of_cultures
+				value = {
+					value = 0
+					every_in_list = {
+                        list = same_heritage_list
+						add = 1
+					}
+				}
+			}
+            ordered_empire = {
+                max = 1
+                limit = {
+                    is_titular = no
+                }
+                order_by = {
+                    value = 10000
+                    subtract = {
+                        value = var:cultures_in_empire
+                        multiply = scope:num_of_cultures
+                    }
+                    add = {
+                        value = 0
+                        every_kingdom_in_de_jure_hierarchy = {
+                            limit = {
+                                NOT = { exists = var:has_at_least_one_culture }
                             }
-                        }
-                        empire = {
-                            exists = var:cultures_in_empire
+                            add = 2
                         }
                     }
                 }
-                save_temporary_scope_as = heritage_center
-                # One extra per heritage
-                empire = {
-                    change_variable = { name = cultures_in_empire add = 1 }
+                random_county_in_de_jure_hierarchy = {
+                    limit = {
+                        kingdom = {
+                            NOT = { exists = var:has_at_least_one_culture }
+                        }
+                    }
+                    alternative_limit = {
+                        always = yes
+                    }
+                    save_temporary_scope_as = heritage_center
                 }
+                # One extra per heritage
+                change_variable = { name = cultures_in_empire add = 1 }
             }
             every_in_list = {
                 list = same_heritage_list
@@ -472,24 +493,14 @@ rnw_select_culture_starting_location_effect = {
                 random_county = {
                     limit = {
                         NOT = { exists = var:conversion_target }
-                        trigger_if = {
-                            limit = {
-                                list_size = {
-                                    name = same_heritage_list
-                                    value > 3
-                                }
-                            }
-                            squared_distance = {
-                                target = scope:heritage_center
-                                value <= squared_distance_large
-                            }
+                        kingdom = {
+                            NOT = { exists = var:has_at_least_one_culture }
                         }
-                        trigger_else = {
-                            squared_distance = {
-                                target = scope:heritage_center
-                                value <= squared_distance_medium
-                            }
-                        }
+                        rnw_in_heritage_distance_trigger = yes
+                    }
+                    alternative_limit = {
+                        NOT = { exists = var:conversion_target }
+                        rnw_in_heritage_distance_trigger = yes
                     }
                     weight = {
                         base = 1
@@ -505,12 +516,6 @@ rnw_select_culture_starting_location_effect = {
                             squared_distance = {
                                 target = scope:heritage_center
                                 value <= squared_distance_medium
-                            }
-                        }
-                        modifier = {
-                            factor = 3
-                            kingdom = {
-                                NOT = { exists = var:has_at_least_one_culture }
                             }
                         }
                     }
