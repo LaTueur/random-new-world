@@ -178,6 +178,7 @@ rnw_set_traditions_effect = {
                     limit = {
                         culture = scope:selected_culture
                     }
+                    max = 1
                     order_by = {
                         value = 0
                         if = {

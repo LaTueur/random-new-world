@@ -100,6 +100,7 @@ rnw_create_head_of_faith_title_effect = {
                 }
             }
             ordered_theocratic_vassal = {
+                max = 1
                 limit = {
                     faith = scope:title_creator.faith
                 }

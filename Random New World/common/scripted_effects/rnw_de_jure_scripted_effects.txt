@@ -68,6 +68,7 @@
 		}
 		ordered_$BELLOW_TIER$_in_de_jure_hierarchy = {
 			order_by = rnw_capital_score
+			max = 1
 			save_temporary_scope_as = capital_title
 			scope:checked_title = {
 				set_capital_county = scope:capital_title.title_capital_county
@@ -365,6 +366,7 @@ rnw_cut_off_disconnected_titles_effect = {
 						limit = {
 							var:titles_connected >= 2
 						}
+						max = 1
 						order_by = rwn_take_disconnected_score
 						save_temporary_scope_as = new_title
 						scope:disconnected_title = {
