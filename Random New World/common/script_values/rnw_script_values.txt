@@ -280,6 +280,8 @@ rnw_starting_gold = {
 
     
 	multiply = rnw_starting_resources_multiplier
+
+    min = 0
 }
 rnw_starting_prestige = {
     if = {
@@ -311,6 +313,8 @@ rnw_starting_prestige = {
     }
 
     multiply = rnw_starting_resources_multiplier
+
+    min = 0
 }
 rnw_starting_piety = {
     if = {
@@ -342,6 +346,8 @@ rnw_starting_piety = {
     }
 
     multiply = rnw_starting_resources_multiplier
+    
+    min = 0
 }
 rnw_holy_site_share_multiplier = {
     value = 10
