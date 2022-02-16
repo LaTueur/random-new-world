@@ -586,6 +586,11 @@ rnw_set_holdings_effect = {
 				has_holding = yes
 			}
 			remove_holding = yes
+			barony = {
+				holder = {
+					destroy_title = prev
+				}
+			}
 		}
 		every_county_province = {
 			limit = {

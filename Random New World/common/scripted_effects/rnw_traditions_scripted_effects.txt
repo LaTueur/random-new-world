@@ -209,6 +209,7 @@ rnw_set_traditions_effect = {
                     alternative_limit = {
                         always = yes
                     }
+                    save_scope_as = old_title
                     create_dynamic_title = {
                         tier = duchy
                         name = NEW_CREATED_TITLE_NAME
@@ -229,13 +230,17 @@ rnw_set_traditions_effect = {
                         add_claim_on_loss = no
                     }
                     scope:new_title = {
+                        set_capital_county = scope:selected_province
+                        set_landless_title = yes
                         change_title_holder = {
                             holder = scope:example_ruler
                             change = scope:change
                         }
-                        set_delete_on_destroy = yes
                     }
                     resolve_title_and_vassal_change = scope:change
+                    scope:example_ruler = {
+                        set_primary_title_to = scope:new_title
+                    }
                 }
             }
             while = {
@@ -245,6 +250,9 @@ rnw_set_traditions_effect = {
             if = {
                 limit = {
                     exists = scope:new_title
+                }
+                scope:new_title = {
+                    set_delete_on_destroy = yes
                 }
                 scope:example_ruler = {
                     destroy_title = scope:new_title

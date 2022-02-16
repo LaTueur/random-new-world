@@ -247,6 +247,9 @@ rnw_starting_resources_effect = {
         }
 		every_in_list = {
             list = real_rulers
+            limit = {
+                highest_held_title_tier >= tier_county
+            }
 			
 			add_gold = rnw_starting_gold
 			
