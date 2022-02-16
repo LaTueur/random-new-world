@@ -168,6 +168,9 @@ rnw_create_head_of_faith_title_effect = {
             set_always_follows_primary_heir = yes
 			save_temporary_scope_as = my_hof_title
         }
+        faith = {
+            set_religious_head_title = scope:new_title
+        }
     }
 	else = {
 		faith = {
@@ -211,9 +214,6 @@ rnw_create_head_of_faith_title_effect = {
     if = {
         limit = {
             exists = scope:new_title
-        }
-        faith = {
-            set_religious_head_title = scope:new_title
         }
         scope:new_title = {
             generate_coa = religious_title
