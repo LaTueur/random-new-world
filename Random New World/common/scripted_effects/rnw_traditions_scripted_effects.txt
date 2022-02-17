@@ -270,3 +270,55 @@ rnw_set_traditions_effect = {
         remove_variable = own_traditions
     }
 }
+rnw_set_culture_names_effect = {
+    every_culture_global = {
+        limit = {
+            any_culture_county = {
+                always = yes
+            }
+        }
+        random_culture_county = {
+            set_variable = {
+                name = already_given_name
+                value = yes
+            }
+            save_scope_as = naming_county
+        }
+        set_culture_name = {
+            noun = rnw_culture_noun
+            collective_noun = rnw_culture_collective_noun
+            prefix = rnw_culture_prefix
+        }
+    }
+    every_culture_global = {
+        limit = {
+            NOT = {
+                any_culture_county = {
+                    always = yes
+                }
+            }
+        }
+        save_temporary_scope_as = culture_to_name
+        random_county = {
+            limit = {
+                culture = {
+                    has_same_culture_heritage = scope:culture_to_name
+                }
+                NOT = { exists = var:already_given_name }
+            }
+            alternative_limit = {
+                NOT = { exists = var:already_given_name }
+            }
+            set_variable = {
+                name = already_given_name
+                value = yes
+            }
+            save_scope_as = naming_county
+        }
+        set_culture_name = {
+            noun = rnw_culture_noun
+            collective_noun = rnw_culture_collective_noun
+            prefix = rnw_culture_prefix
+        }
+    }
+}

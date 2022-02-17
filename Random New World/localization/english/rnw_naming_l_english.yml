@@ -104,3 +104,6 @@
  rnw_gibrish_title_name: "[ROOT.Char.Custom('RNW_START_PLACE')][ROOT.Char.Custom('RNW_SYLLABLE_PLACE')][ROOT.Char.Custom('RNW_SYLLABLE_PLACE')][ROOT.Char.Custom('RNW_RANDOM_CONSONANT')][ROOT.Char.Custom('RNW_NAME_ENDING')]"
  rnw_title_name: "[naming_character.Custom('RNW_NAME_PLACE')][naming_character.Custom('RNW_NAME_ENDING')]"
  rnw_title_name_adj: "[naming_character.Custom('RNW_NAME_PLACE')][naming_character.Custom('RNW_ADJECTIVE_ENDING')]"
+ rnw_culture_noun: "[naming_county.GetAdjectiveNoTooltip]"
+ rnw_culture_collective_noun: "[naming_county.GetAdjectiveNoTooltip]s"
+ rnw_culture_prefix: "[naming_county.GetAdjectiveNoTooltip]"

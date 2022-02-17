@@ -510,3 +510,11 @@ rnw_tradition_randomization_effect = {
         }
     }
 }
+rnw_culture_name_randomization_effect = {
+    if = {
+        limit = {
+            NOT = { has_game_rule = off_rnw_culture_name_randomization }
+        }
+        rnw_set_culture_names_effect = yes
+    }
+}

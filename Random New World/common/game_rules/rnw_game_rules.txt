@@ -497,3 +497,10 @@ rnw_tradition_max_amount = {
 
 	5_rnw_tradition_max_amount = {}
 }
+rnw_culture_name_randomization = {
+    default = on_rnw_culture_name_randomization
+
+    off_rnw_culture_name_randomization = {}
+
+    on_rnw_culture_name_randomization = {}
+}
