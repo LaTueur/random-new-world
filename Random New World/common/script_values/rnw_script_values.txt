@@ -249,105 +249,49 @@ rnw_female_chance = {
         value = 85
     }
 }
-rnw_starting_gold = {
+rnw_base_starting_resource = {
     if = {
         limit = {
             highest_held_title_tier = tier_county
-        }
-        value = 50
-    }
-    else_if = {
-        limit = {
-            highest_held_title_tier = tier_duchy
         }
         value = 100
     }
     else_if = {
         limit = {
-            highest_held_title_tier = tier_kingdom
+            highest_held_title_tier = tier_duchy
         }
         value = 200
     }
     else_if = {
         limit = {
+            highest_held_title_tier = tier_kingdom
+        }
+        value = 400
+    }
+    else_if = {
+        limit = {
             highest_held_title_tier = tier_empire
         }
-        value = 300
+        value = 500
     }
     else = {
         value = 0
     }
-
     
 	multiply = rnw_starting_resources_multiplier
 
     min = 0
 }
+rnw_starting_gold = {
+    value = rnw_base_starting_resource
+}
 rnw_starting_prestige = {
-    if = {
-        limit = {
-            highest_held_title_tier = tier_county
-        }
-        value = 250
-    }
-    else_if = {
-        limit = {
-            highest_held_title_tier = tier_duchy
-        }
-        value = 500
-    }
-    else_if = {
-        limit = {
-            highest_held_title_tier = tier_kingdom
-        }
-        value = 1000
-    }
-    else_if = {
-        limit = {
-            highest_held_title_tier = tier_empire
-        }
-        value = 1500
-    }
-    else = {
-        value = 0
-    }
+    value = rnw_base_starting_resource
 
-    multiply = rnw_starting_resources_multiplier
-
-    min = 0
+    multiply = 2
 }
 rnw_starting_piety = {
-    if = {
-        limit = {
-            highest_held_title_tier = tier_county
-        }
-        value = 100
-    }
-    else_if = {
-        limit = {
-            highest_held_title_tier = tier_duchy
-        }
-        value = 200
-    }
-    else_if = {
-        limit = {
-            highest_held_title_tier = tier_kingdom
-        }
-        value = 300
-    }
-    else_if = {
-        limit = {
-            highest_held_title_tier = tier_empire
-        }
-        value = 400
-    }
-    else = {
-        value = 0
-    }
-
-    multiply = rnw_starting_resources_multiplier
-    
-    min = 0
+    value = rnw_base_starting_resource
 }
 rnw_holy_site_share_multiplier = {
     value = 10
