@@ -111,3 +111,17 @@ rnw_in_heritage_distance_trigger = {
         }
     }
 }
+rnw_ending_consonant_trigger = {
+    OR = {
+		var:title_endig = flag:rnw_ending_ia
+		var:title_endig = flag:rnw_ending_an
+		var:title_endig = flag:rnw_ending_en
+		var:title_endig = flag:rnw_ending_istan
+		var:title_endig = flag:rnw_ending_ex
+		var:title_endig = flag:rnw_ending_ony
+		var:title_endig = flag:rnw_ending_ium
+		var:title_endig = flag:rnw_ending_al
+		var:title_endig = flag:rnw_ending_ine
+		var:title_endig = flag:rnw_letter_a
+    }
+}

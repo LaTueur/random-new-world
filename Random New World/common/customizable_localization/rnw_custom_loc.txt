@@ -1,172 +1,172 @@
-﻿RNW_RANDOM_VOWEL = {
+﻿RNW_RANDOM_SIMPLE_VOWEL = {
 	type = character
 
 	random_valid = yes
 
 	text = {
-		localization_key = rnw_letter_e
-		weight_multiplier = {
-			base = 112
-		}
+		localization_key = rnw_letter_a
 	}
 	text = {
-		localization_key = rnw_letter_a
-		weight_multiplier = {
-			base = 85
-		}
+		localization_key = rnw_letter_e
 	}
 	text = {
 		localization_key = rnw_letter_i
-		weight_multiplier = {
-			base = 75
-		}
 	}
 	text = {
 		localization_key = rnw_letter_o
-		weight_multiplier = {
-			base = 72
-		}
 	}
 	text = {
 		localization_key = rnw_letter_u
-		weight_multiplier = {
-			base = 36
-		}
-	}
-	text = {
-		localization_key = rnw_letter_y
-		weight_multiplier = {
-			base = 18
-		}
 	}
 }
-RNW_RANDOM_CONSONANT = {
+RNW_RANDOM_DOUBLE_VOWEL = {
 	type = character
 
 	random_valid = yes
 
 	text = {
-		localization_key = rnw_letter_r
-		weight_multiplier = {
-			base = 76
-		}
+		localization_key = rnw_letter_ae
 	}
 	text = {
-		localization_key = rnw_letter_t
-		weight_multiplier = {
-			base = 70
-		}
+		localization_key = rnw_letter_ai
 	}
 	text = {
-		localization_key = rnw_letter_n
-		weight_multiplier = {
-			base = 66
-		}
+		localization_key = rnw_letter_ao
 	}
 	text = {
-		localization_key = rnw_letter_s
-		weight_multiplier = {
-			base = 57
-		}
+		localization_key = rnw_letter_au
 	}
 	text = {
-		localization_key = rnw_letter_l
-		weight_multiplier = {
-			base = 55
-		}
+		localization_key = rnw_letter_ay
+	}
+	text = {
+		localization_key = rnw_letter_ea
+	}
+	text = {
+		localization_key = rnw_letter_ei
+	}
+	text = {
+		localization_key = rnw_letter_eo
+	}
+	text = {
+		localization_key = rnw_letter_eu
+	}
+	text = {
+		localization_key = rnw_letter_ey
+	}
+	text = {
+		localization_key = rnw_letter_ia
+	}
+	text = {
+		localization_key = rnw_letter_ie
+	}
+	text = {
+		localization_key = rnw_letter_io
+	}
+	text = {
+		localization_key = rnw_letter_iu
+	}
+	text = {
+		localization_key = rnw_letter_iy
+	}
+	text = {
+		localization_key = rnw_letter_oa
+	}
+	text = {
+		localization_key = rnw_letter_oe
+	}
+	text = {
+		localization_key = rnw_letter_oi
+	}
+	text = {
+		localization_key = rnw_letter_ou
+	}
+	text = {
+		localization_key = rnw_letter_oy
+	}
+	text = {
+		localization_key = rnw_letter_ua
+	}
+	text = {
+		localization_key = rnw_letter_ue
+	}
+	text = {
+		localization_key = rnw_letter_ui
+	}
+	text = {
+		localization_key = rnw_letter_uo
+	}
+	text = {
+		localization_key = rnw_letter_uy
+	}
+}
+RNW_RANDOM_SIMPLE_CONSONANT = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_letter_b
 	}
 	text = {
 		localization_key = rnw_letter_c
-		weight_multiplier = {
-			base = 45
-		}
 	}
 	text = {
 		localization_key = rnw_letter_d
-		weight_multiplier = {
-			base = 36
-		}
-	}
-	text = {
-		localization_key = rnw_letter_p
-		weight_multiplier = {
-			base = 34
-		}
-	}
-	text = {
-		localization_key = rnw_letter_m
-		weight_multiplier = {
-			base = 32
-		}
-	}
-	text = {
-		localization_key = rnw_letter_h
-		weight_multiplier = {
-			base = 30
-		}
-	}
-	text = {
-		localization_key = rnw_letter_g
-		weight_multiplier = {
-			base = 30
-		}
-	}
-	text = {
-		localization_key = rnw_letter_b
-		weight_multiplier = {
-			base = 25
-		}
 	}
 	text = {
 		localization_key = rnw_letter_f
-		weight_multiplier = {
-			base = 18
-		}
 	}
 	text = {
-		localization_key = rnw_letter_w
-		weight_multiplier = {
-			base = 13
-		}
+		localization_key = rnw_letter_g
 	}
 	text = {
-		localization_key = rnw_letter_k
-		weight_multiplier = {
-			base = 11
-		}
-	}
-	text = {
-		localization_key = rnw_letter_v
-		weight_multiplier = {
-			base = 10
-		}
-	}
-	text = {
-		localization_key = rnw_letter_x
-		weight_multiplier = {
-			base = 3
-		}
-	}
-	text = {
-		localization_key = rnw_letter_z
-		weight_multiplier = {
-			base = 3
-		}
+		localization_key = rnw_letter_h
 	}
 	text = {
 		localization_key = rnw_letter_j
-		weight_multiplier = {
-			base = 2
-		}
+	}
+	text = {
+		localization_key = rnw_letter_k
+	}
+	text = {
+		localization_key = rnw_letter_l
+	}
+	text = {
+		localization_key = rnw_letter_m
+	}
+	text = {
+		localization_key = rnw_letter_n
+	}
+	text = {
+		localization_key = rnw_letter_p
 	}
 	text = {
 		localization_key = rnw_letter_q
-		weight_multiplier = {
-			base = 2
-		}
+	}
+	text = {
+		localization_key = rnw_letter_r
+	}
+	text = {
+		localization_key = rnw_letter_s
+	}
+	text = {
+		localization_key = rnw_letter_t
+	}
+	text = {
+		localization_key = rnw_letter_v
+	}
+	text = {
+		localization_key = rnw_letter_w
+	}
+	text = {
+		localization_key = rnw_letter_x
+	}
+	text = {
+		localization_key = rnw_letter_z
 	}
 }
-RNW_RANDOM_CLUSTER = {
+RNW_RANDOM_COMBINED_CONSONANT = {
 	type = character
 
 	random_valid = yes
@@ -263,6 +263,81 @@ RNW_RANDOM_CLUSTER = {
 	}
 	text = {
 		localization_key = rnw_letter_sq
+    }
+	text = {
+		localization_key = rnw_letter_ch
+    }
+	text = {
+		localization_key = rnw_letter_sh
+    }
+	text = {
+		localization_key = rnw_letter_ch
+    }
+	text = {
+		localization_key = rnw_letter_wh
+    }
+	text = {
+		localization_key = rnw_letter_sl
+    }
+	text = {
+		localization_key = rnw_letter_cr
+    }
+	text = {
+		localization_key = rnw_letter_zr
+    }
+	text = {
+		localization_key = rnw_letter_ph
+    }
+	text = {
+		localization_key = rnw_letter_kh
+    }
+}
+RNW_RANDOM_DOUBLE_CONSONANT = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_letter_bb
+    }
+	text = {
+		localization_key = rnw_letter_cc
+    }
+	text = {
+		localization_key = rnw_letter_dd
+    }
+	text = {
+		localization_key = rnw_letter_ff
+    }
+	text = {
+		localization_key = rnw_letter_gg
+    }
+	text = {
+		localization_key = rnw_letter_kk
+    }
+	text = {
+		localization_key = rnw_letter_ll
+    }
+	text = {
+		localization_key = rnw_letter_mm
+    }
+	text = {
+		localization_key = rnw_letter_nn
+    }
+	text = {
+		localization_key = rnw_letter_pp
+    }
+	text = {
+		localization_key = rnw_letter_rr
+    }
+	text = {
+		localization_key = rnw_letter_ss
+    }
+	text = {
+		localization_key = rnw_letter_tt
+    }
+	text = {
+		localization_key = rnw_letter_zz
     }
 }
 RNW_NAME_ENDING = {
@@ -371,12 +446,6 @@ RNW_NAME_ENDING = {
 		}
 	}
 	text = {
-		localization_key = rnw_nothing
-		trigger = {
-			var:title_endig = flag:rnw_nothing
-		}
-	}
-	text = {
 		localization_key = rnw_letter_a
 		trigger = {
 			var:title_endig = flag:rnw_letter_a
@@ -386,13 +455,24 @@ RNW_NAME_ENDING = {
 RNW_ADJECTIVE_ENDING = {
 	type = character
 
+	random_valid = yes
+
 	text = {
 		localization_key = rnw_ending_ian
 		trigger = {
 			OR = {
 				var:title_endig = flag:rnw_ending_ia
-				var:title_endig = flag:rnw_nothing
 				var:title_endig = flag:rnw_ending_ium
+			}
+		}
+	}
+	text = {
+		localization_key = rnw_ending_ish
+		trigger = {
+			OR = {
+				var:title_endig = flag:rnw_ending_ia
+				var:title_endig = flag:rnw_ending_ium
+				var:title_endig = flag:rnw_ending_ine
 			}
 		}
 	}
@@ -421,7 +501,7 @@ RNW_ADJECTIVE_ENDING = {
 		}
 	}
 	text = {
-		localization_key = rnw_ending_icenian
+		localization_key = rnw_ending_li
 		trigger = {
 			var:title_endig = flag:rnw_ending_lia
 		}
@@ -463,7 +543,7 @@ RNW_ADJECTIVE_ENDING = {
 		}
 	}
 	text = {
-		localization_key = rnw_ending_iot
+		localization_key = rnw_ending_riot
 		trigger = {
 			var:title_endig = flag:rnw_ending_rus
 		}
@@ -477,7 +557,10 @@ RNW_ADJECTIVE_ENDING = {
 	text = {
 		localization_key = rnw_ending_lian
 		trigger = {
-			var:title_endig = flag:rnw_ending_li
+			OR = {
+				var:title_endig = flag:rnw_ending_li
+				var:title_endig = flag:rnw_ending_lia
+			}
 		}
 	}
 	text = {
@@ -499,95 +582,97 @@ RNW_VOWEL_PLACE = {
 	random_valid = yes
 
 	text = {
-		localization_key = rnw_one_vowel
+		localization_key = rnw_simple_vowel
 		weight_multiplier = {
-			base = 65
+			base = 20
 		}
 	}
 	text = {
-		localization_key = rnw_two_vowel
-		weight_multiplier = {
-			base = 25
-		}
-	}
-	text = {
-		localization_key = rnw_three_vowel
+		localization_key = rnw_double_vowel
 		weight_multiplier = {
 			base = 10
 		}
 	}
 }
-RNW_CONSONANT_PLACE = {
+RNW_MID_CONSONANT_PLACE = {
 	type = character
 
 	random_valid = yes
 
 	text = {
-		localization_key = rnw_consonant
+		localization_key = rnw_simple_consonant
 		weight_multiplier = {
-			base = 70
+			base = 40
 		}
 	}
 	text = {
-		localization_key = rnw_cluster
+		localization_key = rnw_combined_consonant
 		weight_multiplier = {
-			base = 30
+			base = 10
+		}
+	}
+	text = {
+		localization_key = rnw_double_consonant
+		weight_multiplier = {
+			base = 10
 		}
 	}
 }
-RNW_SYLLABLE_PLACE = {
+RNW_FRONT_CONSONANT_PLACE = {
 	type = character
 
 	random_valid = yes
 
 	text = {
-		localization_key = rnw_syllable
+		localization_key = rnw_simple_consonant
 		weight_multiplier = {
-			base = 50
+			base = 20
 		}
 	}
+	text = {
+		localization_key = rnw_combined_consonant
+		weight_multiplier = {
+			base = 20
+		}
+	}
+}
+RNW_NAME_STRUCTURE = {
+	type = character
+
+	random_valid = yes
+
+	text = {
+		localization_key = rnw_cons_vow_end
+		weight_multiplier = {
+			base = 45
+		}
+	}
+	text = {
+		localization_key = rnw_vow_cons_vow_end
+		weight_multiplier = {
+			base = 35
+		}
+	}
+	text = {
+		localization_key = rnw_cons_vow_cons_vow_end
+		weight_multiplier = {
+			base = 20
+		}
+	}
+}
+RNW_ENDING_CONSONANT = {
+	type = character
+
 	text = {
 		localization_key = rnw_nothing
-		weight_multiplier = {
-			base = 50
-		}
-	}
-}
-RNW_START_PLACE = {
-	type = character
-
-	random_valid = yes
-
-	text = {
-		localization_key = rnw_vowel_start
-		weight_multiplier = {
-			base = 50
-		}
-	}
-	text = {
-		localization_key = rnw_consonant_start
-		weight_multiplier = {
-			base = 50
-		}
-	}
-}
-RNW_NAME_PLACE = {
-	type = character
-
-	random_valid = yes
-
-	text = {
-		localization_key = rnw_first_name
 		trigger = {
-			var:name_type = flag:rnw_first_name
+			rnw_ending_consonant_trigger = no
 		}
 	}
 	text = {
-		localization_key = rnw_house_name
+		localization_key = rnw_consonant_place
 		trigger = {
-			var:name_type = flag:rnw_house_name
+			rnw_ending_consonant_trigger = yes
 		}
 	}
 }
-
-

@@ -556,27 +556,7 @@ rnw_assign_naming_flags_effect = {
 		30 = {
 			set_variable = {
 				name = title_endig
-				value = flag:rnw_nothing
-			}
-		}
-		30 = {
-			set_variable = {
-				name = title_endig
 				value = flag:rnw_letter_a
-			}
-		}
-	}
-	random_list = {
-		50 = {
-			set_variable = {
-				name = name_type
-				value = flag:rnw_first_name
-			}
-		}
-		50 = {
-			set_variable = {
-				name = name_type
-				value = flag:rnw_house_name
 			}
 		}
 	}
