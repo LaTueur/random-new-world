@@ -394,6 +394,57 @@
 		10 = { 
 			trigger = { 
 				NOT = { 
+					title:c_toledo = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_toledo
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = toledo_mozarabic
+				COUNTY = title:c_toledo
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_tunis = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_tunis
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = carthage_adoptionist
+				COUNTY = title:c_tunis
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_lyon = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_lyon
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = lyon
+				COUNTY = title:c_lyon
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
 					title:c_mecca = { 
 						is_in_list = choosen_holy_sites
 					}
@@ -1085,6 +1136,40 @@
 			rnw_add_holy_site_effect = { 
 				SITE = pagan
 				COUNTY = title:c_pagan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_ava = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_ava
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ava
+				COUNTY = title:c_ava
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_sittaung = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_sittaung
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = sittaung
+				COUNTY = title:c_sittaung
 				FAITH = $FAITH$
 			}
 		}
@@ -2417,6 +2502,57 @@
 		10 = { 
 			trigger = { 
 				NOT = { 
+					title:c_viscaya = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_viscaya
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = viscaya
+				COUNTY = title:c_viscaya
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_alto_aragon = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_alto_aragon
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = aneto
+				COUNTY = title:c_alto_aragon
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_bordeaux = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_bordeaux
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = bordeaux
+				COUNTY = title:c_bordeaux
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
 					title:c_awkar = { 
 						is_in_list = choosen_holy_sites
 					}
@@ -2791,6 +2927,57 @@
 		10 = { 
 			trigger = { 
 				NOT = { 
+					title:c_canarias = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_canarias
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = tenerife
+				COUNTY = title:c_canarias
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_murcia = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_murcia
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = cartagena
+				COUNTY = title:c_murcia
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_madeira = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_madeira
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = madiera
+				COUNTY = title:c_madeira
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
 					title:c_danakil = { 
 						is_in_list = choosen_holy_sites
 					}
@@ -2934,6 +3121,14 @@ rnw_forward_to_holy_site_choice_effect = {
 		}
 		rnw_choose_multiple_holy_site_effect = { 
 			FAITH = baltic_pagan
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:basque_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = basque_pagan
 		}
 	}
 	else_if = { 
@@ -3118,6 +3313,22 @@ rnw_forward_to_holy_site_choice_effect = {
 		}
 		rnw_choose_multiple_holy_site_effect = { 
 			FAITH = bosnian_church
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:mozarabic_church
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = mozarabic_church
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:adoptionist
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = adoptionist
 		}
 	}
 	else_if = { 
@@ -3426,6 +3637,14 @@ rnw_forward_to_holy_site_choice_effect = {
 	}
 	else_if = { 
 		limit = { 
+			this = faith:hafizi
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = hafizi
+		}
+	}
+	else_if = { 
+		limit = { 
 			this = faith:digambara
 		}
 		rnw_choose_multiple_holy_site_effect = { 
@@ -3526,6 +3745,14 @@ rnw_forward_to_holy_site_choice_effect = {
 		}
 		rnw_choose_multiple_holy_site_effect = { 
 			FAITH = yumaism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:north_african_acham_pagan
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = north_african_acham_pagan
 		}
 	}
 	else_if = { 

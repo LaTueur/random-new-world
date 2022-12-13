@@ -45,7 +45,8 @@ doctrine_groups_to_skip = (
     "full_tolerance",
     "hostility_group",
     "is_eastern_faith",
-    "is_gnostic_faith"
+    "is_gnostic_faith",
+    "adoptionist_school"
 )
 extra_modifiers = {
     "doctrine_theocracy_temporal": "multiply = rnw_doctrine_theocracy_temporal_multiplier\n",
@@ -53,6 +54,11 @@ extra_modifiers = {
     "doctrine_gender_equal": "multiply = rnw_doctrine_gender_equal_multiplier\n",
     "doctrine_gender_female_dominated": "multiply = rnw_doctrine_gender_female_dominated_multiplier\n",
 }
+rite_trigger = """NOT = { 
+    religion = religion:islam_religion
+}
+has_doctrine = doctrine_spiritual_head
+"""
 
 def dumpfiles(path, ending = ".txt"):
     full_text = ""
@@ -130,10 +136,10 @@ for doctrine_group in doctrine_groups:
         can_pick = can_pick_pattern.search(body)
         if not can_pick:
             can_pick = ("","")
-        trigger = is_shown[1] + can_pick[1]
+        trigger = is_shown[1] + can_pick[1] if "_rite" not in name else rite_trigger
         weight = piety_cost[1]
 
-        for i in (cost_chance_conversion if "_syncretism" not in name else cost_chance_conversion_syncretism):
+        for i in (cost_chance_conversion if "_syncretism" not in name and "_rite" not in name else cost_chance_conversion_syncretism):
             weight = weight.replace(f"faith_tenet_cost_{i[0]}", f"rnw_faith_doctrine_{i[1]}_chance")
             weight = weight.replace(f"faith_doctrine_cost_{i[0]}", f"rnw_faith_doctrine_{i[1]}_chance")
 

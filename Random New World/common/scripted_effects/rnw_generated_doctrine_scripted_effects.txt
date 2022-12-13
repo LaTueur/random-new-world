@@ -252,12 +252,21 @@
 					}
 				}
 				NOT = { 
+					has_doctrine = tenet_sacrificial_ceremonies
+				}
+				NOT = { 
 					has_doctrine = tenet_consolamentum
 				}
 			}
 			modifier = { 
 				add = { 
 					if = { 
+						limit = { 
+							has_doctrine = tenet_sacrificial_ceremonies
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else_if = { 
 						limit = { 
 							OR = { 
 								religion_tag = dualism_religion
@@ -689,6 +698,34 @@
 		}
 		0 = { 
 			trigger = { 
+				NOT = { 
+					religion = religion:islam_religion
+				}
+				has_doctrine = doctrine_spiritual_head
+				NOT = { 
+					has_doctrine = tenet_rite
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_rite
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_rite
+		}
+		0 = { 
+			trigger = { 
 				NOR = { 
 					has_doctrine = doctrine_pluralism_fundamentalist
 					has_doctrine = doctrine_pluralism_righteous
@@ -830,7 +867,6 @@
 		}
 		0 = { 
 			trigger = { 
-				has_doctrine = abrahamic_hostility_doctrine
 				NOT = { 
 					has_doctrine = tenet_literalism
 				}
@@ -848,6 +884,15 @@
 					}
 					else = { 
 						value = rnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								has_doctrine = abrahamic_hostility_doctrine
+							}
+						}
+						multiply = 1.5
+						round = yes
 					}
 					if = { 
 						limit = { 
@@ -1458,12 +1503,21 @@
 					has_doctrine = tenet_gruesome_festivals
 				}
 				NOT = { 
+					has_doctrine = tenet_sacrificial_ceremonies
+				}
+				NOT = { 
 					has_doctrine = tenet_human_sacrifice
 				}
 			}
 			modifier = { 
 				add = { 
 					if = { 
+						limit = { 
+							has_doctrine = tenet_sacrificial_ceremonies
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else_if = { 
 						limit = { 
 							has_doctrine = pagan_hostility_doctrine
 						}
@@ -1556,10 +1610,6 @@
 		}
 		0 = { 
 			trigger = { 
-				OR = { 
-					religion_tag = baltic_religion
-					religion_tag = waaqism_religion
-				}
 				NOT = { 
 					has_doctrine = tenet_sacred_childbirth
 				}
@@ -1749,6 +1799,9 @@
 					has_doctrine = tenet_human_sacrifice
 				}
 				NOT = { 
+					has_doctrine = tenet_sacrificial_ceremonies
+				}
+				NOT = { 
 					has_doctrine = tenet_gruesome_festivals
 				}
 			}
@@ -1789,6 +1842,50 @@
 				}
 			}
 			add_doctrine = tenet_gruesome_festivals
+		}
+		0 = { 
+			trigger = { 
+				always = yes
+				NOT = { 
+					has_doctrine = tenet_cthonic_redoubts
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							OR = { 
+								this = faith:bosnian_church
+								this = faith:armenian_apostolic
+								this = faith:lamaism
+								this = faith:vajrayana
+								this = faith:mahayana
+								this = faith:haymanot
+								religion = religion:basque_religion
+								religion = religion:kushitism_religion
+								religion = religion:zunism_religion
+								religion = religion:tani_religion
+								religion = religion:qiangic_religion
+								religion = religion:bon_religion
+							}
+						}
+						multiply = faith_tenet_discount_mountain_background_value
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_cthonic_redoubts
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_cthonic_redoubts
 		}
 		0 = { 
 			trigger = { 
@@ -2305,6 +2402,98 @@
 			}
 			add_doctrine = tenet_polyamory
 		}
+		0 = { 
+			trigger = { 
+				religion_tag = north_african_religion
+				NOT = { 
+					has_doctrine = tenet_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_dharmic_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_gruesome_festivals
+				}
+				NOT = { 
+					has_doctrine = tenet_human_sacrifice
+				}
+				NOT = { 
+					has_doctrine = tenet_consolamentum
+				}
+				NOT = { 
+					has_doctrine = tenet_sacrificial_ceremonies
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_doctrine = tenet_human_sacrifice
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							has_doctrine = pagan_hostility_doctrine
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_very_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_sacrificial_ceremonies
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_sacrificial_ceremonies
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_megaliths
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_doctrine = tenet_natural_primitivism
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							this = faith:insular_celtic
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_megaliths
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_megaliths
+		}
 	}
 }
 rnw_religion_pick_random_doctrine_core_tenets_effect = { 
@@ -2514,10 +2703,25 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 						}
 					}
 				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_sacrificial_ceremonies
+					}
+				}
 			}
 			modifier = { 
 				add = { 
 					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:tenet_sacrificial_ceremonies
+							}
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else_if = { 
 						limit = { 
 							OR = { 
 								religion_tag = dualism_religion
@@ -2889,6 +3093,26 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
+				NOT = { 
+					religion = religion:islam_religion
+				}
+				is_target_in_variable_list = { 
+					name = religion_doctrine_preferences
+					target = flag:doctrine_spiritual_head
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_rite
+			}
+		}
+		0 = { 
+			trigger = { 
 				NOR = { 
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
@@ -3009,12 +3233,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 			}
 		}
 		0 = { 
-			trigger = { 
-				is_target_in_variable_list = { 
-					name = religion_doctrine_preferences
-					target = flag:abrahamic_hostility_doctrine
-				}
-			}
+			trigger = { }
 			modifier = { 
 				add = { 
 					if = { 
@@ -3028,6 +3247,18 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					}
 					else = { 
 						value = rnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:abrahamic_hostility_doctrine
+								}
+							}
+						}
+						multiply = 1.5
+						round = yes
 					}
 				}
 			}
@@ -3519,10 +3750,25 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 						target = flag:tenet_gruesome_festivals
 					}
 				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_sacrificial_ceremonies
+					}
+				}
 			}
 			modifier = { 
 				add = { 
 					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:tenet_sacrificial_ceremonies
+							}
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else_if = { 
 						limit = { 
 							is_target_in_variable_list = { 
 								name = religion_doctrine_preferences
@@ -3589,12 +3835,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 			}
 		}
 		0 = { 
-			trigger = { 
-				OR = { 
-					religion_tag = baltic_religion
-					religion_tag = waaqism_religion
-				}
-			}
+			trigger = { }
 			modifier = { 
 				add = { 
 					value = rnw_faith_doctrine_high_chance
@@ -3753,6 +3994,12 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 						target = flag:tenet_human_sacrifice
 					}
 				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_sacrificial_ceremonies
+					}
+				}
 			}
 			modifier = { 
 				add = { 
@@ -3788,6 +4035,39 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
 				target = flag:tenet_gruesome_festivals
+			}
+		}
+		0 = { 
+			trigger = { 
+				always = yes
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							OR = { 
+								this = faith:bosnian_church
+								this = faith:armenian_apostolic
+								this = faith:lamaism
+								this = faith:vajrayana
+								this = faith:mahayana
+								this = faith:haymanot
+								religion = religion:basque_religion
+								religion = religion:kushitism_religion
+								religion = religion:zunism_religion
+								religion = religion:tani_religion
+								religion = religion:qiangic_religion
+								religion = religion:bon_religion
+							}
+						}
+						multiply = faith_tenet_discount_mountain_background_value
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_cthonic_redoubts
 			}
 		}
 		0 = { 
@@ -4308,6 +4588,99 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
 				target = flag:tenet_polyamory
+			}
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = north_african_religion
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_pacifism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_dharmic_pacifism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_gruesome_festivals
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_human_sacrifice
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_consolamentum
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:tenet_human_sacrifice
+							}
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:pagan_hostility_doctrine
+							}
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_very_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_sacrificial_ceremonies
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:tenet_natural_primitivism
+							}
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else_if = { 
+						limit = { 
+							this = faith:insular_celtic
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_megaliths
 			}
 		}
 	}
@@ -6967,6 +7340,12 @@ rnw_remove_all_doctrines_effect = {
 	}
 	if = { 
 		limit = { 
+			has_doctrine = tenet_rite
+		}
+		remove_doctrine = tenet_rite
+	}
+	if = { 
+		limit = { 
 			has_doctrine = tenet_adaptive
 		}
 		remove_doctrine = tenet_adaptive
@@ -7129,6 +7508,12 @@ rnw_remove_all_doctrines_effect = {
 	}
 	if = { 
 		limit = { 
+			has_doctrine = tenet_cthonic_redoubts
+		}
+		remove_doctrine = tenet_cthonic_redoubts
+	}
+	if = { 
+		limit = { 
 			has_doctrine = tenet_eastern_syncretism
 		}
 		remove_doctrine = tenet_eastern_syncretism
@@ -7192,6 +7577,18 @@ rnw_remove_all_doctrines_effect = {
 			has_doctrine = tenet_polyamory
 		}
 		remove_doctrine = tenet_polyamory
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_sacrificial_ceremonies
+		}
+		remove_doctrine = tenet_sacrificial_ceremonies
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_megaliths
+		}
+		remove_doctrine = tenet_megaliths
 	}
 	if = { 
 		limit = { 

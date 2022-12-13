@@ -204,9 +204,7 @@ rnw_check_innovation_level_threshold_effect = {
     }
     if = {
         limit = {
-            scope:progress_to_next_level = {
-                compare_value >= scope:level_threshold
-            }
+            scope:progress_to_next_level >= scope:level_threshold
         }
         save_temporary_scope_value_as = {
             name = progress_to_next_level
@@ -273,9 +271,7 @@ rnw_assign_innovations_to_culture_effect = {
             }
             if = {
                 limit = {
-					scope:added_innovations = {
-						compare_value >= rnw_innovation_second_era_threshold
-					}
+					scope:added_innovations >= rnw_innovation_second_era_threshold
                 }
                 join_era = culture_era_early_medieval
                 set_variable = {

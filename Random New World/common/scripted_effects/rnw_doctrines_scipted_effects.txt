@@ -12,12 +12,7 @@ rnw_resolve_doctrine_head_of_faith_change_effect = {
     every_religion_global = {
         every_faith = {
             save_temporary_scope_as = selected_faith
-            if = {
-                limit = {
-                    exists = religious_head_title
-                }
-                remove_religious_head_title = yes
-            }
+            rnw_remove_religious_head_title_effect = yes
             if = {
                 limit = {
                     NOR = {
@@ -79,6 +74,20 @@ rnw_resolve_doctrine_head_of_faith_change_effect = {
                 }
             }
         }
+    }
+}
+rnw_remove_religious_head_title_effect = {
+    if = {
+        limit = {
+            exists = religious_head_title
+        }
+        if = {
+            limit = {
+                exists = religious_head_title.holder
+            }
+            destroy_title = religious_head_title
+        }
+        remove_religious_head_title = yes
     }
 }
 rnw_create_head_of_faith_title_effect = {
@@ -234,4 +243,60 @@ rnw_check_for_equal_doctrine_effect = {
 		}
 		add_realm_law_skip_effects = equal_law
 	}
+}
+rnw_resolve_rite_doctrine_effect = {
+    every_religion_global = {
+        every_faith = {
+            if = {
+                limit = {
+                    has_doctrine = tenet_rite
+                }
+                rnw_resolve_individual_rite_doctrine_effect = yes
+            }
+        }
+    }
+}
+rnw_resolve_individual_rite_doctrine_effect = {
+    save_temporary_scope_as = selected_faith
+    if = {
+        limit = {
+            religion = {
+                any_faith = {
+                    rnw_valid_rite_target_trigger = { OTHER = scope:selected_faith }
+                }
+            }
+        }
+        religion = {
+            random_faith = {
+                limit = {
+                    rnw_valid_rite_target_trigger = { OTHER = scope:selected_faith }
+                }
+                save_temporary_scope_as = old_faith
+            }
+        }
+        rnw_remove_religious_head_title_effect = yes
+        set_religious_head_title = scope:old_faith.religious_head_title
+        # Christian faiths also get to keep ecumenism.
+        if = {
+            limit = {
+                scope:old_faith = { has_doctrine = special_doctrine_ecumenical_christian }
+            }
+            add_doctrine = special_doctrine_ecumenical_christian
+        }
+        else_if = {
+            limit = {
+                has_doctrine = special_doctrine_ecumenical_christian
+            }
+            remove_doctrine = special_doctrine_ecumenical_christian
+        }
+    }
+    else = {
+        while = {
+            limit = {
+                has_doctrine = tenet_rite
+            }
+            remove_doctrine = tenet_rite
+            rnw_pick_random_doctrine_core_tenets_effect = yes
+        }
+    }
 }

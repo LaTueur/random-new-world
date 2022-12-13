@@ -465,8 +465,9 @@ rnw_select_culture_starting_location_effect = {
                     }
                     add = {
                         value = 0
-                        every_kingdom_in_de_jure_hierarchy = {
+                        every_in_de_jure_hierarchy = {
                             limit = {
+                                tier = tier_kingdom
                                 NOT = { exists = var:has_at_least_one_culture }
                             }
                             add = 2

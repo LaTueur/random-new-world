@@ -79,6 +79,12 @@
 	}
 	if = { 
 		limit = { 
+			has_innovation = innovation_pole_vault
+		}
+		remove_innovation = innovation_pole_vault
+	}
+	if = { 
+		limit = { 
 			has_innovation = innovation_battlements
 		}
 		remove_innovation = innovation_battlements

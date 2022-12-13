@@ -79,6 +79,7 @@ rnw_faith_doctrine_randomization_after_effect = {
             }
         }
         rnw_resolve_doctrine_head_of_faith_change_effect = yes
+        rnw_resolve_rite_doctrine_effect = yes
         every_living_character = {
             trigger_event = {
                 on_action = rnw_faith_randomization_character_check

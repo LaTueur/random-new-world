@@ -193,7 +193,7 @@ rnw_choose_governments_effect = {
 		}
 		if = {
 			limit = {
-				var:effective_development.compare_value >= scope:world_development_average.compare_value
+				var:effective_development >= scope:world_development_average
 			}
 			if = {
 				limit = {
