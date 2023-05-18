@@ -31,6 +31,7 @@ body_replacements = (
     (r"text\s*=\s*\w+", r""),
     (r"divide\s*=\s*\w+\s*ceiling\s*=\s*\w+\s*multiply\s*=\s*\w+", r""),
     (r"flag:(\w+)\s*=\s*{\s*is_in_list\s*=\s*selected_doctrines\s*}", r"has_doctrine = \1"),
+    (r"doctrine:(\w+)\s*=\s*{\s*is_in_list\s*=\s*selected_doctrines\s*}", r"has_doctrine = \1"),
     (r"if\s*=\s*{\s*limit\s*=\s*{\s*has_doctrine\s*=\s*\w+\s*}\s*multiply\s*=\s*faith_unchanged_doctrine_cost_mult\s*}\s*((?:else_if|else)\s*=\s*{\s*((?:\w+\s*=\s*{(?2)}|[^{}])*)}\s*)*", r"")
 )
 doctrine_groups_to_skip = (
