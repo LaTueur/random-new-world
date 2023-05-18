@@ -32,7 +32,8 @@ body_replacements = (
     (r"divide\s*=\s*\w+\s*ceiling\s*=\s*\w+\s*multiply\s*=\s*\w+", r""),
     (r"flag:(\w+)\s*=\s*{\s*is_in_list\s*=\s*selected_doctrines\s*}", r"has_doctrine = \1"),
     (r"doctrine:(\w+)\s*=\s*{\s*is_in_list\s*=\s*selected_doctrines\s*}", r"has_doctrine = \1"),
-    (r"if\s*=\s*{\s*limit\s*=\s*{\s*has_doctrine\s*=\s*\w+\s*}\s*multiply\s*=\s*faith_unchanged_doctrine_cost_mult\s*}\s*((?:else_if|else)\s*=\s*{\s*((?:\w+\s*=\s*{(?2)}|[^{}])*)}\s*)*", r"")
+    (r"if\s*=\s*{\s*limit\s*=\s*{\s*has_doctrine\s*=\s*\w+\s*}\s*multiply\s*=\s*faith_unchanged_doctrine_cost_mult\s*}\s*((?:else_if|else)\s*=\s*{\s*((?:\w+\s*=\s*{(?2)}|[^{}])*)}\s*)*", r""),
+    (r"NAND\s*=\s*{\s*exists\s*=\s*religious_head\s*religious_head.culture\s*=\s*{\s*has_cultural_parameter\s*=\s*[a-z_]*\s*}\s*}", r"")
 )
 doctrine_groups_to_skip = (
     "is_christian_faith",
