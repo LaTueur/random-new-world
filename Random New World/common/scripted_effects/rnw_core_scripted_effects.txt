@@ -16,6 +16,7 @@
                 rnw_religion_pick_random_doctrine_clerical_gender_effect = yes
                 rnw_religion_pick_random_doctrine_clerical_marriage_effect = yes
                 rnw_religion_pick_random_doctrine_clerical_succession_effect = yes
+                rnw_religion_pick_random_doctrine_pilgrimage_effect = yes
     
                 rnw_religion_pick_random_doctrine_marriage_type_effect = yes
                 rnw_religion_pick_random_doctrine_divorce_effect = yes
@@ -40,6 +41,7 @@
                 rnw_pick_random_doctrine_clerical_gender_effect = yes
                 rnw_pick_random_doctrine_clerical_marriage_effect = yes
                 rnw_pick_random_doctrine_clerical_succession_effect = yes
+                rnw_pick_random_doctrine_pilgrimage_effect = yes
 
                 rnw_pick_random_doctrine_marriage_type_effect = yes
                 rnw_pick_random_doctrine_divorce_effect = yes

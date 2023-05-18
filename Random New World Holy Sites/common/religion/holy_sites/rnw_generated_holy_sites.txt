@@ -5780,7 +5780,7 @@ constantinople_akom_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5788,7 +5788,7 @@ constantinople_baltic_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5796,7 +5796,7 @@ constantinople_basque_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5804,7 +5804,7 @@ constantinople_bon = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5812,7 +5812,7 @@ constantinople_old_bon = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5820,7 +5820,7 @@ constantinople_theravada = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5828,7 +5828,7 @@ constantinople_mahayana = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5836,7 +5836,7 @@ constantinople_vajrayana = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5844,7 +5844,7 @@ constantinople_ari = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5852,7 +5852,7 @@ constantinople_lamaism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5860,7 +5860,7 @@ constantinople_catholic = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5868,7 +5868,7 @@ constantinople_orthodox = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5876,7 +5876,7 @@ constantinople_coptic = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5884,7 +5884,7 @@ constantinople_armenian_apostolic = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5892,7 +5892,7 @@ constantinople_conversos = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5900,7 +5900,7 @@ constantinople_cathar = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5908,7 +5908,7 @@ constantinople_waldensian = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5916,7 +5916,7 @@ constantinople_lollard = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5924,7 +5924,7 @@ constantinople_iconoclast = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5932,7 +5932,7 @@ constantinople_bogomilist = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5940,7 +5940,7 @@ constantinople_paulician = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5948,7 +5948,7 @@ constantinople_nestorian = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5956,7 +5956,7 @@ constantinople_messalian = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5964,7 +5964,7 @@ constantinople_adamites = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5972,7 +5972,7 @@ constantinople_insular_celtic = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5980,7 +5980,7 @@ constantinople_bosnian_church = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5988,7 +5988,7 @@ constantinople_mozarabic_church = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -5996,7 +5996,7 @@ constantinople_adoptionist = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6004,7 +6004,7 @@ constantinople_donyipoloism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6012,7 +6012,7 @@ constantinople_sedism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6020,7 +6020,7 @@ constantinople_manichean = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6028,7 +6028,7 @@ constantinople_mandeaism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6036,7 +6036,7 @@ constantinople_sabianism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6044,7 +6044,7 @@ constantinople_valentinianism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6052,7 +6052,7 @@ constantinople_sethianism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6060,7 +6060,7 @@ constantinople_priscillianism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6068,7 +6068,7 @@ constantinople_cainitism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6076,7 +6076,7 @@ constantinople_finnish_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6084,7 +6084,7 @@ constantinople_norse_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6092,7 +6092,7 @@ constantinople_hellenic_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6100,7 +6100,7 @@ constantinople_vaishnavism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6108,7 +6108,7 @@ constantinople_advaitism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6116,7 +6116,7 @@ constantinople_shaivism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6124,7 +6124,7 @@ constantinople_srikula_shaktism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6132,7 +6132,7 @@ constantinople_kalikula_shaktism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6140,7 +6140,7 @@ constantinople_smartism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6148,7 +6148,7 @@ constantinople_krishnaism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6156,7 +6156,7 @@ constantinople_ashari = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6164,7 +6164,7 @@ constantinople_muwalladi = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6172,7 +6172,7 @@ constantinople_maturidi = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6180,7 +6180,7 @@ constantinople_masmudi = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6188,7 +6188,7 @@ constantinople_mutazila = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6196,7 +6196,7 @@ constantinople_quranist = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6204,7 +6204,7 @@ constantinople_ismaili = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6212,7 +6212,7 @@ constantinople_qarmatian = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6220,7 +6220,7 @@ constantinople_nizari = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6228,7 +6228,7 @@ constantinople_zayidi = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6236,7 +6236,7 @@ constantinople_imami = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6244,7 +6244,7 @@ constantinople_ghulat = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6252,7 +6252,7 @@ constantinople_alawite = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6260,7 +6260,7 @@ constantinople_alevi = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6268,7 +6268,7 @@ constantinople_druze = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6276,7 +6276,7 @@ constantinople_ibadi = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6284,7 +6284,7 @@ constantinople_azariqa = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6292,7 +6292,7 @@ constantinople_najdat = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6300,7 +6300,7 @@ constantinople_sufri = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6308,7 +6308,7 @@ constantinople_hafizi = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6316,7 +6316,7 @@ constantinople_digambara = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6324,7 +6324,7 @@ constantinople_svetambara = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6332,7 +6332,7 @@ constantinople_yapaniya = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6340,7 +6340,7 @@ constantinople_rabbinism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6348,7 +6348,7 @@ constantinople_karaism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6356,7 +6356,7 @@ constantinople_haymanot = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6364,7 +6364,7 @@ constantinople_malabarism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6372,7 +6372,7 @@ constantinople_samaritan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6380,7 +6380,7 @@ constantinople_kabarism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6388,7 +6388,7 @@ constantinople_kushitism_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6396,7 +6396,7 @@ constantinople_magyar_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6404,7 +6404,7 @@ constantinople_kiratism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6412,7 +6412,7 @@ constantinople_yumaism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6420,7 +6420,7 @@ constantinople_north_african_acham_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6428,7 +6428,7 @@ constantinople_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6436,7 +6436,7 @@ constantinople_rrmeaism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6444,7 +6444,7 @@ constantinople_melieism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6452,7 +6452,7 @@ constantinople_siberian_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6460,7 +6460,7 @@ constantinople_slavic_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6468,7 +6468,7 @@ constantinople_zhengyi = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6476,7 +6476,7 @@ constantinople_shangqing = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6484,7 +6484,7 @@ constantinople_quanzhen = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6492,7 +6492,7 @@ constantinople_tengri_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6500,7 +6500,7 @@ constantinople_waaqism_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6508,7 +6508,7 @@ constantinople_west_african_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6516,7 +6516,7 @@ constantinople_west_african_bidu_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6524,7 +6524,7 @@ constantinople_west_african_bori_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6532,7 +6532,7 @@ constantinople_west_african_orisha_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6540,7 +6540,7 @@ constantinople_west_african_roog_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6548,7 +6548,7 @@ constantinople_yazidi = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6556,7 +6556,7 @@ constantinople_meshefaresism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6564,7 +6564,7 @@ constantinople_kitebacilweism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6572,7 +6572,7 @@ constantinople_mazdayasna = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6580,7 +6580,7 @@ constantinople_zurvanism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6588,7 +6588,7 @@ constantinople_gayomarthianism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6596,7 +6596,7 @@ constantinople_khurmazta = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6604,7 +6604,7 @@ constantinople_mazdakism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6612,7 +6612,7 @@ constantinople_khurramism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6620,7 +6620,7 @@ constantinople_urartuism = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }
@@ -6628,7 +6628,7 @@ constantinople_zun_pagan = {
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.15
 	}
 	is_active = no
 }

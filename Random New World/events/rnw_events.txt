@@ -28,7 +28,7 @@ rnw.1000 = {
 					create_dynamic_title = {
 						tier = empire
 						name = rnw_title_name
-						adjective = rnw_title_adj
+						#adjective = rnw_title_adj
 					}
 					every_kingdom_in_de_jure_hierarchy = {
 						set_variable = {

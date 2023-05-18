@@ -79,6 +79,9 @@
 					has_doctrine = tenet_dharmic_pacifism
 				}
 				NOT = { 
+					has_doctrine = doctrine_pilgrimage_forbidden
+				}
+				NOT = { 
 					has_doctrine = tenet_armed_pilgrimages
 				}
 			}
@@ -2564,6 +2567,12 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
 						target = flag:tenet_dharmic_pacifism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_pilgrimage_forbidden
 					}
 				}
 			}
@@ -5223,6 +5232,31 @@ rnw_pick_random_doctrine_deviancy_effect = {
 			}
 			add_doctrine = doctrine_deviancy_accepted
 		}
+		0 = { 
+			trigger = { 
+				has_doctrine = tenet_carnal_exaltation
+				NOT = { 
+					has_doctrine = doctrine_deviancy_virtuous
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_very_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_deviancy_virtuous
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_deviancy_virtuous
+		}
 	}
 }
 rnw_religion_pick_random_doctrine_deviancy_effect = { 
@@ -5261,6 +5295,23 @@ rnw_religion_pick_random_doctrine_deviancy_effect = {
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
 				target = flag:doctrine_deviancy_accepted
+			}
+		}
+		0 = { 
+			trigger = { 
+				is_target_in_variable_list = { 
+					name = religion_doctrine_preferences
+					target = flag:tenet_carnal_exaltation
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_very_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_deviancy_virtuous
 			}
 		}
 	}
@@ -5761,6 +5812,30 @@ rnw_pick_random_doctrine_witchcraft_effect = {
 			}
 			add_doctrine = doctrine_witchcraft_accepted
 		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_witchcraft_virtuous
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_very_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_witchcraft_virtuous
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_witchcraft_virtuous
+		}
 	}
 }
 rnw_religion_pick_random_doctrine_witchcraft_effect = { 
@@ -5801,6 +5876,18 @@ rnw_religion_pick_random_doctrine_witchcraft_effect = {
 				target = flag:doctrine_witchcraft_accepted
 			}
 		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_very_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_witchcraft_virtuous
+			}
+		}
 	}
 }
 rnw_pick_random_doctrine_gender_effect = { 
@@ -5809,12 +5896,6 @@ rnw_pick_random_doctrine_gender_effect = {
 			trigger = { 
 				NOT = { 
 					has_game_rule = full_gender_equality
-				}
-				NAND = { 
-					exists = religious_head
-					religious_head.culture = { 
-						has_cultural_parameter = female_only_inheritance
-					}
 				}
 				NOT = { 
 					has_doctrine = doctrine_gender_male_dominated
@@ -5897,12 +5978,6 @@ rnw_religion_pick_random_doctrine_gender_effect = {
 			trigger = { 
 				NOT = { 
 					has_game_rule = full_gender_equality
-				}
-				NAND = { 
-					exists = religious_head
-					religious_head.culture = { 
-						has_cultural_parameter = female_only_inheritance
-					}
 				}
 			}
 			modifier = { 
@@ -6941,6 +7016,168 @@ rnw_religion_pick_random_doctrine_clerical_succession_effect = {
 		}
 	}
 }
+rnw_pick_random_doctrine_pilgrimage_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_pilgrimage_forbidden
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_pilgrimage_forbidden
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_pilgrimage_forbidden
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_pilgrimage_encouraged
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_pilgrimage_encouraged
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_pilgrimage_encouraged
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = islam_religion
+				}
+				NOT = { 
+					has_doctrine = doctrine_pilgrimage_mandatory
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_pilgrimage_mandatory
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_pilgrimage_mandatory
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = islam_religion
+				NOT = { 
+					has_doctrine = doctrine_pilgrimage_mandatory_hajj
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_pilgrimage_mandatory_hajj
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_pilgrimage_mandatory_hajj
+		}
+	}
+}
+rnw_religion_pick_random_doctrine_pilgrimage_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_pilgrimage_forbidden
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_pilgrimage_encouraged
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					religion_tag = islam_religion
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_pilgrimage_mandatory
+			}
+		}
+		0 = { 
+			trigger = { 
+				religion_tag = islam_religion
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_pilgrimage_mandatory_hajj
+			}
+		}
+	}
+}
 rnw_pick_random_doctrine_muhammad_succession_effect = { 
 	random_list = { 
 		0 = { 
@@ -7682,6 +7919,12 @@ rnw_remove_all_doctrines_effect = {
 	}
 	if = { 
 		limit = { 
+			has_doctrine = doctrine_deviancy_virtuous
+		}
+		remove_doctrine = doctrine_deviancy_virtuous
+	}
+	if = { 
+		limit = { 
 			has_doctrine = doctrine_adultery_men_crime
 		}
 		remove_doctrine = doctrine_adultery_men_crime
@@ -7763,6 +8006,12 @@ rnw_remove_all_doctrines_effect = {
 			has_doctrine = doctrine_witchcraft_accepted
 		}
 		remove_doctrine = doctrine_witchcraft_accepted
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_witchcraft_virtuous
+		}
+		remove_doctrine = doctrine_witchcraft_virtuous
 	}
 	if = { 
 		limit = { 
@@ -7925,6 +8174,30 @@ rnw_remove_all_doctrines_effect = {
 			has_doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
 		}
 		remove_doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_pilgrimage_forbidden
+		}
+		remove_doctrine = doctrine_pilgrimage_forbidden
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_pilgrimage_encouraged
+		}
+		remove_doctrine = doctrine_pilgrimage_encouraged
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_pilgrimage_mandatory
+		}
+		remove_doctrine = doctrine_pilgrimage_mandatory
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_pilgrimage_mandatory_hajj
+		}
+		remove_doctrine = doctrine_pilgrimage_mandatory_hajj
 	}
 	if = { 
 		limit = { 
