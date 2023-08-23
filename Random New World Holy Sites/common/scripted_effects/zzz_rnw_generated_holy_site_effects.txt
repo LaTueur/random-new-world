@@ -190,17 +190,17 @@
 		10 = { 
 			trigger = { 
 				NOT = { 
-					title:c_suenik = { 
+					title:c_dvin = { 
 						is_in_list = choosen_holy_sites
 					}
 				}
 			}
 			rnw_holy_site_choice_modifier = { 
-				COUNTY = title:c_suenik
+				COUNTY = title:c_dvin
 			}
 			rnw_add_holy_site_effect = { 
-				SITE = suenik
-				COUNTY = title:c_suenik
+				SITE = dvin
+				COUNTY = title:c_dvin
 				FAITH = $FAITH$
 			}
 		}
@@ -915,6 +915,40 @@
 			rnw_add_holy_site_effect = { 
 				SITE = manipur
 				COUNTY = title:c_manipur
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_hamadan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_hamadan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = hamadan
+				COUNTY = title:c_hamadan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kufa = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kufa
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = babylon
+				COUNTY = title:c_kufa
 				FAITH = $FAITH$
 			}
 		}
@@ -3485,6 +3519,14 @@ rnw_forward_to_holy_site_choice_effect = {
 	}
 	else_if = { 
 		limit = { 
+			this = faith:saura
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = saura
+		}
+	}
+	else_if = { 
+		limit = { 
 			this = faith:ashari
 		}
 		rnw_choose_multiple_holy_site_effect = { 
@@ -3713,6 +3755,14 @@ rnw_forward_to_holy_site_choice_effect = {
 		}
 		rnw_choose_multiple_holy_site_effect = { 
 			FAITH = kabarism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:merkabah
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = merkabah
 		}
 	}
 	else_if = { 

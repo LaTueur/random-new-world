@@ -915,7 +915,12 @@
 		0 = { 
 			trigger = { 
 				NOR = { 
-					religion_tag = christianity_religion
+					AND = { 
+						religion_tag = christianity_religion
+						NOT = { 
+							this = faith:cathar
+						}
+					}
 					religion_tag = judaism_religion
 					religion_tag = zoroastrianism_religion
 				}
@@ -2514,9 +2519,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = judaism_religion
-								religion_tag = islam_religion
+								this = religion:christianity_religion
+								this = religion:judaism_religion
+								this = religion:islam_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -2533,7 +2538,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = christianity_religion
+				this = religion:christianity_religion
 				NOT = { 
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
@@ -2554,8 +2559,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				OR = { 
-					religion_tag = christianity_religion
-					religion_tag = judaism_religion
+					this = religion:christianity_religion
+					this = religion:judaism_religion
 				}
 				NOT = { 
 					is_target_in_variable_list = { 
@@ -2580,7 +2585,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 				add = { 
 					if = { 
 						limit = { 
-							religion_tag = christianity_religion
+							this = religion:christianity_religion
 						}
 						value = rnw_faith_doctrine_high_chance
 					}
@@ -2600,15 +2605,15 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 				add = { 
 					if = { 
 						limit = { 
-							religion_tag = hinduism_religion
+							this = religion:hinduism_religion
 						}
 						value = rnw_faith_doctrine_high_chance
 					}
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = judaism_religion
+								this = religion:christianity_religion
+								this = religion:judaism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -2616,8 +2621,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_very_low_chance
@@ -2641,8 +2646,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_averange_chance
@@ -2671,8 +2676,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = judaism_religion
+								this = religion:christianity_religion
+								this = religion:judaism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -2699,16 +2704,16 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOR = { 
-					religion_tag = islam_religion
-					religion_tag = judaism_religion
-					religion_tag = zoroastrianism_religion
+					this = religion:islam_religion
+					this = religion:judaism_religion
+					this = religion:zoroastrianism_religion
 					AND = { 
 						is_target_in_variable_list = { 
 							name = religion_doctrine_preferences
 							target = flag:pagan_hostility_doctrine
 						}
 						NOT = { 
-							religion_tag = kushitism_religion
+							this = religion:kushitism_religion
 						}
 					}
 				}
@@ -2733,9 +2738,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = dualism_religion
-								religion_tag = hinduism_religion
-								religion_tag = jainism_religion
+								this = religion:dualism_religion
+								this = religion:hinduism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -2762,10 +2767,10 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = islam_religion
-								religion_tag = dualism_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:islam_religion
+								this = religion:dualism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -2800,8 +2805,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = dualism_religion
-								religion_tag = zoroastrianism_religion
+								this = religion:dualism_religion
+								this = religion:zoroastrianism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -2809,9 +2814,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = judaism_religion
-								religion_tag = islam_religion
-								religion_tag = hinduism_religion
+								this = religion:judaism_religion
+								this = religion:islam_religion
+								this = religion:hinduism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -2844,10 +2849,10 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = dualism_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:christianity_religion
+								this = religion:dualism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -2855,8 +2860,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = hinduism_religion
-								religion_tag = zoroastrianism_religion
+								this = religion:hinduism_religion
+								this = religion:zoroastrianism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -2889,10 +2894,10 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = dualism_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:christianity_religion
+								this = religion:dualism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -2900,7 +2905,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = zoroastrianism_religion
+								this = religion:zoroastrianism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -2922,9 +2927,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOR = { 
-					religion_tag = buddhism_religion
-					religion_tag = hinduism_religion
-					religion_tag = jainism_religion
+					this = religion:buddhism_religion
+					this = religion:hinduism_religion
+					this = religion:jainism_religion
 				}
 				NOT = { 
 					is_target_in_variable_list = { 
@@ -2949,14 +2954,14 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 				add = { 
 					if = { 
 						limit = { 
-							religion_tag = christianity_religion
-							religion_tag = taoism_religion
+							this = religion:christianity_religion
+							this = religion:taoism_religion
 						}
 						value = rnw_faith_doctrine_high_chance
 					}
 					else_if = { 
 						limit = { 
-							religion_tag = islam_religion
+							this = religion:islam_religion
 						}
 						value = rnw_faith_doctrine_low_chance
 					}
@@ -2984,9 +2989,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = hinduism_religion
-								religion_tag = zoroastrianism_religion
+								this = religion:christianity_religion
+								this = religion:hinduism_religion
+								this = religion:zoroastrianism_religion
 							}
 						}
 						value = rnw_faith_doctrine_averange_chance
@@ -3008,8 +3013,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = judaism_religion
-								religion_tag = islam_religion
+								this = religion:judaism_religion
+								this = religion:islam_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3021,8 +3026,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -3046,10 +3051,10 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = dualism_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:christianity_religion
+								this = religion:dualism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3057,7 +3062,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = zoroastrianism_religion
+								this = religion:zoroastrianism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3078,7 +3083,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = christianity_religion
+				this = religion:christianity_religion
 				is_target_in_variable_list = { 
 					name = religion_doctrine_preferences
 					target = flag:doctrine_no_head
@@ -3138,8 +3143,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = islam_religion
+								this = religion:christianity_religion
+								this = religion:islam_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -3147,9 +3152,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = judaism_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:judaism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3175,7 +3180,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
+								this = religion:christianity_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -3183,9 +3188,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = hinduism_religion
-								religion_tag = jainism_religion
-								religion_tag = zoroastrianism_religion
+								this = religion:hinduism_religion
+								this = religion:jainism_religion
+								this = religion:zoroastrianism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3211,8 +3216,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3224,9 +3229,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = islam_religion
-								religion_tag = judaism_religion
-								religion_tag = zoroastrianism_religion
+								this = religion:islam_religion
+								this = religion:judaism_religion
+								this = religion:zoroastrianism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3248,8 +3253,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = islam_religion
-								religion_tag = judaism_religion
+								this = religion:islam_religion
+								this = religion:judaism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3279,9 +3284,14 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOR = { 
-					religion_tag = christianity_religion
-					religion_tag = judaism_religion
-					religion_tag = zoroastrianism_religion
+					AND = { 
+						this = religion:christianity_religion
+						NOT = { 
+							this = faith:cathar
+						}
+					}
+					this = religion:judaism_religion
+					this = religion:zoroastrianism_religion
 				}
 			}
 			modifier = { 
@@ -3289,7 +3299,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = islam_religion
+								this = religion:islam_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -3297,10 +3307,10 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = dualism_religion
-								religion_tag = hinduism_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:dualism_religion
+								this = religion:hinduism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3322,9 +3332,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = hinduism_religion
-								religion_tag = zoroastrianism_religion
+								this = religion:christianity_religion
+								this = religion:hinduism_religion
+								this = religion:zoroastrianism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3336,8 +3346,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = islam_religion
-								religion_tag = judaism_religion
+								this = religion:islam_religion
+								this = religion:judaism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3355,15 +3365,15 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				OR = { 
-					religion_tag = islam_religion
-					religion_tag = dualism_religion
+					this = religion:islam_religion
+					this = religion:dualism_religion
 				}
 			}
 			modifier = { 
 				add = { 
 					if = { 
 						limit = { 
-							religion_tag = islam_religion
+							this = religion:islam_religion
 						}
 						value = rnw_faith_doctrine_high_chance
 					}
@@ -3380,7 +3390,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOT = { 
-					religion_tag = christianity_religion
+					this = religion:christianity_religion
 				}
 			}
 			modifier = { 
@@ -3388,10 +3398,10 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = dualism_religion
-								religion_tag = hinduism_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:dualism_religion
+								this = religion:hinduism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -3399,7 +3409,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = zoroastrianism_religion
+								this = religion:zoroastrianism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3421,8 +3431,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = dualism_religion
+								this = religion:christianity_religion
+								this = religion:dualism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -3430,7 +3440,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = islam_religion
+								this = religion:islam_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3456,7 +3466,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = zoroastrianism_religion
+								this = religion:zoroastrianism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3468,11 +3478,11 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = dualism_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
-								religion_tag = taoism_religion
+								this = religion:christianity_religion
+								this = religion:dualism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
+								this = religion:taoism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3490,9 +3500,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				OR = { 
-					religion_tag = hinduism_religion
+					this = religion:hinduism_religion
 					AND = { 
-						religion_tag = germanic_religion
+						this = religion:germanic_religion
 						has_fp1_dlc_trigger = yes
 					}
 				}
@@ -3514,7 +3524,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					target = flag:eastern_hostility_doctrine
 				}
 				NOT = { 
-					religion_tag = zoroastrianism_religion
+					this = religion:zoroastrianism_religion
 				}
 				NOT = { 
 					is_target_in_variable_list = { 
@@ -3540,8 +3550,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3563,7 +3573,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					target = flag:eastern_hostility_doctrine
 				}
 				NOT = { 
-					religion_tag = zoroastrianism_religion
+					this = religion:zoroastrianism_religion
 				}
 			}
 			modifier = { 
@@ -3590,9 +3600,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = hinduism_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:hinduism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3610,8 +3620,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				OR = { 
-					religion_tag = west_african_bori_religion
-					religion_tag = akom_religion
+					this = religion:west_african_bori_religion
+					this = religion:akom_religion
 				}
 			}
 			modifier = { 
@@ -3648,9 +3658,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = judaism_religion
-								religion_tag = islam_religion
+								this = religion:christianity_religion
+								this = religion:judaism_religion
+								this = religion:islam_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -3658,7 +3668,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = zoroastrianism_religion
+								this = religion:zoroastrianism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3680,7 +3690,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOT = { 
-					religion_tag = dualism_religion
+					this = religion:dualism_religion
 				}
 				NOT = { 
 					is_target_in_variable_list = { 
@@ -3700,9 +3710,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:christianity_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_very_low_chance
@@ -3710,8 +3720,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = islam_religion
-								religion_tag = judaism_religion
+								this = religion:islam_religion
+								this = religion:judaism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -3719,7 +3729,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = hinduism_religion
+								this = religion:hinduism_religion
 							}
 						}
 						value = rnw_faith_doctrine_high_chance
@@ -3737,9 +3747,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOR = { 
-					religion_tag = christianity_religion
-					religion_tag = judaism_religion
-					religion_tag = islam_religion
+					this = religion:christianity_religion
+					this = religion:judaism_religion
+					this = religion:islam_religion
 				}
 				NOT = { 
 					is_target_in_variable_list = { 
@@ -3788,7 +3798,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					}
 					else_if = { 
 						limit = { 
-							religion_tag = hinduism_religion
+							this = religion:hinduism_religion
 						}
 						value = rnw_faith_doctrine_low_chance
 					}
@@ -3804,7 +3814,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = magyar_religion
+				this = religion:magyar_religion
 			}
 			modifier = { 
 				add = { 
@@ -3823,8 +3833,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = hinduism_religion
-								religion_tag = zoroastrianism_religion
+								this = religion:hinduism_religion
+								this = religion:zoroastrianism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -3862,7 +3872,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = hinduism_religion
+								this = religion:hinduism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -3922,7 +3932,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = zunism_religion
+				this = religion:zunism_religion
 			}
 			modifier = { 
 				add = { 
@@ -3937,10 +3947,10 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOR = { 
-					religion_tag = christianity_religion
-					religion_tag = islam_religion
-					religion_tag = judaism_religion
-					religion_tag = dualism_religion
+					this = religion:christianity_religion
+					this = religion:islam_religion
+					this = religion:judaism_religion
+					this = religion:dualism_religion
 				}
 				NOT = { 
 					is_target_in_variable_list = { 
@@ -3960,9 +3970,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
-								religion_tag = taoism_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
+								this = religion:taoism_religion
 							}
 						}
 						value = rnw_faith_doctrine_very_low_chance
@@ -3980,9 +3990,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOR = { 
-					religion_tag = christianity_religion
-					religion_tag = judaism_religion
-					religion_tag = islam_religion
+					this = religion:christianity_religion
+					this = religion:judaism_religion
+					this = religion:islam_religion
 				}
 				has_fp1_dlc_trigger = yes
 				NOT = { 
@@ -4032,7 +4042,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					}
 					else_if = { 
 						limit = { 
-							religion_tag = hinduism_religion
+							this = religion:hinduism_religion
 						}
 						value = rnw_faith_doctrine_low_chance
 					}
@@ -4121,7 +4131,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = dualism_religion
+								this = religion:dualism_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -4132,7 +4142,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					}
 					else_if = { 
 						limit = { 
-							religion_tag = islam_religion
+							this = religion:islam_religion
 						}
 						value = rnw_faith_doctrine_very_low_chance
 					}
@@ -4206,7 +4216,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOT = { 
-					religion_tag = christianity_religion
+					this = religion:christianity_religion
 				}
 				NOR = { 
 					is_target_in_variable_list = { 
@@ -4232,8 +4242,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = islam_religion
-								religion_tag = dualism_religion
+								this = religion:islam_religion
+								this = religion:dualism_religion
 							}
 						}
 						value = rnw_faith_doctrine_averange_chance
@@ -4251,7 +4261,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOT = { 
-					religion_tag = islam_religion
+					this = religion:islam_religion
 				}
 				NOR = { 
 					is_target_in_variable_list = { 
@@ -4277,8 +4287,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = dualism_religion
+								this = religion:christianity_religion
+								this = religion:dualism_religion
 							}
 						}
 						value = rnw_faith_doctrine_averange_chance
@@ -4296,7 +4306,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				NOT = { 
-					religion_tag = judaism_religion
+					this = religion:judaism_religion
 				}
 				NOR = { 
 					is_target_in_variable_list = { 
@@ -4322,9 +4332,9 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = judaism_religion
-								religion_tag = christianity_religion
-								religion_tag = dualism_religion
+								this = religion:judaism_religion
+								this = religion:christianity_religion
+								this = religion:dualism_religion
 							}
 						}
 						value = rnw_faith_doctrine_averange_chance
@@ -4348,7 +4358,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
+								this = religion:christianity_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -4360,7 +4370,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = hinduism_religion
+								this = religion:hinduism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -4452,8 +4462,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
 								}
-								religion_tag = hinduism_religion
-								religion_tag = islam_religion
+								this = religion:hinduism_religion
+								this = religion:islam_religion
 							}
 						}
 						value = rnw_faith_doctrine_averange_chance
@@ -4461,7 +4471,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = judaism_religion
+								this = religion:judaism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -4489,7 +4499,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
+								this = religion:christianity_religion
 								is_target_in_variable_list = { 
 									name = religion_doctrine_preferences
 									target = flag:pagan_hostility_doctrine
@@ -4500,7 +4510,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					}
 					else_if = { 
 						limit = { 
-							religion_tag = hinduism_religion
+							this = religion:hinduism_religion
 						}
 						value = rnw_faith_doctrine_low_chance
 					}
@@ -4532,8 +4542,8 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = islam_religion
-								religion_tag = judaism_religion
+								this = religion:islam_religion
+								this = religion:judaism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -4573,18 +4583,18 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 				add = { 
 					if = { 
 						limit = { 
-							religion_tag = hinduism_religion
+							this = religion:hinduism_religion
 						}
 						value = rnw_faith_doctrine_high_chance
 					}
 					else_if = { 
 						limit = { 
 							OR = { 
-								religion_tag = christianity_religion
-								religion_tag = judaism_religion
-								religion_tag = islam_religion
-								religion_tag = buddhism_religion
-								religion_tag = jainism_religion
+								this = religion:christianity_religion
+								this = religion:judaism_religion
+								this = religion:islam_religion
+								this = religion:buddhism_religion
+								this = religion:jainism_religion
 							}
 						}
 						value = rnw_faith_doctrine_low_chance
@@ -4601,7 +4611,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = north_african_religion
+				this = religion:north_african_religion
 				NOT = { 
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
@@ -5607,7 +5617,6 @@ rnw_pick_random_doctrine_kinslaying_effect = {
 			modifier = { 
 				add = { 
 					value = rnw_faith_doctrine_averange_chance
-					multiply = faith_changed_doctrine_cost_mult_two_step
 					if = { 
 						limit = { 
 							religion = { 
@@ -5704,7 +5713,6 @@ rnw_religion_pick_random_doctrine_kinslaying_effect = {
 			modifier = { 
 				add = { 
 					value = rnw_faith_doctrine_averange_chance
-					multiply = faith_changed_doctrine_cost_mult_two_step
 				}
 			}
 			add_to_variable_list = { 
@@ -7149,7 +7157,7 @@ rnw_religion_pick_random_doctrine_pilgrimage_effect = {
 		0 = { 
 			trigger = { 
 				NOT = { 
-					religion_tag = islam_religion
+					this = religion:islam_religion
 				}
 			}
 			modifier = { 
@@ -7164,7 +7172,7 @@ rnw_religion_pick_random_doctrine_pilgrimage_effect = {
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = islam_religion
+				this = religion:islam_religion
 			}
 			modifier = { 
 				add = { 
@@ -7390,90 +7398,398 @@ rnw_religion_pick_random_doctrine_muhammad_succession_effect = {
 		}
 	}
 }
-rnw_religion_pick_random_doctrine_muhammad_succession_effect = { 
+rnw_pick_random_doctrine_temple_authority_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = temple_authority_rabbinic_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_doctrine = temple_authority_rabbinic_doctrine
+						}
+						value = 0
+					}
+					else_if = { 
+						limit = { 
+							has_doctrine = temple_authority_samaritan_torah_doctrine
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_high_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:temple_authority_rabbinic_doctrine
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = temple_authority_rabbinic_doctrine
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = temple_authority_toric_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_doctrine = temple_authority_toric_doctrine
+						}
+						value = 0
+					}
+					else_if = { 
+						limit = { 
+							has_doctrine = temple_authority_samaritan_torah_doctrine
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_high_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:temple_authority_toric_doctrine
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = temple_authority_toric_doctrine
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = temple_authority_kohanim_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_doctrine = temple_authority_kohanim_doctrine
+						}
+						value = 0
+					}
+					else_if = { 
+						limit = { 
+							has_doctrine = temple_authority_samaritan_torah_doctrine
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_high_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:temple_authority_kohanim_doctrine
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = temple_authority_kohanim_doctrine
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = temple_authority_samaritan_torah_doctrine
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							has_doctrine = temple_authority_samaritan_torah_doctrine
+						}
+						value = 0
+					}
+					else = { 
+						value = rnw_faith_doctrine_averange_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:temple_authority_samaritan_torah_doctrine
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = temple_authority_samaritan_torah_doctrine
+		}
+	}
+}
+rnw_religion_pick_random_doctrine_temple_authority_effect = { 
 	random_list = { 
 		0 = { 
 			trigger = { }
 			modifier = { 
 				add = { 
-					value = rnw_faith_doctrine_high_chance
 					if = { 
 						limit = { 
 							is_target_in_variable_list = { 
 								name = religion_doctrine_preferences
-								target = flag:muhammad_succession_sunni_doctrine
+								target = flag:temple_authority_rabbinic_doctrine
 							}
 						}
-						multiply = 0
+						value = 0
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_samaritan_torah_doctrine
+							}
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_high_chance
 					}
 				}
 			}
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
-				target = flag:muhammad_succession_sunni_doctrine
+				target = flag:temple_authority_rabbinic_doctrine
 			}
 		}
 		0 = { 
 			trigger = { }
 			modifier = { 
 				add = { 
-					value = rnw_faith_doctrine_high_chance
 					if = { 
 						limit = { 
 							is_target_in_variable_list = { 
 								name = religion_doctrine_preferences
-								target = flag:muhammad_succession_shia_doctrine
+								target = flag:temple_authority_toric_doctrine
 							}
 						}
-						multiply = 0
+						value = 0
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_samaritan_torah_doctrine
+							}
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_high_chance
 					}
 				}
 			}
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
-				target = flag:muhammad_succession_shia_doctrine
+				target = flag:temple_authority_toric_doctrine
 			}
 		}
 		0 = { 
 			trigger = { }
 			modifier = { 
 				add = { 
-					value = rnw_faith_doctrine_high_chance
 					if = { 
 						limit = { 
 							is_target_in_variable_list = { 
 								name = religion_doctrine_preferences
-								target = flag:muhammad_succession_muhakkima_doctrine
+								target = flag:temple_authority_kohanim_doctrine
 							}
 						}
-						multiply = 0
+						value = 0
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_samaritan_torah_doctrine
+							}
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_high_chance
 					}
 				}
 			}
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
-				target = flag:muhammad_succession_muhakkima_doctrine
+				target = flag:temple_authority_kohanim_doctrine
 			}
 		}
 		0 = { 
 			trigger = { }
 			modifier = { 
 				add = { 
-					value = rnw_faith_doctrine_high_chance
 					if = { 
 						limit = { 
 							is_target_in_variable_list = { 
 								name = religion_doctrine_preferences
-								target = flag:muhammad_succession_zandaqa_doctrine
+								target = flag:temple_authority_samaritan_torah_doctrine
 							}
 						}
-						multiply = 0
+						value = 0
+					}
+					else = { 
+						value = rnw_faith_doctrine_averange_chance
 					}
 				}
 			}
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
-				target = flag:muhammad_succession_zandaqa_doctrine
+				target = flag:temple_authority_samaritan_torah_doctrine
+			}
+		}
+	}
+}
+rnw_religion_pick_random_doctrine_temple_authority_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_rabbinic_doctrine
+							}
+						}
+						value = 0
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_samaritan_torah_doctrine
+							}
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_high_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:temple_authority_rabbinic_doctrine
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_toric_doctrine
+							}
+						}
+						value = 0
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_samaritan_torah_doctrine
+							}
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_high_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:temple_authority_toric_doctrine
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_kohanim_doctrine
+							}
+						}
+						value = 0
+					}
+					else_if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_samaritan_torah_doctrine
+							}
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_high_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:temple_authority_kohanim_doctrine
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							is_target_in_variable_list = { 
+								name = religion_doctrine_preferences
+								target = flag:temple_authority_samaritan_torah_doctrine
+							}
+						}
+						value = 0
+					}
+					else = { 
+						value = rnw_faith_doctrine_averange_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:temple_authority_samaritan_torah_doctrine
 			}
 		}
 	}
@@ -8222,5 +8538,35 @@ rnw_remove_all_doctrines_effect = {
 			has_doctrine = muhammad_succession_zandaqa_doctrine
 		}
 		remove_doctrine = muhammad_succession_zandaqa_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = temple_authority_rabbinic_doctrine
+		}
+		remove_doctrine = temple_authority_rabbinic_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = temple_authority_toric_doctrine
+		}
+		remove_doctrine = temple_authority_toric_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = temple_authority_kohanim_doctrine
+		}
+		remove_doctrine = temple_authority_kohanim_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = temple_authority_samaritan_torah_doctrine
+		}
+		remove_doctrine = temple_authority_samaritan_torah_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = special_doctrine_not_allowed_to_hof
+		}
+		remove_doctrine = special_doctrine_not_allowed_to_hof
 	}
 }

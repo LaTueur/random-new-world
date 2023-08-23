@@ -374,6 +374,14 @@ jerusalem_krishnaism = {
 	flag = jerusalem_conversion_bonus
 	is_active = no
 }
+jerusalem_saura = { 
+	county = c_jerusalem
+	character_modifier = { 
+		monthly_piety_gain_mult = 0.2
+	}
+	flag = jerusalem_conversion_bonus
+	is_active = no
+}
 jerusalem_ashari = { 
 	county = c_jerusalem
 	character_modifier = { 
@@ -599,6 +607,14 @@ jerusalem_samaritan = {
 	is_active = no
 }
 jerusalem_kabarism = { 
+	county = c_jerusalem
+	character_modifier = { 
+		monthly_piety_gain_mult = 0.2
+	}
+	flag = jerusalem_conversion_bonus
+	is_active = no
+}
+jerusalem_merkabah = { 
 	county = c_jerusalem
 	character_modifier = { 
 		monthly_piety_gain_mult = 0.2
@@ -1324,6 +1340,16 @@ rome_krishnaism = {
 	}
 	is_active = no
 }
+rome_saura = { 
+	county = c_roma
+	barony = b_vaticano
+	character_modifier = { 
+		name = holy_site_rome_effect_name
+		development_growth_factor = 0.1
+		stewardship = 1
+	}
+	is_active = no
+}
 rome_ashari = { 
 	county = c_roma
 	barony = b_vaticano
@@ -1605,6 +1631,16 @@ rome_samaritan = {
 	is_active = no
 }
 rome_kabarism = { 
+	county = c_roma
+	barony = b_vaticano
+	character_modifier = { 
+		name = holy_site_rome_effect_name
+		development_growth_factor = 0.1
+		stewardship = 1
+	}
+	is_active = no
+}
+rome_merkabah = { 
 	county = c_roma
 	barony = b_vaticano
 	character_modifier = { 
@@ -2347,6 +2383,15 @@ cologne_krishnaism = {
 	}
 	is_active = no
 }
+cologne_saura = { 
+	county = c_cologne
+	character_modifier = { 
+		name = holy_site_cologne_effect_name
+		cultural_head_fascination_mult = 0.05
+		monthly_county_control_change_factor = 0.05
+	}
+	is_active = no
+}
 cologne_ashari = { 
 	county = c_cologne
 	character_modifier = { 
@@ -2600,6 +2645,15 @@ cologne_samaritan = {
 	is_active = no
 }
 cologne_kabarism = { 
+	county = c_cologne
+	character_modifier = { 
+		name = holy_site_cologne_effect_name
+		cultural_head_fascination_mult = 0.05
+		monthly_county_control_change_factor = 0.05
+	}
+	is_active = no
+}
+cologne_merkabah = { 
 	county = c_cologne
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
@@ -3310,6 +3364,15 @@ santiago_krishnaism = {
 	}
 	is_active = no
 }
+santiago_saura = { 
+	county = c_santiago
+	character_modifier = { 
+		name = holy_site_santiago_effect_name
+		supply_duration = 0.2
+		holy_order_hire_cost_mult = -0.1
+	}
+	is_active = no
+}
 santiago_ashari = { 
 	county = c_santiago
 	character_modifier = { 
@@ -3563,6 +3626,15 @@ santiago_samaritan = {
 	is_active = no
 }
 santiago_kabarism = { 
+	county = c_santiago
+	character_modifier = { 
+		name = holy_site_santiago_effect_name
+		supply_duration = 0.2
+		holy_order_hire_cost_mult = -0.1
+	}
+	is_active = no
+}
+santiago_merkabah = { 
 	county = c_santiago
 	character_modifier = { 
 		name = holy_site_santiago_effect_name
@@ -4320,6 +4392,16 @@ kent_krishnaism = {
 	}
 	is_active = no
 }
+kent_saura = { 
+	county = c_kent
+	barony = b_canterbury
+	character_modifier = { 
+		name = holy_site_kent_effect_name
+		religious_vassal_opinion = 5
+		sway_scheme_power_mult = 0.1
+	}
+	is_active = no
+}
 kent_ashari = { 
 	county = c_kent
 	barony = b_canterbury
@@ -4601,6 +4683,16 @@ kent_samaritan = {
 	is_active = no
 }
 kent_kabarism = { 
+	county = c_kent
+	barony = b_canterbury
+	character_modifier = { 
+		name = holy_site_kent_effect_name
+		religious_vassal_opinion = 5
+		sway_scheme_power_mult = 0.1
+	}
+	is_active = no
+}
+kent_merkabah = { 
 	county = c_kent
 	barony = b_canterbury
 	character_modifier = { 
@@ -5296,6 +5388,14 @@ segrada_familia_krishnaism = {
 		monthly_piety_gain_mult = 0.1
 	}
 }
+segrada_familia_saura = { 
+	county = c_barcelona
+	is_active = no
+	character_modifier = { 
+		name = holy_site_segrada_familia_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+}
 segrada_familia_ashari = { 
 	county = c_barcelona
 	is_active = no
@@ -5521,6 +5621,14 @@ segrada_familia_samaritan = {
 	}
 }
 segrada_familia_kabarism = { 
+	county = c_barcelona
+	is_active = no
+	character_modifier = { 
+		name = holy_site_segrada_familia_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+}
+segrada_familia_merkabah = { 
 	county = c_barcelona
 	is_active = no
 	character_modifier = { 
@@ -6152,6 +6260,14 @@ constantinople_krishnaism = {
 	}
 	is_active = no
 }
+constantinople_saura = { 
+	county = c_byzantion
+	character_modifier = { 
+		name = holy_site_constantinople_effect_name
+		cultural_head_fascination_mult = 0.15
+	}
+	is_active = no
+}
 constantinople_ashari = { 
 	county = c_byzantion
 	character_modifier = { 
@@ -6377,6 +6493,14 @@ constantinople_samaritan = {
 	is_active = no
 }
 constantinople_kabarism = { 
+	county = c_byzantion
+	character_modifier = { 
+		name = holy_site_constantinople_effect_name
+		cultural_head_fascination_mult = 0.15
+	}
+	is_active = no
+}
+constantinople_merkabah = { 
 	county = c_byzantion
 	character_modifier = { 
 		name = holy_site_constantinople_effect_name
@@ -7008,6 +7132,14 @@ alexandria_krishnaism = {
 	}
 	is_active = no
 }
+alexandria_saura = { 
+	county = c_alexandria
+	character_modifier = { 
+		name = holy_site_alexandria_effect_name
+		learning_per_piety_level = 2
+	}
+	is_active = no
+}
 alexandria_ashari = { 
 	county = c_alexandria
 	character_modifier = { 
@@ -7233,6 +7365,14 @@ alexandria_samaritan = {
 	is_active = no
 }
 alexandria_kabarism = { 
+	county = c_alexandria
+	character_modifier = { 
+		name = holy_site_alexandria_effect_name
+		learning_per_piety_level = 2
+	}
+	is_active = no
+}
+alexandria_merkabah = { 
 	county = c_alexandria
 	character_modifier = { 
 		name = holy_site_alexandria_effect_name
@@ -7911,6 +8051,15 @@ antioch_krishnaism = {
 	}
 	is_active = no
 }
+antioch_saura = { 
+	county = c_antiocheia
+	character_modifier = { 
+		name = holy_site_antioch_effect_name
+		martial_per_piety_level = 1
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
 antioch_ashari = { 
 	county = c_antiocheia
 	character_modifier = { 
@@ -8164,6 +8313,15 @@ antioch_samaritan = {
 	is_active = no
 }
 antioch_kabarism = { 
+	county = c_antiocheia
+	character_modifier = { 
+		name = holy_site_antioch_effect_name
+		martial_per_piety_level = 1
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
+antioch_merkabah = { 
 	county = c_antiocheia
 	character_modifier = { 
 		name = holy_site_antioch_effect_name
@@ -8827,6 +8985,14 @@ aksum_krishnaism = {
 	}
 	is_active = no
 }
+aksum_saura = { 
+	county = c_tigre
+	character_modifier = { 
+		name = holy_site_aksum_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
 aksum_ashari = { 
 	county = c_tigre
 	character_modifier = { 
@@ -9052,6 +9218,14 @@ aksum_samaritan = {
 	is_active = no
 }
 aksum_kabarism = { 
+	county = c_tigre
+	character_modifier = { 
+		name = holy_site_aksum_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
+aksum_merkabah = { 
 	county = c_tigre
 	character_modifier = { 
 		name = holy_site_aksum_effect_name
@@ -9683,6 +9857,14 @@ napata_krishnaism = {
 	}
 	is_active = no
 }
+napata_saura = { 
+	county = c_meroe
+	character_modifier = { 
+		name = holy_site_napata_effect_name
+		stewardship = 1
+	}
+	is_active = no
+}
 napata_ashari = { 
 	county = c_meroe
 	character_modifier = { 
@@ -9908,6 +10090,14 @@ napata_samaritan = {
 	is_active = no
 }
 napata_kabarism = { 
+	county = c_meroe
+	character_modifier = { 
+		name = holy_site_napata_effect_name
+		stewardship = 1
+	}
+	is_active = no
+}
+napata_merkabah = { 
 	county = c_meroe
 	character_modifier = { 
 		name = holy_site_napata_effect_name
@@ -10163,8 +10353,8 @@ napata_zun_pagan = {
 	}
 	is_active = no
 }
-suenik_akom_pagan = { 
-	county = c_suenik
+dvin_akom_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10172,8 +10362,8 @@ suenik_akom_pagan = {
 	}
 	is_active = no
 }
-suenik_baltic_pagan = { 
-	county = c_suenik
+dvin_baltic_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10181,8 +10371,8 @@ suenik_baltic_pagan = {
 	}
 	is_active = no
 }
-suenik_basque_pagan = { 
-	county = c_suenik
+dvin_basque_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10190,8 +10380,8 @@ suenik_basque_pagan = {
 	}
 	is_active = no
 }
-suenik_bon = { 
-	county = c_suenik
+dvin_bon = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10199,8 +10389,8 @@ suenik_bon = {
 	}
 	is_active = no
 }
-suenik_old_bon = { 
-	county = c_suenik
+dvin_old_bon = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10208,8 +10398,8 @@ suenik_old_bon = {
 	}
 	is_active = no
 }
-suenik_theravada = { 
-	county = c_suenik
+dvin_theravada = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10217,8 +10407,8 @@ suenik_theravada = {
 	}
 	is_active = no
 }
-suenik_mahayana = { 
-	county = c_suenik
+dvin_mahayana = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10226,8 +10416,8 @@ suenik_mahayana = {
 	}
 	is_active = no
 }
-suenik_vajrayana = { 
-	county = c_suenik
+dvin_vajrayana = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10235,8 +10425,8 @@ suenik_vajrayana = {
 	}
 	is_active = no
 }
-suenik_ari = { 
-	county = c_suenik
+dvin_ari = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10244,8 +10434,8 @@ suenik_ari = {
 	}
 	is_active = no
 }
-suenik_lamaism = { 
-	county = c_suenik
+dvin_lamaism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10253,8 +10443,8 @@ suenik_lamaism = {
 	}
 	is_active = no
 }
-suenik_catholic = { 
-	county = c_suenik
+dvin_catholic = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10262,8 +10452,8 @@ suenik_catholic = {
 	}
 	is_active = no
 }
-suenik_orthodox = { 
-	county = c_suenik
+dvin_orthodox = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10271,8 +10461,8 @@ suenik_orthodox = {
 	}
 	is_active = no
 }
-suenik_coptic = { 
-	county = c_suenik
+dvin_coptic = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10280,8 +10470,8 @@ suenik_coptic = {
 	}
 	is_active = no
 }
-suenik_armenian_apostolic = { 
-	county = c_suenik
+dvin_armenian_apostolic = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10289,8 +10479,8 @@ suenik_armenian_apostolic = {
 	}
 	is_active = no
 }
-suenik_conversos = { 
-	county = c_suenik
+dvin_conversos = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10298,8 +10488,8 @@ suenik_conversos = {
 	}
 	is_active = no
 }
-suenik_cathar = { 
-	county = c_suenik
+dvin_cathar = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10307,8 +10497,8 @@ suenik_cathar = {
 	}
 	is_active = no
 }
-suenik_waldensian = { 
-	county = c_suenik
+dvin_waldensian = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10316,8 +10506,8 @@ suenik_waldensian = {
 	}
 	is_active = no
 }
-suenik_lollard = { 
-	county = c_suenik
+dvin_lollard = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10325,8 +10515,8 @@ suenik_lollard = {
 	}
 	is_active = no
 }
-suenik_iconoclast = { 
-	county = c_suenik
+dvin_iconoclast = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10334,8 +10524,8 @@ suenik_iconoclast = {
 	}
 	is_active = no
 }
-suenik_bogomilist = { 
-	county = c_suenik
+dvin_bogomilist = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10343,8 +10533,8 @@ suenik_bogomilist = {
 	}
 	is_active = no
 }
-suenik_paulician = { 
-	county = c_suenik
+dvin_paulician = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10352,8 +10542,8 @@ suenik_paulician = {
 	}
 	is_active = no
 }
-suenik_nestorian = { 
-	county = c_suenik
+dvin_nestorian = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10361,8 +10551,8 @@ suenik_nestorian = {
 	}
 	is_active = no
 }
-suenik_messalian = { 
-	county = c_suenik
+dvin_messalian = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10370,8 +10560,8 @@ suenik_messalian = {
 	}
 	is_active = no
 }
-suenik_adamites = { 
-	county = c_suenik
+dvin_adamites = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10379,8 +10569,8 @@ suenik_adamites = {
 	}
 	is_active = no
 }
-suenik_insular_celtic = { 
-	county = c_suenik
+dvin_insular_celtic = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10388,8 +10578,8 @@ suenik_insular_celtic = {
 	}
 	is_active = no
 }
-suenik_bosnian_church = { 
-	county = c_suenik
+dvin_bosnian_church = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10397,8 +10587,8 @@ suenik_bosnian_church = {
 	}
 	is_active = no
 }
-suenik_mozarabic_church = { 
-	county = c_suenik
+dvin_mozarabic_church = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10406,8 +10596,8 @@ suenik_mozarabic_church = {
 	}
 	is_active = no
 }
-suenik_adoptionist = { 
-	county = c_suenik
+dvin_adoptionist = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10415,8 +10605,8 @@ suenik_adoptionist = {
 	}
 	is_active = no
 }
-suenik_donyipoloism = { 
-	county = c_suenik
+dvin_donyipoloism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10424,8 +10614,8 @@ suenik_donyipoloism = {
 	}
 	is_active = no
 }
-suenik_sedism = { 
-	county = c_suenik
+dvin_sedism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10433,8 +10623,8 @@ suenik_sedism = {
 	}
 	is_active = no
 }
-suenik_manichean = { 
-	county = c_suenik
+dvin_manichean = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10442,8 +10632,8 @@ suenik_manichean = {
 	}
 	is_active = no
 }
-suenik_mandeaism = { 
-	county = c_suenik
+dvin_mandeaism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10451,8 +10641,8 @@ suenik_mandeaism = {
 	}
 	is_active = no
 }
-suenik_sabianism = { 
-	county = c_suenik
+dvin_sabianism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10460,8 +10650,8 @@ suenik_sabianism = {
 	}
 	is_active = no
 }
-suenik_valentinianism = { 
-	county = c_suenik
+dvin_valentinianism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10469,8 +10659,8 @@ suenik_valentinianism = {
 	}
 	is_active = no
 }
-suenik_sethianism = { 
-	county = c_suenik
+dvin_sethianism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10478,8 +10668,8 @@ suenik_sethianism = {
 	}
 	is_active = no
 }
-suenik_priscillianism = { 
-	county = c_suenik
+dvin_priscillianism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10487,8 +10677,8 @@ suenik_priscillianism = {
 	}
 	is_active = no
 }
-suenik_cainitism = { 
-	county = c_suenik
+dvin_cainitism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10496,8 +10686,8 @@ suenik_cainitism = {
 	}
 	is_active = no
 }
-suenik_finnish_pagan = { 
-	county = c_suenik
+dvin_finnish_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10505,8 +10695,8 @@ suenik_finnish_pagan = {
 	}
 	is_active = no
 }
-suenik_norse_pagan = { 
-	county = c_suenik
+dvin_norse_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10514,8 +10704,8 @@ suenik_norse_pagan = {
 	}
 	is_active = no
 }
-suenik_hellenic_pagan = { 
-	county = c_suenik
+dvin_hellenic_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10523,8 +10713,8 @@ suenik_hellenic_pagan = {
 	}
 	is_active = no
 }
-suenik_vaishnavism = { 
-	county = c_suenik
+dvin_vaishnavism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10532,8 +10722,8 @@ suenik_vaishnavism = {
 	}
 	is_active = no
 }
-suenik_advaitism = { 
-	county = c_suenik
+dvin_advaitism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10541,8 +10731,8 @@ suenik_advaitism = {
 	}
 	is_active = no
 }
-suenik_shaivism = { 
-	county = c_suenik
+dvin_shaivism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10550,8 +10740,8 @@ suenik_shaivism = {
 	}
 	is_active = no
 }
-suenik_srikula_shaktism = { 
-	county = c_suenik
+dvin_srikula_shaktism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10559,8 +10749,8 @@ suenik_srikula_shaktism = {
 	}
 	is_active = no
 }
-suenik_kalikula_shaktism = { 
-	county = c_suenik
+dvin_kalikula_shaktism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10568,8 +10758,8 @@ suenik_kalikula_shaktism = {
 	}
 	is_active = no
 }
-suenik_smartism = { 
-	county = c_suenik
+dvin_smartism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10577,8 +10767,8 @@ suenik_smartism = {
 	}
 	is_active = no
 }
-suenik_krishnaism = { 
-	county = c_suenik
+dvin_krishnaism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10586,8 +10776,8 @@ suenik_krishnaism = {
 	}
 	is_active = no
 }
-suenik_ashari = { 
-	county = c_suenik
+dvin_saura = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10595,8 +10785,8 @@ suenik_ashari = {
 	}
 	is_active = no
 }
-suenik_muwalladi = { 
-	county = c_suenik
+dvin_ashari = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10604,8 +10794,8 @@ suenik_muwalladi = {
 	}
 	is_active = no
 }
-suenik_maturidi = { 
-	county = c_suenik
+dvin_muwalladi = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10613,8 +10803,8 @@ suenik_maturidi = {
 	}
 	is_active = no
 }
-suenik_masmudi = { 
-	county = c_suenik
+dvin_maturidi = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10622,8 +10812,8 @@ suenik_masmudi = {
 	}
 	is_active = no
 }
-suenik_mutazila = { 
-	county = c_suenik
+dvin_masmudi = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10631,8 +10821,8 @@ suenik_mutazila = {
 	}
 	is_active = no
 }
-suenik_quranist = { 
-	county = c_suenik
+dvin_mutazila = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10640,8 +10830,8 @@ suenik_quranist = {
 	}
 	is_active = no
 }
-suenik_ismaili = { 
-	county = c_suenik
+dvin_quranist = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10649,8 +10839,8 @@ suenik_ismaili = {
 	}
 	is_active = no
 }
-suenik_qarmatian = { 
-	county = c_suenik
+dvin_ismaili = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10658,8 +10848,8 @@ suenik_qarmatian = {
 	}
 	is_active = no
 }
-suenik_nizari = { 
-	county = c_suenik
+dvin_qarmatian = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10667,8 +10857,8 @@ suenik_nizari = {
 	}
 	is_active = no
 }
-suenik_zayidi = { 
-	county = c_suenik
+dvin_nizari = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10676,8 +10866,8 @@ suenik_zayidi = {
 	}
 	is_active = no
 }
-suenik_imami = { 
-	county = c_suenik
+dvin_zayidi = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10685,8 +10875,8 @@ suenik_imami = {
 	}
 	is_active = no
 }
-suenik_ghulat = { 
-	county = c_suenik
+dvin_imami = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10694,8 +10884,8 @@ suenik_ghulat = {
 	}
 	is_active = no
 }
-suenik_alawite = { 
-	county = c_suenik
+dvin_ghulat = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10703,8 +10893,8 @@ suenik_alawite = {
 	}
 	is_active = no
 }
-suenik_alevi = { 
-	county = c_suenik
+dvin_alawite = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10712,8 +10902,8 @@ suenik_alevi = {
 	}
 	is_active = no
 }
-suenik_druze = { 
-	county = c_suenik
+dvin_alevi = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10721,8 +10911,8 @@ suenik_druze = {
 	}
 	is_active = no
 }
-suenik_ibadi = { 
-	county = c_suenik
+dvin_druze = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10730,8 +10920,8 @@ suenik_ibadi = {
 	}
 	is_active = no
 }
-suenik_azariqa = { 
-	county = c_suenik
+dvin_ibadi = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10739,8 +10929,8 @@ suenik_azariqa = {
 	}
 	is_active = no
 }
-suenik_najdat = { 
-	county = c_suenik
+dvin_azariqa = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10748,8 +10938,8 @@ suenik_najdat = {
 	}
 	is_active = no
 }
-suenik_sufri = { 
-	county = c_suenik
+dvin_najdat = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10757,8 +10947,8 @@ suenik_sufri = {
 	}
 	is_active = no
 }
-suenik_hafizi = { 
-	county = c_suenik
+dvin_sufri = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10766,8 +10956,8 @@ suenik_hafizi = {
 	}
 	is_active = no
 }
-suenik_digambara = { 
-	county = c_suenik
+dvin_hafizi = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10775,8 +10965,8 @@ suenik_digambara = {
 	}
 	is_active = no
 }
-suenik_svetambara = { 
-	county = c_suenik
+dvin_digambara = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10784,8 +10974,8 @@ suenik_svetambara = {
 	}
 	is_active = no
 }
-suenik_yapaniya = { 
-	county = c_suenik
+dvin_svetambara = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10793,8 +10983,8 @@ suenik_yapaniya = {
 	}
 	is_active = no
 }
-suenik_rabbinism = { 
-	county = c_suenik
+dvin_yapaniya = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10802,8 +10992,8 @@ suenik_rabbinism = {
 	}
 	is_active = no
 }
-suenik_karaism = { 
-	county = c_suenik
+dvin_rabbinism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10811,8 +11001,8 @@ suenik_karaism = {
 	}
 	is_active = no
 }
-suenik_haymanot = { 
-	county = c_suenik
+dvin_karaism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10820,8 +11010,8 @@ suenik_haymanot = {
 	}
 	is_active = no
 }
-suenik_malabarism = { 
-	county = c_suenik
+dvin_haymanot = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10829,8 +11019,8 @@ suenik_malabarism = {
 	}
 	is_active = no
 }
-suenik_samaritan = { 
-	county = c_suenik
+dvin_malabarism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10838,8 +11028,8 @@ suenik_samaritan = {
 	}
 	is_active = no
 }
-suenik_kabarism = { 
-	county = c_suenik
+dvin_samaritan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10847,8 +11037,8 @@ suenik_kabarism = {
 	}
 	is_active = no
 }
-suenik_kushitism_pagan = { 
-	county = c_suenik
+dvin_kabarism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10856,8 +11046,8 @@ suenik_kushitism_pagan = {
 	}
 	is_active = no
 }
-suenik_magyar_pagan = { 
-	county = c_suenik
+dvin_merkabah = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10865,8 +11055,8 @@ suenik_magyar_pagan = {
 	}
 	is_active = no
 }
-suenik_kiratism = { 
-	county = c_suenik
+dvin_kushitism_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10874,8 +11064,8 @@ suenik_kiratism = {
 	}
 	is_active = no
 }
-suenik_yumaism = { 
-	county = c_suenik
+dvin_magyar_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10883,8 +11073,8 @@ suenik_yumaism = {
 	}
 	is_active = no
 }
-suenik_north_african_acham_pagan = { 
-	county = c_suenik
+dvin_kiratism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10892,8 +11082,8 @@ suenik_north_african_acham_pagan = {
 	}
 	is_active = no
 }
-suenik_pagan = { 
-	county = c_suenik
+dvin_yumaism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10901,8 +11091,8 @@ suenik_pagan = {
 	}
 	is_active = no
 }
-suenik_rrmeaism = { 
-	county = c_suenik
+dvin_north_african_acham_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10910,8 +11100,8 @@ suenik_rrmeaism = {
 	}
 	is_active = no
 }
-suenik_melieism = { 
-	county = c_suenik
+dvin_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10919,8 +11109,8 @@ suenik_melieism = {
 	}
 	is_active = no
 }
-suenik_siberian_pagan = { 
-	county = c_suenik
+dvin_rrmeaism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10928,8 +11118,8 @@ suenik_siberian_pagan = {
 	}
 	is_active = no
 }
-suenik_slavic_pagan = { 
-	county = c_suenik
+dvin_melieism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10937,8 +11127,8 @@ suenik_slavic_pagan = {
 	}
 	is_active = no
 }
-suenik_zhengyi = { 
-	county = c_suenik
+dvin_siberian_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10946,8 +11136,8 @@ suenik_zhengyi = {
 	}
 	is_active = no
 }
-suenik_shangqing = { 
-	county = c_suenik
+dvin_slavic_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10955,8 +11145,8 @@ suenik_shangqing = {
 	}
 	is_active = no
 }
-suenik_quanzhen = { 
-	county = c_suenik
+dvin_zhengyi = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10964,8 +11154,8 @@ suenik_quanzhen = {
 	}
 	is_active = no
 }
-suenik_tengri_pagan = { 
-	county = c_suenik
+dvin_shangqing = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10973,8 +11163,8 @@ suenik_tengri_pagan = {
 	}
 	is_active = no
 }
-suenik_waaqism_pagan = { 
-	county = c_suenik
+dvin_quanzhen = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10982,8 +11172,8 @@ suenik_waaqism_pagan = {
 	}
 	is_active = no
 }
-suenik_west_african_pagan = { 
-	county = c_suenik
+dvin_tengri_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -10991,8 +11181,8 @@ suenik_west_african_pagan = {
 	}
 	is_active = no
 }
-suenik_west_african_bidu_pagan = { 
-	county = c_suenik
+dvin_waaqism_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11000,8 +11190,8 @@ suenik_west_african_bidu_pagan = {
 	}
 	is_active = no
 }
-suenik_west_african_bori_pagan = { 
-	county = c_suenik
+dvin_west_african_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11009,8 +11199,8 @@ suenik_west_african_bori_pagan = {
 	}
 	is_active = no
 }
-suenik_west_african_orisha_pagan = { 
-	county = c_suenik
+dvin_west_african_bidu_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11018,8 +11208,8 @@ suenik_west_african_orisha_pagan = {
 	}
 	is_active = no
 }
-suenik_west_african_roog_pagan = { 
-	county = c_suenik
+dvin_west_african_bori_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11027,8 +11217,8 @@ suenik_west_african_roog_pagan = {
 	}
 	is_active = no
 }
-suenik_yazidi = { 
-	county = c_suenik
+dvin_west_african_orisha_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11036,8 +11226,8 @@ suenik_yazidi = {
 	}
 	is_active = no
 }
-suenik_meshefaresism = { 
-	county = c_suenik
+dvin_west_african_roog_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11045,8 +11235,8 @@ suenik_meshefaresism = {
 	}
 	is_active = no
 }
-suenik_kitebacilweism = { 
-	county = c_suenik
+dvin_yazidi = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11054,8 +11244,8 @@ suenik_kitebacilweism = {
 	}
 	is_active = no
 }
-suenik_mazdayasna = { 
-	county = c_suenik
+dvin_meshefaresism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11063,8 +11253,8 @@ suenik_mazdayasna = {
 	}
 	is_active = no
 }
-suenik_zurvanism = { 
-	county = c_suenik
+dvin_kitebacilweism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11072,8 +11262,8 @@ suenik_zurvanism = {
 	}
 	is_active = no
 }
-suenik_gayomarthianism = { 
-	county = c_suenik
+dvin_mazdayasna = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11081,8 +11271,8 @@ suenik_gayomarthianism = {
 	}
 	is_active = no
 }
-suenik_khurmazta = { 
-	county = c_suenik
+dvin_zurvanism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11090,8 +11280,8 @@ suenik_khurmazta = {
 	}
 	is_active = no
 }
-suenik_mazdakism = { 
-	county = c_suenik
+dvin_gayomarthianism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11099,8 +11289,8 @@ suenik_mazdakism = {
 	}
 	is_active = no
 }
-suenik_khurramism = { 
-	county = c_suenik
+dvin_khurmazta = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11108,8 +11298,8 @@ suenik_khurramism = {
 	}
 	is_active = no
 }
-suenik_urartuism = { 
-	county = c_suenik
+dvin_mazdakism = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11117,8 +11307,26 @@ suenik_urartuism = {
 	}
 	is_active = no
 }
-suenik_zun_pagan = { 
-	county = c_suenik
+dvin_khurramism = { 
+	county = c_dvin
+	character_modifier = { 
+		name = holy_site_dwin_effect_name
+		monthly_piety_gain_mult = 0.05
+		learning = 1
+	}
+	is_active = no
+}
+dvin_urartuism = { 
+	county = c_dvin
+	character_modifier = { 
+		name = holy_site_dwin_effect_name
+		monthly_piety_gain_mult = 0.05
+		learning = 1
+	}
+	is_active = no
+}
+dvin_zun_pagan = { 
+	county = c_dvin
 	character_modifier = { 
 		name = holy_site_dwin_effect_name
 		monthly_piety_gain_mult = 0.05
@@ -11502,6 +11710,14 @@ colonea_krishnaism = {
 	}
 	is_active = no
 }
+colonea_saura = { 
+	county = c_colonea
+	character_modifier = { 
+		name = holy_site_koloneia_effect_name
+		direct_vassal_opinion = 5
+	}
+	is_active = no
+}
 colonea_ashari = { 
 	county = c_colonea
 	character_modifier = { 
@@ -11727,6 +11943,14 @@ colonea_samaritan = {
 	is_active = no
 }
 colonea_kabarism = { 
+	county = c_colonea
+	character_modifier = { 
+		name = holy_site_koloneia_effect_name
+		direct_vassal_opinion = 5
+	}
+	is_active = no
+}
+colonea_merkabah = { 
 	county = c_colonea
 	character_modifier = { 
 		name = holy_site_koloneia_effect_name
@@ -12358,6 +12582,14 @@ beirut_krishnaism = {
 	}
 	is_active = no
 }
+beirut_saura = { 
+	county = c_beirut
+	character_modifier = { 
+		name = holy_site_beirut_effect_name
+		councillor_opinion = 5
+	}
+	is_active = no
+}
 beirut_ashari = { 
 	county = c_beirut
 	character_modifier = { 
@@ -12583,6 +12815,14 @@ beirut_samaritan = {
 	is_active = no
 }
 beirut_kabarism = { 
+	county = c_beirut
+	character_modifier = { 
+		name = holy_site_beirut_effect_name
+		councillor_opinion = 5
+	}
+	is_active = no
+}
+beirut_merkabah = { 
 	county = c_beirut
 	character_modifier = { 
 		name = holy_site_beirut_effect_name
@@ -13261,6 +13501,15 @@ baghdad_krishnaism = {
 	}
 	is_active = no
 }
+baghdad_saura = { 
+	county = c_baghdad
+	character_modifier = { 
+		name = holy_site_baghdad_effect_name
+		development_growth_factor = 0.1
+		church_holding_build_gold_cost = -0.1
+	}
+	is_active = no
+}
 baghdad_ashari = { 
 	county = c_baghdad
 	character_modifier = { 
@@ -13514,6 +13763,15 @@ baghdad_samaritan = {
 	is_active = no
 }
 baghdad_kabarism = { 
+	county = c_baghdad
+	character_modifier = { 
+		name = holy_site_baghdad_effect_name
+		development_growth_factor = 0.1
+		church_holding_build_gold_cost = -0.1
+	}
+	is_active = no
+}
+baghdad_merkabah = { 
 	county = c_baghdad
 	character_modifier = { 
 		name = holy_site_baghdad_effect_name
@@ -14177,6 +14435,14 @@ farz_krishnaism = {
 	}
 	is_active = no
 }
+farz_saura = { 
+	county = c_shiraz
+	character_modifier = { 
+		name = holy_site_farz_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
 farz_ashari = { 
 	county = c_shiraz
 	character_modifier = { 
@@ -14402,6 +14668,14 @@ farz_samaritan = {
 	is_active = no
 }
 farz_kabarism = { 
+	county = c_shiraz
+	character_modifier = { 
+		name = holy_site_farz_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
+farz_merkabah = { 
 	county = c_shiraz
 	character_modifier = { 
 		name = holy_site_farz_effect_name
@@ -14892,6 +15166,11 @@ kerala_krishnaism = {
 	flag = kerala_conversion_bonus
 	is_active = no
 }
+kerala_saura = { 
+	county = c_kanara
+	flag = kerala_conversion_bonus
+	is_active = no
+}
 kerala_ashari = { 
 	county = c_kanara
 	flag = kerala_conversion_bonus
@@ -15033,6 +15312,11 @@ kerala_samaritan = {
 	is_active = no
 }
 kerala_kabarism = { 
+	county = c_kanara
+	flag = kerala_conversion_bonus
+	is_active = no
+}
+kerala_merkabah = { 
 	county = c_kanara
 	flag = kerala_conversion_bonus
 	is_active = no
@@ -15615,6 +15899,15 @@ armagh_krishnaism = {
 	}
 	is_active = no
 }
+armagh_saura = { 
+	county = c_oriel
+	character_modifier = { 
+		name = holy_site_armagh_effect_name
+		monthly_piety_gain_mult = 0.05
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
 armagh_ashari = { 
 	county = c_oriel
 	character_modifier = { 
@@ -15868,6 +16161,15 @@ armagh_samaritan = {
 	is_active = no
 }
 armagh_kabarism = { 
+	county = c_oriel
+	character_modifier = { 
+		name = holy_site_armagh_effect_name
+		monthly_piety_gain_mult = 0.05
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
+armagh_merkabah = { 
 	county = c_oriel
 	character_modifier = { 
 		name = holy_site_armagh_effect_name
@@ -16390,6 +16692,11 @@ iona_krishnaism = {
 	flag = iona_conversion_bonus
 	is_active = no
 }
+iona_saura = { 
+	county = c_inner_hebrides
+	flag = iona_conversion_bonus
+	is_active = no
+}
 iona_ashari = { 
 	county = c_inner_hebrides
 	flag = iona_conversion_bonus
@@ -16531,6 +16838,11 @@ iona_samaritan = {
 	is_active = no
 }
 iona_kabarism = { 
+	county = c_inner_hebrides
+	flag = iona_conversion_bonus
+	is_active = no
+}
+iona_merkabah = { 
 	county = c_inner_hebrides
 	flag = iona_conversion_bonus
 	is_active = no
@@ -16925,6 +17237,11 @@ visoki_krishnaism = {
 	flag = visoki_conversion_resistance_bonus
 	is_active = no
 }
+visoki_saura = { 
+	county = c_rama
+	flag = visoki_conversion_resistance_bonus
+	is_active = no
+}
 visoki_ashari = { 
 	county = c_rama
 	flag = visoki_conversion_resistance_bonus
@@ -17066,6 +17383,11 @@ visoki_samaritan = {
 	is_active = no
 }
 visoki_kabarism = { 
+	county = c_rama
+	flag = visoki_conversion_resistance_bonus
+	is_active = no
+}
+visoki_merkabah = { 
 	county = c_rama
 	flag = visoki_conversion_resistance_bonus
 	is_active = no
@@ -17601,6 +17923,14 @@ ragusa_krishnaism = {
 	}
 	is_active = no
 }
+ragusa_saura = { 
+	county = c_ragusa
+	character_modifier = { 
+		name = holy_site_ragusa_effect_name
+		diplomacy = 1
+	}
+	is_active = no
+}
 ragusa_ashari = { 
 	county = c_ragusa
 	character_modifier = { 
@@ -17826,6 +18156,14 @@ ragusa_samaritan = {
 	is_active = no
 }
 ragusa_kabarism = { 
+	county = c_ragusa
+	character_modifier = { 
+		name = holy_site_ragusa_effect_name
+		diplomacy = 1
+	}
+	is_active = no
+}
+ragusa_merkabah = { 
 	county = c_ragusa
 	character_modifier = { 
 		name = holy_site_ragusa_effect_name
@@ -18457,6 +18795,14 @@ esztergom_krishnaism = {
 	}
 	is_active = no
 }
+esztergom_saura = { 
+	county = c_esztergom
+	character_modifier = { 
+		name = holy_site_esztergom_effect_name
+		county_opinion_add = 10
+	}
+	is_active = no
+}
 esztergom_ashari = { 
 	county = c_esztergom
 	character_modifier = { 
@@ -18682,6 +19028,14 @@ esztergom_samaritan = {
 	is_active = no
 }
 esztergom_kabarism = { 
+	county = c_esztergom
+	character_modifier = { 
+		name = holy_site_esztergom_effect_name
+		county_opinion_add = 10
+	}
+	is_active = no
+}
+esztergom_merkabah = { 
 	county = c_esztergom
 	character_modifier = { 
 		name = holy_site_esztergom_effect_name
@@ -19360,6 +19714,15 @@ albi_krishnaism = {
 	}
 	is_active = no
 }
+albi_saura = { 
+	county = c_albi
+	character_modifier = { 
+		name = holy_site_albi_effect_name
+		monthly_piety_gain_mult = 0.05
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
 albi_ashari = { 
 	county = c_albi
 	character_modifier = { 
@@ -19613,6 +19976,15 @@ albi_samaritan = {
 	is_active = no
 }
 albi_kabarism = { 
+	county = c_albi
+	character_modifier = { 
+		name = holy_site_albi_effect_name
+		monthly_piety_gain_mult = 0.05
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
+albi_merkabah = { 
 	county = c_albi
 	character_modifier = { 
 		name = holy_site_albi_effect_name
@@ -20323,6 +20695,15 @@ toledo_mozarabic_krishnaism = {
 	}
 	is_active = no
 }
+toledo_mozarabic_saura = { 
+	county = c_toledo
+	character_modifier = { 
+		name = holy_site_toledo_mozarabic_effect_name
+		prowess_per_piety_level = 1
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
 toledo_mozarabic_ashari = { 
 	county = c_toledo
 	character_modifier = { 
@@ -20576,6 +20957,15 @@ toledo_mozarabic_samaritan = {
 	is_active = no
 }
 toledo_mozarabic_kabarism = { 
+	county = c_toledo
+	character_modifier = { 
+		name = holy_site_toledo_mozarabic_effect_name
+		prowess_per_piety_level = 1
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
+toledo_mozarabic_merkabah = { 
 	county = c_toledo
 	character_modifier = { 
 		name = holy_site_toledo_mozarabic_effect_name
@@ -21239,6 +21629,14 @@ carthage_adoptionist_krishnaism = {
 	}
 	is_active = no
 }
+carthage_adoptionist_saura = { 
+	county = c_tunis
+	character_modifier = { 
+		name = holy_site_carthage_effect_name
+		same_faith_opinion = 10
+	}
+	is_active = no
+}
 carthage_adoptionist_ashari = { 
 	county = c_tunis
 	character_modifier = { 
@@ -21464,6 +21862,14 @@ carthage_adoptionist_samaritan = {
 	is_active = no
 }
 carthage_adoptionist_kabarism = { 
+	county = c_tunis
+	character_modifier = { 
+		name = holy_site_carthage_effect_name
+		same_faith_opinion = 10
+	}
+	is_active = no
+}
+carthage_adoptionist_merkabah = { 
 	county = c_tunis
 	character_modifier = { 
 		name = holy_site_carthage_effect_name
@@ -22095,6 +22501,14 @@ lyon_krishnaism = {
 	}
 	is_active = no
 }
+lyon_saura = { 
+	county = c_lyon
+	character_modifier = { 
+		name = holy_site_lyon_effect_name
+		learning_per_piety_level = 2
+	}
+	is_active = no
+}
 lyon_ashari = { 
 	county = c_lyon
 	character_modifier = { 
@@ -22320,6 +22734,14 @@ lyon_samaritan = {
 	is_active = no
 }
 lyon_kabarism = { 
+	county = c_lyon
+	character_modifier = { 
+		name = holy_site_lyon_effect_name
+		learning_per_piety_level = 2
+	}
+	is_active = no
+}
+lyon_merkabah = { 
 	county = c_lyon
 	character_modifier = { 
 		name = holy_site_lyon_effect_name
@@ -22998,6 +23420,15 @@ mecca_krishnaism = {
 	}
 	is_active = no
 }
+mecca_saura = { 
+	county = c_mecca
+	character_modifier = { 
+		name = holy_site_mecca_effect_name
+		monthly_piety_gain_per_knight_mult = 0.02
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
 mecca_ashari = { 
 	county = c_mecca
 	character_modifier = { 
@@ -23251,6 +23682,15 @@ mecca_samaritan = {
 	is_active = no
 }
 mecca_kabarism = { 
+	county = c_mecca
+	character_modifier = { 
+		name = holy_site_mecca_effect_name
+		monthly_piety_gain_per_knight_mult = 0.02
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
+mecca_merkabah = { 
 	county = c_mecca
 	character_modifier = { 
 		name = holy_site_mecca_effect_name
@@ -23914,6 +24354,14 @@ medina_krishnaism = {
 	}
 	is_active = no
 }
+medina_saura = { 
+	county = c_medina
+	character_modifier = { 
+		name = holy_site_medina_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
 medina_ashari = { 
 	county = c_medina
 	character_modifier = { 
@@ -24139,6 +24587,14 @@ medina_samaritan = {
 	is_active = no
 }
 medina_kabarism = { 
+	county = c_medina
+	character_modifier = { 
+		name = holy_site_medina_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
+medina_merkabah = { 
 	county = c_medina
 	character_modifier = { 
 		name = holy_site_medina_effect_name
@@ -24629,6 +25085,11 @@ cordoba_krishnaism = {
 	flag = cordoba_conversion_bonus
 	is_active = no
 }
+cordoba_saura = { 
+	county = c_cordoba
+	flag = cordoba_conversion_bonus
+	is_active = no
+}
 cordoba_ashari = { 
 	county = c_cordoba
 	flag = cordoba_conversion_bonus
@@ -24770,6 +25231,11 @@ cordoba_samaritan = {
 	is_active = no
 }
 cordoba_kabarism = { 
+	county = c_cordoba
+	flag = cordoba_conversion_bonus
+	is_active = no
+}
+cordoba_merkabah = { 
 	county = c_cordoba
 	flag = cordoba_conversion_bonus
 	is_active = no
@@ -25352,6 +25818,15 @@ sinai_krishnaism = {
 	}
 	is_active = no
 }
+sinai_saura = { 
+	county = c_sinai
+	character_modifier = { 
+		name = holy_site_sinai_effect_name
+		desert_mountains_advantage = 5
+		learning = 1
+	}
+	is_active = no
+}
 sinai_ashari = { 
 	county = c_sinai
 	character_modifier = { 
@@ -25605,6 +26080,15 @@ sinai_samaritan = {
 	is_active = no
 }
 sinai_kabarism = { 
+	county = c_sinai
+	character_modifier = { 
+		name = holy_site_sinai_effect_name
+		desert_mountains_advantage = 5
+		learning = 1
+	}
+	is_active = no
+}
+sinai_merkabah = { 
 	county = c_sinai
 	character_modifier = { 
 		name = holy_site_sinai_effect_name
@@ -26315,6 +26799,15 @@ tinmallal_krishnaism = {
 	}
 	is_active = no
 }
+tinmallal_saura = { 
+	county = c_tinmallal
+	character_modifier = { 
+		name = holy_site_tinmallal_effect_name
+		prowess_per_piety_level = 1
+		max_combat_roll = 4
+	}
+	is_active = no
+}
 tinmallal_ashari = { 
 	county = c_tinmallal
 	character_modifier = { 
@@ -26568,6 +27061,15 @@ tinmallal_samaritan = {
 	is_active = no
 }
 tinmallal_kabarism = { 
+	county = c_tinmallal
+	character_modifier = { 
+		name = holy_site_tinmallal_effect_name
+		prowess_per_piety_level = 1
+		max_combat_roll = 4
+	}
+	is_active = no
+}
+tinmallal_merkabah = { 
 	county = c_tinmallal
 	character_modifier = { 
 		name = holy_site_tinmallal_effect_name
@@ -27278,6 +27780,15 @@ fes_krishnaism = {
 	}
 	is_active = no
 }
+fes_saura = { 
+	county = c_fes
+	barony = b_subu
+	character_modifier = { 
+		name = holy_site_fes_effect_name
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
 fes_ashari = { 
 	county = c_fes
 	barony = b_subu
@@ -27531,6 +28042,15 @@ fes_samaritan = {
 	is_active = no
 }
 fes_kabarism = { 
+	county = c_fes
+	barony = b_subu
+	character_modifier = { 
+		name = holy_site_fes_effect_name
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+fes_merkabah = { 
 	county = c_fes
 	barony = b_subu
 	character_modifier = { 
@@ -28241,6 +28761,15 @@ nadjaf_krishnaism = {
 	}
 	is_active = no
 }
+nadjaf_saura = { 
+	county = c_kufa
+	barony = b_an-najaf
+	character_modifier = { 
+		name = holy_site_nadjaf_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
 nadjaf_ashari = { 
 	county = c_kufa
 	barony = b_an-najaf
@@ -28494,6 +29023,15 @@ nadjaf_samaritan = {
 	is_active = no
 }
 nadjaf_kabarism = { 
+	county = c_kufa
+	barony = b_an-najaf
+	character_modifier = { 
+		name = holy_site_nadjaf_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
+nadjaf_merkabah = { 
 	county = c_kufa
 	barony = b_an-najaf
 	character_modifier = { 
@@ -29204,6 +29742,15 @@ damascus_krishnaism = {
 	}
 	is_active = no
 }
+damascus_saura = { 
+	county = c_damascus
+	character_modifier = { 
+		name = holy_site_damascus_effect_name
+		levy_size = 0.05
+		monthly_county_control_change_factor = 0.1
+	}
+	is_active = no
+}
 damascus_ashari = { 
 	county = c_damascus
 	character_modifier = { 
@@ -29457,6 +30004,15 @@ damascus_samaritan = {
 	is_active = no
 }
 damascus_kabarism = { 
+	county = c_damascus
+	character_modifier = { 
+		name = holy_site_damascus_effect_name
+		levy_size = 0.05
+		monthly_county_control_change_factor = 0.1
+	}
+	is_active = no
+}
+damascus_merkabah = { 
 	county = c_damascus
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
@@ -30167,6 +30723,15 @@ siffa_krishnaism = {
 	}
 	is_active = no
 }
+siffa_saura = { 
+	county = c_palmyra
+	character_modifier = { 
+		name = holy_site_siffa_effect_name
+		prowess = 2
+		knight_effectiveness_mult = 0.2
+	}
+	is_active = no
+}
 siffa_ashari = { 
 	county = c_palmyra
 	character_modifier = { 
@@ -30420,6 +30985,15 @@ siffa_samaritan = {
 	is_active = no
 }
 siffa_kabarism = { 
+	county = c_palmyra
+	character_modifier = { 
+		name = holy_site_siffa_effect_name
+		prowess = 2
+		knight_effectiveness_mult = 0.2
+	}
+	is_active = no
+}
+siffa_merkabah = { 
 	county = c_palmyra
 	character_modifier = { 
 		name = holy_site_siffa_effect_name
@@ -31083,6 +31657,14 @@ kufa_krishnaism = {
 	}
 	is_active = no
 }
+kufa_saura = { 
+	county = c_kufa
+	character_modifier = { 
+		name = holy_site_kufa_effect_name
+		intrigue_per_piety_level = 1
+	}
+	is_active = no
+}
 kufa_ashari = { 
 	county = c_kufa
 	character_modifier = { 
@@ -31308,6 +31890,14 @@ kufa_samaritan = {
 	is_active = no
 }
 kufa_kabarism = { 
+	county = c_kufa
+	character_modifier = { 
+		name = holy_site_kufa_effect_name
+		intrigue_per_piety_level = 1
+	}
+	is_active = no
+}
+kufa_merkabah = { 
 	county = c_kufa
 	character_modifier = { 
 		name = holy_site_kufa_effect_name
@@ -31939,6 +32529,14 @@ basra_krishnaism = {
 	}
 	is_active = no
 }
+basra_saura = { 
+	county = c_basra
+	character_modifier = { 
+		name = holy_site_basra_effect_name
+		learning = 2
+	}
+	is_active = no
+}
 basra_ashari = { 
 	county = c_basra
 	character_modifier = { 
@@ -32164,6 +32762,14 @@ basra_samaritan = {
 	is_active = no
 }
 basra_kabarism = { 
+	county = c_basra
+	character_modifier = { 
+		name = holy_site_basra_effect_name
+		learning = 2
+	}
+	is_active = no
+}
+basra_merkabah = { 
 	county = c_basra
 	character_modifier = { 
 		name = holy_site_basra_effect_name
@@ -32795,6 +33401,14 @@ nizwa_krishnaism = {
 	}
 	is_active = no
 }
+nizwa_saura = { 
+	county = c_nizwa
+	character_modifier = { 
+		name = holy_site_nizwa_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
 nizwa_ashari = { 
 	county = c_nizwa
 	character_modifier = { 
@@ -33020,6 +33634,14 @@ nizwa_samaritan = {
 	is_active = no
 }
 nizwa_kabarism = { 
+	county = c_nizwa
+	character_modifier = { 
+		name = holy_site_nizwa_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
+nizwa_merkabah = { 
 	county = c_nizwa
 	character_modifier = { 
 		name = holy_site_nizwa_effect_name
@@ -33698,6 +34320,15 @@ sijilmasa_krishnaism = {
 	}
 	is_active = no
 }
+sijilmasa_saura = { 
+	county = c_sijilmasa
+	character_modifier = { 
+		name = holy_site_sijilmasa_effect_name
+		diplomacy = 1
+		stewardship = 1
+	}
+	is_active = no
+}
 sijilmasa_ashari = { 
 	county = c_sijilmasa
 	character_modifier = { 
@@ -33951,6 +34582,15 @@ sijilmasa_samaritan = {
 	is_active = no
 }
 sijilmasa_kabarism = { 
+	county = c_sijilmasa
+	character_modifier = { 
+		name = holy_site_sijilmasa_effect_name
+		diplomacy = 1
+		stewardship = 1
+	}
+	is_active = no
+}
+sijilmasa_merkabah = { 
 	county = c_sijilmasa
 	character_modifier = { 
 		name = holy_site_sijilmasa_effect_name
@@ -34614,6 +35254,14 @@ bahrein_krishnaism = {
 	}
 	is_active = no
 }
+bahrein_saura = { 
+	county = c_qatif
+	character_modifier = { 
+		name = holy_site_bahrein_effect_name
+		stewardship = 1
+	}
+	is_active = no
+}
 bahrein_ashari = { 
 	county = c_qatif
 	character_modifier = { 
@@ -34839,6 +35487,14 @@ bahrein_samaritan = {
 	is_active = no
 }
 bahrein_kabarism = { 
+	county = c_qatif
+	character_modifier = { 
+		name = holy_site_bahrein_effect_name
+		stewardship = 1
+	}
+	is_active = no
+}
+bahrein_merkabah = { 
 	county = c_qatif
 	character_modifier = { 
 		name = holy_site_bahrein_effect_name
@@ -35470,6 +36126,14 @@ yamama_krishnaism = {
 	}
 	is_active = no
 }
+yamama_saura = { 
+	county = c_yamama
+	character_modifier = { 
+		name = holy_site_yamama_effect_name
+		desert_advantage = 5
+	}
+	is_active = no
+}
 yamama_ashari = { 
 	county = c_yamama
 	character_modifier = { 
@@ -35695,6 +36359,14 @@ yamama_samaritan = {
 	is_active = no
 }
 yamama_kabarism = { 
+	county = c_yamama
+	character_modifier = { 
+		name = holy_site_yamama_effect_name
+		desert_advantage = 5
+	}
+	is_active = no
+}
+yamama_merkabah = { 
 	county = c_yamama
 	character_modifier = { 
 		name = holy_site_yamama_effect_name
@@ -36326,6 +36998,14 @@ sinjar_krishnaism = {
 	}
 	is_active = no
 }
+sinjar_saura = { 
+	county = c_sinjar
+	character_modifier = { 
+		name = holy_site_sinjar_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
 sinjar_ashari = { 
 	county = c_sinjar
 	character_modifier = { 
@@ -36551,6 +37231,14 @@ sinjar_samaritan = {
 	is_active = no
 }
 sinjar_kabarism = { 
+	county = c_sinjar
+	character_modifier = { 
+		name = holy_site_sinjar_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
+sinjar_merkabah = { 
 	county = c_sinjar
 	character_modifier = { 
 		name = holy_site_sinjar_effect_name
@@ -37229,6 +37917,15 @@ baalbek_krishnaism = {
 	}
 	is_active = no
 }
+baalbek_saura = { 
+	county = c_baalbek
+	character_modifier = { 
+		name = holy_site_sinjar_effect_name
+		clergy_opinion = 10
+		monthly_prestige_gain_mult = 0.2
+	}
+	is_active = no
+}
 baalbek_ashari = { 
 	county = c_baalbek
 	character_modifier = { 
@@ -37482,6 +38179,15 @@ baalbek_samaritan = {
 	is_active = no
 }
 baalbek_kabarism = { 
+	county = c_baalbek
+	character_modifier = { 
+		name = holy_site_sinjar_effect_name
+		clergy_opinion = 10
+		monthly_prestige_gain_mult = 0.2
+	}
+	is_active = no
+}
+baalbek_merkabah = { 
 	county = c_baalbek
 	character_modifier = { 
 		name = holy_site_sinjar_effect_name
@@ -38192,6 +38898,15 @@ lalish_krishnaism = {
 	}
 	is_active = no
 }
+lalish_saura = { 
+	county = c_ninive
+	character_modifier = { 
+		name = holy_site_lalish_effect_name
+		learning_per_piety_level = 1
+		monthly_piety_gain_mult = 0.2
+	}
+	is_active = no
+}
 lalish_ashari = { 
 	county = c_ninive
 	character_modifier = { 
@@ -38445,6 +39160,15 @@ lalish_samaritan = {
 	is_active = no
 }
 lalish_kabarism = { 
+	county = c_ninive
+	character_modifier = { 
+		name = holy_site_lalish_effect_name
+		learning_per_piety_level = 1
+		monthly_piety_gain_mult = 0.2
+	}
+	is_active = no
+}
+lalish_merkabah = { 
 	county = c_ninive
 	character_modifier = { 
 		name = holy_site_lalish_effect_name
@@ -39108,6 +39832,14 @@ nishapur_krishnaism = {
 	}
 	is_active = no
 }
+nishapur_saura = { 
+	county = c_nishapur
+	character_modifier = { 
+		name = holy_site_nishapur_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
 nishapur_ashari = { 
 	county = c_nishapur
 	character_modifier = { 
@@ -39333,6 +40065,14 @@ nishapur_samaritan = {
 	is_active = no
 }
 nishapur_kabarism = { 
+	county = c_nishapur
+	character_modifier = { 
+		name = holy_site_nishapur_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
+nishapur_merkabah = { 
 	county = c_nishapur
 	character_modifier = { 
 		name = holy_site_nishapur_effect_name
@@ -39964,6 +40704,14 @@ dashtestan_krishnaism = {
 	}
 	is_active = no
 }
+dashtestan_saura = { 
+	county = c_mandestan
+	character_modifier = { 
+		name = holy_site_dashtestan_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
 dashtestan_ashari = { 
 	county = c_mandestan
 	character_modifier = { 
@@ -40189,6 +40937,14 @@ dashtestan_samaritan = {
 	is_active = no
 }
 dashtestan_kabarism = { 
+	county = c_mandestan
+	character_modifier = { 
+		name = holy_site_dashtestan_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
+dashtestan_merkabah = { 
 	county = c_mandestan
 	character_modifier = { 
 		name = holy_site_dashtestan_effect_name
@@ -40867,6 +41623,15 @@ zozan_krishnaism = {
 	}
 	is_active = no
 }
+zozan_saura = { 
+	county = c_bakharz
+	character_modifier = { 
+		name = holy_site_zozan_effect_name
+		same_faith_opinion = 5
+		domain_tax_same_faith_mult = 0.1
+	}
+	is_active = no
+}
 zozan_ashari = { 
 	county = c_bakharz
 	character_modifier = { 
@@ -41120,6 +41885,15 @@ zozan_samaritan = {
 	is_active = no
 }
 zozan_kabarism = { 
+	county = c_bakharz
+	character_modifier = { 
+		name = holy_site_zozan_effect_name
+		same_faith_opinion = 5
+		domain_tax_same_faith_mult = 0.1
+	}
+	is_active = no
+}
+zozan_merkabah = { 
 	county = c_bakharz
 	character_modifier = { 
 		name = holy_site_zozan_effect_name
@@ -41830,6 +42604,15 @@ semien_krishnaism = {
 	}
 	is_active = no
 }
+semien_saura = { 
+	county = c_semien
+	character_modifier = { 
+		name = holy_site_semien_effect_name
+		defender_advantage = 5
+		diplomacy = 1
+	}
+	is_active = no
+}
 semien_ashari = { 
 	county = c_semien
 	character_modifier = { 
@@ -42083,6 +42866,15 @@ semien_samaritan = {
 	is_active = no
 }
 semien_kabarism = { 
+	county = c_semien
+	character_modifier = { 
+		name = holy_site_semien_effect_name
+		defender_advantage = 5
+		diplomacy = 1
+	}
+	is_active = no
+}
+semien_merkabah = { 
 	county = c_semien
 	character_modifier = { 
 		name = holy_site_semien_effect_name
@@ -42746,6 +43538,14 @@ sufed_krishnaism = {
 	}
 	is_active = no
 }
+sufed_saura = { 
+	county = c_acre
+	character_modifier = { 
+		name = holy_site_sufed_effect_name
+		same_faith_opinion = 10
+	}
+	is_active = no
+}
 sufed_ashari = { 
 	county = c_acre
 	character_modifier = { 
@@ -42971,6 +43771,14 @@ sufed_samaritan = {
 	is_active = no
 }
 sufed_kabarism = { 
+	county = c_acre
+	character_modifier = { 
+		name = holy_site_sufed_effect_name
+		same_faith_opinion = 10
+	}
+	is_active = no
+}
+sufed_merkabah = { 
 	county = c_acre
 	character_modifier = { 
 		name = holy_site_sufed_effect_name
@@ -43696,6 +44504,16 @@ gerizim_krishnaism = {
 	}
 	is_active = no
 }
+gerizim_saura = { 
+	county = c_jerusalem
+	barony = b_nablus
+	character_modifier = { 
+		name = holy_site_gerizim_effect_name
+		learning_per_piety_level = 1
+		monthly_prestige_gain_mult = 0.2
+	}
+	is_active = no
+}
 gerizim_ashari = { 
 	county = c_jerusalem
 	barony = b_nablus
@@ -43977,6 +44795,16 @@ gerizim_samaritan = {
 	is_active = no
 }
 gerizim_kabarism = { 
+	county = c_jerusalem
+	barony = b_nablus
+	character_modifier = { 
+		name = holy_site_gerizim_effect_name
+		learning_per_piety_level = 1
+		monthly_prestige_gain_mult = 0.2
+	}
+	is_active = no
+}
+gerizim_merkabah = { 
 	county = c_jerusalem
 	barony = b_nablus
 	character_modifier = { 
@@ -44719,6 +45547,15 @@ panticapaeum_krishnaism = {
 	}
 	is_active = no
 }
+panticapaeum_saura = { 
+	county = c_kerch
+	character_modifier = { 
+		name = holy_site_panticapaeum_effect_name
+		world_steppe_development_growth_factor = 0.25
+		steppe_development_growth_factor = 0.15
+	}
+	is_active = no
+}
 panticapaeum_ashari = { 
 	county = c_kerch
 	character_modifier = { 
@@ -44972,6 +45809,15 @@ panticapaeum_samaritan = {
 	is_active = no
 }
 panticapaeum_kabarism = { 
+	county = c_kerch
+	character_modifier = { 
+		name = holy_site_panticapaeum_effect_name
+		world_steppe_development_growth_factor = 0.25
+		steppe_development_growth_factor = 0.15
+	}
+	is_active = no
+}
+panticapaeum_merkabah = { 
 	county = c_kerch
 	character_modifier = { 
 		name = holy_site_panticapaeum_effect_name
@@ -45682,6 +46528,15 @@ itil_krishnaism = {
 	}
 	is_active = no
 }
+itil_saura = { 
+	county = c_itil
+	character_modifier = { 
+		name = holy_site_itil_effect_name
+		different_culture_opinion = 10
+		cultural_head_acceptance_gain_mult = 0.15
+	}
+	is_active = no
+}
 itil_ashari = { 
 	county = c_itil
 	character_modifier = { 
@@ -45935,6 +46790,15 @@ itil_samaritan = {
 	is_active = no
 }
 itil_kabarism = { 
+	county = c_itil
+	character_modifier = { 
+		name = holy_site_itil_effect_name
+		different_culture_opinion = 10
+		cultural_head_acceptance_gain_mult = 0.15
+	}
+	is_active = no
+}
+itil_merkabah = { 
 	county = c_itil
 	character_modifier = { 
 		name = holy_site_itil_effect_name
@@ -46692,6 +47556,16 @@ kochi_krishnaism = {
 	}
 	is_active = no
 }
+kochi_saura = { 
+	county = c_kerala
+	barony = b_kunjakari
+	character_modifier = { 
+		name = holy_site_kochi_effect_name
+		diplomacy_per_piety_level = 1
+		cultural_head_acceptance_gain_mult = 0.15
+	}
+	is_active = no
+}
 kochi_ashari = { 
 	county = c_kerala
 	barony = b_kunjakari
@@ -46973,6 +47847,16 @@ kochi_samaritan = {
 	is_active = no
 }
 kochi_kabarism = { 
+	county = c_kerala
+	barony = b_kunjakari
+	character_modifier = { 
+		name = holy_site_kochi_effect_name
+		diplomacy_per_piety_level = 1
+		cultural_head_acceptance_gain_mult = 0.15
+	}
+	is_active = no
+}
+kochi_merkabah = { 
 	county = c_kerala
 	barony = b_kunjakari
 	character_modifier = { 
@@ -47715,6 +48599,15 @@ manipur_krishnaism = {
 	}
 	is_active = no
 }
+manipur_saura = { 
+	county = c_manipur
+	character_modifier = { 
+		name = holy_site_manipur_effect_name
+		mountains_development_growth_factor = 0.2
+		mountains_advantage = 5
+	}
+	is_active = no
+}
 manipur_ashari = { 
 	county = c_manipur
 	character_modifier = { 
@@ -47968,6 +48861,15 @@ manipur_samaritan = {
 	is_active = no
 }
 manipur_kabarism = { 
+	county = c_manipur
+	character_modifier = { 
+		name = holy_site_manipur_effect_name
+		mountains_development_growth_factor = 0.2
+		mountains_advantage = 5
+	}
+	is_active = no
+}
+manipur_merkabah = { 
 	county = c_manipur
 	character_modifier = { 
 		name = holy_site_manipur_effect_name
@@ -48252,6 +49154,2186 @@ manipur_zun_pagan = {
 		name = holy_site_manipur_effect_name
 		mountains_development_growth_factor = 0.2
 		mountains_advantage = 5
+	}
+	is_active = no
+}
+hamadan_akom_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_baltic_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_basque_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_bon = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_old_bon = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_theravada = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_mahayana = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_vajrayana = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_ari = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_lamaism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_catholic = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_orthodox = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_coptic = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_armenian_apostolic = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_conversos = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_cathar = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_waldensian = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_lollard = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_iconoclast = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_bogomilist = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_paulician = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_nestorian = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_messalian = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_adamites = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_insular_celtic = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_bosnian_church = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_mozarabic_church = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_adoptionist = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_donyipoloism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_sedism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_manichean = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_mandeaism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_sabianism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_valentinianism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_sethianism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_priscillianism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_cainitism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_finnish_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_norse_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_hellenic_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_vaishnavism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_advaitism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_shaivism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_srikula_shaktism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_kalikula_shaktism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_smartism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_krishnaism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_saura = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_ashari = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_muwalladi = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_maturidi = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_masmudi = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_mutazila = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_quranist = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_ismaili = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_qarmatian = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_nizari = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_zayidi = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_imami = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_ghulat = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_alawite = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_alevi = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_druze = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_ibadi = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_azariqa = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_najdat = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_sufri = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_hafizi = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_digambara = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_svetambara = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_yapaniya = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_rabbinism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_karaism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_haymanot = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_malabarism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_samaritan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_kabarism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_merkabah = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_kushitism_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_magyar_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_kiratism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_yumaism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_north_african_acham_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_rrmeaism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_melieism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_siberian_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_slavic_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_zhengyi = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_shangqing = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_quanzhen = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_tengri_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_waaqism_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_west_african_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_west_african_bidu_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_west_african_bori_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_west_african_orisha_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_west_african_roog_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_yazidi = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_meshefaresism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_kitebacilweism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_mazdayasna = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_zurvanism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_gayomarthianism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_khurmazta = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_mazdakism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_khurramism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_urartuism = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+hamadan_zun_pagan = { 
+	county = c_hamadan
+	barony = b_hamadan
+	character_modifier = { 
+		name = holy_site_hamadan_effect_name
+		different_faith_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+babylon_akom_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_baltic_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_basque_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_bon = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_old_bon = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_theravada = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_mahayana = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_vajrayana = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_ari = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_lamaism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_catholic = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_orthodox = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_coptic = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_armenian_apostolic = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_conversos = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_cathar = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_waldensian = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_lollard = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_iconoclast = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_bogomilist = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_paulician = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_nestorian = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_messalian = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_adamites = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_insular_celtic = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_bosnian_church = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_mozarabic_church = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_adoptionist = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_donyipoloism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_sedism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_manichean = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_mandeaism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_sabianism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_valentinianism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_sethianism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_priscillianism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_cainitism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_finnish_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_norse_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_hellenic_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_vaishnavism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_advaitism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_shaivism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_srikula_shaktism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_kalikula_shaktism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_smartism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_krishnaism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_saura = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_ashari = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_muwalladi = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_maturidi = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_masmudi = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_mutazila = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_quranist = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_ismaili = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_qarmatian = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_nizari = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_zayidi = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_imami = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_ghulat = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_alawite = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_alevi = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_druze = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_ibadi = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_azariqa = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_najdat = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_sufri = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_hafizi = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_digambara = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_svetambara = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_yapaniya = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_rabbinism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_karaism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_haymanot = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_malabarism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_samaritan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_kabarism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_merkabah = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_kushitism_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_magyar_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_kiratism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_yumaism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_north_african_acham_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_rrmeaism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_melieism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_siberian_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_slavic_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_zhengyi = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_shangqing = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_quanzhen = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_tengri_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_waaqism_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_west_african_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_west_african_bidu_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_west_african_bori_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_west_african_orisha_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_west_african_roog_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_yazidi = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_meshefaresism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_kitebacilweism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_mazdayasna = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_zurvanism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_gayomarthianism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_khurmazta = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_mazdakism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_khurramism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_urartuism = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
+	}
+	is_active = no
+}
+babylon_zun_pagan = { 
+	county = c_kufa
+	barony = b_al-hila
+	character_modifier = { 
+		name = holy_site_babylon_effect_name
+		development_growth_factor = 0.1
+		cultural_head_fascination_mult = 0.1
 	}
 	is_active = no
 }
@@ -48678,6 +51760,15 @@ ahvaz_krishnaism = {
 	}
 	is_active = no
 }
+ahvaz_saura = { 
+	county = c_ahvaz
+	character_modifier = { 
+		name = holy_site_ahvaz_effect_name
+		clergy_opinion = 5
+		personal_scheme_power_mult = 0.1
+	}
+	is_active = no
+}
 ahvaz_ashari = { 
 	county = c_ahvaz
 	character_modifier = { 
@@ -48931,6 +52022,15 @@ ahvaz_samaritan = {
 	is_active = no
 }
 ahvaz_kabarism = { 
+	county = c_ahvaz
+	character_modifier = { 
+		name = holy_site_ahvaz_effect_name
+		clergy_opinion = 5
+		personal_scheme_power_mult = 0.1
+	}
+	is_active = no
+}
+ahvaz_merkabah = { 
 	county = c_ahvaz
 	character_modifier = { 
 		name = holy_site_ahvaz_effect_name
@@ -49594,6 +52694,14 @@ samarkand_krishnaism = {
 	}
 	is_active = no
 }
+samarkand_saura = { 
+	county = c_samarkand
+	character_modifier = { 
+		name = holy_site_samarkand_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
 samarkand_ashari = { 
 	county = c_samarkand
 	character_modifier = { 
@@ -49819,6 +52927,14 @@ samarkand_samaritan = {
 	is_active = no
 }
 samarkand_kabarism = { 
+	county = c_samarkand
+	character_modifier = { 
+		name = holy_site_samarkand_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
+samarkand_merkabah = { 
 	county = c_samarkand
 	character_modifier = { 
 		name = holy_site_samarkand_effect_name
@@ -50450,6 +53566,14 @@ udabhanda_krishnaism = {
 	}
 	is_active = no
 }
+udabhanda_saura = { 
+	county = c_udabhanda
+	character_modifier = { 
+		name = holy_site_udabhanda_effect_name
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
 udabhanda_ashari = { 
 	county = c_udabhanda
 	character_modifier = { 
@@ -50675,6 +53799,14 @@ udabhanda_samaritan = {
 	is_active = no
 }
 udabhanda_kabarism = { 
+	county = c_udabhanda
+	character_modifier = { 
+		name = holy_site_udabhanda_effect_name
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
+udabhanda_merkabah = { 
 	county = c_udabhanda
 	character_modifier = { 
 		name = holy_site_udabhanda_effect_name
@@ -51306,6 +54438,14 @@ toledo_krishnaism = {
 	}
 	is_active = no
 }
+toledo_saura = { 
+	county = c_toledo
+	character_modifier = { 
+		name = holy_site_toledo_effect_name
+		learning = 1
+	}
+	is_active = no
+}
 toledo_ashari = { 
 	county = c_toledo
 	character_modifier = { 
@@ -51531,6 +54671,14 @@ toledo_samaritan = {
 	is_active = no
 }
 toledo_kabarism = { 
+	county = c_toledo
+	character_modifier = { 
+		name = holy_site_toledo_effect_name
+		learning = 1
+	}
+	is_active = no
+}
+toledo_merkabah = { 
 	county = c_toledo
 	character_modifier = { 
 		name = holy_site_toledo_effect_name
@@ -52209,6 +55357,15 @@ memphis_krishnaism = {
 	}
 	is_active = no
 }
+memphis_saura = { 
+	county = c_cairo
+	barony = b_hulwan-cairo
+	character_modifier = { 
+		name = holy_site_memphis_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
 memphis_ashari = { 
 	county = c_cairo
 	barony = b_hulwan-cairo
@@ -52462,6 +55619,15 @@ memphis_samaritan = {
 	is_active = no
 }
 memphis_kabarism = { 
+	county = c_cairo
+	barony = b_hulwan-cairo
+	character_modifier = { 
+		name = holy_site_memphis_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
+memphis_merkabah = { 
 	county = c_cairo
 	barony = b_hulwan-cairo
 	character_modifier = { 
@@ -53125,6 +56291,14 @@ bodh_gaya_krishnaism = {
 	}
 	is_active = no
 }
+bodh_gaya_saura = { 
+	county = c_gaya
+	character_modifier = { 
+		name = holy_site_bodh_gaya_effect_name
+		stress_loss_mult = 0.2
+	}
+	is_active = no
+}
 bodh_gaya_ashari = { 
 	county = c_gaya
 	character_modifier = { 
@@ -53350,6 +56524,14 @@ bodh_gaya_samaritan = {
 	is_active = no
 }
 bodh_gaya_kabarism = { 
+	county = c_gaya
+	character_modifier = { 
+		name = holy_site_bodh_gaya_effect_name
+		stress_loss_mult = 0.2
+	}
+	is_active = no
+}
+bodh_gaya_merkabah = { 
 	county = c_gaya
 	character_modifier = { 
 		name = holy_site_bodh_gaya_effect_name
@@ -54028,6 +57210,15 @@ kusinagara_krishnaism = {
 	}
 	is_active = no
 }
+kusinagara_saura = { 
+	county = c_lumbini
+	character_modifier = { 
+		name = holy_site_kusinagara_effect_name
+		fertility = 0.10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
 kusinagara_ashari = { 
 	county = c_lumbini
 	character_modifier = { 
@@ -54281,6 +57472,15 @@ kusinagara_samaritan = {
 	is_active = no
 }
 kusinagara_kabarism = { 
+	county = c_lumbini
+	character_modifier = { 
+		name = holy_site_kusinagara_effect_name
+		fertility = 0.10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+	is_active = no
+}
+kusinagara_merkabah = { 
 	county = c_lumbini
 	character_modifier = { 
 		name = holy_site_kusinagara_effect_name
@@ -54944,6 +58144,14 @@ sarnath_krishnaism = {
 	}
 	is_active = no
 }
+sarnath_saura = { 
+	county = c_varanasi
+	character_modifier = { 
+		name = holy_site_sarnath_effect_name
+		learning = 2
+	}
+	is_active = no
+}
 sarnath_ashari = { 
 	county = c_varanasi
 	character_modifier = { 
@@ -55169,6 +58377,14 @@ sarnath_samaritan = {
 	is_active = no
 }
 sarnath_kabarism = { 
+	county = c_varanasi
+	character_modifier = { 
+		name = holy_site_sarnath_effect_name
+		learning = 2
+	}
+	is_active = no
+}
+sarnath_merkabah = { 
 	county = c_varanasi
 	character_modifier = { 
 		name = holy_site_sarnath_effect_name
@@ -55800,6 +59016,14 @@ sanchi_krishnaism = {
 	}
 	is_active = no
 }
+sanchi_saura = { 
+	county = c_vidisa
+	character_modifier = { 
+		name = holy_site_sanchi_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
 sanchi_ashari = { 
 	county = c_vidisa
 	character_modifier = { 
@@ -56025,6 +59249,14 @@ sanchi_samaritan = {
 	is_active = no
 }
 sanchi_kabarism = { 
+	county = c_vidisa
+	character_modifier = { 
+		name = holy_site_sanchi_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
+sanchi_merkabah = { 
 	county = c_vidisa
 	character_modifier = { 
 		name = holy_site_sanchi_effect_name
@@ -56703,6 +59935,15 @@ ajanta_krishnaism = {
 	}
 	is_active = no
 }
+ajanta_saura = { 
+	county = c_vatsagulma
+	character_modifier = { 
+		name = holy_site_ajanta_effect_name
+		negate_learning_penalty_add = 2
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
 ajanta_ashari = { 
 	county = c_vatsagulma
 	character_modifier = { 
@@ -56956,6 +60197,15 @@ ajanta_samaritan = {
 	is_active = no
 }
 ajanta_kabarism = { 
+	county = c_vatsagulma
+	character_modifier = { 
+		name = holy_site_ajanta_effect_name
+		negate_learning_penalty_add = 2
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
+ajanta_merkabah = { 
 	county = c_vatsagulma
 	character_modifier = { 
 		name = holy_site_ajanta_effect_name
@@ -57666,6 +60916,15 @@ sagya_krishnaism = {
 	}
 	is_active = no
 }
+sagya_saura = { 
+	county = c_sagya
+	character_modifier = { 
+		name = holy_site_sagya_effect_name
+		diplomacy = 1
+		learning = 1
+	}
+	is_active = no
+}
 sagya_ashari = { 
 	county = c_sagya
 	character_modifier = { 
@@ -57919,6 +61178,15 @@ sagya_samaritan = {
 	is_active = no
 }
 sagya_kabarism = { 
+	county = c_sagya
+	character_modifier = { 
+		name = holy_site_sagya_effect_name
+		diplomacy = 1
+		learning = 1
+	}
+	is_active = no
+}
+sagya_merkabah = { 
 	county = c_sagya
 	character_modifier = { 
 		name = holy_site_sagya_effect_name
@@ -58582,6 +61850,14 @@ dagon_krishnaism = {
 	}
 	is_active = no
 }
+dagon_saura = { 
+	county = c_dagon
+	character_modifier = { 
+		name = holy_site_dagon_effect_name
+		martial_per_piety_level = 1
+	}
+	is_active = no
+}
 dagon_ashari = { 
 	county = c_dagon
 	character_modifier = { 
@@ -58807,6 +62083,14 @@ dagon_samaritan = {
 	is_active = no
 }
 dagon_kabarism = { 
+	county = c_dagon
+	character_modifier = { 
+		name = holy_site_dagon_effect_name
+		martial_per_piety_level = 1
+	}
+	is_active = no
+}
+dagon_merkabah = { 
 	county = c_dagon
 	character_modifier = { 
 		name = holy_site_dagon_effect_name
@@ -59485,6 +62769,15 @@ pagan_krishnaism = {
 	}
 	is_active = no
 }
+pagan_saura = { 
+	county = c_pagan
+	character_modifier = { 
+		name = holy_site_pagan_effect_name
+		stewardship = 1
+		monthly_prestige_gain_mult = 0.05
+	}
+	is_active = no
+}
 pagan_ashari = { 
 	county = c_pagan
 	character_modifier = { 
@@ -59738,6 +63031,15 @@ pagan_samaritan = {
 	is_active = no
 }
 pagan_kabarism = { 
+	county = c_pagan
+	character_modifier = { 
+		name = holy_site_pagan_effect_name
+		stewardship = 1
+		monthly_prestige_gain_mult = 0.05
+	}
+	is_active = no
+}
+pagan_merkabah = { 
 	county = c_pagan
 	character_modifier = { 
 		name = holy_site_pagan_effect_name
@@ -60448,6 +63750,15 @@ ava_krishnaism = {
 	}
 	is_active = no
 }
+ava_saura = { 
+	county = c_ava
+	character_modifier = { 
+		name = holy_site_ava_effect_name
+		stewardship = 1
+		knight_effectiveness_mult = 0.05
+	}
+	is_active = no
+}
 ava_ashari = { 
 	county = c_ava
 	character_modifier = { 
@@ -60701,6 +64012,15 @@ ava_samaritan = {
 	is_active = no
 }
 ava_kabarism = { 
+	county = c_ava
+	character_modifier = { 
+		name = holy_site_ava_effect_name
+		stewardship = 1
+		knight_effectiveness_mult = 0.05
+	}
+	is_active = no
+}
+ava_merkabah = { 
 	county = c_ava
 	character_modifier = { 
 		name = holy_site_ava_effect_name
@@ -61411,6 +64731,15 @@ sittaung_krishnaism = {
 	}
 	is_active = no
 }
+sittaung_saura = { 
+	county = c_sittaung
+	character_modifier = { 
+		name = holy_site_sittaung_effect_name
+		advantage_against_coreligionists = 1
+		artifact_decay_reduction_mult = -0.2
+	}
+	is_active = no
+}
 sittaung_ashari = { 
 	county = c_sittaung
 	character_modifier = { 
@@ -61664,6 +64993,15 @@ sittaung_samaritan = {
 	is_active = no
 }
 sittaung_kabarism = { 
+	county = c_sittaung
+	character_modifier = { 
+		name = holy_site_sittaung_effect_name
+		advantage_against_coreligionists = 1
+		artifact_decay_reduction_mult = -0.2
+	}
+	is_active = no
+}
+sittaung_merkabah = { 
 	county = c_sittaung
 	character_modifier = { 
 		name = holy_site_sittaung_effect_name
@@ -62327,6 +65665,14 @@ atamasthana_krishnaism = {
 	}
 	is_active = no
 }
+atamasthana_saura = { 
+	county = c_phiti
+	character_modifier = { 
+		name = holy_site_atamasthana_effect_name
+		domain_tax_mult = 0.02
+	}
+	is_active = no
+}
 atamasthana_ashari = { 
 	county = c_phiti
 	character_modifier = { 
@@ -62552,6 +65898,14 @@ atamasthana_samaritan = {
 	is_active = no
 }
 atamasthana_kabarism = { 
+	county = c_phiti
+	character_modifier = { 
+		name = holy_site_atamasthana_effect_name
+		domain_tax_mult = 0.02
+	}
+	is_active = no
+}
+atamasthana_merkabah = { 
 	county = c_phiti
 	character_modifier = { 
 		name = holy_site_atamasthana_effect_name
@@ -63183,6 +66537,14 @@ amaravati_krishnaism = {
 	}
 	is_active = no
 }
+amaravati_saura = { 
+	county = c_nallamala
+	character_modifier = { 
+		name = holy_site_amaravati_effect_name
+		monthly_county_control_change_factor = 0.1
+	}
+	is_active = no
+}
 amaravati_ashari = { 
 	county = c_nallamala
 	character_modifier = { 
@@ -63408,6 +66770,14 @@ amaravati_samaritan = {
 	is_active = no
 }
 amaravati_kabarism = { 
+	county = c_nallamala
+	character_modifier = { 
+		name = holy_site_amaravati_effect_name
+		monthly_county_control_change_factor = 0.1
+	}
+	is_active = no
+}
+amaravati_merkabah = { 
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
@@ -64086,6 +67456,15 @@ varanasi_krishnaism = {
 	}
 	is_active = no
 }
+varanasi_saura = { 
+	county = c_varanasi
+	character_modifier = { 
+		name = holy_site_varanasi_effect_name
+		learning = 2
+		clergy_opinion = 5
+	}
+	is_active = no
+}
 varanasi_ashari = { 
 	county = c_varanasi
 	character_modifier = { 
@@ -64339,6 +67718,15 @@ varanasi_samaritan = {
 	is_active = no
 }
 varanasi_kabarism = { 
+	county = c_varanasi
+	character_modifier = { 
+		name = holy_site_varanasi_effect_name
+		learning = 2
+		clergy_opinion = 5
+	}
+	is_active = no
+}
+varanasi_merkabah = { 
 	county = c_varanasi
 	character_modifier = { 
 		name = holy_site_varanasi_effect_name
@@ -65049,6 +68437,15 @@ ayodhya_krishnaism = {
 	}
 	is_active = no
 }
+ayodhya_saura = { 
+	county = c_ayodhya
+	character_modifier = { 
+		name = holy_site_ayodhya_effect_name
+		monthly_piety_gain_per_knight_mult = 0.01
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
 ayodhya_ashari = { 
 	county = c_ayodhya
 	character_modifier = { 
@@ -65302,6 +68699,15 @@ ayodhya_samaritan = {
 	is_active = no
 }
 ayodhya_kabarism = { 
+	county = c_ayodhya
+	character_modifier = { 
+		name = holy_site_ayodhya_effect_name
+		monthly_piety_gain_per_knight_mult = 0.01
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
+ayodhya_merkabah = { 
 	county = c_ayodhya
 	character_modifier = { 
 		name = holy_site_ayodhya_effect_name
@@ -66012,6 +69418,15 @@ mathura_krishnaism = {
 	}
 	is_active = no
 }
+mathura_saura = { 
+	county = c_mathura
+	character_modifier = { 
+		name = holy_site_mathura_effect_name
+		diplomacy = 1
+		powerful_vassal_opinion = 5
+	}
+	is_active = no
+}
 mathura_ashari = { 
 	county = c_mathura
 	character_modifier = { 
@@ -66265,6 +69680,15 @@ mathura_samaritan = {
 	is_active = no
 }
 mathura_kabarism = { 
+	county = c_mathura
+	character_modifier = { 
+		name = holy_site_mathura_effect_name
+		diplomacy = 1
+		powerful_vassal_opinion = 5
+	}
+	is_active = no
+}
+mathura_merkabah = { 
 	county = c_mathura
 	character_modifier = { 
 		name = holy_site_mathura_effect_name
@@ -66928,6 +70352,14 @@ haridwar_krishnaism = {
 	}
 	is_active = no
 }
+haridwar_saura = { 
+	county = c_sthanisvara
+	character_modifier = { 
+		name = holy_site_haridwar_effect_name
+		health = 0.1
+	}
+	is_active = no
+}
 haridwar_ashari = { 
 	county = c_sthanisvara
 	character_modifier = { 
@@ -67153,6 +70585,14 @@ haridwar_samaritan = {
 	is_active = no
 }
 haridwar_kabarism = { 
+	county = c_sthanisvara
+	character_modifier = { 
+		name = holy_site_haridwar_effect_name
+		health = 0.1
+	}
+	is_active = no
+}
+haridwar_merkabah = { 
 	county = c_sthanisvara
 	character_modifier = { 
 		name = holy_site_haridwar_effect_name
@@ -67784,6 +71224,14 @@ kanchipuram_krishnaism = {
 	}
 	is_active = no
 }
+kanchipuram_saura = { 
+	county = c_kanchipuram
+	character_modifier = { 
+		name = holy_site_kanchipuram_effect_name
+		fertility = 0.15
+	}
+	is_active = no
+}
 kanchipuram_ashari = { 
 	county = c_kanchipuram
 	character_modifier = { 
@@ -68009,6 +71457,14 @@ kanchipuram_samaritan = {
 	is_active = no
 }
 kanchipuram_kabarism = { 
+	county = c_kanchipuram
+	character_modifier = { 
+		name = holy_site_kanchipuram_effect_name
+		fertility = 0.15
+	}
+	is_active = no
+}
+kanchipuram_merkabah = { 
 	county = c_kanchipuram
 	character_modifier = { 
 		name = holy_site_kanchipuram_effect_name
@@ -68687,6 +72143,15 @@ ujjayini_krishnaism = {
 	}
 	is_active = no
 }
+ujjayini_saura = { 
+	county = c_ujjayini
+	character_modifier = { 
+		name = holy_site_ujjayini_effect_name
+		stewardship = 1
+		courtier_and_guest_opinion = 5
+	}
+	is_active = no
+}
 ujjayini_ashari = { 
 	county = c_ujjayini
 	character_modifier = { 
@@ -68940,6 +72405,15 @@ ujjayini_samaritan = {
 	is_active = no
 }
 ujjayini_kabarism = { 
+	county = c_ujjayini
+	character_modifier = { 
+		name = holy_site_ujjayini_effect_name
+		stewardship = 1
+		courtier_and_guest_opinion = 5
+	}
+	is_active = no
+}
+ujjayini_merkabah = { 
 	county = c_ujjayini
 	character_modifier = { 
 		name = holy_site_ujjayini_effect_name
@@ -69650,6 +73124,15 @@ dwarka_krishnaism = {
 	}
 	is_active = no
 }
+dwarka_saura = { 
+	county = c_dvaraka
+	character_modifier = { 
+		name = holy_site_dwarka_effect_name
+		martial = 1
+		hard_casualty_modifier = -0.1
+	}
+	is_active = no
+}
 dwarka_ashari = { 
 	county = c_dvaraka
 	character_modifier = { 
@@ -69903,6 +73386,15 @@ dwarka_samaritan = {
 	is_active = no
 }
 dwarka_kabarism = { 
+	county = c_dvaraka
+	character_modifier = { 
+		name = holy_site_dwarka_effect_name
+		martial = 1
+		hard_casualty_modifier = -0.1
+	}
+	is_active = no
+}
+dwarka_merkabah = { 
 	county = c_dvaraka
 	character_modifier = { 
 		name = holy_site_dwarka_effect_name
@@ -70566,6 +74058,14 @@ palitana_krishnaism = {
 	}
 	is_active = no
 }
+palitana_saura = { 
+	county = c_somnath
+	character_modifier = { 
+		name = holy_site_palitana_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
 palitana_ashari = { 
 	county = c_somnath
 	character_modifier = { 
@@ -70791,6 +74291,14 @@ palitana_samaritan = {
 	is_active = no
 }
 palitana_kabarism = { 
+	county = c_somnath
+	character_modifier = { 
+		name = holy_site_palitana_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
+palitana_merkabah = { 
 	county = c_somnath
 	character_modifier = { 
 		name = holy_site_palitana_effect_name
@@ -71469,6 +74977,15 @@ shikharj_krishnaism = {
 	}
 	is_active = no
 }
+shikharj_saura = { 
+	county = c_radha
+	character_modifier = { 
+		name = holy_site_shikharj_effect_name
+		stress_loss_mult = 0.2
+		life_expectancy = 1
+	}
+	is_active = no
+}
 shikharj_ashari = { 
 	county = c_radha
 	character_modifier = { 
@@ -71722,6 +75239,15 @@ shikharj_samaritan = {
 	is_active = no
 }
 shikharj_kabarism = { 
+	county = c_radha
+	character_modifier = { 
+		name = holy_site_shikharj_effect_name
+		stress_loss_mult = 0.2
+		life_expectancy = 1
+	}
+	is_active = no
+}
+shikharj_merkabah = { 
 	county = c_radha
 	character_modifier = { 
 		name = holy_site_shikharj_effect_name
@@ -72432,6 +75958,15 @@ ranakpur_krishnaism = {
 	}
 	is_active = no
 }
+ranakpur_saura = { 
+	county = c_naddula
+	character_modifier = { 
+		name = holy_site_ranakpur_effect_name
+		stewardship = 1
+		sway_scheme_power_mult = 0.2
+	}
+	is_active = no
+}
 ranakpur_ashari = { 
 	county = c_naddula
 	character_modifier = { 
@@ -72685,6 +76220,15 @@ ranakpur_samaritan = {
 	is_active = no
 }
 ranakpur_kabarism = { 
+	county = c_naddula
+	character_modifier = { 
+		name = holy_site_ranakpur_effect_name
+		stewardship = 1
+		sway_scheme_power_mult = 0.2
+	}
+	is_active = no
+}
+ranakpur_merkabah = { 
 	county = c_naddula
 	character_modifier = { 
 		name = holy_site_ranakpur_effect_name
@@ -73395,6 +76939,15 @@ ellora_krishnaism = {
 	}
 	is_active = no
 }
+ellora_saura = { 
+	county = c_vatsagulma
+	character_modifier = { 
+		name = holy_site_ellora_effect_name
+		county_opinion_add = 5
+		different_culture_opinion = 5
+	}
+	is_active = no
+}
 ellora_ashari = { 
 	county = c_vatsagulma
 	character_modifier = { 
@@ -73648,6 +77201,15 @@ ellora_samaritan = {
 	is_active = no
 }
 ellora_kabarism = { 
+	county = c_vatsagulma
+	character_modifier = { 
+		name = holy_site_ellora_effect_name
+		county_opinion_add = 5
+		different_culture_opinion = 5
+	}
+	is_active = no
+}
+ellora_merkabah = { 
 	county = c_vatsagulma
 	character_modifier = { 
 		name = holy_site_ellora_effect_name
@@ -74311,6 +77873,14 @@ sittannavasal_krishnaism = {
 	}
 	is_active = no
 }
+sittannavasal_saura = { 
+	county = c_kongu
+	character_modifier = { 
+		name = holy_site_sittannavasal_effect_name
+		direct_vassal_opinion = 5
+	}
+	is_active = no
+}
 sittannavasal_ashari = { 
 	county = c_kongu
 	character_modifier = { 
@@ -74536,6 +78106,14 @@ sittannavasal_samaritan = {
 	is_active = no
 }
 sittannavasal_kabarism = { 
+	county = c_kongu
+	character_modifier = { 
+		name = holy_site_sittannavasal_effect_name
+		direct_vassal_opinion = 5
+	}
+	is_active = no
+}
+sittannavasal_merkabah = { 
 	county = c_kongu
 	character_modifier = { 
 		name = holy_site_sittannavasal_effect_name
@@ -75167,6 +78745,14 @@ itanagar_krishnaism = {
 	}
 	is_active = no
 }
+itanagar_saura = { 
+	county = c_itanagar
+	character_modifier = { 
+		name = holy_site_itanagar_effect_name
+		monthly_prestige_gain_mult = 0.1
+	}
+	is_active = no
+}
 itanagar_ashari = { 
 	county = c_itanagar
 	character_modifier = { 
@@ -75392,6 +78978,14 @@ itanagar_samaritan = {
 	is_active = no
 }
 itanagar_kabarism = { 
+	county = c_itanagar
+	character_modifier = { 
+		name = holy_site_itanagar_effect_name
+		monthly_prestige_gain_mult = 0.1
+	}
+	is_active = no
+}
+itanagar_merkabah = { 
 	county = c_itanagar
 	character_modifier = { 
 		name = holy_site_itanagar_effect_name
@@ -76070,6 +79664,15 @@ pemako_krishnaism = {
 	}
 	is_active = no
 }
+pemako_saura = { 
+	county = c_pemako
+	character_modifier = { 
+		name = holy_site_pemako_effect_name
+		learning = 1
+		tyranny_gain_mult = -0.2
+	}
+	is_active = no
+}
 pemako_ashari = { 
 	county = c_pemako
 	character_modifier = { 
@@ -76323,6 +79926,15 @@ pemako_samaritan = {
 	is_active = no
 }
 pemako_kabarism = { 
+	county = c_pemako
+	character_modifier = { 
+		name = holy_site_pemako_effect_name
+		learning = 1
+		tyranny_gain_mult = -0.2
+	}
+	is_active = no
+}
+pemako_merkabah = { 
 	county = c_pemako
 	character_modifier = { 
 		name = holy_site_pemako_effect_name
@@ -76986,6 +80598,14 @@ rima_krishnaism = {
 	}
 	is_active = no
 }
+rima_saura = { 
+	county = c_rima
+	character_modifier = { 
+		name = holy_site_rima_effect_name
+		diplomacy_per_prestige_level = 1
+	}
+	is_active = no
+}
 rima_ashari = { 
 	county = c_rima
 	character_modifier = { 
@@ -77211,6 +80831,14 @@ rima_samaritan = {
 	is_active = no
 }
 rima_kabarism = { 
+	county = c_rima
+	character_modifier = { 
+		name = holy_site_rima_effect_name
+		diplomacy_per_prestige_level = 1
+	}
+	is_active = no
+}
+rima_merkabah = { 
 	county = c_rima
 	character_modifier = { 
 		name = holy_site_rima_effect_name
@@ -77842,6 +81470,14 @@ tezu_krishnaism = {
 	}
 	is_active = no
 }
+tezu_saura = { 
+	county = c_tezu
+	character_modifier = { 
+		name = holy_site_tezu_effect_name
+		hills_advantage = 5
+	}
+	is_active = no
+}
 tezu_ashari = { 
 	county = c_tezu
 	character_modifier = { 
@@ -78067,6 +81703,14 @@ tezu_samaritan = {
 	is_active = no
 }
 tezu_kabarism = { 
+	county = c_tezu
+	character_modifier = { 
+		name = holy_site_tezu_effect_name
+		hills_advantage = 5
+	}
+	is_active = no
+}
+tezu_merkabah = { 
 	county = c_tezu
 	character_modifier = { 
 		name = holy_site_tezu_effect_name
@@ -78745,6 +82389,15 @@ kathmandu_krishnaism = {
 	}
 	is_active = no
 }
+kathmandu_saura = { 
+	county = c_kathmandu
+	character_modifier = { 
+		name = holy_site_kathmandu_effect_name
+		county_opinion_add = 5
+		different_faith_opinion = 5
+	}
+	is_active = no
+}
 kathmandu_ashari = { 
 	county = c_kathmandu
 	character_modifier = { 
@@ -78998,6 +82651,15 @@ kathmandu_samaritan = {
 	is_active = no
 }
 kathmandu_kabarism = { 
+	county = c_kathmandu
+	character_modifier = { 
+		name = holy_site_kathmandu_effect_name
+		county_opinion_add = 5
+		different_faith_opinion = 5
+	}
+	is_active = no
+}
+kathmandu_merkabah = { 
 	county = c_kathmandu
 	character_modifier = { 
 		name = holy_site_kathmandu_effect_name
@@ -79661,6 +83323,14 @@ ilam_krishnaism = {
 	}
 	is_active = no
 }
+ilam_saura = { 
+	county = c_ilam
+	character_modifier = { 
+		name = holy_site_ilam_effect_name
+		mountains_advantage = 5
+	}
+	is_active = no
+}
 ilam_ashari = { 
 	county = c_ilam
 	character_modifier = { 
@@ -79886,6 +83556,14 @@ ilam_samaritan = {
 	is_active = no
 }
 ilam_kabarism = { 
+	county = c_ilam
+	character_modifier = { 
+		name = holy_site_ilam_effect_name
+		mountains_advantage = 5
+	}
+	is_active = no
+}
+ilam_merkabah = { 
 	county = c_ilam
 	character_modifier = { 
 		name = holy_site_ilam_effect_name
@@ -80517,6 +84195,14 @@ garwhal_krishnaism = {
 	}
 	is_active = no
 }
+garwhal_saura = { 
+	county = c_garwhal
+	character_modifier = { 
+		name = holy_site_garwhal_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
 garwhal_ashari = { 
 	county = c_garwhal
 	character_modifier = { 
@@ -80742,6 +84428,14 @@ garwhal_samaritan = {
 	is_active = no
 }
 garwhal_kabarism = { 
+	county = c_garwhal
+	character_modifier = { 
+		name = holy_site_garwhal_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
+garwhal_merkabah = { 
 	county = c_garwhal
 	character_modifier = { 
 		name = holy_site_garwhal_effect_name
@@ -81373,6 +85067,14 @@ jumla_krishnaism = {
 	}
 	is_active = no
 }
+jumla_saura = { 
+	county = c_jumla
+	character_modifier = { 
+		name = holy_site_jumla_effect_name
+		dynasty_house_opinion = 5
+	}
+	is_active = no
+}
 jumla_ashari = { 
 	county = c_jumla
 	character_modifier = { 
@@ -81598,6 +85300,14 @@ jumla_samaritan = {
 	is_active = no
 }
 jumla_kabarism = { 
+	county = c_jumla
+	character_modifier = { 
+		name = holy_site_jumla_effect_name
+		dynasty_house_opinion = 5
+	}
+	is_active = no
+}
+jumla_merkabah = { 
 	county = c_jumla
 	character_modifier = { 
 		name = holy_site_jumla_effect_name
@@ -82229,6 +85939,14 @@ maowun_krishnaism = {
 	}
 	is_active = no
 }
+maowun_saura = { 
+	county = c_maowun
+	character_modifier = { 
+		name = holy_site_maowun_effect_name
+		monthly_piety_gain_per_knight_mult = 0.01
+	}
+	is_active = no
+}
 maowun_ashari = { 
 	county = c_maowun
 	character_modifier = { 
@@ -82454,6 +86172,14 @@ maowun_samaritan = {
 	is_active = no
 }
 maowun_kabarism = { 
+	county = c_maowun
+	character_modifier = { 
+		name = holy_site_maowun_effect_name
+		monthly_piety_gain_per_knight_mult = 0.01
+	}
+	is_active = no
+}
+maowun_merkabah = { 
 	county = c_maowun
 	character_modifier = { 
 		name = holy_site_maowun_effect_name
@@ -83085,6 +86811,14 @@ ngawa_krishnaism = {
 	}
 	is_active = no
 }
+ngawa_saura = { 
+	county = c_ngawa
+	character_modifier = { 
+		name = holy_site_ngawa_effect_name
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
 ngawa_ashari = { 
 	county = c_ngawa
 	character_modifier = { 
@@ -83310,6 +87044,14 @@ ngawa_samaritan = {
 	is_active = no
 }
 ngawa_kabarism = { 
+	county = c_ngawa
+	character_modifier = { 
+		name = holy_site_ngawa_effect_name
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
+ngawa_merkabah = { 
 	county = c_ngawa
 	character_modifier = { 
 		name = holy_site_ngawa_effect_name
@@ -83941,6 +87683,14 @@ chakla_krishnaism = {
 	}
 	is_active = no
 }
+chakla_saura = { 
+	county = c_chakla
+	character_modifier = { 
+		name = holy_site_chakla_effect_name
+		build_speed = -0.15
+	}
+	is_active = no
+}
 chakla_ashari = { 
 	county = c_chakla
 	character_modifier = { 
@@ -84166,6 +87916,14 @@ chakla_samaritan = {
 	is_active = no
 }
 chakla_kabarism = { 
+	county = c_chakla
+	character_modifier = { 
+		name = holy_site_chakla_effect_name
+		build_speed = -0.15
+	}
+	is_active = no
+}
+chakla_merkabah = { 
 	county = c_chakla
 	character_modifier = { 
 		name = holy_site_chakla_effect_name
@@ -84797,6 +88555,14 @@ gyaitang_krishnaism = {
 	}
 	is_active = no
 }
+gyaitang_saura = { 
+	county = c_gyaitang
+	character_modifier = { 
+		name = holy_site_gyaitang_effect_name
+		same_culture_opinion = 5
+	}
+	is_active = no
+}
 gyaitang_ashari = { 
 	county = c_gyaitang
 	character_modifier = { 
@@ -85022,6 +88788,14 @@ gyaitang_samaritan = {
 	is_active = no
 }
 gyaitang_kabarism = { 
+	county = c_gyaitang
+	character_modifier = { 
+		name = holy_site_gyaitang_effect_name
+		same_culture_opinion = 5
+	}
+	is_active = no
+}
+gyaitang_merkabah = { 
 	county = c_gyaitang
 	character_modifier = { 
 		name = holy_site_gyaitang_effect_name
@@ -85653,6 +89427,14 @@ rebgong_krishnaism = {
 	}
 	is_active = no
 }
+rebgong_saura = { 
+	county = c_rebgong
+	character_modifier = { 
+		name = holy_site_rebgong_effect_name
+		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.02
+	}
+	is_active = no
+}
 rebgong_ashari = { 
 	county = c_rebgong
 	character_modifier = { 
@@ -85878,6 +89660,14 @@ rebgong_samaritan = {
 	is_active = no
 }
 rebgong_kabarism = { 
+	county = c_rebgong
+	character_modifier = { 
+		name = holy_site_rebgong_effect_name
+		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.02
+	}
+	is_active = no
+}
+rebgong_merkabah = { 
 	county = c_rebgong
 	character_modifier = { 
 		name = holy_site_rebgong_effect_name
@@ -86509,6 +90299,14 @@ xingqing_krishnaism = {
 	}
 	is_active = no
 }
+xingqing_saura = { 
+	county = c_xingqing
+	character_modifier = { 
+		name = holy_site_xingqing_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
 xingqing_ashari = { 
 	county = c_xingqing
 	character_modifier = { 
@@ -86734,6 +90532,14 @@ xingqing_samaritan = {
 	is_active = no
 }
 xingqing_kabarism = { 
+	county = c_xingqing
+	character_modifier = { 
+		name = holy_site_xingqing_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
+xingqing_merkabah = { 
 	county = c_xingqing
 	character_modifier = { 
 		name = holy_site_xingqing_effect_name
@@ -87365,6 +91171,14 @@ yijinai_krishnaism = {
 	}
 	is_active = no
 }
+yijinai_saura = { 
+	county = c_yijinai
+	character_modifier = { 
+		name = holy_site_yijinai_effect_name
+		build_gold_cost = -0.05
+	}
+	is_active = no
+}
 yijinai_ashari = { 
 	county = c_yijinai
 	character_modifier = { 
@@ -87590,6 +91404,14 @@ yijinai_samaritan = {
 	is_active = no
 }
 yijinai_kabarism = { 
+	county = c_yijinai
+	character_modifier = { 
+		name = holy_site_yijinai_effect_name
+		build_gold_cost = -0.05
+	}
+	is_active = no
+}
+yijinai_merkabah = { 
 	county = c_yijinai
 	character_modifier = { 
 		name = holy_site_yijinai_effect_name
@@ -88221,6 +92043,14 @@ alxa_krishnaism = {
 	}
 	is_active = no
 }
+alxa_saura = { 
+	county = c_alxa
+	character_modifier = { 
+		name = holy_site_alxa_effect_name
+		stewardship = 1
+	}
+	is_active = no
+}
 alxa_ashari = { 
 	county = c_alxa
 	character_modifier = { 
@@ -88446,6 +92276,14 @@ alxa_samaritan = {
 	is_active = no
 }
 alxa_kabarism = { 
+	county = c_alxa
+	character_modifier = { 
+		name = holy_site_alxa_effect_name
+		stewardship = 1
+	}
+	is_active = no
+}
+alxa_merkabah = { 
 	county = c_alxa
 	character_modifier = { 
 		name = holy_site_alxa_effect_name
@@ -89077,6 +92915,14 @@ yazd_krishnaism = {
 	}
 	is_active = no
 }
+yazd_saura = { 
+	county = c_yazd
+	character_modifier = { 
+		name = holy_site_yazd_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
 yazd_ashari = { 
 	county = c_yazd
 	character_modifier = { 
@@ -89302,6 +93148,14 @@ yazd_samaritan = {
 	is_active = no
 }
 yazd_kabarism = { 
+	county = c_yazd
+	character_modifier = { 
+		name = holy_site_yazd_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
+yazd_merkabah = { 
 	county = c_yazd
 	character_modifier = { 
 		name = holy_site_yazd_effect_name
@@ -89980,6 +93834,15 @@ nok_kundi_krishnaism = {
 	}
 	is_active = no
 }
+nok_kundi_saura = { 
+	county = c_riqan
+	character_modifier = { 
+		name = holy_site_nok_kundi_effect_name
+		build_gold_cost = -0.1
+		stewardship = 1
+	}
+	is_active = no
+}
 nok_kundi_ashari = { 
 	county = c_riqan
 	character_modifier = { 
@@ -90233,6 +94096,15 @@ nok_kundi_samaritan = {
 	is_active = no
 }
 nok_kundi_kabarism = { 
+	county = c_riqan
+	character_modifier = { 
+		name = holy_site_nok_kundi_effect_name
+		build_gold_cost = -0.1
+		stewardship = 1
+	}
+	is_active = no
+}
+nok_kundi_merkabah = { 
 	county = c_riqan
 	character_modifier = { 
 		name = holy_site_nok_kundi_effect_name
@@ -90943,6 +94815,15 @@ takht-i-sangin_krishnaism = {
 	}
 	is_active = no
 }
+takht-i-sangin_saura = { 
+	county = c_balkh
+	character_modifier = { 
+		name = holy_site_takht-i-sangin_effect_name
+		diplomacy = 1
+		clergy_opinion = 5
+	}
+	is_active = no
+}
 takht-i-sangin_ashari = { 
 	county = c_balkh
 	character_modifier = { 
@@ -91196,6 +95077,15 @@ takht-i-sangin_samaritan = {
 	is_active = no
 }
 takht-i-sangin_kabarism = { 
+	county = c_balkh
+	character_modifier = { 
+		name = holy_site_takht-i-sangin_effect_name
+		diplomacy = 1
+		clergy_opinion = 5
+	}
+	is_active = no
+}
+takht-i-sangin_merkabah = { 
 	county = c_balkh
 	character_modifier = { 
 		name = holy_site_takht-i-sangin_effect_name
@@ -91859,6 +95749,14 @@ takht-e_soleyman_krishnaism = {
 	}
 	is_active = no
 }
+takht-e_soleyman_saura = { 
+	county = c_urmiya
+	character_modifier = { 
+		name = holy_site_takht-e_soleyman_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
 takht-e_soleyman_ashari = { 
 	county = c_urmiya
 	character_modifier = { 
@@ -92084,6 +95982,14 @@ takht-e_soleyman_samaritan = {
 	is_active = no
 }
 takht-e_soleyman_kabarism = { 
+	county = c_urmiya
+	character_modifier = { 
+		name = holy_site_takht-e_soleyman_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
+takht-e_soleyman_merkabah = { 
 	county = c_urmiya
 	character_modifier = { 
 		name = holy_site_takht-e_soleyman_effect_name
@@ -92762,6 +96668,15 @@ ushi-darena_krishnaism = {
 	}
 	is_active = no
 }
+ushi-darena_saura = { 
+	county = c_baduspan
+	character_modifier = { 
+		name = holy_site_ushi-darena_effect_name
+		learning = 1
+		county_opinion_add = 5
+	}
+	is_active = no
+}
 ushi-darena_ashari = { 
 	county = c_baduspan
 	character_modifier = { 
@@ -93015,6 +96930,15 @@ ushi-darena_samaritan = {
 	is_active = no
 }
 ushi-darena_kabarism = { 
+	county = c_baduspan
+	character_modifier = { 
+		name = holy_site_ushi-darena_effect_name
+		learning = 1
+		county_opinion_add = 5
+	}
+	is_active = no
+}
+ushi-darena_merkabah = { 
 	county = c_baduspan
 	character_modifier = { 
 		name = holy_site_ushi-darena_effect_name
@@ -93725,6 +97649,15 @@ uppsala_krishnaism = {
 	}
 	is_active = no
 }
+uppsala_saura = { 
+	county = c_upland
+	character_modifier = { 
+		name = holy_site_uppsala_effect_name
+		monthly_piety_gain_per_knight_mult = 0.01
+		heavy_infantry_damage_mult = 0.05
+	}
+	is_active = no
+}
 uppsala_ashari = { 
 	county = c_upland
 	character_modifier = { 
@@ -93978,6 +97911,15 @@ uppsala_samaritan = {
 	is_active = no
 }
 uppsala_kabarism = { 
+	county = c_upland
+	character_modifier = { 
+		name = holy_site_uppsala_effect_name
+		monthly_piety_gain_per_knight_mult = 0.01
+		heavy_infantry_damage_mult = 0.05
+	}
+	is_active = no
+}
+uppsala_merkabah = { 
 	county = c_upland
 	character_modifier = { 
 		name = holy_site_uppsala_effect_name
@@ -94688,6 +98630,15 @@ lejre_krishnaism = {
 	}
 	is_active = no
 }
+lejre_saura = { 
+	county = c_sjaelland
+	character_modifier = { 
+		name = holy_site_lejre_effect_name
+		knight_effectiveness_mult = 0.2
+		prowess_per_piety_level = 1
+	}
+	is_active = no
+}
 lejre_ashari = { 
 	county = c_sjaelland
 	character_modifier = { 
@@ -94941,6 +98892,15 @@ lejre_samaritan = {
 	is_active = no
 }
 lejre_kabarism = { 
+	county = c_sjaelland
+	character_modifier = { 
+		name = holy_site_lejre_effect_name
+		knight_effectiveness_mult = 0.2
+		prowess_per_piety_level = 1
+	}
+	is_active = no
+}
+lejre_merkabah = { 
 	county = c_sjaelland
 	character_modifier = { 
 		name = holy_site_lejre_effect_name
@@ -95651,6 +99611,15 @@ paderborn_krishnaism = {
 	}
 	is_active = no
 }
+paderborn_saura = { 
+	county = c_paderborn
+	character_modifier = { 
+		name = holy_site_paderborn_effect_name
+		stewardship_per_piety_level = 1
+		fertility = 0.1
+	}
+	is_active = no
+}
 paderborn_ashari = { 
 	county = c_paderborn
 	character_modifier = { 
@@ -95904,6 +99873,15 @@ paderborn_samaritan = {
 	is_active = no
 }
 paderborn_kabarism = { 
+	county = c_paderborn
+	character_modifier = { 
+		name = holy_site_paderborn_effect_name
+		stewardship_per_piety_level = 1
+		fertility = 0.1
+	}
+	is_active = no
+}
+paderborn_merkabah = { 
 	county = c_paderborn
 	character_modifier = { 
 		name = holy_site_paderborn_effect_name
@@ -96614,6 +100592,15 @@ zeeland_krishnaism = {
 	}
 	is_active = no
 }
+zeeland_saura = { 
+	county = c_zeeland
+	character_modifier = { 
+		name = holy_site_zeeland_effect_name
+		prowess_per_piety_level = 1
+		supply_duration = 0.2
+	}
+	is_active = no
+}
 zeeland_ashari = { 
 	county = c_zeeland
 	character_modifier = { 
@@ -96867,6 +100854,15 @@ zeeland_samaritan = {
 	is_active = no
 }
 zeeland_kabarism = { 
+	county = c_zeeland
+	character_modifier = { 
+		name = holy_site_zeeland_effect_name
+		prowess_per_piety_level = 1
+		supply_duration = 0.2
+	}
+	is_active = no
+}
+zeeland_merkabah = { 
 	county = c_zeeland
 	character_modifier = { 
 		name = holy_site_zeeland_effect_name
@@ -97577,6 +101573,15 @@ ranaheim_krishnaism = {
 	}
 	is_active = no
 }
+ranaheim_saura = { 
+	county = c_trandheim
+	character_modifier = { 
+		name = holy_site_ranaheim_effect_name
+		naval_movement_speed_mult = 0.2
+		men_at_arms_maintenance = -0.05
+	}
+	is_active = no
+}
 ranaheim_ashari = { 
 	county = c_trandheim
 	character_modifier = { 
@@ -97830,6 +101835,15 @@ ranaheim_samaritan = {
 	is_active = no
 }
 ranaheim_kabarism = { 
+	county = c_trandheim
+	character_modifier = { 
+		name = holy_site_ranaheim_effect_name
+		naval_movement_speed_mult = 0.2
+		men_at_arms_maintenance = -0.05
+	}
+	is_active = no
+}
+ranaheim_merkabah = { 
 	county = c_trandheim
 	character_modifier = { 
 		name = holy_site_ranaheim_effect_name
@@ -98540,6 +102554,15 @@ jorvik_krishnaism = {
 	}
 	is_active = no
 }
+jorvik_saura = { 
+	county = c_north_riding
+	character_modifier = { 
+		name = holy_site_jorvik_effect_name
+		knight_effectiveness_mult = 0.2
+		prowess_per_piety_level = 1
+	}
+	is_active = no
+}
 jorvik_ashari = { 
 	county = c_north_riding
 	character_modifier = { 
@@ -98793,6 +102816,15 @@ jorvik_samaritan = {
 	is_active = no
 }
 jorvik_kabarism = { 
+	county = c_north_riding
+	character_modifier = { 
+		name = holy_site_jorvik_effect_name
+		knight_effectiveness_mult = 0.2
+		prowess_per_piety_level = 1
+	}
+	is_active = no
+}
+jorvik_merkabah = { 
 	county = c_north_riding
 	character_modifier = { 
 		name = holy_site_jorvik_effect_name
@@ -99503,6 +103535,15 @@ konugardr_krishnaism = {
 	}
 	is_active = no
 }
+konugardr_saura = { 
+	county = c_kiev
+	character_modifier = { 
+		name = holy_site_konugardr_effect_name
+		prowess_per_piety_level = 1
+		supply_duration = 0.2
+	}
+	is_active = no
+}
 konugardr_ashari = { 
 	county = c_kiev
 	character_modifier = { 
@@ -99756,6 +103797,15 @@ konugardr_samaritan = {
 	is_active = no
 }
 konugardr_kabarism = { 
+	county = c_kiev
+	character_modifier = { 
+		name = holy_site_konugardr_effect_name
+		prowess_per_piety_level = 1
+		supply_duration = 0.2
+	}
+	is_active = no
+}
+konugardr_merkabah = { 
 	county = c_kiev
 	character_modifier = { 
 		name = holy_site_konugardr_effect_name
@@ -100419,6 +104469,14 @@ raivola_krishnaism = {
 	}
 	is_active = no
 }
+raivola_saura = { 
+	county = c_kakisalmi
+	character_modifier = { 
+		name = holy_site_raivola_effect_name
+		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.02
+	}
+	is_active = no
+}
 raivola_ashari = { 
 	county = c_kakisalmi
 	character_modifier = { 
@@ -100644,6 +104702,14 @@ raivola_samaritan = {
 	is_active = no
 }
 raivola_kabarism = { 
+	county = c_kakisalmi
+	character_modifier = { 
+		name = holy_site_raivola_effect_name
+		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.02
+	}
+	is_active = no
+}
+raivola_merkabah = { 
 	county = c_kakisalmi
 	character_modifier = { 
 		name = holy_site_raivola_effect_name
@@ -101369,6 +105435,16 @@ hiiumaa_krishnaism = {
 	}
 	is_active = no
 }
+hiiumaa_saura = { 
+	county = c_osel
+	barony = b_hiiumaa
+	character_modifier = { 
+		name = holy_site_hiiumaa_effect_name
+		stewardship = 1
+		close_relative_opinion = 5
+	}
+	is_active = no
+}
 hiiumaa_ashari = { 
 	county = c_osel
 	barony = b_hiiumaa
@@ -101650,6 +105726,16 @@ hiiumaa_samaritan = {
 	is_active = no
 }
 hiiumaa_kabarism = { 
+	county = c_osel
+	barony = b_hiiumaa
+	character_modifier = { 
+		name = holy_site_hiiumaa_effect_name
+		stewardship = 1
+		close_relative_opinion = 5
+	}
+	is_active = no
+}
+hiiumaa_merkabah = { 
 	county = c_osel
 	barony = b_hiiumaa
 	character_modifier = { 
@@ -102392,6 +106478,15 @@ akkel_krishnaism = {
 	}
 	is_active = no
 }
+akkel_saura = { 
+	county = c_akkel
+	character_modifier = { 
+		name = holy_site_akkel_effect_name
+		taiga_max_combat_roll = 5
+		archers_toughness_mult = 0.1
+	}
+	is_active = no
+}
 akkel_ashari = { 
 	county = c_akkel
 	character_modifier = { 
@@ -102645,6 +106740,15 @@ akkel_samaritan = {
 	is_active = no
 }
 akkel_kabarism = { 
+	county = c_akkel
+	character_modifier = { 
+		name = holy_site_akkel_effect_name
+		taiga_max_combat_roll = 5
+		archers_toughness_mult = 0.1
+	}
+	is_active = no
+}
+akkel_merkabah = { 
 	county = c_akkel
 	character_modifier = { 
 		name = holy_site_akkel_effect_name
@@ -103355,6 +107459,15 @@ perm_krishnaism = {
 	}
 	is_active = no
 }
+perm_saura = { 
+	county = c_perm
+	character_modifier = { 
+		name = holy_site_perm_effect_name
+		supply_duration = 0.25
+		prowess = 1
+	}
+	is_active = no
+}
 perm_ashari = { 
 	county = c_perm
 	character_modifier = { 
@@ -103608,6 +107721,15 @@ perm_samaritan = {
 	is_active = no
 }
 perm_kabarism = { 
+	county = c_perm
+	character_modifier = { 
+		name = holy_site_perm_effect_name
+		supply_duration = 0.25
+		prowess = 1
+	}
+	is_active = no
+}
+perm_merkabah = { 
 	county = c_perm
 	character_modifier = { 
 		name = holy_site_perm_effect_name
@@ -104318,6 +108440,15 @@ kiev_krishnaism = {
 	}
 	is_active = no
 }
+kiev_saura = { 
+	county = c_kiev
+	character_modifier = { 
+		name = holy_site_kiev_effect_name
+		monthly_piety_gain_mult = 0.1
+		knight_effectiveness_mult = 0.2
+	}
+	is_active = no
+}
 kiev_ashari = { 
 	county = c_kiev
 	character_modifier = { 
@@ -104571,6 +108702,15 @@ kiev_samaritan = {
 	is_active = no
 }
 kiev_kabarism = { 
+	county = c_kiev
+	character_modifier = { 
+		name = holy_site_kiev_effect_name
+		monthly_piety_gain_mult = 0.1
+		knight_effectiveness_mult = 0.2
+	}
+	is_active = no
+}
+kiev_merkabah = { 
 	county = c_kiev
 	character_modifier = { 
 		name = holy_site_kiev_effect_name
@@ -105234,6 +109374,14 @@ novgorod_krishnaism = {
 	}
 	is_active = no
 }
+novgorod_saura = { 
+	county = c_novgorod
+	character_modifier = { 
+		name = holy_site_novgorod_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
 novgorod_ashari = { 
 	county = c_novgorod
 	character_modifier = { 
@@ -105459,6 +109607,14 @@ novgorod_samaritan = {
 	is_active = no
 }
 novgorod_kabarism = { 
+	county = c_novgorod
+	character_modifier = { 
+		name = holy_site_novgorod_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
+novgorod_merkabah = { 
 	county = c_novgorod
 	character_modifier = { 
 		name = holy_site_novgorod_effect_name
@@ -106137,6 +110293,15 @@ barlad_krishnaism = {
 	}
 	is_active = no
 }
+barlad_saura = { 
+	county = c_barlad
+	character_modifier = { 
+		name = holy_site_barlad_effect_name
+		prowess = 1
+		heavy_infantry_toughness_mult = 0.1
+	}
+	is_active = no
+}
 barlad_ashari = { 
 	county = c_barlad
 	character_modifier = { 
@@ -106390,6 +110555,15 @@ barlad_samaritan = {
 	is_active = no
 }
 barlad_kabarism = { 
+	county = c_barlad
+	character_modifier = { 
+		name = holy_site_barlad_effect_name
+		prowess = 1
+		heavy_infantry_toughness_mult = 0.1
+	}
+	is_active = no
+}
+barlad_merkabah = { 
 	county = c_barlad
 	character_modifier = { 
 		name = holy_site_barlad_effect_name
@@ -107053,6 +111227,14 @@ plock_krishnaism = {
 	}
 	is_active = no
 }
+plock_saura = { 
+	county = c_plocka
+	character_modifier = { 
+		name = holy_site_plock_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
 plock_ashari = { 
 	county = c_plocka
 	character_modifier = { 
@@ -107278,6 +111460,14 @@ plock_samaritan = {
 	is_active = no
 }
 plock_kabarism = { 
+	county = c_plocka
+	character_modifier = { 
+		name = holy_site_plock_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
+plock_merkabah = { 
 	county = c_plocka
 	character_modifier = { 
 		name = holy_site_plock_effect_name
@@ -108003,6 +112193,16 @@ pokaini_krishnaism = {
 	}
 	is_active = no
 }
+pokaini_saura = { 
+	county = c_zemigalians
+	barony = b_dobele
+	character_modifier = { 
+		name = holy_site_pokaini_effect_name
+		controlled_province_advantage = 5
+		stress_loss_mult = 0.1
+	}
+	is_active = no
+}
 pokaini_ashari = { 
 	county = c_zemigalians
 	barony = b_dobele
@@ -108284,6 +112484,16 @@ pokaini_samaritan = {
 	is_active = no
 }
 pokaini_kabarism = { 
+	county = c_zemigalians
+	barony = b_dobele
+	character_modifier = { 
+		name = holy_site_pokaini_effect_name
+		controlled_province_advantage = 5
+		stress_loss_mult = 0.1
+	}
+	is_active = no
+}
+pokaini_merkabah = { 
 	county = c_zemigalians
 	barony = b_dobele
 	character_modifier = { 
@@ -109026,6 +113236,15 @@ torun_krishnaism = {
 	}
 	is_active = no
 }
+torun_saura = { 
+	county = c_torun
+	character_modifier = { 
+		name = holy_site_torun_effect_name
+		martial_per_piety_level = 1
+		knight_effectiveness_mult = 0.2
+	}
+	is_active = no
+}
 torun_ashari = { 
 	county = c_torun
 	character_modifier = { 
@@ -109279,6 +113498,15 @@ torun_samaritan = {
 	is_active = no
 }
 torun_kabarism = { 
+	county = c_torun
+	character_modifier = { 
+		name = holy_site_torun_effect_name
+		martial_per_piety_level = 1
+		knight_effectiveness_mult = 0.2
+	}
+	is_active = no
+}
+torun_merkabah = { 
 	county = c_torun
 	character_modifier = { 
 		name = holy_site_torun_effect_name
@@ -109989,6 +114217,15 @@ braslau_krishnaism = {
 	}
 	is_active = no
 }
+braslau_saura = { 
+	county = c_braslau
+	character_modifier = { 
+		name = holy_site_braslau_effect_name
+		monthly_piety_gain_per_knight_add = 0.1
+		skirmishers_toughness_mult = 0.1
+	}
+	is_active = no
+}
 braslau_ashari = { 
 	county = c_braslau
 	character_modifier = { 
@@ -110242,6 +114479,15 @@ braslau_samaritan = {
 	is_active = no
 }
 braslau_kabarism = { 
+	county = c_braslau
+	character_modifier = { 
+		name = holy_site_braslau_effect_name
+		monthly_piety_gain_per_knight_add = 0.1
+		skirmishers_toughness_mult = 0.1
+	}
+	is_active = no
+}
+braslau_merkabah = { 
 	county = c_braslau
 	character_modifier = { 
 		name = holy_site_braslau_effect_name
@@ -110952,6 +115198,15 @@ rugen_krishnaism = {
 	}
 	is_active = no
 }
+rugen_saura = { 
+	county = c_rugen
+	character_modifier = { 
+		name = holy_site_rugen_effect_name
+		embarkation_cost_mult = -0.25
+		retreat_losses = -0.1
+	}
+	is_active = no
+}
 rugen_ashari = { 
 	county = c_rugen
 	character_modifier = { 
@@ -111205,6 +115460,15 @@ rugen_samaritan = {
 	is_active = no
 }
 rugen_kabarism = { 
+	county = c_rugen
+	character_modifier = { 
+		name = holy_site_rugen_effect_name
+		embarkation_cost_mult = -0.25
+		retreat_losses = -0.1
+	}
+	is_active = no
+}
+rugen_merkabah = { 
 	county = c_rugen
 	character_modifier = { 
 		name = holy_site_rugen_effect_name
@@ -111915,6 +116179,15 @@ pest_krishnaism = {
 	}
 	is_active = no
 }
+pest_saura = { 
+	county = c_visegrad
+	character_modifier = { 
+		name = holy_site_pest_effect_name
+		martial = 1
+		prowess_per_prestige_level = 1
+	}
+	is_active = no
+}
 pest_ashari = { 
 	county = c_visegrad
 	character_modifier = { 
@@ -112168,6 +116441,15 @@ pest_samaritan = {
 	is_active = no
 }
 pest_kabarism = { 
+	county = c_visegrad
+	character_modifier = { 
+		name = holy_site_pest_effect_name
+		martial = 1
+		prowess_per_prestige_level = 1
+	}
+	is_active = no
+}
+pest_merkabah = { 
 	county = c_visegrad
 	character_modifier = { 
 		name = holy_site_pest_effect_name
@@ -112878,6 +117160,15 @@ kerch_krishnaism = {
 	}
 	is_active = no
 }
+kerch_saura = { 
+	county = c_kerch
+	character_modifier = { 
+		name = holy_site_kerch_effect_name
+		army_maintenance_mult = -0.05
+		martial_per_prestige_level = 1
+	}
+	is_active = no
+}
 kerch_ashari = { 
 	county = c_kerch
 	character_modifier = { 
@@ -113131,6 +117422,15 @@ kerch_samaritan = {
 	is_active = no
 }
 kerch_kabarism = { 
+	county = c_kerch
+	character_modifier = { 
+		name = holy_site_kerch_effect_name
+		army_maintenance_mult = -0.05
+		martial_per_prestige_level = 1
+	}
+	is_active = no
+}
+kerch_merkabah = { 
 	county = c_kerch
 	character_modifier = { 
 		name = holy_site_kerch_effect_name
@@ -113841,6 +118141,15 @@ olvia_krishnaism = {
 	}
 	is_active = no
 }
+olvia_saura = { 
+	county = c_odessa
+	barony = b_olbia_ETEL
+	character_modifier = { 
+		name = holy_site_olvia_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
 olvia_ashari = { 
 	county = c_odessa
 	barony = b_olbia_ETEL
@@ -114094,6 +118403,15 @@ olvia_samaritan = {
 	is_active = no
 }
 olvia_kabarism = { 
+	county = c_odessa
+	barony = b_olbia_ETEL
+	character_modifier = { 
+		name = holy_site_olvia_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
+olvia_merkabah = { 
 	county = c_odessa
 	barony = b_olbia_ETEL
 	character_modifier = { 
@@ -114757,6 +119075,14 @@ poszony_krishnaism = {
 	}
 	is_active = no
 }
+poszony_saura = { 
+	county = c_poszony
+	character_modifier = { 
+		name = holy_site_poszony_effect_name
+		levy_reinforcement_rate_same_faith = 0.2
+	}
+	is_active = no
+}
 poszony_ashari = { 
 	county = c_poszony
 	character_modifier = { 
@@ -114982,6 +119308,14 @@ poszony_samaritan = {
 	is_active = no
 }
 poszony_kabarism = { 
+	county = c_poszony
+	character_modifier = { 
+		name = holy_site_poszony_effect_name
+		levy_reinforcement_rate_same_faith = 0.2
+	}
+	is_active = no
+}
+poszony_merkabah = { 
 	county = c_poszony
 	character_modifier = { 
 		name = holy_site_poszony_effect_name
@@ -115613,6 +119947,14 @@ sarysyn_krishnaism = {
 	}
 	is_active = no
 }
+sarysyn_saura = { 
+	county = c_sarysyn
+	character_modifier = { 
+		name = holy_site_sarysyn_effect_name
+		men_at_arms_maintenance = -0.1
+	}
+	is_active = no
+}
 sarysyn_ashari = { 
 	county = c_sarysyn
 	character_modifier = { 
@@ -115838,6 +120180,14 @@ sarysyn_samaritan = {
 	is_active = no
 }
 sarysyn_kabarism = { 
+	county = c_sarysyn
+	character_modifier = { 
+		name = holy_site_sarysyn_effect_name
+		men_at_arms_maintenance = -0.1
+	}
+	is_active = no
+}
+sarysyn_merkabah = { 
 	county = c_sarysyn
 	character_modifier = { 
 		name = holy_site_sarysyn_effect_name
@@ -116516,6 +120866,15 @@ kara_khorum_krishnaism = {
 	}
 	is_active = no
 }
+kara_khorum_saura = { 
+	county = c_karakorum
+	character_modifier = { 
+		name = holy_site_kara_khorum_effect_name
+		knight_effectiveness_mult = 0.2
+		prowess_per_prestige_level = 1
+	}
+	is_active = no
+}
 kara_khorum_ashari = { 
 	county = c_karakorum
 	character_modifier = { 
@@ -116769,6 +121128,15 @@ kara_khorum_samaritan = {
 	is_active = no
 }
 kara_khorum_kabarism = { 
+	county = c_karakorum
+	character_modifier = { 
+		name = holy_site_kara_khorum_effect_name
+		knight_effectiveness_mult = 0.2
+		prowess_per_prestige_level = 1
+	}
+	is_active = no
+}
+kara_khorum_merkabah = { 
 	county = c_karakorum
 	character_modifier = { 
 		name = holy_site_kara_khorum_effect_name
@@ -117526,6 +121894,16 @@ qayaliq_krishnaism = {
 	}
 	is_active = no
 }
+qayaliq_saura = { 
+	county = c_qayaliq
+	character_modifier = { 
+		name = holy_site_qayaliq_effect_name
+		skirmishers_damage_mult = 0.1
+		light_cavalry_damage_mult = 0.1
+		archer_cavalry_damage_mult = 0.1
+	}
+	is_active = no
+}
 qayaliq_ashari = { 
 	county = c_qayaliq
 	character_modifier = { 
@@ -117807,6 +122185,16 @@ qayaliq_samaritan = {
 	is_active = no
 }
 qayaliq_kabarism = { 
+	county = c_qayaliq
+	character_modifier = { 
+		name = holy_site_qayaliq_effect_name
+		skirmishers_damage_mult = 0.1
+		light_cavalry_damage_mult = 0.1
+		archer_cavalry_damage_mult = 0.1
+	}
+	is_active = no
+}
+qayaliq_merkabah = { 
 	county = c_qayaliq
 	character_modifier = { 
 		name = holy_site_qayaliq_effect_name
@@ -118549,6 +122937,15 @@ tavan_bogd_krishnaism = {
 	}
 	is_active = no
 }
+tavan_bogd_saura = { 
+	county = c_tavan_bogd
+	character_modifier = { 
+		name = holy_site_tavan_bogd_effect_name
+		prowess_per_piety_level = 1
+		clergy_opinion = 5
+	}
+	is_active = no
+}
 tavan_bogd_ashari = { 
 	county = c_tavan_bogd
 	character_modifier = { 
@@ -118802,6 +123199,15 @@ tavan_bogd_samaritan = {
 	is_active = no
 }
 tavan_bogd_kabarism = { 
+	county = c_tavan_bogd
+	character_modifier = { 
+		name = holy_site_tavan_bogd_effect_name
+		prowess_per_piety_level = 1
+		clergy_opinion = 5
+	}
+	is_active = no
+}
+tavan_bogd_merkabah = { 
 	county = c_tavan_bogd
 	character_modifier = { 
 		name = holy_site_tavan_bogd_effect_name
@@ -119465,6 +123871,14 @@ preslav_krishnaism = {
 	}
 	is_active = no
 }
+preslav_saura = { 
+	county = c_dorostorum
+	character_modifier = { 
+		name = holy_site_preslav_effect_name
+		levy_size = 0.1
+	}
+	is_active = no
+}
 preslav_ashari = { 
 	county = c_dorostorum
 	character_modifier = { 
@@ -119690,6 +124104,14 @@ preslav_samaritan = {
 	is_active = no
 }
 preslav_kabarism = { 
+	county = c_dorostorum
+	character_modifier = { 
+		name = holy_site_preslav_effect_name
+		levy_size = 0.1
+	}
+	is_active = no
+}
+preslav_merkabah = { 
 	county = c_dorostorum
 	character_modifier = { 
 		name = holy_site_preslav_effect_name
@@ -120368,6 +124790,15 @@ athens_krishnaism = {
 	}
 	is_active = no
 }
+athens_saura = { 
+	county = c_attica
+	character_modifier = { 
+		name = holy_site_athens_effect_name
+		diplomacy = 1
+		stewardship = 1
+	}
+	is_active = no
+}
 athens_ashari = { 
 	county = c_attica
 	character_modifier = { 
@@ -120621,6 +125052,15 @@ athens_samaritan = {
 	is_active = no
 }
 athens_kabarism = { 
+	county = c_attica
+	character_modifier = { 
+		name = holy_site_athens_effect_name
+		diplomacy = 1
+		stewardship = 1
+	}
+	is_active = no
+}
+athens_merkabah = { 
 	county = c_attica
 	character_modifier = { 
 		name = holy_site_athens_effect_name
@@ -121284,6 +125724,14 @@ carthage_krishnaism = {
 	}
 	is_active = no
 }
+carthage_saura = { 
+	county = c_tunis
+	character_modifier = { 
+		name = holy_site_carthage_effect_name
+		dread_baseline_add = 5
+	}
+	is_active = no
+}
 carthage_ashari = { 
 	county = c_tunis
 	character_modifier = { 
@@ -121509,6 +125957,14 @@ carthage_samaritan = {
 	is_active = no
 }
 carthage_kabarism = { 
+	county = c_tunis
+	character_modifier = { 
+		name = holy_site_carthage_effect_name
+		dread_baseline_add = 5
+	}
+	is_active = no
+}
+carthage_merkabah = { 
 	county = c_tunis
 	character_modifier = { 
 		name = holy_site_carthage_effect_name
@@ -122187,6 +126643,15 @@ olympus_krishnaism = {
 	}
 	is_active = no
 }
+olympus_saura = { 
+	county = c_thessalia
+	barony = b_servia
+	character_modifier = { 
+		name = holy_site_olympus_effect_name
+		learning = 2
+	}
+	is_active = no
+}
 olympus_ashari = { 
 	county = c_thessalia
 	barony = b_servia
@@ -122440,6 +126905,15 @@ olympus_samaritan = {
 	is_active = no
 }
 olympus_kabarism = { 
+	county = c_thessalia
+	barony = b_servia
+	character_modifier = { 
+		name = holy_site_olympus_effect_name
+		learning = 2
+	}
+	is_active = no
+}
+olympus_merkabah = { 
 	county = c_thessalia
 	barony = b_servia
 	character_modifier = { 
@@ -123150,6 +127624,15 @@ sparta_krishnaism = {
 	}
 	is_active = no
 }
+sparta_saura = { 
+	county = c_laconia
+	character_modifier = { 
+		name = holy_site_sparta_effect_name
+		martial = 1
+		prowess = 1
+	}
+	is_active = no
+}
 sparta_ashari = { 
 	county = c_laconia
 	character_modifier = { 
@@ -123403,6 +127886,15 @@ sparta_samaritan = {
 	is_active = no
 }
 sparta_kabarism = { 
+	county = c_laconia
+	character_modifier = { 
+		name = holy_site_sparta_effect_name
+		martial = 1
+		prowess = 1
+	}
+	is_active = no
+}
+sparta_merkabah = { 
 	county = c_laconia
 	character_modifier = { 
 		name = holy_site_sparta_effect_name
@@ -124113,6 +128605,15 @@ kabul_krishnaism = {
 	}
 	is_active = no
 }
+kabul_saura = { 
+	county = c_kabul
+	character_modifier = { 
+		name = holy_site_kabul_effect_name
+		stewardship = 1
+		monthly_piety_gain_mult = 0.05
+	}
+	is_active = no
+}
 kabul_ashari = { 
 	county = c_kabul
 	character_modifier = { 
@@ -124366,6 +128867,15 @@ kabul_samaritan = {
 	is_active = no
 }
 kabul_kabarism = { 
+	county = c_kabul
+	character_modifier = { 
+		name = holy_site_kabul_effect_name
+		stewardship = 1
+		monthly_piety_gain_mult = 0.05
+	}
+	is_active = no
+}
+kabul_merkabah = { 
 	county = c_kabul
 	character_modifier = { 
 		name = holy_site_kabul_effect_name
@@ -125076,6 +129586,15 @@ multan_krishnaism = {
 	}
 	is_active = no
 }
+multan_saura = { 
+	county = c_multan
+	character_modifier = { 
+		name = holy_site_multan_effect_name
+		martial = 1
+		monthly_piety_gain_mult = 0.05
+	}
+	is_active = no
+}
 multan_ashari = { 
 	county = c_multan
 	character_modifier = { 
@@ -125329,6 +129848,15 @@ multan_samaritan = {
 	is_active = no
 }
 multan_kabarism = { 
+	county = c_multan
+	character_modifier = { 
+		name = holy_site_multan_effect_name
+		martial = 1
+		monthly_piety_gain_mult = 0.05
+	}
+	is_active = no
+}
+multan_merkabah = { 
 	county = c_multan
 	character_modifier = { 
 		name = holy_site_multan_effect_name
@@ -125992,6 +130520,14 @@ bost_krishnaism = {
 	}
 	is_active = no
 }
+bost_saura = { 
+	county = c_bost
+	character_modifier = { 
+		name = holy_site_bost_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
 bost_ashari = { 
 	county = c_bost
 	character_modifier = { 
@@ -126217,6 +130753,14 @@ bost_samaritan = {
 	is_active = no
 }
 bost_kabarism = { 
+	county = c_bost
+	character_modifier = { 
+		name = holy_site_bost_effect_name
+		same_faith_opinion = 5
+	}
+	is_active = no
+}
+bost_merkabah = { 
 	county = c_bost
 	character_modifier = { 
 		name = holy_site_bost_effect_name
@@ -126848,6 +131392,14 @@ khotan_krishnaism = {
 	}
 	is_active = no
 }
+khotan_saura = { 
+	county = c_khotan
+	character_modifier = { 
+		name = holy_site_khotan_effect_name
+		different_culture_opinion = 10
+	}
+	is_active = no
+}
 khotan_ashari = { 
 	county = c_khotan
 	character_modifier = { 
@@ -127073,6 +131625,14 @@ khotan_samaritan = {
 	is_active = no
 }
 khotan_kabarism = { 
+	county = c_khotan
+	character_modifier = { 
+		name = holy_site_khotan_effect_name
+		different_culture_opinion = 10
+	}
+	is_active = no
+}
+khotan_merkabah = { 
 	county = c_khotan
 	character_modifier = { 
 		name = holy_site_khotan_effect_name
@@ -127704,6 +132264,14 @@ balkh_krishnaism = {
 	}
 	is_active = no
 }
+balkh_saura = { 
+	county = c_balkh
+	character_modifier = { 
+		name = holy_site_balkh_effect_name
+		different_faith_opinion = 10
+	}
+	is_active = no
+}
 balkh_ashari = { 
 	county = c_balkh
 	character_modifier = { 
@@ -127929,6 +132497,14 @@ balkh_samaritan = {
 	is_active = no
 }
 balkh_kabarism = { 
+	county = c_balkh
+	character_modifier = { 
+		name = holy_site_balkh_effect_name
+		different_faith_opinion = 10
+	}
+	is_active = no
+}
+balkh_merkabah = { 
 	county = c_balkh
 	character_modifier = { 
 		name = holy_site_balkh_effect_name
@@ -128560,6 +133136,14 @@ lhasa_krishnaism = {
 	}
 	is_active = no
 }
+lhasa_saura = { 
+	county = c_lhasa
+	character_modifier = { 
+		name = holy_site_lhasa_effect_name
+		monthly_piety_gain_mult = 0.2
+	}
+	is_active = no
+}
 lhasa_ashari = { 
 	county = c_lhasa
 	character_modifier = { 
@@ -128785,6 +133369,14 @@ lhasa_samaritan = {
 	is_active = no
 }
 lhasa_kabarism = { 
+	county = c_lhasa
+	character_modifier = { 
+		name = holy_site_lhasa_effect_name
+		monthly_piety_gain_mult = 0.2
+	}
+	is_active = no
+}
+lhasa_merkabah = { 
 	county = c_lhasa
 	character_modifier = { 
 		name = holy_site_lhasa_effect_name
@@ -129416,6 +134008,14 @@ purang_krishnaism = {
 	}
 	is_active = no
 }
+purang_saura = { 
+	county = c_purang
+	character_modifier = { 
+		name = holy_site_purang_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
 purang_ashari = { 
 	county = c_purang
 	character_modifier = { 
@@ -129641,6 +134241,14 @@ purang_samaritan = {
 	is_active = no
 }
 purang_kabarism = { 
+	county = c_purang
+	character_modifier = { 
+		name = holy_site_purang_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
+purang_merkabah = { 
 	county = c_purang
 	character_modifier = { 
 		name = holy_site_purang_effect_name
@@ -130319,6 +134927,15 @@ tyumen_krishnaism = {
 	}
 	is_active = no
 }
+tyumen_saura = { 
+	county = c_tyumen
+	character_modifier = { 
+		name = holy_site_tyumen_effect_name
+		martial_per_piety_level = 1
+		raid_speed = 0.1
+	}
+	is_active = no
+}
 tyumen_ashari = { 
 	county = c_tyumen
 	character_modifier = { 
@@ -130572,6 +135189,15 @@ tyumen_samaritan = {
 	is_active = no
 }
 tyumen_kabarism = { 
+	county = c_tyumen
+	character_modifier = { 
+		name = holy_site_tyumen_effect_name
+		martial_per_piety_level = 1
+		raid_speed = 0.1
+	}
+	is_active = no
+}
+tyumen_merkabah = { 
 	county = c_tyumen
 	character_modifier = { 
 		name = holy_site_tyumen_effect_name
@@ -131235,6 +135861,14 @@ surgut_krishnaism = {
 	}
 	is_active = no
 }
+surgut_saura = { 
+	county = c_kazym
+	character_modifier = { 
+		name = holy_site_surgut_effect_name
+		health = 0.1
+	}
+	is_active = no
+}
 surgut_ashari = { 
 	county = c_kazym
 	character_modifier = { 
@@ -131460,6 +136094,14 @@ surgut_samaritan = {
 	is_active = no
 }
 surgut_kabarism = { 
+	county = c_kazym
+	character_modifier = { 
+		name = holy_site_surgut_effect_name
+		health = 0.1
+	}
+	is_active = no
+}
+surgut_merkabah = { 
 	county = c_kazym
 	character_modifier = { 
 		name = holy_site_surgut_effect_name
@@ -132138,6 +136780,15 @@ ob_krishnaism = {
 	}
 	is_active = no
 }
+ob_saura = { 
+	county = c_ob
+	character_modifier = { 
+		name = holy_site_ob_effect_name
+		learning = 1
+		fertility = 0.1
+	}
+	is_active = no
+}
 ob_ashari = { 
 	county = c_ob
 	character_modifier = { 
@@ -132391,6 +137042,15 @@ ob_samaritan = {
 	is_active = no
 }
 ob_kabarism = { 
+	county = c_ob
+	character_modifier = { 
+		name = holy_site_ob_effect_name
+		learning = 1
+		fertility = 0.1
+	}
+	is_active = no
+}
+ob_merkabah = { 
 	county = c_ob
 	character_modifier = { 
 		name = holy_site_ob_effect_name
@@ -133054,6 +137714,14 @@ olkhon_krishnaism = {
 	}
 	is_active = no
 }
+olkhon_saura = { 
+	county = c_olkhon
+	character_modifier = { 
+		name = holy_site_olkhon_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
 olkhon_ashari = { 
 	county = c_olkhon
 	character_modifier = { 
@@ -133279,6 +137947,14 @@ olkhon_samaritan = {
 	is_active = no
 }
 olkhon_kabarism = { 
+	county = c_olkhon
+	character_modifier = { 
+		name = holy_site_olkhon_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
+olkhon_merkabah = { 
 	county = c_olkhon
 	character_modifier = { 
 		name = holy_site_olkhon_effect_name
@@ -133910,6 +138586,14 @@ viscaya_krishnaism = {
 	}
 	is_active = no
 }
+viscaya_saura = { 
+	county = c_viscaya
+	character_modifier = { 
+		name = holy_site_viscaya_effect_name
+		coastal_advantage = 8
+	}
+	is_active = no
+}
 viscaya_ashari = { 
 	county = c_viscaya
 	character_modifier = { 
@@ -134135,6 +138819,14 @@ viscaya_samaritan = {
 	is_active = no
 }
 viscaya_kabarism = { 
+	county = c_viscaya
+	character_modifier = { 
+		name = holy_site_viscaya_effect_name
+		coastal_advantage = 8
+	}
+	is_active = no
+}
+viscaya_merkabah = { 
 	county = c_viscaya
 	character_modifier = { 
 		name = holy_site_viscaya_effect_name
@@ -134766,6 +139458,14 @@ aneto_krishnaism = {
 	}
 	is_active = no
 }
+aneto_saura = { 
+	county = c_alto_aragon
+	character_modifier = { 
+		name = holy_site_aneto_effect_name
+		monthly_prestige_gain_per_knight_add = 0.03
+	}
+	is_active = no
+}
 aneto_ashari = { 
 	county = c_alto_aragon
 	character_modifier = { 
@@ -134991,6 +139691,14 @@ aneto_samaritan = {
 	is_active = no
 }
 aneto_kabarism = { 
+	county = c_alto_aragon
+	character_modifier = { 
+		name = holy_site_aneto_effect_name
+		monthly_prestige_gain_per_knight_add = 0.03
+	}
+	is_active = no
+}
+aneto_merkabah = { 
 	county = c_alto_aragon
 	character_modifier = { 
 		name = holy_site_aneto_effect_name
@@ -135622,6 +140330,14 @@ bordeaux_krishnaism = {
 	}
 	is_active = no
 }
+bordeaux_saura = { 
+	county = c_bordeaux
+	character_modifier = { 
+		name = holy_site_bordeaux_effect_name
+		monthly_county_control_change_factor = 0.5
+	}
+	is_active = no
+}
 bordeaux_ashari = { 
 	county = c_bordeaux
 	character_modifier = { 
@@ -135847,6 +140563,14 @@ bordeaux_samaritan = {
 	is_active = no
 }
 bordeaux_kabarism = { 
+	county = c_bordeaux
+	character_modifier = { 
+		name = holy_site_bordeaux_effect_name
+		monthly_county_control_change_factor = 0.5
+	}
+	is_active = no
+}
+bordeaux_merkabah = { 
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
@@ -136525,6 +141249,15 @@ awkar_krishnaism = {
 	}
 	is_active = no
 }
+awkar_saura = { 
+	county = c_awkar
+	character_modifier = { 
+		name = holy_site_awkar_effect_name
+		knight_limit = 1
+		light_cavalry_toughness_mult = 0.1
+	}
+	is_active = no
+}
 awkar_ashari = { 
 	county = c_awkar
 	character_modifier = { 
@@ -136778,6 +141511,15 @@ awkar_samaritan = {
 	is_active = no
 }
 awkar_kabarism = { 
+	county = c_awkar
+	character_modifier = { 
+		name = holy_site_awkar_effect_name
+		knight_limit = 1
+		light_cavalry_toughness_mult = 0.1
+	}
+	is_active = no
+}
+awkar_merkabah = { 
 	county = c_awkar
 	character_modifier = { 
 		name = holy_site_awkar_effect_name
@@ -137488,6 +142230,15 @@ jenne_krishnaism = {
 	}
 	is_active = no
 }
+jenne_saura = { 
+	county = c_jenne
+	character_modifier = { 
+		name = holy_site_jenne_effect_name
+		diplomacy = 1
+		councillor_opinion = 5
+	}
+	is_active = no
+}
 jenne_ashari = { 
 	county = c_jenne
 	character_modifier = { 
@@ -137741,6 +142492,15 @@ jenne_samaritan = {
 	is_active = no
 }
 jenne_kabarism = { 
+	county = c_jenne
+	character_modifier = { 
+		name = holy_site_jenne_effect_name
+		diplomacy = 1
+		councillor_opinion = 5
+	}
+	is_active = no
+}
+jenne_merkabah = { 
 	county = c_jenne
 	character_modifier = { 
 		name = holy_site_jenne_effect_name
@@ -138451,6 +143211,15 @@ niani_krishnaism = {
 	}
 	is_active = no
 }
+niani_saura = { 
+	county = c_niani
+	character_modifier = { 
+		name = holy_site_niani_effect_name
+		monthly_tyranny = -0.1
+		tyranny_gain_mult = -0.2
+	}
+	is_active = no
+}
 niani_ashari = { 
 	county = c_niani
 	character_modifier = { 
@@ -138704,6 +143473,15 @@ niani_samaritan = {
 	is_active = no
 }
 niani_kabarism = { 
+	county = c_niani
+	character_modifier = { 
+		name = holy_site_niani_effect_name
+		monthly_tyranny = -0.1
+		tyranny_gain_mult = -0.2
+	}
+	is_active = no
+}
+niani_merkabah = { 
 	county = c_niani
 	character_modifier = { 
 		name = holy_site_niani_effect_name
@@ -139414,6 +144192,15 @@ kukiya_krishnaism = {
 	}
 	is_active = no
 }
+kukiya_saura = { 
+	county = c_kukiya
+	character_modifier = { 
+		name = holy_site_kukiya_effect_name
+		monthly_piety_gain_per_knight_mult = 0.01
+		monthly_prestige_gain_per_knight_mult = 0.01
+	}
+	is_active = no
+}
 kukiya_ashari = { 
 	county = c_kukiya
 	character_modifier = { 
@@ -139667,6 +144454,15 @@ kukiya_samaritan = {
 	is_active = no
 }
 kukiya_kabarism = { 
+	county = c_kukiya
+	character_modifier = { 
+		name = holy_site_kukiya_effect_name
+		monthly_piety_gain_per_knight_mult = 0.01
+		monthly_prestige_gain_per_knight_mult = 0.01
+	}
+	is_active = no
+}
+kukiya_merkabah = { 
 	county = c_kukiya
 	character_modifier = { 
 		name = holy_site_kukiya_effect_name
@@ -140377,6 +145173,15 @@ wadan_krishnaism = {
 	}
 	is_active = no
 }
+wadan_saura = { 
+	county = c_wadan
+	character_modifier = { 
+		name = holy_site_wadan_effect_name
+		martial = 1
+		supply_duration = 0.25
+	}
+	is_active = no
+}
 wadan_ashari = { 
 	county = c_wadan
 	character_modifier = { 
@@ -140630,6 +145435,15 @@ wadan_samaritan = {
 	is_active = no
 }
 wadan_kabarism = { 
+	county = c_wadan
+	character_modifier = { 
+		name = holy_site_wadan_effect_name
+		martial = 1
+		supply_duration = 0.25
+	}
+	is_active = no
+}
+wadan_merkabah = { 
 	county = c_wadan
 	character_modifier = { 
 		name = holy_site_wadan_effect_name
@@ -141340,6 +146154,15 @@ daura_krishnaism = {
 	}
 	is_active = no
 }
+daura_saura = { 
+	county = c_daura
+	character_modifier = { 
+		name = holy_site_daura_effect_name
+		monthly_prestige_gain_per_knight_mult = 0.02
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
 daura_ashari = { 
 	county = c_daura
 	character_modifier = { 
@@ -141593,6 +146416,15 @@ daura_samaritan = {
 	is_active = no
 }
 daura_kabarism = { 
+	county = c_daura
+	character_modifier = { 
+		name = holy_site_daura_effect_name
+		monthly_prestige_gain_per_knight_mult = 0.02
+		knight_effectiveness_mult = 0.1
+	}
+	is_active = no
+}
+daura_merkabah = { 
 	county = c_daura
 	character_modifier = { 
 		name = holy_site_daura_effect_name
@@ -142256,6 +147088,14 @@ garumele_krishnaism = {
 	}
 	is_active = no
 }
+garumele_saura = { 
+	county = c_garumele
+	character_modifier = { 
+		name = holy_site_garumele_effect_name
+		county_opinion_add = 5
+	}
+	is_active = no
+}
 garumele_ashari = { 
 	county = c_garumele
 	character_modifier = { 
@@ -142481,6 +147321,14 @@ garumele_samaritan = {
 	is_active = no
 }
 garumele_kabarism = { 
+	county = c_garumele
+	character_modifier = { 
+		name = holy_site_garumele_effect_name
+		county_opinion_add = 5
+	}
+	is_active = no
+}
+garumele_merkabah = { 
 	county = c_garumele
 	character_modifier = { 
 		name = holy_site_garumele_effect_name
@@ -143112,6 +147960,14 @@ igbo_krishnaism = {
 	}
 	is_active = no
 }
+igbo_saura = { 
+	county = c_igbo
+	character_modifier = { 
+		name = holy_site_igbo_effect_name
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
 igbo_ashari = { 
 	county = c_igbo
 	character_modifier = { 
@@ -143337,6 +148193,14 @@ igbo_samaritan = {
 	is_active = no
 }
 igbo_kabarism = { 
+	county = c_igbo
+	character_modifier = { 
+		name = holy_site_igbo_effect_name
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
+igbo_merkabah = { 
 	county = c_igbo
 	character_modifier = { 
 		name = holy_site_igbo_effect_name
@@ -143968,6 +148832,14 @@ el_fasher_krishnaism = {
 	}
 	is_active = no
 }
+el_fasher_saura = { 
+	county = c_el_fasher
+	character_modifier = { 
+		name = holy_site_el_fasher_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
 el_fasher_ashari = { 
 	county = c_el_fasher
 	character_modifier = { 
@@ -144193,6 +149065,14 @@ el_fasher_samaritan = {
 	is_active = no
 }
 el_fasher_kabarism = { 
+	county = c_el_fasher
+	character_modifier = { 
+		name = holy_site_el_fasher_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
+el_fasher_merkabah = { 
 	county = c_el_fasher
 	character_modifier = { 
 		name = holy_site_el_fasher_effect_name
@@ -144824,6 +149704,14 @@ wandala_krishnaism = {
 	}
 	is_active = no
 }
+wandala_saura = { 
+	county = c_wandala
+	character_modifier = { 
+		name = holy_site_wandala_effect_name
+		drylands_advantage = 5
+	}
+	is_active = no
+}
 wandala_ashari = { 
 	county = c_wandala
 	character_modifier = { 
@@ -145049,6 +149937,14 @@ wandala_samaritan = {
 	is_active = no
 }
 wandala_kabarism = { 
+	county = c_wandala
+	character_modifier = { 
+		name = holy_site_wandala_effect_name
+		drylands_advantage = 5
+	}
+	is_active = no
+}
+wandala_merkabah = { 
 	county = c_wandala
 	character_modifier = { 
 		name = holy_site_wandala_effect_name
@@ -145727,6 +150623,15 @@ kisi_krishnaism = {
 	}
 	is_active = no
 }
+kisi_saura = { 
+	county = c_kisi
+	character_modifier = { 
+		name = holy_site_kisi_effect_name
+		monthly_prestige_gain_per_knight_mult = 0.02
+		build_prestige_cost = -0.2
+	}
+	is_active = no
+}
 kisi_ashari = { 
 	county = c_kisi
 	character_modifier = { 
@@ -145980,6 +150885,15 @@ kisi_samaritan = {
 	is_active = no
 }
 kisi_kabarism = { 
+	county = c_kisi
+	character_modifier = { 
+		name = holy_site_kisi_effect_name
+		monthly_prestige_gain_per_knight_mult = 0.02
+		build_prestige_cost = -0.2
+	}
+	is_active = no
+}
+kisi_merkabah = { 
 	county = c_kisi
 	character_modifier = { 
 		name = holy_site_kisi_effect_name
@@ -146643,6 +151557,14 @@ sherbro_krishnaism = {
 	}
 	is_active = no
 }
+sherbro_saura = { 
+	county = c_sherbro
+	character_modifier = { 
+		name = holy_site_sherbro_effect_name
+		same_faith_opinion = 10
+	}
+	is_active = no
+}
 sherbro_ashari = { 
 	county = c_sherbro
 	character_modifier = { 
@@ -146868,6 +151790,14 @@ sherbro_samaritan = {
 	is_active = no
 }
 sherbro_kabarism = { 
+	county = c_sherbro
+	character_modifier = { 
+		name = holy_site_sherbro_effect_name
+		same_faith_opinion = 10
+	}
+	is_active = no
+}
+sherbro_merkabah = { 
 	county = c_sherbro
 	character_modifier = { 
 		name = holy_site_sherbro_effect_name
@@ -147546,6 +152476,15 @@ kayor_krishnaism = {
 	}
 	is_active = no
 }
+kayor_saura = { 
+	county = c_kayor
+	character_modifier = { 
+		name = holy_site_kayor_effect_name
+		owned_personal_scheme_success_chance_add = 5
+		diplomacy = 1
+	}
+	is_active = no
+}
 kayor_ashari = { 
 	county = c_kayor
 	character_modifier = { 
@@ -147799,6 +152738,15 @@ kayor_samaritan = {
 	is_active = no
 }
 kayor_kabarism = { 
+	county = c_kayor
+	character_modifier = { 
+		name = holy_site_kayor_effect_name
+		owned_personal_scheme_success_chance_add = 5
+		diplomacy = 1
+	}
+	is_active = no
+}
+kayor_merkabah = { 
 	county = c_kayor
 	character_modifier = { 
 		name = holy_site_kayor_effect_name
@@ -148462,6 +153410,14 @@ kasa_krishnaism = {
 	}
 	is_active = no
 }
+kasa_saura = { 
+	county = c_kasa
+	character_modifier = { 
+		name = holy_site_kasa_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
 kasa_ashari = { 
 	county = c_kasa
 	character_modifier = { 
@@ -148687,6 +153643,14 @@ kasa_samaritan = {
 	is_active = no
 }
 kasa_kabarism = { 
+	county = c_kasa
+	character_modifier = { 
+		name = holy_site_kasa_effect_name
+		diplomacy_per_piety_level = 1
+	}
+	is_active = no
+}
+kasa_merkabah = { 
 	county = c_kasa
 	character_modifier = { 
 		name = holy_site_kasa_effect_name
@@ -149365,6 +154329,15 @@ bono_krishnaism = {
 	}
 	is_active = no
 }
+bono_saura = { 
+	county = c_bono
+	character_modifier = { 
+		name = holy_site_bono_effect_name
+		men_at_arms_maintenance = -0.05
+		personal_scheme_power_add = 5
+	}
+	is_active = no
+}
 bono_ashari = { 
 	county = c_bono
 	character_modifier = { 
@@ -149618,6 +154591,15 @@ bono_samaritan = {
 	is_active = no
 }
 bono_kabarism = { 
+	county = c_bono
+	character_modifier = { 
+		name = holy_site_bono_effect_name
+		men_at_arms_maintenance = -0.05
+		personal_scheme_power_add = 5
+	}
+	is_active = no
+}
+bono_merkabah = { 
 	county = c_bono
 	character_modifier = { 
 		name = holy_site_bono_effect_name
@@ -150328,6 +155310,15 @@ kumasi_krishnaism = {
 	}
 	is_active = no
 }
+kumasi_saura = { 
+	county = c_kumasi
+	character_modifier = { 
+		name = holy_site_kumasi_effect_name
+		learning = 1
+		short_reign_duration_mult = -0.25
+	}
+	is_active = no
+}
 kumasi_ashari = { 
 	county = c_kumasi
 	character_modifier = { 
@@ -150581,6 +155572,15 @@ kumasi_samaritan = {
 	is_active = no
 }
 kumasi_kabarism = { 
+	county = c_kumasi
+	character_modifier = { 
+		name = holy_site_kumasi_effect_name
+		learning = 1
+		short_reign_duration_mult = -0.25
+	}
+	is_active = no
+}
+kumasi_merkabah = { 
 	county = c_kumasi
 	character_modifier = { 
 		name = holy_site_kumasi_effect_name
@@ -151244,6 +156244,14 @@ ife_krishnaism = {
 	}
 	is_active = no
 }
+ife_saura = { 
+	county = c_ife
+	character_modifier = { 
+		name = holy_site_ife_effect_name
+		monthly_piety_gain_mult = 0.2
+	}
+	is_active = no
+}
 ife_ashari = { 
 	county = c_ife
 	character_modifier = { 
@@ -151469,6 +156477,14 @@ ife_samaritan = {
 	is_active = no
 }
 ife_kabarism = { 
+	county = c_ife
+	character_modifier = { 
+		name = holy_site_ife_effect_name
+		monthly_piety_gain_mult = 0.2
+	}
+	is_active = no
+}
+ife_merkabah = { 
 	county = c_ife
 	character_modifier = { 
 		name = holy_site_ife_effect_name
@@ -152100,6 +157116,14 @@ nikki_krishnaism = {
 	}
 	is_active = no
 }
+nikki_saura = { 
+	county = c_nikki
+	character_modifier = { 
+		name = holy_site_nikki_effect_name
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
 nikki_ashari = { 
 	county = c_nikki
 	character_modifier = { 
@@ -152325,6 +157349,14 @@ nikki_samaritan = {
 	is_active = no
 }
 nikki_kabarism = { 
+	county = c_nikki
+	character_modifier = { 
+		name = holy_site_nikki_effect_name
+		learning_per_piety_level = 1
+	}
+	is_active = no
+}
+nikki_merkabah = { 
 	county = c_nikki
 	character_modifier = { 
 		name = holy_site_nikki_effect_name
@@ -152956,6 +157988,14 @@ aswan_krishnaism = {
 	}
 	is_active = no
 }
+aswan_saura = { 
+	county = c_aswan
+	character_modifier = { 
+		name = holy_site_aswan_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
 aswan_ashari = { 
 	county = c_aswan
 	character_modifier = { 
@@ -153181,6 +158221,14 @@ aswan_samaritan = {
 	is_active = no
 }
 aswan_kabarism = { 
+	county = c_aswan
+	character_modifier = { 
+		name = holy_site_aswan_effect_name
+		stewardship_per_piety_level = 1
+	}
+	is_active = no
+}
+aswan_merkabah = { 
 	county = c_aswan
 	character_modifier = { 
 		name = holy_site_aswan_effect_name
@@ -153671,6 +158719,11 @@ wadi_el_milk_krishnaism = {
 	flag = wadi_el_milk_conversion_resistance_bonus
 	is_active = no
 }
+wadi_el_milk_saura = { 
+	county = c_wadi_el-milk
+	flag = wadi_el_milk_conversion_resistance_bonus
+	is_active = no
+}
 wadi_el_milk_ashari = { 
 	county = c_wadi_el-milk
 	flag = wadi_el_milk_conversion_resistance_bonus
@@ -153812,6 +158865,11 @@ wadi_el_milk_samaritan = {
 	is_active = no
 }
 wadi_el_milk_kabarism = { 
+	county = c_wadi_el-milk
+	flag = wadi_el_milk_conversion_resistance_bonus
+	is_active = no
+}
+wadi_el_milk_merkabah = { 
 	county = c_wadi_el-milk
 	flag = wadi_el_milk_conversion_resistance_bonus
 	is_active = no
@@ -154347,6 +159405,14 @@ naqis_krishnaism = {
 	}
 	is_active = no
 }
+naqis_saura = { 
+	county = c_naqis
+	character_modifier = { 
+		name = holy_site_naqis_effect_name
+		martial = 2
+	}
+	is_active = no
+}
 naqis_ashari = { 
 	county = c_naqis
 	character_modifier = { 
@@ -154572,6 +159638,14 @@ naqis_samaritan = {
 	is_active = no
 }
 naqis_kabarism = { 
+	county = c_naqis
+	character_modifier = { 
+		name = holy_site_naqis_effect_name
+		martial = 2
+	}
+	is_active = no
+}
+naqis_merkabah = { 
 	county = c_naqis
 	character_modifier = { 
 		name = holy_site_naqis_effect_name
@@ -155203,6 +160277,14 @@ sennar_krishnaism = {
 	}
 	is_active = no
 }
+sennar_saura = { 
+	county = c_sennar
+	character_modifier = { 
+		name = holy_site_sennar_effect_name
+		diplomacy = 2
+	}
+	is_active = no
+}
 sennar_ashari = { 
 	county = c_sennar
 	character_modifier = { 
@@ -155428,6 +160510,14 @@ sennar_samaritan = {
 	is_active = no
 }
 sennar_kabarism = { 
+	county = c_sennar
+	character_modifier = { 
+		name = holy_site_sennar_effect_name
+		diplomacy = 2
+	}
+	is_active = no
+}
+sennar_merkabah = { 
 	county = c_sennar
 	character_modifier = { 
 		name = holy_site_sennar_effect_name
@@ -156153,6 +161243,16 @@ tenerife_krishnaism = {
 	}
 	is_active = no
 }
+tenerife_saura = { 
+	county = c_canarias
+	barony = b_tenerife
+	character_modifier = { 
+		name = holy_site_tenerife_effect_name
+		hills_development_growth_factor = 0.25
+		monthly_piety_gain_per_dread_add = 0.03
+	}
+	is_active = no
+}
 tenerife_ashari = { 
 	county = c_canarias
 	barony = b_tenerife
@@ -156434,6 +161534,16 @@ tenerife_samaritan = {
 	is_active = no
 }
 tenerife_kabarism = { 
+	county = c_canarias
+	barony = b_tenerife
+	character_modifier = { 
+		name = holy_site_tenerife_effect_name
+		hills_development_growth_factor = 0.25
+		monthly_piety_gain_per_dread_add = 0.03
+	}
+	is_active = no
+}
+tenerife_merkabah = { 
 	county = c_canarias
 	barony = b_tenerife
 	character_modifier = { 
@@ -157223,6 +162333,16 @@ cartagena_krishnaism = {
 	}
 	is_active = no
 }
+cartagena_saura = { 
+	county = c_murcia
+	barony = b_cartagena
+	character_modifier = { 
+		name = holy_site_cartagena_effect_name
+		title_creation_cost_mult = -0.15
+		men_at_arms_maintenance_per_dread_mult = -0.002
+	}
+	is_active = no
+}
 cartagena_ashari = { 
 	county = c_murcia
 	barony = b_cartagena
@@ -157504,6 +162624,16 @@ cartagena_samaritan = {
 	is_active = no
 }
 cartagena_kabarism = { 
+	county = c_murcia
+	barony = b_cartagena
+	character_modifier = { 
+		name = holy_site_cartagena_effect_name
+		title_creation_cost_mult = -0.15
+		men_at_arms_maintenance_per_dread_mult = -0.002
+	}
+	is_active = no
+}
+cartagena_merkabah = { 
 	county = c_murcia
 	barony = b_cartagena
 	character_modifier = { 
@@ -158246,6 +163376,15 @@ madiera_krishnaism = {
 	}
 	is_active = no
 }
+madiera_saura = { 
+	county = c_madeira
+	character_modifier = { 
+		name = holy_site_madeira_effect_name
+		naval_movement_speed_mult = 0.2
+		coastal_advantage = 5
+	}
+	is_active = no
+}
 madiera_ashari = { 
 	county = c_madeira
 	character_modifier = { 
@@ -158499,6 +163638,15 @@ madiera_samaritan = {
 	is_active = no
 }
 madiera_kabarism = { 
+	county = c_madeira
+	character_modifier = { 
+		name = holy_site_madeira_effect_name
+		naval_movement_speed_mult = 0.2
+		coastal_advantage = 5
+	}
+	is_active = no
+}
+madiera_merkabah = { 
 	county = c_madeira
 	character_modifier = { 
 		name = holy_site_madeira_effect_name
@@ -159209,6 +164357,15 @@ danakil_krishnaism = {
 	}
 	is_active = no
 }
+danakil_saura = { 
+	county = c_danakil
+	character_modifier = { 
+		name = holy_site_danakil_effect_name
+		learning = 1
+		personal_scheme_power_add = 5
+	}
+	is_active = no
+}
 danakil_ashari = { 
 	county = c_danakil
 	character_modifier = { 
@@ -159462,6 +164619,15 @@ danakil_samaritan = {
 	is_active = no
 }
 danakil_kabarism = { 
+	county = c_danakil
+	character_modifier = { 
+		name = holy_site_danakil_effect_name
+		learning = 1
+		personal_scheme_power_add = 5
+	}
+	is_active = no
+}
+danakil_merkabah = { 
 	county = c_danakil
 	character_modifier = { 
 		name = holy_site_danakil_effect_name
@@ -160172,6 +165338,15 @@ kaffa_krishnaism = {
 	}
 	is_active = no
 }
+kaffa_saura = { 
+	county = c_kaffa
+	character_modifier = { 
+		name = holy_site_kaffa_effect_name
+		martial_per_piety_level = 1
+		raid_speed = 0.1
+	}
+	is_active = no
+}
 kaffa_ashari = { 
 	county = c_kaffa
 	character_modifier = { 
@@ -160425,6 +165600,15 @@ kaffa_samaritan = {
 	is_active = no
 }
 kaffa_kabarism = { 
+	county = c_kaffa
+	character_modifier = { 
+		name = holy_site_kaffa_effect_name
+		martial_per_piety_level = 1
+		raid_speed = 0.1
+	}
+	is_active = no
+}
+kaffa_merkabah = { 
 	county = c_kaffa
 	character_modifier = { 
 		name = holy_site_kaffa_effect_name
@@ -161088,6 +166272,14 @@ harar_krishnaism = {
 	}
 	is_active = no
 }
+harar_saura = { 
+	county = c_harar
+	character_modifier = { 
+		name = holy_site_harar_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
 harar_ashari = { 
 	county = c_harar
 	character_modifier = { 
@@ -161313,6 +166505,14 @@ harar_samaritan = {
 	is_active = no
 }
 harar_kabarism = { 
+	county = c_harar
+	character_modifier = { 
+		name = holy_site_harar_effect_name
+		monthly_piety_gain_mult = 0.1
+	}
+	is_active = no
+}
+harar_merkabah = { 
 	county = c_harar
 	character_modifier = { 
 		name = holy_site_harar_effect_name
@@ -161944,6 +167144,14 @@ makhir_krishnaism = {
 	}
 	is_active = no
 }
+makhir_saura = { 
+	county = c_makhir
+	character_modifier = { 
+		name = holy_site_makhir_effect_name
+		diplomacy = 2
+	}
+	is_active = no
+}
 makhir_ashari = { 
 	county = c_makhir
 	character_modifier = { 
@@ -162169,6 +167377,14 @@ makhir_samaritan = {
 	is_active = no
 }
 makhir_kabarism = { 
+	county = c_makhir
+	character_modifier = { 
+		name = holy_site_makhir_effect_name
+		diplomacy = 2
+	}
+	is_active = no
+}
+makhir_merkabah = { 
 	county = c_makhir
 	character_modifier = { 
 		name = holy_site_makhir_effect_name
@@ -162800,6 +168016,14 @@ mogadishu_krishnaism = {
 	}
 	is_active = no
 }
+mogadishu_saura = { 
+	county = c_mogadishu
+	character_modifier = { 
+		name = holy_site_mogadishu_effect_name
+		clergy_opinion = 5
+	}
+	is_active = no
+}
 mogadishu_ashari = { 
 	county = c_mogadishu
 	character_modifier = { 
@@ -163025,6 +168249,14 @@ mogadishu_samaritan = {
 	is_active = no
 }
 mogadishu_kabarism = { 
+	county = c_mogadishu
+	character_modifier = { 
+		name = holy_site_mogadishu_effect_name
+		clergy_opinion = 5
+	}
+	is_active = no
+}
+mogadishu_merkabah = { 
 	county = c_mogadishu
 	character_modifier = { 
 		name = holy_site_mogadishu_effect_name
@@ -163703,6 +168935,15 @@ gilgit_krishnaism = {
 	}
 	is_active = no
 }
+gilgit_saura = { 
+	county = c_gilgit
+	character_modifier = { 
+		name = holy_site_gilgit_effect_name
+		martial = 1
+		stewardship = 1
+	}
+	is_active = no
+}
 gilgit_ashari = { 
 	county = c_gilgit
 	character_modifier = { 
@@ -163956,6 +169197,15 @@ gilgit_samaritan = {
 	is_active = no
 }
 gilgit_kabarism = { 
+	county = c_gilgit
+	character_modifier = { 
+		name = holy_site_gilgit_effect_name
+		martial = 1
+		stewardship = 1
+	}
+	is_active = no
+}
+gilgit_merkabah = { 
 	county = c_gilgit
 	character_modifier = { 
 		name = holy_site_gilgit_effect_name
@@ -164666,6 +169916,15 @@ suzhou_krishnaism = {
 	}
 	is_active = no
 }
+suzhou_saura = { 
+	county = c_suzhou
+	character_modifier = { 
+		name = holy_site_suzhou_effect_name
+		diplomacy = 1
+		martial = 1
+	}
+	is_active = no
+}
 suzhou_ashari = { 
 	county = c_suzhou
 	character_modifier = { 
@@ -164919,6 +170178,15 @@ suzhou_samaritan = {
 	is_active = no
 }
 suzhou_kabarism = { 
+	county = c_suzhou
+	character_modifier = { 
+		name = holy_site_suzhou_effect_name
+		diplomacy = 1
+		martial = 1
+	}
+	is_active = no
+}
+suzhou_merkabah = { 
 	county = c_suzhou
 	character_modifier = { 
 		name = holy_site_suzhou_effect_name

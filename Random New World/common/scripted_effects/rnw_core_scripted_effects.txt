@@ -62,6 +62,12 @@
                     }
                     rnw_pick_random_doctrine_muhammad_succession_effect = yes
                 }
+                if = {
+                    limit = {
+                        religion_tag = judaism_religion
+                    }
+                    rnw_pick_random_doctrine_temple_authority_effect = yes
+                }
 
                 rnw_pick_random_doctrine_core_tenets_effect = yes
                 rnw_pick_random_doctrine_core_tenets_effect = yes
