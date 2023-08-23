@@ -9,9 +9,6 @@ piety_cost_alternative_pattern = regex.compile(r"piety_cost\s*=\s(\w+)")
 is_shown_pattern = regex.compile(r"is_shown\s*=\s*{(\s*((?:\w+\s*=\s*{(?2)}|[^{}])*))}")
 can_pick_pattern = regex.compile(r"can_pick\s*=\s*{(\s*((?:\w+\s*=\s*{(?2)}|[^{}])*))}")
 comment_pattern = regex.compile(r"(#)[^\n]*")
-religion_doctrine_preference_pattern = regex.compile(r"has_doctrine = (\w+)")
-religion_doctrine_preference_replacement = r"is_target_in_variable_list = { name = religion_doctrine_preferences target = flag:\1 }"
-
 game_path = "C:\Program Files (x86)\Steam\steamapps\common\Crusader Kings III\game" # Can be mod path too
 
 cost_chance_conversion = (
@@ -35,6 +32,10 @@ body_replacements = (
     (r"if\s*=\s*{\s*limit\s*=\s*{\s*has_doctrine\s*=\s*\w+\s*}\s*multiply\s*=\s*faith_unchanged_doctrine_cost_mult\s*}\s*((?:else_if|else)\s*=\s*{\s*((?:\w+\s*=\s*{(?2)}|[^{}])*)}\s*)*", r""),
     (r"NAND\s*=\s*{\s*exists\s*=\s*religious_head\s*religious_head.culture\s*=\s*{\s*has_cultural_parameter\s*=\s*[a-z_]*\s*}\s*}", r"")
 )
+religion_doctrine_replacements = (
+    (r"has_doctrine = (\w+)", r"is_target_in_variable_list = { name = religion_doctrine_preferences target = flag:\1 }"),
+    (r"religion_tag = (\w+)", r"this = religion:\1")
+)
 doctrine_groups_to_skip = (
     "is_christian_faith",
     "is_islamic_faith",
@@ -48,7 +49,8 @@ doctrine_groups_to_skip = (
     "hostility_group",
     "is_eastern_faith",
     "is_gnostic_faith",
-    "adoptionist_school"
+    "adoptionist_school",
+    "not_allowed_to_hof"
 )
 extra_modifiers = {
     "doctrine_theocracy_temporal": "multiply = rnw_doctrine_theocracy_temporal_multiplier\n",
@@ -169,9 +171,10 @@ for doctrine_group in doctrine_groups:
             }}
             add_doctrine = {name}
         }}"""
-
-        trigger = religion_doctrine_preference_pattern.sub(religion_doctrine_preference_replacement, trigger)
-        weight = religion_doctrine_preference_pattern.sub(religion_doctrine_preference_replacement, weight)
+        
+        for i in religion_doctrine_replacements:
+            trigger = regex.sub(i[0], i[1], trigger)
+            weight  = regex.sub(i[0], i[1], weight)
 
         pick_group_religion += f"""
         0 = {{
@@ -195,6 +198,13 @@ for doctrine_group in doctrine_groups:
     pick_group_religion += "\n}\n}\n"
     pick_random_doctrines += pick_group + pick_group_religion
 
+remove_all_doctrines += f"""
+        if = {{
+            limit = {{
+                has_doctrine = special_doctrine_not_allowed_to_hof
+            }}
+            remove_doctrine = special_doctrine_not_allowed_to_hof
+        }}"""
 remove_all_doctrines += "\n}\n"
 output = pick_random_doctrines + pick_group_religion + remove_all_doctrines
 
