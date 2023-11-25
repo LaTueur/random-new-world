@@ -237,6 +237,7 @@ rnw_family_generation_and_connection_effect = {
         if = {
             limit  = {
                 has_game_rule = across_realms_rnw_family_generation
+                always = no
             }
             rnw_select_percent_of_list_to_target_list_effect = {
                 LIST = real_rulers
