@@ -50,7 +50,8 @@ doctrine_groups_to_skip = (
     "is_eastern_faith",
     "is_gnostic_faith",
     "adoptionist_school",
-    "not_allowed_to_hof"
+    "not_allowed_to_hof",
+    "has_jizya_doctrine"
 )
 extra_modifiers = {
     "doctrine_theocracy_temporal": "multiply = rnw_doctrine_theocracy_temporal_multiplier\n",

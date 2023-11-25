@@ -68,6 +68,12 @@
                     }
                     rnw_pick_random_doctrine_temple_authority_effect = yes
                 }
+                if = {
+                    limit = {
+                        religion_tag = zoroastrianism_religion
+                    }
+                    rnw_pick_random_doctrine_zoroastrian_branches_effect = yes
+                }
 
                 rnw_pick_random_doctrine_core_tenets_effect = yes
                 rnw_pick_random_doctrine_core_tenets_effect = yes

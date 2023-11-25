@@ -41,6 +41,7 @@
 		0 = { 
 			trigger = { 
 				religion_tag = christianity_religion
+				religion_tag = islam_religion
 				NOT = { 
 					has_doctrine = doctrine_pluralism_fundamentalist
 				}
@@ -1052,9 +1053,6 @@
 		0 = { 
 			trigger = { 
 				NOT = { 
-					religion_tag = christianity_religion
-				}
-				NOT = { 
 					has_doctrine = tenet_false_conversion_sanction
 				}
 			}
@@ -1099,6 +1097,12 @@
 		}
 		0 = { 
 			trigger = { 
+				NOT = { 
+					religion_tag = christianity_religion
+				}
+				NOT = { 
+					has_doctrine = special_doctrine_jizya
+				}
 				NOT = { 
 					has_doctrine = tenet_tax_nonbelievers
 				}
@@ -1718,7 +1722,14 @@
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = zunism_religion
+				OR = { 
+					religion_tag = zunism_religion
+					has_doctrine = tenet_sun_worship
+					AND = { 
+						religion_tag = hinduism_religion
+						this = faith:saura
+					}
+				}
 				NOT = { 
 					has_doctrine = tenet_sun_worship
 				}
@@ -2502,6 +2513,101 @@
 			}
 			add_doctrine = tenet_megaliths
 		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_pacifism
+				}
+				NOT = { 
+					has_doctrine = tenet_dharmic_pacifism
+				}
+				OR = { 
+					has_doctrine = tenet_warmonger
+					has_doctrine = tenet_unrelenting_faith
+					has_doctrine = tenet_consolamentum
+					has_doctrine = tenet_armed_pilgrimages
+					has_doctrine = tenet_struggle_submission
+					has_doctrine = tenet_pursuit_of_power
+				}
+				NOT = { 
+					has_doctrine = tenet_fp3_fedayeen
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							AND = { 
+								OR = { 
+									has_doctrine = muhammad_succession_shia_doctrine
+									has_doctrine = muhammad_succession_muhakkima_doctrine
+								}
+								OR = { 
+									has_doctrine = tenet_warmonger
+									has_doctrine = tenet_unrelenting_faith
+									has_doctrine = tenet_consolamentum
+								}
+							}
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_very_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_fp3_fedayeen
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_fp3_fedayeen
+		}
+		0 = { 
+			trigger = { 
+				always = no
+				always = yes
+				NOT = { 
+					has_doctrine = tenet_communal_possessions
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								has_doctrine = tenet_mendicant_preachers
+								has_doctrine = tenet_gnosticism
+								religion_tag = christianity_religion
+								religion_tag = zoroastrianism_religion
+							}
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_low_chance
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_communal_possessions
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = tenet_communal_possessions
+		}
 	}
 }
 rnw_religion_pick_random_doctrine_core_tenets_effect = { 
@@ -2539,6 +2645,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				this = religion:christianity_religion
+				this = religion:islam_religion
 				NOT = { 
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
@@ -3388,11 +3495,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 			}
 		}
 		0 = { 
-			trigger = { 
-				NOT = { 
-					this = religion:christianity_religion
-				}
-			}
+			trigger = { }
 			modifier = { 
 				add = { 
 					if = { 
@@ -3425,7 +3528,17 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 			}
 		}
 		0 = { 
-			trigger = { }
+			trigger = { 
+				NOT = { 
+					this = religion:christianity_religion
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:special_doctrine_jizya
+					}
+				}
+			}
 			modifier = { 
 				add = { 
 					if = { 
@@ -3932,7 +4045,17 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				this = religion:zunism_religion
+				OR = { 
+					this = religion:zunism_religion
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_sun_worship
+					}
+					AND = { 
+						this = religion:hinduism_religion
+						this = faith:saura
+					}
+				}
 			}
 			modifier = { 
 				add = { 
@@ -4700,6 +4823,124 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
 				target = flag:tenet_megaliths
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_pacifism
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_dharmic_pacifism
+					}
+				}
+				OR = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_warmonger
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_unrelenting_faith
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_consolamentum
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_armed_pilgrimages
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_struggle_submission
+					}
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_pursuit_of_power
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							AND = { 
+								OR = { 
+									is_target_in_variable_list = { 
+										name = religion_doctrine_preferences
+										target = flag:muhammad_succession_shia_doctrine
+									}
+									is_target_in_variable_list = { 
+										name = religion_doctrine_preferences
+										target = flag:muhammad_succession_muhakkima_doctrine
+									}
+								}
+								OR = { 
+									is_target_in_variable_list = { 
+										name = religion_doctrine_preferences
+										target = flag:tenet_warmonger
+									}
+									is_target_in_variable_list = { 
+										name = religion_doctrine_preferences
+										target = flag:tenet_unrelenting_faith
+									}
+									is_target_in_variable_list = { 
+										name = religion_doctrine_preferences
+										target = flag:tenet_consolamentum
+									}
+								}
+							}
+						}
+						value = rnw_faith_doctrine_high_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_very_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_fp3_fedayeen
+			}
+		}
+		0 = { 
+			trigger = { 
+				always = no
+				always = yes
+			}
+			modifier = { 
+				add = { 
+					if = { 
+						limit = { 
+							OR = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_mendicant_preachers
+								}
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:tenet_gnosticism
+								}
+								this = religion:christianity_religion
+								this = religion:zoroastrianism_religion
+							}
+						}
+						value = rnw_faith_doctrine_averange_chance
+					}
+					else = { 
+						value = rnw_faith_doctrine_low_chance
+					}
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:tenet_communal_possessions
 			}
 		}
 	}
@@ -7671,125 +7912,134 @@ rnw_religion_pick_random_doctrine_temple_authority_effect = {
 		}
 	}
 }
-rnw_religion_pick_random_doctrine_temple_authority_effect = { 
+rnw_pick_random_doctrine_zoroastrian_branches_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_major_branch_behdin
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							has_doctrine = doctrine_heretic_branch_zandik
+						}
+						multiply = 3
+					}
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_major_branch_behdin
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_major_branch_behdin
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_heretic_branch_zandik
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_high_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_heretic_branch_zandik
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_heretic_branch_zandik
+		}
+	}
+}
+rnw_religion_pick_random_doctrine_zoroastrian_branches_effect = { 
 	random_list = { 
 		0 = { 
 			trigger = { }
 			modifier = { 
 				add = { 
+					value = rnw_faith_doctrine_low_chance
 					if = { 
 						limit = { 
 							is_target_in_variable_list = { 
 								name = religion_doctrine_preferences
-								target = flag:temple_authority_rabbinic_doctrine
+								target = flag:doctrine_heretic_branch_zandik
 							}
 						}
-						value = 0
-					}
-					else_if = { 
-						limit = { 
-							is_target_in_variable_list = { 
-								name = religion_doctrine_preferences
-								target = flag:temple_authority_samaritan_torah_doctrine
-							}
-						}
-						value = rnw_faith_doctrine_averange_chance
-					}
-					else = { 
-						value = rnw_faith_doctrine_high_chance
+						multiply = 3
 					}
 				}
 			}
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
-				target = flag:temple_authority_rabbinic_doctrine
+				target = flag:doctrine_major_branch_behdin
 			}
 		}
 		0 = { 
 			trigger = { }
 			modifier = { 
 				add = { 
+					value = rnw_faith_doctrine_high_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_heretic_branch_zandik
+			}
+		}
+	}
+}
+rnw_religion_pick_random_doctrine_zoroastrian_branches_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_low_chance
 					if = { 
 						limit = { 
 							is_target_in_variable_list = { 
 								name = religion_doctrine_preferences
-								target = flag:temple_authority_toric_doctrine
+								target = flag:doctrine_heretic_branch_zandik
 							}
 						}
-						value = 0
-					}
-					else_if = { 
-						limit = { 
-							is_target_in_variable_list = { 
-								name = religion_doctrine_preferences
-								target = flag:temple_authority_samaritan_torah_doctrine
-							}
-						}
-						value = rnw_faith_doctrine_averange_chance
-					}
-					else = { 
-						value = rnw_faith_doctrine_high_chance
+						multiply = 3
 					}
 				}
 			}
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
-				target = flag:temple_authority_toric_doctrine
+				target = flag:doctrine_major_branch_behdin
 			}
 		}
 		0 = { 
 			trigger = { }
 			modifier = { 
 				add = { 
-					if = { 
-						limit = { 
-							is_target_in_variable_list = { 
-								name = religion_doctrine_preferences
-								target = flag:temple_authority_kohanim_doctrine
-							}
-						}
-						value = 0
-					}
-					else_if = { 
-						limit = { 
-							is_target_in_variable_list = { 
-								name = religion_doctrine_preferences
-								target = flag:temple_authority_samaritan_torah_doctrine
-							}
-						}
-						value = rnw_faith_doctrine_averange_chance
-					}
-					else = { 
-						value = rnw_faith_doctrine_high_chance
-					}
+					value = rnw_faith_doctrine_high_chance
 				}
 			}
 			add_to_variable_list = { 
 				name = religion_doctrine_preferences
-				target = flag:temple_authority_kohanim_doctrine
-			}
-		}
-		0 = { 
-			trigger = { }
-			modifier = { 
-				add = { 
-					if = { 
-						limit = { 
-							is_target_in_variable_list = { 
-								name = religion_doctrine_preferences
-								target = flag:temple_authority_samaritan_torah_doctrine
-							}
-						}
-						value = 0
-					}
-					else = { 
-						value = rnw_faith_doctrine_averange_chance
-					}
-				}
-			}
-			add_to_variable_list = { 
-				name = religion_doctrine_preferences
-				target = flag:temple_authority_samaritan_torah_doctrine
+				target = flag:doctrine_heretic_branch_zandik
 			}
 		}
 	}
@@ -8142,6 +8392,18 @@ rnw_remove_all_doctrines_effect = {
 			has_doctrine = tenet_megaliths
 		}
 		remove_doctrine = tenet_megaliths
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_fp3_fedayeen
+		}
+		remove_doctrine = tenet_fp3_fedayeen
+	}
+	if = { 
+		limit = { 
+			has_doctrine = tenet_communal_possessions
+		}
+		remove_doctrine = tenet_communal_possessions
 	}
 	if = { 
 		limit = { 
@@ -8562,6 +8824,18 @@ rnw_remove_all_doctrines_effect = {
 			has_doctrine = temple_authority_samaritan_torah_doctrine
 		}
 		remove_doctrine = temple_authority_samaritan_torah_doctrine
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_major_branch_behdin
+		}
+		remove_doctrine = doctrine_major_branch_behdin
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_heretic_branch_zandik
+		}
+		remove_doctrine = doctrine_heretic_branch_zandik
 	}
 	if = { 
 		limit = { 
