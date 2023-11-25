@@ -190,6 +190,23 @@
 		10 = { 
 			trigger = { 
 				NOT = { 
+					title:c_suenik = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_suenik
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = suenik
+				COUNTY = title:c_suenik
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
 					title:c_dvin = { 
 						is_in_list = choosen_holy_sites
 					}
@@ -1754,17 +1771,51 @@
 		10 = { 
 			trigger = { 
 				NOT = { 
-					title:c_balkh = { 
+					title:c_irahistan = { 
 						is_in_list = choosen_holy_sites
 					}
 				}
 			}
 			rnw_holy_site_choice_modifier = { 
-				COUNTY = title:c_balkh
+				COUNTY = title:c_irahistan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = adur_farnbag
+				COUNTY = title:c_irahistan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_nishapur = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_nishapur
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = adur_burzen_mihr
+				COUNTY = title:c_nishapur
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_wakhsh = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_wakhsh
 			}
 			rnw_add_holy_site_effect = { 
 				SITE = takht-i-sangin
-				COUNTY = title:c_balkh
+				COUNTY = title:c_wakhsh
 				FAITH = $FAITH$
 			}
 		}
@@ -1799,6 +1850,108 @@
 			rnw_add_holy_site_effect = { 
 				SITE = ushi-darena
 				COUNTY = title:c_baduspan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_baduspan = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_baduspan
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = mount_damavand
+				COUNTY = title:c_baduspan
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_tabriz = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_tabriz
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = badd
+				COUNTY = title:c_tabriz
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_baghdad = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_baghdad
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ctesiphon
+				COUNTY = title:c_baghdad
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_hayk = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_hayk
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = ani
+				COUNTY = title:c_hayk
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_kurdar = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_kurdar
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = mizdahqan
+				COUNTY = title:c_kurdar
+				FAITH = $FAITH$
+			}
+		}
+		10 = { 
+			trigger = { 
+				NOT = { 
+					title:c_dunhuang = { 
+						is_in_list = choosen_holy_sites
+					}
+				}
+			}
+			rnw_holy_site_choice_modifier = { 
+				COUNTY = title:c_dunhuang
+			}
+			rnw_add_holy_site_effect = { 
+				SITE = dunhuang
+				COUNTY = title:c_dunhuang
 				FAITH = $FAITH$
 			}
 		}
@@ -4003,6 +4156,14 @@ rnw_forward_to_holy_site_choice_effect = {
 		}
 		rnw_choose_multiple_holy_site_effect = { 
 			FAITH = urartuism
+		}
+	}
+	else_if = { 
+		limit = { 
+			this = faith:afridunism
+		}
+		rnw_choose_multiple_holy_site_effect = { 
+			FAITH = afridunism
 		}
 	}
 	else_if = { 
