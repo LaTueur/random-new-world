@@ -187,6 +187,18 @@
 	}
 	if = { 
 		limit = { 
+			has_innovation = fp3_innovation_mural_sextant
+		}
+		remove_innovation = fp3_innovation_mural_sextant
+	}
+	if = { 
+		limit = { 
+			has_innovation = fp3_innovation_fritware
+		}
+		remove_innovation = fp3_innovation_fritware
+	}
+	if = { 
+		limit = { 
 			has_innovation = innovation_hoardings
 		}
 		remove_innovation = innovation_hoardings
@@ -526,5 +538,11 @@
 			has_innovation = innovation_all_things
 		}
 		remove_innovation = innovation_all_things
+	}
+	if = { 
+		limit = { 
+			has_innovation = innovation_sanitation
+		}
+		remove_innovation = innovation_sanitation
 	}
 }

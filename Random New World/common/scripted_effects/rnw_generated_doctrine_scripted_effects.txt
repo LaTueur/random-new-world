@@ -3,7 +3,9 @@
 		0 = { 
 			trigger = { 
 				has_doctrine = abrahamic_hostility_doctrine
-				always = yes
+				NOT = { 
+					has_doctrine = doctrine_funeral_mummification
+				}
 				NOT = { 
 					has_doctrine = tenet_aniconism
 				}
@@ -40,8 +42,10 @@
 		}
 		0 = { 
 			trigger = { 
-				religion_tag = christianity_religion
-				religion_tag = islam_religion
+				OR = { 
+					religion_tag = christianity_religion
+					religion_tag = islam_religion
+				}
 				NOT = { 
 					has_doctrine = doctrine_pluralism_fundamentalist
 				}
@@ -202,6 +206,9 @@
 			trigger = { 
 				NOT = { 
 					has_doctrine = doctrine_no_head
+				}
+				NOT = { 
+					has_doctrine = tenet_sacred_shadows
 				}
 				NOT = { 
 					has_doctrine = tenet_communion
@@ -923,7 +930,6 @@
 						}
 					}
 					religion_tag = judaism_religion
-					religion_tag = zoroastrianism_religion
 				}
 				NOT = { 
 					has_doctrine = tenet_reincarnation
@@ -1695,34 +1701,6 @@
 		0 = { 
 			trigger = { 
 				OR = { 
-					has_doctrine = pagan_hostility_doctrine
-					has_doctrine = eastern_hostility_doctrine
-				}
-				NOT = { 
-					has_doctrine = tenet_sky_burials
-				}
-			}
-			modifier = { 
-				add = { 
-					value = rnw_faith_doctrine_high_chance
-					if = { 
-						limit = { 
-							religion = { 
-								is_target_in_variable_list = { 
-									name = religion_doctrine_preferences
-									target = flag:tenet_sky_burials
-								}
-							}
-						}
-						multiply = rnw_religion_doctrine_preferences_modifier
-					}
-				}
-			}
-			add_doctrine = tenet_sky_burials
-		}
-		0 = { 
-			trigger = { 
-				OR = { 
 					religion_tag = zunism_religion
 					has_doctrine = tenet_sun_worship
 					AND = { 
@@ -2142,7 +2120,6 @@
 		}
 		0 = { 
 			trigger = { 
-				always = no
 				NOT = { 
 					has_doctrine = tenet_exaltation_of_pain
 				}
@@ -2330,6 +2307,9 @@
 		}
 		0 = { 
 			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_communion
+				}
 				NOT = { 
 					has_doctrine = tenet_sacred_shadows
 				}
@@ -2571,7 +2551,6 @@
 		}
 		0 = { 
 			trigger = { 
-				always = no
 				always = yes
 				NOT = { 
 					has_doctrine = tenet_communal_possessions
@@ -2618,7 +2597,12 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					name = religion_doctrine_preferences
 					target = flag:abrahamic_hostility_doctrine
 				}
-				always = yes
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:doctrine_funeral_mummification
+					}
+				}
 			}
 			modifier = { 
 				add = { 
@@ -2644,8 +2628,10 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				this = religion:christianity_religion
-				this = religion:islam_religion
+				OR = { 
+					this = religion:christianity_religion
+					this = religion:islam_religion
+				}
 				NOT = { 
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
@@ -2775,6 +2761,12 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
 						target = flag:doctrine_no_head
+					}
+				}
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_sacred_shadows
 					}
 				}
 			}
@@ -3398,7 +3390,6 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 						}
 					}
 					this = religion:judaism_religion
-					this = religion:zoroastrianism_religion
 				}
 			}
 			modifier = { 
@@ -4023,29 +4014,6 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		0 = { 
 			trigger = { 
 				OR = { 
-					is_target_in_variable_list = { 
-						name = religion_doctrine_preferences
-						target = flag:pagan_hostility_doctrine
-					}
-					is_target_in_variable_list = { 
-						name = religion_doctrine_preferences
-						target = flag:eastern_hostility_doctrine
-					}
-				}
-			}
-			modifier = { 
-				add = { 
-					value = rnw_faith_doctrine_high_chance
-				}
-			}
-			add_to_variable_list = { 
-				name = religion_doctrine_preferences
-				target = flag:tenet_sky_burials
-			}
-		}
-		0 = { 
-			trigger = { 
-				OR = { 
 					this = religion:zunism_religion
 					is_target_in_variable_list = { 
 						name = religion_doctrine_preferences
@@ -4473,9 +4441,7 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 			}
 		}
 		0 = { 
-			trigger = { 
-				always = no
-			}
+			trigger = { }
 			modifier = { 
 				add = { 
 					if = { 
@@ -4648,7 +4614,14 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 			}
 		}
 		0 = { 
-			trigger = { }
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_communion
+					}
+				}
+			}
 			modifier = { 
 				add = { 
 					if = { 
@@ -4911,7 +4884,6 @@ rnw_religion_pick_random_doctrine_core_tenets_effect = {
 		}
 		0 = { 
 			trigger = { 
-				always = no
 				always = yes
 			}
 			modifier = { 
@@ -7427,6 +7399,204 @@ rnw_religion_pick_random_doctrine_pilgrimage_effect = {
 		}
 	}
 }
+rnw_pick_random_doctrine_funeral_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_funeral_stoic
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_funeral_stoic
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_funeral_stoic
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_funeral_bewailment
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_funeral_bewailment
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_funeral_bewailment
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_funeral_cremation
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_funeral_cremation
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_funeral_cremation
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = doctrine_funeral_sky_burial
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_funeral_sky_burial
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_funeral_sky_burial
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					has_doctrine = tenet_aniconism
+				}
+				NOT = { 
+					has_doctrine = doctrine_funeral_mummification
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_low_chance
+					if = { 
+						limit = { 
+							religion = { 
+								is_target_in_variable_list = { 
+									name = religion_doctrine_preferences
+									target = flag:doctrine_funeral_mummification
+								}
+							}
+						}
+						multiply = rnw_religion_doctrine_preferences_modifier
+					}
+				}
+			}
+			add_doctrine = doctrine_funeral_mummification
+		}
+	}
+}
+rnw_religion_pick_random_doctrine_funeral_effect = { 
+	random_list = { 
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_funeral_stoic
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_funeral_bewailment
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_funeral_cremation
+			}
+		}
+		0 = { 
+			trigger = { }
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_averange_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_funeral_sky_burial
+			}
+		}
+		0 = { 
+			trigger = { 
+				NOT = { 
+					is_target_in_variable_list = { 
+						name = religion_doctrine_preferences
+						target = flag:tenet_aniconism
+					}
+				}
+			}
+			modifier = { 
+				add = { 
+					value = rnw_faith_doctrine_low_chance
+				}
+			}
+			add_to_variable_list = { 
+				name = religion_doctrine_preferences
+				target = flag:doctrine_funeral_mummification
+			}
+		}
+	}
+}
 rnw_pick_random_doctrine_muhammad_succession_effect = { 
 	random_list = { 
 		0 = { 
@@ -8287,12 +8457,6 @@ rnw_remove_all_doctrines_effect = {
 	}
 	if = { 
 		limit = { 
-			has_doctrine = tenet_sky_burials
-		}
-		remove_doctrine = tenet_sky_burials
-	}
-	if = { 
-		limit = { 
 			has_doctrine = tenet_sun_worship
 		}
 		remove_doctrine = tenet_sun_worship
@@ -8776,6 +8940,36 @@ rnw_remove_all_doctrines_effect = {
 			has_doctrine = doctrine_pilgrimage_mandatory_hajj
 		}
 		remove_doctrine = doctrine_pilgrimage_mandatory_hajj
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_funeral_stoic
+		}
+		remove_doctrine = doctrine_funeral_stoic
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_funeral_bewailment
+		}
+		remove_doctrine = doctrine_funeral_bewailment
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_funeral_cremation
+		}
+		remove_doctrine = doctrine_funeral_cremation
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_funeral_sky_burial
+		}
+		remove_doctrine = doctrine_funeral_sky_burial
+	}
+	if = { 
+		limit = { 
+			has_doctrine = doctrine_funeral_mummification
+		}
+		remove_doctrine = doctrine_funeral_mummification
 	}
 	if = { 
 		limit = { 

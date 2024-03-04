@@ -1983,7 +1983,7 @@ cologne_akom_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -1992,7 +1992,7 @@ cologne_baltic_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2001,7 +2001,7 @@ cologne_basque_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2010,7 +2010,7 @@ cologne_bon = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2019,7 +2019,7 @@ cologne_old_bon = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2028,7 +2028,7 @@ cologne_theravada = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2037,7 +2037,7 @@ cologne_mahayana = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2046,7 +2046,7 @@ cologne_vajrayana = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2055,7 +2055,7 @@ cologne_ari = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2064,7 +2064,7 @@ cologne_lamaism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2073,7 +2073,7 @@ cologne_catholic = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2082,7 +2082,7 @@ cologne_orthodox = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2091,7 +2091,7 @@ cologne_coptic = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2100,7 +2100,7 @@ cologne_armenian_apostolic = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2109,7 +2109,7 @@ cologne_conversos = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2118,7 +2118,7 @@ cologne_cathar = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2127,7 +2127,7 @@ cologne_waldensian = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2136,7 +2136,7 @@ cologne_lollard = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2145,7 +2145,7 @@ cologne_iconoclast = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2154,7 +2154,7 @@ cologne_bogomilist = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2163,7 +2163,7 @@ cologne_paulician = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2172,7 +2172,7 @@ cologne_nestorian = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2181,7 +2181,7 @@ cologne_messalian = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2190,7 +2190,7 @@ cologne_adamites = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2199,7 +2199,7 @@ cologne_insular_celtic = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2208,7 +2208,7 @@ cologne_bosnian_church = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2217,7 +2217,7 @@ cologne_mozarabic_church = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2226,7 +2226,7 @@ cologne_adoptionist = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2235,7 +2235,7 @@ cologne_donyipoloism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2244,7 +2244,7 @@ cologne_sedism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2253,7 +2253,7 @@ cologne_manichean = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2262,7 +2262,7 @@ cologne_mandeaism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2271,7 +2271,7 @@ cologne_sabianism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2280,7 +2280,7 @@ cologne_valentinianism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2289,7 +2289,7 @@ cologne_sethianism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2298,7 +2298,7 @@ cologne_priscillianism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2307,7 +2307,7 @@ cologne_cainitism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2316,7 +2316,7 @@ cologne_finnish_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2325,7 +2325,7 @@ cologne_norse_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2334,7 +2334,7 @@ cologne_hellenic_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2343,7 +2343,7 @@ cologne_vaishnavism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2352,7 +2352,7 @@ cologne_advaitism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2361,7 +2361,7 @@ cologne_shaivism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2370,7 +2370,7 @@ cologne_srikula_shaktism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2379,7 +2379,7 @@ cologne_kalikula_shaktism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2388,7 +2388,7 @@ cologne_smartism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2397,7 +2397,7 @@ cologne_krishnaism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2406,7 +2406,7 @@ cologne_saura = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2415,7 +2415,7 @@ cologne_ashari = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2424,7 +2424,7 @@ cologne_muwalladi = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2433,7 +2433,7 @@ cologne_maturidi = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2442,7 +2442,7 @@ cologne_masmudi = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2451,7 +2451,7 @@ cologne_mutazila = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2460,7 +2460,7 @@ cologne_quranist = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2469,7 +2469,7 @@ cologne_ismaili = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2478,7 +2478,7 @@ cologne_qarmatian = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2487,7 +2487,7 @@ cologne_nizari = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2496,7 +2496,7 @@ cologne_zayidi = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2505,7 +2505,7 @@ cologne_imami = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2514,7 +2514,7 @@ cologne_ghulat = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2523,7 +2523,7 @@ cologne_alawite = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2532,7 +2532,7 @@ cologne_alevi = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2541,7 +2541,7 @@ cologne_druze = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2550,7 +2550,7 @@ cologne_ibadi = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2559,7 +2559,7 @@ cologne_azariqa = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2568,7 +2568,7 @@ cologne_najdat = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2577,7 +2577,7 @@ cologne_sufri = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2586,7 +2586,7 @@ cologne_hafizi = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2595,7 +2595,7 @@ cologne_digambara = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2604,7 +2604,7 @@ cologne_svetambara = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2613,7 +2613,7 @@ cologne_yapaniya = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2622,7 +2622,7 @@ cologne_rabbinism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2631,7 +2631,7 @@ cologne_karaism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2640,7 +2640,7 @@ cologne_haymanot = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2649,7 +2649,7 @@ cologne_malabarism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2658,7 +2658,7 @@ cologne_samaritan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2667,7 +2667,7 @@ cologne_kabarism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2676,7 +2676,7 @@ cologne_merkabah = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2685,7 +2685,7 @@ cologne_kushitism_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2694,7 +2694,7 @@ cologne_magyar_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2703,7 +2703,7 @@ cologne_kiratism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2712,7 +2712,7 @@ cologne_yumaism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2721,7 +2721,7 @@ cologne_north_african_acham_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2730,7 +2730,7 @@ cologne_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2739,7 +2739,7 @@ cologne_rrmeaism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2748,7 +2748,7 @@ cologne_melieism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2757,7 +2757,7 @@ cologne_siberian_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2766,7 +2766,7 @@ cologne_slavic_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2775,7 +2775,7 @@ cologne_zhengyi = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2784,7 +2784,7 @@ cologne_shangqing = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2793,7 +2793,7 @@ cologne_quanzhen = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2802,7 +2802,7 @@ cologne_tengri_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2811,7 +2811,7 @@ cologne_waaqism_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2820,7 +2820,7 @@ cologne_west_african_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2829,7 +2829,7 @@ cologne_west_african_bidu_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2838,7 +2838,7 @@ cologne_west_african_bori_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2847,7 +2847,7 @@ cologne_west_african_orisha_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2856,7 +2856,7 @@ cologne_west_african_roog_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2865,7 +2865,7 @@ cologne_yazidi = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2874,7 +2874,7 @@ cologne_meshefaresism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2883,7 +2883,7 @@ cologne_kitebacilweism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2892,7 +2892,7 @@ cologne_mazdayasna = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2901,7 +2901,7 @@ cologne_zurvanism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2910,7 +2910,7 @@ cologne_gayomarthianism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2919,7 +2919,7 @@ cologne_khurmazta = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2928,7 +2928,7 @@ cologne_mazdakism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2937,7 +2937,7 @@ cologne_khurramism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2946,7 +2946,7 @@ cologne_urartuism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2955,7 +2955,7 @@ cologne_afridunism = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -2964,7 +2964,7 @@ cologne_zun_pagan = {
 	character_modifier = { 
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 	is_active = no
 }
@@ -30583,7 +30583,7 @@ damascus_akom_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30592,7 +30592,7 @@ damascus_baltic_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30601,7 +30601,7 @@ damascus_basque_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30610,7 +30610,7 @@ damascus_bon = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30619,7 +30619,7 @@ damascus_old_bon = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30628,7 +30628,7 @@ damascus_theravada = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30637,7 +30637,7 @@ damascus_mahayana = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30646,7 +30646,7 @@ damascus_vajrayana = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30655,7 +30655,7 @@ damascus_ari = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30664,7 +30664,7 @@ damascus_lamaism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30673,7 +30673,7 @@ damascus_catholic = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30682,7 +30682,7 @@ damascus_orthodox = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30691,7 +30691,7 @@ damascus_coptic = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30700,7 +30700,7 @@ damascus_armenian_apostolic = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30709,7 +30709,7 @@ damascus_conversos = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30718,7 +30718,7 @@ damascus_cathar = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30727,7 +30727,7 @@ damascus_waldensian = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30736,7 +30736,7 @@ damascus_lollard = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30745,7 +30745,7 @@ damascus_iconoclast = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30754,7 +30754,7 @@ damascus_bogomilist = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30763,7 +30763,7 @@ damascus_paulician = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30772,7 +30772,7 @@ damascus_nestorian = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30781,7 +30781,7 @@ damascus_messalian = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30790,7 +30790,7 @@ damascus_adamites = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30799,7 +30799,7 @@ damascus_insular_celtic = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30808,7 +30808,7 @@ damascus_bosnian_church = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30817,7 +30817,7 @@ damascus_mozarabic_church = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30826,7 +30826,7 @@ damascus_adoptionist = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30835,7 +30835,7 @@ damascus_donyipoloism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30844,7 +30844,7 @@ damascus_sedism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30853,7 +30853,7 @@ damascus_manichean = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30862,7 +30862,7 @@ damascus_mandeaism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30871,7 +30871,7 @@ damascus_sabianism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30880,7 +30880,7 @@ damascus_valentinianism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30889,7 +30889,7 @@ damascus_sethianism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30898,7 +30898,7 @@ damascus_priscillianism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30907,7 +30907,7 @@ damascus_cainitism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30916,7 +30916,7 @@ damascus_finnish_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30925,7 +30925,7 @@ damascus_norse_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30934,7 +30934,7 @@ damascus_hellenic_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30943,7 +30943,7 @@ damascus_vaishnavism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30952,7 +30952,7 @@ damascus_advaitism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30961,7 +30961,7 @@ damascus_shaivism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30970,7 +30970,7 @@ damascus_srikula_shaktism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30979,7 +30979,7 @@ damascus_kalikula_shaktism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30988,7 +30988,7 @@ damascus_smartism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -30997,7 +30997,7 @@ damascus_krishnaism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31006,7 +31006,7 @@ damascus_saura = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31015,7 +31015,7 @@ damascus_ashari = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31024,7 +31024,7 @@ damascus_muwalladi = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31033,7 +31033,7 @@ damascus_maturidi = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31042,7 +31042,7 @@ damascus_masmudi = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31051,7 +31051,7 @@ damascus_mutazila = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31060,7 +31060,7 @@ damascus_quranist = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31069,7 +31069,7 @@ damascus_ismaili = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31078,7 +31078,7 @@ damascus_qarmatian = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31087,7 +31087,7 @@ damascus_nizari = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31096,7 +31096,7 @@ damascus_zayidi = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31105,7 +31105,7 @@ damascus_imami = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31114,7 +31114,7 @@ damascus_ghulat = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31123,7 +31123,7 @@ damascus_alawite = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31132,7 +31132,7 @@ damascus_alevi = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31141,7 +31141,7 @@ damascus_druze = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31150,7 +31150,7 @@ damascus_ibadi = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31159,7 +31159,7 @@ damascus_azariqa = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31168,7 +31168,7 @@ damascus_najdat = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31177,7 +31177,7 @@ damascus_sufri = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31186,7 +31186,7 @@ damascus_hafizi = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31195,7 +31195,7 @@ damascus_digambara = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31204,7 +31204,7 @@ damascus_svetambara = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31213,7 +31213,7 @@ damascus_yapaniya = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31222,7 +31222,7 @@ damascus_rabbinism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31231,7 +31231,7 @@ damascus_karaism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31240,7 +31240,7 @@ damascus_haymanot = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31249,7 +31249,7 @@ damascus_malabarism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31258,7 +31258,7 @@ damascus_samaritan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31267,7 +31267,7 @@ damascus_kabarism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31276,7 +31276,7 @@ damascus_merkabah = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31285,7 +31285,7 @@ damascus_kushitism_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31294,7 +31294,7 @@ damascus_magyar_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31303,7 +31303,7 @@ damascus_kiratism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31312,7 +31312,7 @@ damascus_yumaism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31321,7 +31321,7 @@ damascus_north_african_acham_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31330,7 +31330,7 @@ damascus_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31339,7 +31339,7 @@ damascus_rrmeaism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31348,7 +31348,7 @@ damascus_melieism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31357,7 +31357,7 @@ damascus_siberian_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31366,7 +31366,7 @@ damascus_slavic_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31375,7 +31375,7 @@ damascus_zhengyi = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31384,7 +31384,7 @@ damascus_shangqing = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31393,7 +31393,7 @@ damascus_quanzhen = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31402,7 +31402,7 @@ damascus_tengri_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31411,7 +31411,7 @@ damascus_waaqism_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31420,7 +31420,7 @@ damascus_west_african_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31429,7 +31429,7 @@ damascus_west_african_bidu_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31438,7 +31438,7 @@ damascus_west_african_bori_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31447,7 +31447,7 @@ damascus_west_african_orisha_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31456,7 +31456,7 @@ damascus_west_african_roog_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31465,7 +31465,7 @@ damascus_yazidi = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31474,7 +31474,7 @@ damascus_meshefaresism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31483,7 +31483,7 @@ damascus_kitebacilweism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31492,7 +31492,7 @@ damascus_mazdayasna = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31501,7 +31501,7 @@ damascus_zurvanism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31510,7 +31510,7 @@ damascus_gayomarthianism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31519,7 +31519,7 @@ damascus_khurmazta = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31528,7 +31528,7 @@ damascus_mazdakism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31537,7 +31537,7 @@ damascus_khurramism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31546,7 +31546,7 @@ damascus_urartuism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31555,7 +31555,7 @@ damascus_afridunism = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -31564,7 +31564,7 @@ damascus_zun_pagan = {
 	character_modifier = { 
 		name = holy_site_damascus_effect_name
 		levy_size = 0.05
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67762,7 +67762,7 @@ amaravati_akom_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67770,7 +67770,7 @@ amaravati_baltic_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67778,7 +67778,7 @@ amaravati_basque_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67786,7 +67786,7 @@ amaravati_bon = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67794,7 +67794,7 @@ amaravati_old_bon = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67802,7 +67802,7 @@ amaravati_theravada = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67810,7 +67810,7 @@ amaravati_mahayana = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67818,7 +67818,7 @@ amaravati_vajrayana = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67826,7 +67826,7 @@ amaravati_ari = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67834,7 +67834,7 @@ amaravati_lamaism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67842,7 +67842,7 @@ amaravati_catholic = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67850,7 +67850,7 @@ amaravati_orthodox = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67858,7 +67858,7 @@ amaravati_coptic = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67866,7 +67866,7 @@ amaravati_armenian_apostolic = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67874,7 +67874,7 @@ amaravati_conversos = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67882,7 +67882,7 @@ amaravati_cathar = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67890,7 +67890,7 @@ amaravati_waldensian = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67898,7 +67898,7 @@ amaravati_lollard = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67906,7 +67906,7 @@ amaravati_iconoclast = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67914,7 +67914,7 @@ amaravati_bogomilist = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67922,7 +67922,7 @@ amaravati_paulician = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67930,7 +67930,7 @@ amaravati_nestorian = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67938,7 +67938,7 @@ amaravati_messalian = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67946,7 +67946,7 @@ amaravati_adamites = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67954,7 +67954,7 @@ amaravati_insular_celtic = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67962,7 +67962,7 @@ amaravati_bosnian_church = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67970,7 +67970,7 @@ amaravati_mozarabic_church = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67978,7 +67978,7 @@ amaravati_adoptionist = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67986,7 +67986,7 @@ amaravati_donyipoloism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -67994,7 +67994,7 @@ amaravati_sedism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68002,7 +68002,7 @@ amaravati_manichean = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68010,7 +68010,7 @@ amaravati_mandeaism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68018,7 +68018,7 @@ amaravati_sabianism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68026,7 +68026,7 @@ amaravati_valentinianism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68034,7 +68034,7 @@ amaravati_sethianism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68042,7 +68042,7 @@ amaravati_priscillianism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68050,7 +68050,7 @@ amaravati_cainitism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68058,7 +68058,7 @@ amaravati_finnish_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68066,7 +68066,7 @@ amaravati_norse_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68074,7 +68074,7 @@ amaravati_hellenic_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68082,7 +68082,7 @@ amaravati_vaishnavism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68090,7 +68090,7 @@ amaravati_advaitism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68098,7 +68098,7 @@ amaravati_shaivism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68106,7 +68106,7 @@ amaravati_srikula_shaktism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68114,7 +68114,7 @@ amaravati_kalikula_shaktism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68122,7 +68122,7 @@ amaravati_smartism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68130,7 +68130,7 @@ amaravati_krishnaism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68138,7 +68138,7 @@ amaravati_saura = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68146,7 +68146,7 @@ amaravati_ashari = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68154,7 +68154,7 @@ amaravati_muwalladi = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68162,7 +68162,7 @@ amaravati_maturidi = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68170,7 +68170,7 @@ amaravati_masmudi = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68178,7 +68178,7 @@ amaravati_mutazila = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68186,7 +68186,7 @@ amaravati_quranist = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68194,7 +68194,7 @@ amaravati_ismaili = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68202,7 +68202,7 @@ amaravati_qarmatian = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68210,7 +68210,7 @@ amaravati_nizari = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68218,7 +68218,7 @@ amaravati_zayidi = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68226,7 +68226,7 @@ amaravati_imami = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68234,7 +68234,7 @@ amaravati_ghulat = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68242,7 +68242,7 @@ amaravati_alawite = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68250,7 +68250,7 @@ amaravati_alevi = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68258,7 +68258,7 @@ amaravati_druze = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68266,7 +68266,7 @@ amaravati_ibadi = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68274,7 +68274,7 @@ amaravati_azariqa = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68282,7 +68282,7 @@ amaravati_najdat = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68290,7 +68290,7 @@ amaravati_sufri = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68298,7 +68298,7 @@ amaravati_hafizi = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68306,7 +68306,7 @@ amaravati_digambara = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68314,7 +68314,7 @@ amaravati_svetambara = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68322,7 +68322,7 @@ amaravati_yapaniya = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68330,7 +68330,7 @@ amaravati_rabbinism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68338,7 +68338,7 @@ amaravati_karaism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68346,7 +68346,7 @@ amaravati_haymanot = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68354,7 +68354,7 @@ amaravati_malabarism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68362,7 +68362,7 @@ amaravati_samaritan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68370,7 +68370,7 @@ amaravati_kabarism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68378,7 +68378,7 @@ amaravati_merkabah = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68386,7 +68386,7 @@ amaravati_kushitism_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68394,7 +68394,7 @@ amaravati_magyar_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68402,7 +68402,7 @@ amaravati_kiratism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68410,7 +68410,7 @@ amaravati_yumaism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68418,7 +68418,7 @@ amaravati_north_african_acham_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68426,7 +68426,7 @@ amaravati_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68434,7 +68434,7 @@ amaravati_rrmeaism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68442,7 +68442,7 @@ amaravati_melieism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68450,7 +68450,7 @@ amaravati_siberian_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68458,7 +68458,7 @@ amaravati_slavic_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68466,7 +68466,7 @@ amaravati_zhengyi = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68474,7 +68474,7 @@ amaravati_shangqing = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68482,7 +68482,7 @@ amaravati_quanzhen = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68490,7 +68490,7 @@ amaravati_tengri_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68498,7 +68498,7 @@ amaravati_waaqism_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68506,7 +68506,7 @@ amaravati_west_african_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68514,7 +68514,7 @@ amaravati_west_african_bidu_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68522,7 +68522,7 @@ amaravati_west_african_bori_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68530,7 +68530,7 @@ amaravati_west_african_orisha_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68538,7 +68538,7 @@ amaravati_west_african_roog_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68546,7 +68546,7 @@ amaravati_yazidi = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68554,7 +68554,7 @@ amaravati_meshefaresism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68562,7 +68562,7 @@ amaravati_kitebacilweism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68570,7 +68570,7 @@ amaravati_mazdayasna = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68578,7 +68578,7 @@ amaravati_zurvanism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68586,7 +68586,7 @@ amaravati_gayomarthianism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68594,7 +68594,7 @@ amaravati_khurmazta = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68602,7 +68602,7 @@ amaravati_mazdakism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68610,7 +68610,7 @@ amaravati_khurramism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68618,7 +68618,7 @@ amaravati_urartuism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68626,7 +68626,7 @@ amaravati_afridunism = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -68634,7 +68634,7 @@ amaravati_zun_pagan = {
 	county = c_nallamala
 	character_modifier = { 
 		name = holy_site_amaravati_effect_name
-		monthly_county_control_change_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
 	}
 	is_active = no
 }
@@ -150812,7 +150812,7 @@ bordeaux_akom_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150820,7 +150820,7 @@ bordeaux_baltic_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150828,7 +150828,7 @@ bordeaux_basque_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150836,7 +150836,7 @@ bordeaux_bon = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150844,7 +150844,7 @@ bordeaux_old_bon = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150852,7 +150852,7 @@ bordeaux_theravada = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150860,7 +150860,7 @@ bordeaux_mahayana = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150868,7 +150868,7 @@ bordeaux_vajrayana = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150876,7 +150876,7 @@ bordeaux_ari = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150884,7 +150884,7 @@ bordeaux_lamaism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150892,7 +150892,7 @@ bordeaux_catholic = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150900,7 +150900,7 @@ bordeaux_orthodox = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150908,7 +150908,7 @@ bordeaux_coptic = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150916,7 +150916,7 @@ bordeaux_armenian_apostolic = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150924,7 +150924,7 @@ bordeaux_conversos = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150932,7 +150932,7 @@ bordeaux_cathar = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150940,7 +150940,7 @@ bordeaux_waldensian = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150948,7 +150948,7 @@ bordeaux_lollard = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150956,7 +150956,7 @@ bordeaux_iconoclast = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150964,7 +150964,7 @@ bordeaux_bogomilist = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150972,7 +150972,7 @@ bordeaux_paulician = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150980,7 +150980,7 @@ bordeaux_nestorian = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150988,7 +150988,7 @@ bordeaux_messalian = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -150996,7 +150996,7 @@ bordeaux_adamites = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151004,7 +151004,7 @@ bordeaux_insular_celtic = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151012,7 +151012,7 @@ bordeaux_bosnian_church = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151020,7 +151020,7 @@ bordeaux_mozarabic_church = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151028,7 +151028,7 @@ bordeaux_adoptionist = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151036,7 +151036,7 @@ bordeaux_donyipoloism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151044,7 +151044,7 @@ bordeaux_sedism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151052,7 +151052,7 @@ bordeaux_manichean = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151060,7 +151060,7 @@ bordeaux_mandeaism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151068,7 +151068,7 @@ bordeaux_sabianism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151076,7 +151076,7 @@ bordeaux_valentinianism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151084,7 +151084,7 @@ bordeaux_sethianism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151092,7 +151092,7 @@ bordeaux_priscillianism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151100,7 +151100,7 @@ bordeaux_cainitism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151108,7 +151108,7 @@ bordeaux_finnish_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151116,7 +151116,7 @@ bordeaux_norse_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151124,7 +151124,7 @@ bordeaux_hellenic_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151132,7 +151132,7 @@ bordeaux_vaishnavism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151140,7 +151140,7 @@ bordeaux_advaitism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151148,7 +151148,7 @@ bordeaux_shaivism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151156,7 +151156,7 @@ bordeaux_srikula_shaktism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151164,7 +151164,7 @@ bordeaux_kalikula_shaktism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151172,7 +151172,7 @@ bordeaux_smartism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151180,7 +151180,7 @@ bordeaux_krishnaism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151188,7 +151188,7 @@ bordeaux_saura = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151196,7 +151196,7 @@ bordeaux_ashari = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151204,7 +151204,7 @@ bordeaux_muwalladi = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151212,7 +151212,7 @@ bordeaux_maturidi = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151220,7 +151220,7 @@ bordeaux_masmudi = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151228,7 +151228,7 @@ bordeaux_mutazila = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151236,7 +151236,7 @@ bordeaux_quranist = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151244,7 +151244,7 @@ bordeaux_ismaili = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151252,7 +151252,7 @@ bordeaux_qarmatian = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151260,7 +151260,7 @@ bordeaux_nizari = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151268,7 +151268,7 @@ bordeaux_zayidi = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151276,7 +151276,7 @@ bordeaux_imami = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151284,7 +151284,7 @@ bordeaux_ghulat = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151292,7 +151292,7 @@ bordeaux_alawite = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151300,7 +151300,7 @@ bordeaux_alevi = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151308,7 +151308,7 @@ bordeaux_druze = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151316,7 +151316,7 @@ bordeaux_ibadi = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151324,7 +151324,7 @@ bordeaux_azariqa = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151332,7 +151332,7 @@ bordeaux_najdat = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151340,7 +151340,7 @@ bordeaux_sufri = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151348,7 +151348,7 @@ bordeaux_hafizi = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151356,7 +151356,7 @@ bordeaux_digambara = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151364,7 +151364,7 @@ bordeaux_svetambara = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151372,7 +151372,7 @@ bordeaux_yapaniya = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151380,7 +151380,7 @@ bordeaux_rabbinism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151388,7 +151388,7 @@ bordeaux_karaism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151396,7 +151396,7 @@ bordeaux_haymanot = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151404,7 +151404,7 @@ bordeaux_malabarism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151412,7 +151412,7 @@ bordeaux_samaritan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151420,7 +151420,7 @@ bordeaux_kabarism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151428,7 +151428,7 @@ bordeaux_merkabah = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151436,7 +151436,7 @@ bordeaux_kushitism_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151444,7 +151444,7 @@ bordeaux_magyar_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151452,7 +151452,7 @@ bordeaux_kiratism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151460,7 +151460,7 @@ bordeaux_yumaism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151468,7 +151468,7 @@ bordeaux_north_african_acham_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151476,7 +151476,7 @@ bordeaux_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151484,7 +151484,7 @@ bordeaux_rrmeaism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151492,7 +151492,7 @@ bordeaux_melieism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151500,7 +151500,7 @@ bordeaux_siberian_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151508,7 +151508,7 @@ bordeaux_slavic_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151516,7 +151516,7 @@ bordeaux_zhengyi = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151524,7 +151524,7 @@ bordeaux_shangqing = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151532,7 +151532,7 @@ bordeaux_quanzhen = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151540,7 +151540,7 @@ bordeaux_tengri_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151548,7 +151548,7 @@ bordeaux_waaqism_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151556,7 +151556,7 @@ bordeaux_west_african_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151564,7 +151564,7 @@ bordeaux_west_african_bidu_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151572,7 +151572,7 @@ bordeaux_west_african_bori_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151580,7 +151580,7 @@ bordeaux_west_african_orisha_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151588,7 +151588,7 @@ bordeaux_west_african_roog_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151596,7 +151596,7 @@ bordeaux_yazidi = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151604,7 +151604,7 @@ bordeaux_meshefaresism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151612,7 +151612,7 @@ bordeaux_kitebacilweism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151620,7 +151620,7 @@ bordeaux_mazdayasna = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151628,7 +151628,7 @@ bordeaux_zurvanism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151636,7 +151636,7 @@ bordeaux_gayomarthianism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151644,7 +151644,7 @@ bordeaux_khurmazta = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151652,7 +151652,7 @@ bordeaux_mazdakism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151660,7 +151660,7 @@ bordeaux_khurramism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151668,7 +151668,7 @@ bordeaux_urartuism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151676,7 +151676,7 @@ bordeaux_afridunism = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }
@@ -151684,7 +151684,7 @@ bordeaux_zun_pagan = {
 	county = c_bordeaux
 	character_modifier = { 
 		name = holy_site_bordeaux_effect_name
-		monthly_county_control_change_factor = 0.5
+		monthly_county_control_growth_factor = 0.5
 	}
 	is_active = no
 }

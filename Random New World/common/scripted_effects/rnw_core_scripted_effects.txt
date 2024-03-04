@@ -30,6 +30,7 @@
                 rnw_religion_pick_random_doctrine_gender_effect = yes
                 rnw_religion_pick_random_doctrine_consanguinity_effect = yes
                 rnw_religion_pick_random_doctrine_pluralism_effect = yes
+                rnw_religion_pick_random_doctrine_funeral_effect = yes
             }
 
             every_faith = {
@@ -55,6 +56,7 @@
                 rnw_pick_random_doctrine_gender_effect = yes
                 rnw_pick_random_doctrine_consanguinity_effect = yes
                 rnw_pick_random_doctrine_pluralism_effect = yes
+                rnw_pick_random_doctrine_funeral_effect = yes
 
                 if = {
                     limit = {
